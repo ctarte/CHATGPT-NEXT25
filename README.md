@@ -68,3 +68,11 @@ Adds `second-life-journey.html` and `second-life-journey.js`, combining discover
 
 ## Phase 12 — Adaptive Deep Discovery™ + Blueprint Quality Lab
 Adds adaptive branching from a common discovery foundation into five relevant paths, plus a five-persona Quality Lab for testing recognition, differentiation, explainability, expansion and actionability. See `adaptive-discovery.html`, `blueprint-quality-lab.html`, and `PHASE12-ADAPTIVE-DISCOVERY-SPEC.txt`.
+
+
+## Phase 13 — Integrated Signal Architecture
+`second-life-journey.html` is now the primary adaptive journey and Blueprint. `signal-architecture.js` provides traceable directional signals and `integrated-sla13.js` connects adaptive answers to the Possibility Universe. See `PHASE13-SIGNAL-ARCHITECTURE-SPEC.txt`.
+
+
+## Phase 13 — Signal Architecture™ + Adaptive Integration
+`second-life-journey.html` now hosts the adaptive customer journey and the integrated signal-to-Blueprint experience. `signal-engine.js` contains deterministic, answer-traceable signals and matching. `phase13-blueprint.js` renders the integrated report. The earlier Phase 11 journey is retained as `second-life-journey-legacy.html` for reference. See `PHASE13-SIGNAL-ARCHITECTURE-SPEC.txt`. Browser prototype only.

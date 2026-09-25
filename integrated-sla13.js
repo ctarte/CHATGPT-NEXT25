@@ -1,4 +1,4 @@
-const AK="next25_adaptive_v1";let A=JSON.parse(localStorage.getItem(AK)||'{"answers":{},"active":[],"step":0,"version":"adaptive_v1"}');
+const AK="next25_integrated_v13";let A=JSON.parse(localStorage.getItem(AK)||'{"answers":{},"active":[],"step":0,"version":"integrated_v13"}');
 const CORE=[
 ["entry","Which statement comes closest to why you are exploring NEXT25?","single",["Approaching retirement","Already retired","Want a different career","Want to start or own a business","Burned out / need a change","Revisiting a dream I postponed","Life is fine—I want to be more intentional"]],
 ["change","What most needs to change?","multi",["How I spend my time","My work itself","My employer / environment","My level of responsibility","My schedule","My sense of purpose","My income model","Where I live or work","Nothing urgent—I want to expand possibilities"]],
@@ -63,7 +63,7 @@ function determine(){
  if(!active.length)active.push("reinvent");
  A.active=[...new Set(active)].slice(0,3);save();return A.active;
 }
-function allSteps(){let steps=[{key:"core",label:"Common Foundation",why:"These questions establish the transition, energy, desired conditions and definition of success.",q:CORE}];determine().forEach(k=>steps.push({key:k,...BR[k]}));steps.push({key:"synthesis",label:"Signal Review",why:"Review the evidence and interpretations before your Blueprint.",q:[]});steps.push({key:"blueprint",label:"Your Blueprint",why:"Your answers, signals and experiments come together in one report.",q:[]});return steps}
+function allSteps(){let steps=[{key:"core",label:"Common Foundation",why:"These questions establish the transition, energy, desired conditions and definition of success.",q:CORE}];determine().forEach(k=>steps.push({key:k,...BR[k]}));steps.push({key:"synthesis",label:"Your Blueprint",why:"Review the signals NEXT25 has gathered before carrying them into the Blueprint.",q:[]});return steps}
 function fld(q){let [id,t,type,opts]=q,v=A.answers[id]??(type==="multi"?[]:"");if(type==="text")return `<label class="aq"><b>${t}</b><textarea data-id="${id}" placeholder="Write whatever comes to mind…">${v}</textarea></label>`;return `<div class="aq"><b>${t}</b><div class="aopts">${opts.map(o=>`<button data-id="${id}" data-type="${type}" data-val="${o}" class="${type==="multi"?(v.includes(o)?"selected":""):(v===o?"selected":"")}">${o}</button>`).join("")}</div></div>`}
 function answered(){return Object.values(A.answers).filter(v=>Array.isArray(v)?v.length:String(v).trim()).length}
 function synth(){
@@ -77,13 +77,13 @@ function synth(){
  if((a.calendar||[]).length)signals.push(["Retirement engagement",a.calendar.slice(0,4).join(", ")]);
  if((a.dreamrep||[]).length)signals.push(["Dream represented",a.dreamrep.slice(0,4).join(", ")]);
  if((a.moreof||[]).length)signals.push(["More of",a.moreof.slice(0,4).join(", ")]);
- return `<div class="asynth"><p class="eyebrow">DISCOVERY SYNTHESIS</p><h2>The question path changed because your answers changed.</h2><p class="lead">You completed the common foundation plus ${A.active.length} relevant branch${A.active.length===1?"":"es"}: <b>${A.active.map(k=>BR[k].label).join(" • ")}</b>.</p><div class="signal-cards">${signals.map(([k,v])=>`<article><small>${k}</small><b>${v}</b></article>`).join("")}</div><div class="a12-note"><b>Next production connection</b><p>These answers now feed the explainable signal layer and the Blueprint in this same journey. Review the result before treating any possibility as a reason to act.</p></div><div class="a-actions"><button class="ghost" id="prev">← Back</button><button class="button" id="next">Build My Blueprint →</button></div></div>`
+ return `<div class="asynth"><p class="eyebrow">DISCOVERY SYNTHESIS</p><h2>The question path changed because your answers changed.</h2><p class="lead">You completed the common foundation plus ${A.active.length} relevant branch${A.active.length===1?"":"es"}: <b>${A.active.map(k=>BR[k].label).join(" • ")}</b>.</p><div class="signal-cards">${signals.map(([k,v])=>`<article><small>${k}</small><b>${v}</b></article>`).join("")}</div><div class="a12-note"><b>Next production connection</b><p>These normalized signals will feed the integrated Matching Engine and Personalized NEXT25 Blueprint™. The current Phase 12 page validates branching and question quality before we merge it into the paid customer flow.</p></div><div class="a-actions"><button class="ghost" id="prev">← Back</button><a class="button" href="blueprint-quality-lab.html">Open Blueprint Quality Lab →</a></div></div>`
 }
 function render(){
  let steps=allSteps();if(A.step>=steps.length)A.step=steps.length-1;let st=steps[A.step];
  aTitle.textContent=st.label;aWhy.textContent=st.why;aCount.textContent=`${answered()} answered`;aPath.textContent=A.step===0?"Common Core":st.label;aBar.style.width=`${(A.step+1)/steps.length*100}%`;
  pathMap.innerHTML=steps.map((s,i)=>`<button data-step="${i}" class="${i===A.step?"active":""}"><b>${i+1}</b><span>${s.label}<small>${i===0?"Everyone":i===steps.length-1?"Review":A.active.includes(s.key)?"Opened by your answers":"Not opened"}</small></span></button>`).join("");
- if(st.key==="synthesis")aCard.innerHTML=synth(); else if(st.key==="blueprint")aCard.innerHTML=window.NEXT25Phase13.renderBlueprint(); else aCard.innerHTML=`<p class="branchwhy">${st.why}</p>${st.q.map(fld).join("")}<div class="a-actions">${A.step?'<button class="ghost" id="prev">← Back</button>':'<span></span>'}<button class="button" id="next">${A.step===0?"Choose My Deeper Paths":"Continue"} →</button></div>`;
+ if(st.key==="synthesis")aCard.innerHTML=blueprint13(); else aCard.innerHTML=`<p class="branchwhy">${st.why}</p>${st.q.map(fld).join("")}<div class="a-actions">${A.step?'<button class="ghost" id="prev">← Back</button>':'<span></span>'}<button class="button" id="next">${A.step===0?"Choose My Deeper Paths":"Continue"} →</button></div>`;
  bind()
 }
 function bind(){
@@ -94,3 +94,23 @@ function bind(){
  if(document.querySelector("#prev"))prev.onclick=()=>{A.step=Math.max(0,A.step-1);save();render();document.querySelector("#adaptive").scrollIntoView({behavior:"smooth"})}
 }
 render();
+let universe13=[];
+fetch('possibility-universe.json').then(r=>r.json()).then(d=>{universe13=d.possibilities;if(allSteps()[A.step].key==='synthesis')render()}).catch(()=>{});
+function esc13(v){return String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function blueprint13(){
+let profile=NEXT25Signals.interpret(A.answers),matches=universe13.length?NEXT25Signals.rank(universe13,profile):null;
+let active=profile.signals.filter(s=>s.level).sort((a,b)=>b.level-a.level).slice(0,6);
+let sections=matches?[['Strong',matches.strong],['Adjacent',matches.adjacent],['Overlooked',matches.overlooked]]:[];
+return `<div class="asynth bp13"><p class="eyebrow">PERSONALIZED NEXT25 BLUEPRINT™ • PROTOTYPE</p><h2>Your next chapter, with the reasoning made visible.</h2><p class="lead">${profile.answered} answered questions across ${A.active.length} adaptive paths. These are hypotheses worth testing, not prescriptions.</p>
+<section><h3>01 • Where You Are Now</h3><p>${esc13(A.answers.entry||'Your transition is still taking shape.')}. ${A.answers.success?'Your definition of a worthwhile change: “'+esc13(A.answers.success)+'”':'Your definition of success deserves further reflection.'}</p></section>
+<section><h3>02 • What We Noticed</h3><div class="signal-cards">${active.map(s=>`<article><small>${esc13(s.id)} • directional signal ${s.level}/5</small><b>${esc13(s.reasons.map(r=>r.answer).join(' · '))}</b><details><summary>Why this appeared</summary>${s.reasons.map(r=>`<p>${esc13(r.question)} → ${esc13(r.answer)} <code>${esc13(r.code)}</code></p>`).join('')}</details></article>`).join('')||'<p>More answers are needed.</p>'}</div></section>
+<section><h3>03 • Tensions & Tradeoffs</h3>${profile.tensions.map(t=>`<article class="bptension"><p>${esc13(t.message)}</p><details><summary>Supporting answers</summary>${t.reasons.map(r=>`<p>${esc13(r.question)} → ${esc13(r.answer)}</p>`).join('')}</details></article>`).join('')||'<p>No dominant tension surfaced; real-world tests may reveal additional tradeoffs.</p>'}</section>
+<section><h3>04 • Nine Possibilities Worth Exploring</h3>${matches?`<div class="bp9">${sections.map(([label,arr])=>`<div><h4>${label}</h4>${arr.map(r=>`<article><b>${esc13(r.item.name)}</b><small>${esc13(r.item.family)}</small><p><strong>Why:</strong> ${esc13(r.why.map(w=>w.label).join(', ')||'A combination of directional attributes and your answers')}.</p><p><strong>Possible friction:</strong> ${esc13(r.friction.join('; ')||r.item.poor_fit?.[0]||'Actual work may differ from expectations')}.</p><p><strong>Test:</strong> ${esc13(r.item.experiment||'Run a bounded experiment')}.</p><details><summary>Reason codes</summary>${r.why.map(w=>`<p>${w.reasonCodes.map(esc13).join(' · ')}</p>`).join('')||'<p>More evidence is needed.</p>'}</details></article>`).join('')}</div>`).join('')}</div>`:'<p>Loading possibilities…</p>'}</section>
+<section><h3>05 • Possibility Gap™</h3><p>The overlooked group expands the field of inquiry; novelty is not evidence that a possibility is better.</p></section>
+<section><h3>06 • 90-Day Experiments™</h3>${matches?matches.strong.map(r=>`<p><b>${esc13(r.item.name)}:</b> ${esc13(r.item.experiment||'Test a small version first.')}</p>`).join(''):'<p>Experiments load with the universe.</p>'}</section>
+<section><h3>07 • 25 for 25™</h3><p>List experiences, relationships, projects, learning and contributions—not merely work.</p><textarea id="list25" placeholder="One idea per line…">${esc13(A.twentyfive||'')}</textarea></section>
+<section><h3>08 • Questions Still Worth Answering</h3><p>What would you enjoy on an ordinary Tuesday? Which attractive idea conflicts with a genuine life requirement? What evidence could change your mind?</p></section>
+<section><h3>09 • Your Next 90 Days</h3><p><b>Days 1–30:</b> speak with people doing the work. <b>Days 31–60:</b> test one bounded version. <b>Days 61–90:</b> review energy, usefulness, lifestyle fit and willingness to repeat.</p></section>
+<div class="a12-note"><b>Prototype boundary</b><p>Signals and possibility attributes are unvalidated design heuristics, not psychological measures, income predictions or proof of suitability. Responses remain in this browser. Production requires secure accounts, private matching logic, consent and human testing.</p></div>
+<div class="a-actions"><button class="ghost" id="prev">← Back</button><button class="button" id="printBlueprint" type="button">Print Blueprint →</button></div></div>`}
+const bind13=bind;bind=function(){bind13();let t=document.querySelector('#list25');if(t)t.oninput=()=>{A.twentyfive=t.value;save()};let p=document.querySelector('#printBlueprint');if(p)p.onclick=()=>window.print()};

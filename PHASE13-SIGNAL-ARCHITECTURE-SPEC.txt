@@ -1,0 +1,12 @@
+NEXT25 PHASE 13 — SIGNAL ARCHITECTURE + ADAPTIVE INTEGRATION
+
+PRIMARY CUSTOMER JOURNEY: second-life-journey.html
+One common core, up to three adaptive branches, and a personalized nine-section Blueprint.
+
+TRACEABILITY: signal-architecture.js normalizes exact answers into directional signals with question/answer reason codes. The Blueprint displays the evidence trail and tensions.
+
+MATCHING: signals feed the 240-entry Possibility Universe, producing three Strong, three Adjacent and three Overlooked candidates with family diversity, friction notes and experiments. The signal strengths are unvalidated design metadata.
+
+BOUNDARIES: No clinical inference, financial suitability, probability of success, or verified market data. Preferences are not hard constraints. Synthetic personas are editorial examples, not validation.
+
+PRODUCTION NEXT: migrate all customer data and proprietary logic to authenticated server infrastructure, audit branch routing, add explicit hard-constraint questions, independent QA, and validate outcomes with consenting pilot users.
