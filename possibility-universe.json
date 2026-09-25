@@ -1,5 +1,5 @@
 {
-  "version": "pu_v1.0",
+  "version": "pu_v1.1-phase10",
   "count": 240,
   "scale": "1 low \u2014 5 high",
   "dimensions": [
@@ -34,7 +34,11 @@
       "selling": 3,
       "physical": 2,
       "scalability": 3,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Offer one tightly bounded project to three people or organizations and test whether the work creates both value and energy.",
+      "poor_fit": [
+        "leans on existing expertise rather than offering a clean break"
+      ]
     },
     {
       "id": "P002",
@@ -52,7 +56,12 @@
       "selling": 4,
       "physical": 2,
       "scalability": 3,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Offer one tightly bounded project to three people or organizations and test whether the work creates both value and energy.",
+      "poor_fit": [
+        "requires comfort with business development or selling",
+        "leans on existing expertise rather than offering a clean break"
+      ]
     },
     {
       "id": "P003",
@@ -70,7 +79,11 @@
       "selling": 3,
       "physical": 2,
       "scalability": 3,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Offer one tightly bounded project to three people or organizations and test whether the work creates both value and energy.",
+      "poor_fit": [
+        "could still be a poor fit if the day-to-day work does not create energy"
+      ]
     },
     {
       "id": "P004",
@@ -88,7 +101,12 @@
       "selling": 2,
       "physical": 2,
       "scalability": 3,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Offer one tightly bounded project to three people or organizations and test whether the work creates both value and energy.",
+      "poor_fit": [
+        "leans on existing expertise rather than offering a clean break",
+        "has a meaningful learning curve"
+      ]
     },
     {
       "id": "P005",
@@ -106,7 +124,11 @@
       "selling": 3,
       "physical": 2,
       "scalability": 4,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Offer one tightly bounded project to three people or organizations and test whether the work creates both value and energy.",
+      "poor_fit": [
+        "leans on existing expertise rather than offering a clean break"
+      ]
     },
     {
       "id": "P006",
@@ -124,7 +146,11 @@
       "selling": 3,
       "physical": 2,
       "scalability": 3,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Offer one tightly bounded project to three people or organizations and test whether the work creates both value and energy.",
+      "poor_fit": [
+        "leans on existing expertise rather than offering a clean break"
+      ]
     },
     {
       "id": "P007",
@@ -142,7 +168,12 @@
       "selling": 4,
       "physical": 2,
       "scalability": 2,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Offer one tightly bounded project to three people or organizations and test whether the work creates both value and energy.",
+      "poor_fit": [
+        "requires comfort with business development or selling",
+        "leans on existing expertise rather than offering a clean break"
+      ]
     },
     {
       "id": "P008",
@@ -160,7 +191,11 @@
       "selling": 3,
       "physical": 2,
       "scalability": 3,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Offer one tightly bounded project to three people or organizations and test whether the work creates both value and energy.",
+      "poor_fit": [
+        "leans on existing expertise rather than offering a clean break"
+      ]
     },
     {
       "id": "P009",
@@ -178,7 +213,12 @@
       "selling": 3,
       "physical": 2,
       "scalability": 3,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Offer one tightly bounded project to three people or organizations and test whether the work creates both value and energy.",
+      "poor_fit": [
+        "leans on existing expertise rather than offering a clean break",
+        "has a meaningful learning curve"
+      ]
     },
     {
       "id": "P010",
@@ -196,7 +236,11 @@
       "selling": 3,
       "physical": 2,
       "scalability": 4,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Offer one tightly bounded project to three people or organizations and test whether the work creates both value and energy.",
+      "poor_fit": [
+        "leans on existing expertise rather than offering a clean break"
+      ]
     },
     {
       "id": "P011",
@@ -214,7 +258,11 @@
       "selling": 2,
       "physical": 2,
       "scalability": 3,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Offer one tightly bounded project to three people or organizations and test whether the work creates both value and energy.",
+      "poor_fit": [
+        "leans on existing expertise rather than offering a clean break"
+      ]
     },
     {
       "id": "P012",
@@ -232,7 +280,12 @@
       "selling": 4,
       "physical": 2,
       "scalability": 3,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Offer one tightly bounded project to three people or organizations and test whether the work creates both value and energy.",
+      "poor_fit": [
+        "requires comfort with business development or selling",
+        "leans on existing expertise rather than offering a clean break"
+      ]
     },
     {
       "id": "P013",
@@ -250,7 +303,11 @@
       "selling": 3,
       "physical": 2,
       "scalability": 3,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Offer one tightly bounded project to three people or organizations and test whether the work creates both value and energy.",
+      "poor_fit": [
+        "leans on existing expertise rather than offering a clean break"
+      ]
     },
     {
       "id": "P014",
@@ -268,7 +325,12 @@
       "selling": 3,
       "physical": 2,
       "scalability": 2,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Offer one tightly bounded project to three people or organizations and test whether the work creates both value and energy.",
+      "poor_fit": [
+        "leans on existing expertise rather than offering a clean break",
+        "has a meaningful learning curve"
+      ]
     },
     {
       "id": "P015",
@@ -286,7 +348,11 @@
       "selling": 3,
       "physical": 2,
       "scalability": 4,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Offer one tightly bounded project to three people or organizations and test whether the work creates both value and energy.",
+      "poor_fit": [
+        "leans on existing expertise rather than offering a clean break"
+      ]
     },
     {
       "id": "P016",
@@ -304,7 +370,11 @@
       "selling": 3,
       "physical": 2,
       "scalability": 3,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Offer one tightly bounded project to three people or organizations and test whether the work creates both value and energy.",
+      "poor_fit": [
+        "leans on existing expertise rather than offering a clean break"
+      ]
     },
     {
       "id": "P017",
@@ -322,7 +392,11 @@
       "selling": 4,
       "physical": 2,
       "scalability": 3,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Offer one tightly bounded project to three people or organizations and test whether the work creates both value and energy.",
+      "poor_fit": [
+        "requires comfort with business development or selling"
+      ]
     },
     {
       "id": "P018",
@@ -340,7 +414,11 @@
       "selling": 2,
       "physical": 2,
       "scalability": 3,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Offer one tightly bounded project to three people or organizations and test whether the work creates both value and energy.",
+      "poor_fit": [
+        "leans on existing expertise rather than offering a clean break"
+      ]
     },
     {
       "id": "P019",
@@ -358,7 +436,12 @@
       "selling": 3,
       "physical": 2,
       "scalability": 3,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Offer one tightly bounded project to three people or organizations and test whether the work creates both value and energy.",
+      "poor_fit": [
+        "leans on existing expertise rather than offering a clean break",
+        "has a meaningful learning curve"
+      ]
     },
     {
       "id": "P020",
@@ -376,7 +459,11 @@
       "selling": 3,
       "physical": 2,
       "scalability": 4,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Offer one tightly bounded project to three people or organizations and test whether the work creates both value and energy.",
+      "poor_fit": [
+        "leans on existing expertise rather than offering a clean break"
+      ]
     },
     {
       "id": "P021",
@@ -394,7 +481,12 @@
       "selling": 3,
       "physical": 2,
       "scalability": 3,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Run one 60-minute pilot session for a small invited group and record both participant response and your own energy afterward.",
+      "poor_fit": [
+        "is relatively people-intensive",
+        "leans on existing expertise rather than offering a clean break"
+      ]
     },
     {
       "id": "P022",
@@ -412,7 +504,13 @@
       "selling": 4,
       "physical": 2,
       "scalability": 3,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Run one 60-minute pilot session for a small invited group and record both participant response and your own energy afterward.",
+      "poor_fit": [
+        "requires comfort with business development or selling",
+        "is relatively people-intensive",
+        "leans on existing expertise rather than offering a clean break"
+      ]
     },
     {
       "id": "P023",
@@ -430,7 +528,13 @@
       "selling": 3,
       "physical": 2,
       "scalability": 3,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Run one 60-minute pilot session for a small invited group and record both participant response and your own energy afterward.",
+      "poor_fit": [
+        "may require more public visibility than some people want",
+        "is relatively people-intensive",
+        "has a meaningful learning curve"
+      ]
     },
     {
       "id": "P024",
@@ -448,7 +552,13 @@
       "selling": 2,
       "physical": 2,
       "scalability": 3,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Run one 60-minute pilot session for a small invited group and record both participant response and your own energy afterward.",
+      "poor_fit": [
+        "is relatively people-intensive",
+        "leans on existing expertise rather than offering a clean break",
+        "has a meaningful learning curve"
+      ]
     },
     {
       "id": "P025",
@@ -466,7 +576,13 @@
       "selling": 3,
       "physical": 2,
       "scalability": 4,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Run one 60-minute pilot session for a small invited group and record both participant response and your own energy afterward.",
+      "poor_fit": [
+        "is relatively people-intensive",
+        "leans on existing expertise rather than offering a clean break",
+        "has a meaningful learning curve"
+      ]
     },
     {
       "id": "P026",
@@ -484,7 +600,13 @@
       "selling": 3,
       "physical": 2,
       "scalability": 3,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Run one 60-minute pilot session for a small invited group and record both participant response and your own energy afterward.",
+      "poor_fit": [
+        "is relatively people-intensive",
+        "leans on existing expertise rather than offering a clean break",
+        "has a meaningful learning curve"
+      ]
     },
     {
       "id": "P027",
@@ -502,7 +624,13 @@
       "selling": 4,
       "physical": 2,
       "scalability": 2,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Run one 60-minute pilot session for a small invited group and record both participant response and your own energy afterward.",
+      "poor_fit": [
+        "requires comfort with business development or selling",
+        "is relatively people-intensive",
+        "leans on existing expertise rather than offering a clean break"
+      ]
     },
     {
       "id": "P028",
@@ -520,7 +648,13 @@
       "selling": 3,
       "physical": 2,
       "scalability": 3,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Run one 60-minute pilot session for a small invited group and record both participant response and your own energy afterward.",
+      "poor_fit": [
+        "may require more public visibility than some people want",
+        "is relatively people-intensive",
+        "leans on existing expertise rather than offering a clean break"
+      ]
     },
     {
       "id": "P029",
@@ -538,7 +672,13 @@
       "selling": 3,
       "physical": 2,
       "scalability": 3,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Run one 60-minute pilot session for a small invited group and record both participant response and your own energy afterward.",
+      "poor_fit": [
+        "is relatively people-intensive",
+        "leans on existing expertise rather than offering a clean break",
+        "has a meaningful learning curve"
+      ]
     },
     {
       "id": "P030",
@@ -556,7 +696,13 @@
       "selling": 3,
       "physical": 2,
       "scalability": 4,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Run one 60-minute pilot session for a small invited group and record both participant response and your own energy afterward.",
+      "poor_fit": [
+        "is relatively people-intensive",
+        "leans on existing expertise rather than offering a clean break",
+        "has a meaningful learning curve"
+      ]
     },
     {
       "id": "P031",
@@ -574,7 +720,13 @@
       "selling": 2,
       "physical": 2,
       "scalability": 3,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Run one 60-minute pilot session for a small invited group and record both participant response and your own energy afterward.",
+      "poor_fit": [
+        "is relatively people-intensive",
+        "leans on existing expertise rather than offering a clean break",
+        "has a meaningful learning curve"
+      ]
     },
     {
       "id": "P032",
@@ -592,7 +744,13 @@
       "selling": 4,
       "physical": 2,
       "scalability": 3,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Run one 60-minute pilot session for a small invited group and record both participant response and your own energy afterward.",
+      "poor_fit": [
+        "requires comfort with business development or selling",
+        "is relatively people-intensive",
+        "leans on existing expertise rather than offering a clean break"
+      ]
     },
     {
       "id": "P033",
@@ -610,7 +768,13 @@
       "selling": 3,
       "physical": 2,
       "scalability": 3,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Run one 60-minute pilot session for a small invited group and record both participant response and your own energy afterward.",
+      "poor_fit": [
+        "is relatively people-intensive",
+        "leans on existing expertise rather than offering a clean break",
+        "has a meaningful learning curve"
+      ]
     },
     {
       "id": "P034",
@@ -628,7 +792,12 @@
       "selling": 3,
       "physical": 2,
       "scalability": 2,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Run one 60-minute pilot session for a small invited group and record both participant response and your own energy afterward.",
+      "poor_fit": [
+        "leans on existing expertise rather than offering a clean break",
+        "has a meaningful learning curve"
+      ]
     },
     {
       "id": "P035",
@@ -646,7 +815,12 @@
       "selling": 3,
       "physical": 2,
       "scalability": 4,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Run one 60-minute pilot session for a small invited group and record both participant response and your own energy afterward.",
+      "poor_fit": [
+        "is relatively people-intensive",
+        "leans on existing expertise rather than offering a clean break"
+      ]
     },
     {
       "id": "P036",
@@ -664,7 +838,13 @@
       "selling": 3,
       "physical": 2,
       "scalability": 3,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Run one 60-minute pilot session for a small invited group and record both participant response and your own energy afterward.",
+      "poor_fit": [
+        "is relatively people-intensive",
+        "leans on existing expertise rather than offering a clean break",
+        "has a meaningful learning curve"
+      ]
     },
     {
       "id": "P037",
@@ -682,7 +862,13 @@
       "selling": 4,
       "physical": 2,
       "scalability": 3,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Run one 60-minute pilot session for a small invited group and record both participant response and your own energy afterward.",
+      "poor_fit": [
+        "requires comfort with business development or selling",
+        "is relatively people-intensive",
+        "has a meaningful learning curve"
+      ]
     },
     {
       "id": "P038",
@@ -700,7 +886,13 @@
       "selling": 2,
       "physical": 2,
       "scalability": 3,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Run one 60-minute pilot session for a small invited group and record both participant response and your own energy afterward.",
+      "poor_fit": [
+        "may require more public visibility than some people want",
+        "is relatively people-intensive",
+        "leans on existing expertise rather than offering a clean break"
+      ]
     },
     {
       "id": "P039",
@@ -718,7 +910,13 @@
       "selling": 3,
       "physical": 2,
       "scalability": 3,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Run one 60-minute pilot session for a small invited group and record both participant response and your own energy afterward.",
+      "poor_fit": [
+        "is relatively people-intensive",
+        "leans on existing expertise rather than offering a clean break",
+        "has a meaningful learning curve"
+      ]
     },
     {
       "id": "P040",
@@ -736,7 +934,13 @@
       "selling": 3,
       "physical": 2,
       "scalability": 4,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Run one 60-minute pilot session for a small invited group and record both participant response and your own energy afterward.",
+      "poor_fit": [
+        "is relatively people-intensive",
+        "leans on existing expertise rather than offering a clean break",
+        "has a meaningful learning curve"
+      ]
     },
     {
       "id": "P041",
@@ -754,7 +958,13 @@
       "selling": 4,
       "physical": 4,
       "scalability": 4,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Interview five potential customers about one narrow problem before building or buying anything.",
+      "poor_fit": [
+        "requires comfort with business development or selling",
+        "may require more public visibility than some people want",
+        "may require more upfront resources than a low-cost experiment"
+      ]
     },
     {
       "id": "P042",
@@ -772,7 +982,13 @@
       "selling": 5,
       "physical": 4,
       "scalability": 4,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Interview five potential customers about one narrow problem before building or buying anything.",
+      "poor_fit": [
+        "requires comfort with business development or selling",
+        "may require more public visibility than some people want",
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P043",
@@ -790,7 +1006,13 @@
       "selling": 4,
       "physical": 4,
       "scalability": 4,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Interview five potential customers about one narrow problem before building or buying anything.",
+      "poor_fit": [
+        "requires comfort with business development or selling",
+        "may require more public visibility than some people want",
+        "may require more upfront resources than a low-cost experiment"
+      ]
     },
     {
       "id": "P044",
@@ -808,7 +1030,13 @@
       "selling": 3,
       "physical": 4,
       "scalability": 4,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Interview five potential customers about one narrow problem before building or buying anything.",
+      "poor_fit": [
+        "may require more public visibility than some people want",
+        "may require more upfront resources than a low-cost experiment",
+        "may involve meaningful physical activity"
+      ]
     },
     {
       "id": "P045",
@@ -826,7 +1054,13 @@
       "selling": 4,
       "physical": 4,
       "scalability": 5,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Interview five potential customers about one narrow problem before building or buying anything.",
+      "poor_fit": [
+        "requires comfort with business development or selling",
+        "may require more public visibility than some people want",
+        "may require more upfront resources than a low-cost experiment"
+      ]
     },
     {
       "id": "P046",
@@ -844,7 +1078,13 @@
       "selling": 4,
       "physical": 4,
       "scalability": 4,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Interview five potential customers about one narrow problem before building or buying anything.",
+      "poor_fit": [
+        "requires comfort with business development or selling",
+        "may require more upfront resources than a low-cost experiment",
+        "may involve meaningful physical activity"
+      ]
     },
     {
       "id": "P047",
@@ -862,7 +1102,13 @@
       "selling": 5,
       "physical": 4,
       "scalability": 3,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Interview five potential customers about one narrow problem before building or buying anything.",
+      "poor_fit": [
+        "requires comfort with business development or selling",
+        "may require more public visibility than some people want",
+        "may require more upfront resources than a low-cost experiment"
+      ]
     },
     {
       "id": "P048",
@@ -880,7 +1126,13 @@
       "selling": 4,
       "physical": 4,
       "scalability": 4,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Interview five potential customers about one narrow problem before building or buying anything.",
+      "poor_fit": [
+        "requires comfort with business development or selling",
+        "may require more public visibility than some people want",
+        "may require more upfront resources than a low-cost experiment"
+      ]
     },
     {
       "id": "P049",
@@ -898,7 +1150,13 @@
       "selling": 4,
       "physical": 4,
       "scalability": 4,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Interview five potential customers about one narrow problem before building or buying anything.",
+      "poor_fit": [
+        "requires comfort with business development or selling",
+        "may require more public visibility than some people want",
+        "may require more upfront resources than a low-cost experiment"
+      ]
     },
     {
       "id": "P050",
@@ -916,7 +1174,13 @@
       "selling": 4,
       "physical": 4,
       "scalability": 5,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Interview five potential customers about one narrow problem before building or buying anything.",
+      "poor_fit": [
+        "requires comfort with business development or selling",
+        "may require more public visibility than some people want",
+        "may require more upfront resources than a low-cost experiment"
+      ]
     },
     {
       "id": "P051",
@@ -934,7 +1198,13 @@
       "selling": 3,
       "physical": 4,
       "scalability": 4,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Interview five potential customers about one narrow problem before building or buying anything.",
+      "poor_fit": [
+        "may require more public visibility than some people want",
+        "may require more upfront resources than a low-cost experiment",
+        "may involve meaningful physical activity"
+      ]
     },
     {
       "id": "P052",
@@ -952,7 +1222,13 @@
       "selling": 5,
       "physical": 4,
       "scalability": 4,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Interview five potential customers about one narrow problem before building or buying anything.",
+      "poor_fit": [
+        "requires comfort with business development or selling",
+        "may require more public visibility than some people want",
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P053",
@@ -970,7 +1246,13 @@
       "selling": 4,
       "physical": 4,
       "scalability": 4,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Interview five potential customers about one narrow problem before building or buying anything.",
+      "poor_fit": [
+        "requires comfort with business development or selling",
+        "may require more public visibility than some people want",
+        "may require more upfront resources than a low-cost experiment"
+      ]
     },
     {
       "id": "P054",
@@ -988,7 +1270,13 @@
       "selling": 4,
       "physical": 4,
       "scalability": 3,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Interview five potential customers about one narrow problem before building or buying anything.",
+      "poor_fit": [
+        "requires comfort with business development or selling",
+        "may require more public visibility than some people want",
+        "may require more upfront resources than a low-cost experiment"
+      ]
     },
     {
       "id": "P055",
@@ -1006,7 +1294,13 @@
       "selling": 4,
       "physical": 4,
       "scalability": 5,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Interview five potential customers about one narrow problem before building or buying anything.",
+      "poor_fit": [
+        "requires comfort with business development or selling",
+        "may require more public visibility than some people want",
+        "may require more upfront resources than a low-cost experiment"
+      ]
     },
     {
       "id": "P056",
@@ -1024,7 +1318,13 @@
       "selling": 4,
       "physical": 4,
       "scalability": 4,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Interview five potential customers about one narrow problem before building or buying anything.",
+      "poor_fit": [
+        "requires comfort with business development or selling",
+        "may require more public visibility than some people want",
+        "may require more upfront resources than a low-cost experiment"
+      ]
     },
     {
       "id": "P057",
@@ -1042,7 +1342,13 @@
       "selling": 5,
       "physical": 4,
       "scalability": 4,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Interview five potential customers about one narrow problem before building or buying anything.",
+      "poor_fit": [
+        "requires comfort with business development or selling",
+        "may require more public visibility than some people want",
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P058",
@@ -1060,7 +1366,13 @@
       "selling": 3,
       "physical": 4,
       "scalability": 4,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Interview five potential customers about one narrow problem before building or buying anything.",
+      "poor_fit": [
+        "may require more public visibility than some people want",
+        "may require more upfront resources than a low-cost experiment",
+        "may involve meaningful physical activity"
+      ]
     },
     {
       "id": "P059",
@@ -1078,7 +1390,13 @@
       "selling": 4,
       "physical": 4,
       "scalability": 4,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Interview five potential customers about one narrow problem before building or buying anything.",
+      "poor_fit": [
+        "requires comfort with business development or selling",
+        "may require more public visibility than some people want",
+        "may require more upfront resources than a low-cost experiment"
+      ]
     },
     {
       "id": "P060",
@@ -1096,7 +1414,13 @@
       "selling": 4,
       "physical": 4,
       "scalability": 5,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Interview five potential customers about one narrow problem before building or buying anything.",
+      "poor_fit": [
+        "requires comfort with business development or selling",
+        "may require more upfront resources than a low-cost experiment",
+        "may involve meaningful physical activity"
+      ]
     },
     {
       "id": "P061",
@@ -1114,7 +1438,11 @@
       "selling": 2,
       "physical": 1,
       "scalability": 4,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Complete one small publishable or shareable project on a fixed two-week deadline.",
+      "poor_fit": [
+        "may require more public visibility than some people want"
+      ]
     },
     {
       "id": "P062",
@@ -1132,7 +1460,11 @@
       "selling": 3,
       "physical": 1,
       "scalability": 4,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Complete one small publishable or shareable project on a fixed two-week deadline.",
+      "poor_fit": [
+        "may require more public visibility than some people want"
+      ]
     },
     {
       "id": "P063",
@@ -1150,7 +1482,11 @@
       "selling": 2,
       "physical": 1,
       "scalability": 4,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Complete one small publishable or shareable project on a fixed two-week deadline.",
+      "poor_fit": [
+        "may require more public visibility than some people want"
+      ]
     },
     {
       "id": "P064",
@@ -1168,7 +1504,12 @@
       "selling": 1,
       "physical": 1,
       "scalability": 4,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Complete one small publishable or shareable project on a fixed two-week deadline.",
+      "poor_fit": [
+        "may require more public visibility than some people want",
+        "has a meaningful learning curve"
+      ]
     },
     {
       "id": "P065",
@@ -1186,7 +1527,11 @@
       "selling": 2,
       "physical": 1,
       "scalability": 5,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Complete one small publishable or shareable project on a fixed two-week deadline.",
+      "poor_fit": [
+        "may require more public visibility than some people want"
+      ]
     },
     {
       "id": "P066",
@@ -1204,7 +1549,11 @@
       "selling": 2,
       "physical": 1,
       "scalability": 4,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Complete one small publishable or shareable project on a fixed two-week deadline.",
+      "poor_fit": [
+        "could still be a poor fit if the day-to-day work does not create energy"
+      ]
     },
     {
       "id": "P067",
@@ -1222,7 +1571,11 @@
       "selling": 3,
       "physical": 1,
       "scalability": 3,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Complete one small publishable or shareable project on a fixed two-week deadline.",
+      "poor_fit": [
+        "may require more public visibility than some people want"
+      ]
     },
     {
       "id": "P068",
@@ -1240,7 +1593,11 @@
       "selling": 2,
       "physical": 1,
       "scalability": 4,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Complete one small publishable or shareable project on a fixed two-week deadline.",
+      "poor_fit": [
+        "may require more public visibility than some people want"
+      ]
     },
     {
       "id": "P069",
@@ -1258,7 +1615,12 @@
       "selling": 2,
       "physical": 1,
       "scalability": 4,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Complete one small publishable or shareable project on a fixed two-week deadline.",
+      "poor_fit": [
+        "may require more public visibility than some people want",
+        "has a meaningful learning curve"
+      ]
     },
     {
       "id": "P070",
@@ -1276,7 +1638,11 @@
       "selling": 2,
       "physical": 1,
       "scalability": 5,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Complete one small publishable or shareable project on a fixed two-week deadline.",
+      "poor_fit": [
+        "may require more public visibility than some people want"
+      ]
     },
     {
       "id": "P071",
@@ -1294,7 +1660,11 @@
       "selling": 1,
       "physical": 1,
       "scalability": 4,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Complete one small publishable or shareable project on a fixed two-week deadline.",
+      "poor_fit": [
+        "may require more public visibility than some people want"
+      ]
     },
     {
       "id": "P072",
@@ -1312,7 +1682,11 @@
       "selling": 3,
       "physical": 1,
       "scalability": 4,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Complete one small publishable or shareable project on a fixed two-week deadline.",
+      "poor_fit": [
+        "may require more public visibility than some people want"
+      ]
     },
     {
       "id": "P073",
@@ -1330,7 +1704,11 @@
       "selling": 2,
       "physical": 1,
       "scalability": 4,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Complete one small publishable or shareable project on a fixed two-week deadline.",
+      "poor_fit": [
+        "may require more public visibility than some people want"
+      ]
     },
     {
       "id": "P074",
@@ -1348,7 +1726,12 @@
       "selling": 2,
       "physical": 1,
       "scalability": 3,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Complete one small publishable or shareable project on a fixed two-week deadline.",
+      "poor_fit": [
+        "may require more public visibility than some people want",
+        "has a meaningful learning curve"
+      ]
     },
     {
       "id": "P075",
@@ -1366,7 +1749,11 @@
       "selling": 2,
       "physical": 1,
       "scalability": 5,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Complete one small publishable or shareable project on a fixed two-week deadline.",
+      "poor_fit": [
+        "may require more public visibility than some people want"
+      ]
     },
     {
       "id": "P076",
@@ -1384,7 +1771,11 @@
       "selling": 2,
       "physical": 1,
       "scalability": 4,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Complete one small publishable or shareable project on a fixed two-week deadline.",
+      "poor_fit": [
+        "may require more public visibility than some people want"
+      ]
     },
     {
       "id": "P077",
@@ -1402,7 +1793,11 @@
       "selling": 3,
       "physical": 1,
       "scalability": 4,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Complete one small publishable or shareable project on a fixed two-week deadline.",
+      "poor_fit": [
+        "may require more public visibility than some people want"
+      ]
     },
     {
       "id": "P078",
@@ -1420,7 +1815,11 @@
       "selling": 1,
       "physical": 1,
       "scalability": 4,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Complete one small publishable or shareable project on a fixed two-week deadline.",
+      "poor_fit": [
+        "may require more public visibility than some people want"
+      ]
     },
     {
       "id": "P079",
@@ -1438,7 +1837,12 @@
       "selling": 2,
       "physical": 1,
       "scalability": 4,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Complete one small publishable or shareable project on a fixed two-week deadline.",
+      "poor_fit": [
+        "may require more public visibility than some people want",
+        "has a meaningful learning curve"
+      ]
     },
     {
       "id": "P080",
@@ -1456,7 +1860,11 @@
       "selling": 2,
       "physical": 1,
       "scalability": 5,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Complete one small publishable or shareable project on a fixed two-week deadline.",
+      "poor_fit": [
+        "could still be a poor fit if the day-to-day work does not create energy"
+      ]
     },
     {
       "id": "P081",
@@ -1474,7 +1882,11 @@
       "selling": 3,
       "physical": 1,
       "scalability": 5,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Build or demonstrate one tiny workflow or prototype for a real user and observe whether the problem is worth solving.",
+      "poor_fit": [
+        "may require more public visibility than some people want"
+      ]
     },
     {
       "id": "P082",
@@ -1492,7 +1904,13 @@
       "selling": 4,
       "physical": 1,
       "scalability": 5,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Build or demonstrate one tiny workflow or prototype for a real user and observe whether the problem is worth solving.",
+      "poor_fit": [
+        "requires comfort with business development or selling",
+        "may require more public visibility than some people want",
+        "has a meaningful learning curve"
+      ]
     },
     {
       "id": "P083",
@@ -1510,7 +1928,12 @@
       "selling": 3,
       "physical": 1,
       "scalability": 5,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Build or demonstrate one tiny workflow or prototype for a real user and observe whether the problem is worth solving.",
+      "poor_fit": [
+        "may require more public visibility than some people want",
+        "has a meaningful learning curve"
+      ]
     },
     {
       "id": "P084",
@@ -1528,7 +1951,12 @@
       "selling": 2,
       "physical": 1,
       "scalability": 5,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Build or demonstrate one tiny workflow or prototype for a real user and observe whether the problem is worth solving.",
+      "poor_fit": [
+        "may require more public visibility than some people want",
+        "has a meaningful learning curve"
+      ]
     },
     {
       "id": "P085",
@@ -1546,7 +1974,13 @@
       "selling": 3,
       "physical": 1,
       "scalability": 5,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Build or demonstrate one tiny workflow or prototype for a real user and observe whether the problem is worth solving.",
+      "poor_fit": [
+        "may require more public visibility than some people want",
+        "leans on existing expertise rather than offering a clean break",
+        "has a meaningful learning curve"
+      ]
     },
     {
       "id": "P086",
@@ -1564,7 +1998,11 @@
       "selling": 3,
       "physical": 1,
       "scalability": 5,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Build or demonstrate one tiny workflow or prototype for a real user and observe whether the problem is worth solving.",
+      "poor_fit": [
+        "has a meaningful learning curve"
+      ]
     },
     {
       "id": "P087",
@@ -1582,7 +2020,13 @@
       "selling": 4,
       "physical": 1,
       "scalability": 4,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Build or demonstrate one tiny workflow or prototype for a real user and observe whether the problem is worth solving.",
+      "poor_fit": [
+        "requires comfort with business development or selling",
+        "may require more public visibility than some people want",
+        "has a meaningful learning curve"
+      ]
     },
     {
       "id": "P088",
@@ -1600,7 +2044,11 @@
       "selling": 3,
       "physical": 1,
       "scalability": 5,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Build or demonstrate one tiny workflow or prototype for a real user and observe whether the problem is worth solving.",
+      "poor_fit": [
+        "may require more public visibility than some people want"
+      ]
     },
     {
       "id": "P089",
@@ -1618,7 +2066,12 @@
       "selling": 3,
       "physical": 1,
       "scalability": 5,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Build or demonstrate one tiny workflow or prototype for a real user and observe whether the problem is worth solving.",
+      "poor_fit": [
+        "may require more public visibility than some people want",
+        "has a meaningful learning curve"
+      ]
     },
     {
       "id": "P090",
@@ -1636,7 +2089,12 @@
       "selling": 3,
       "physical": 1,
       "scalability": 5,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Build or demonstrate one tiny workflow or prototype for a real user and observe whether the problem is worth solving.",
+      "poor_fit": [
+        "may require more public visibility than some people want",
+        "has a meaningful learning curve"
+      ]
     },
     {
       "id": "P091",
@@ -1654,7 +2112,12 @@
       "selling": 2,
       "physical": 1,
       "scalability": 5,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Build or demonstrate one tiny workflow or prototype for a real user and observe whether the problem is worth solving.",
+      "poor_fit": [
+        "may require more public visibility than some people want",
+        "has a meaningful learning curve"
+      ]
     },
     {
       "id": "P092",
@@ -1672,7 +2135,13 @@
       "selling": 4,
       "physical": 1,
       "scalability": 5,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Build or demonstrate one tiny workflow or prototype for a real user and observe whether the problem is worth solving.",
+      "poor_fit": [
+        "requires comfort with business development or selling",
+        "may require more public visibility than some people want",
+        "has a meaningful learning curve"
+      ]
     },
     {
       "id": "P093",
@@ -1690,7 +2159,12 @@
       "selling": 3,
       "physical": 1,
       "scalability": 5,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Build or demonstrate one tiny workflow or prototype for a real user and observe whether the problem is worth solving.",
+      "poor_fit": [
+        "may require more public visibility than some people want",
+        "has a meaningful learning curve"
+      ]
     },
     {
       "id": "P094",
@@ -1708,7 +2182,12 @@
       "selling": 3,
       "physical": 1,
       "scalability": 4,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Build or demonstrate one tiny workflow or prototype for a real user and observe whether the problem is worth solving.",
+      "poor_fit": [
+        "may require more public visibility than some people want",
+        "has a meaningful learning curve"
+      ]
     },
     {
       "id": "P095",
@@ -1726,7 +2205,12 @@
       "selling": 3,
       "physical": 1,
       "scalability": 5,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Build or demonstrate one tiny workflow or prototype for a real user and observe whether the problem is worth solving.",
+      "poor_fit": [
+        "may require more public visibility than some people want",
+        "leans on existing expertise rather than offering a clean break"
+      ]
     },
     {
       "id": "P096",
@@ -1744,7 +2228,12 @@
       "selling": 3,
       "physical": 1,
       "scalability": 5,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Build or demonstrate one tiny workflow or prototype for a real user and observe whether the problem is worth solving.",
+      "poor_fit": [
+        "may require more public visibility than some people want",
+        "has a meaningful learning curve"
+      ]
     },
     {
       "id": "P097",
@@ -1762,7 +2251,13 @@
       "selling": 4,
       "physical": 1,
       "scalability": 5,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Build or demonstrate one tiny workflow or prototype for a real user and observe whether the problem is worth solving.",
+      "poor_fit": [
+        "requires comfort with business development or selling",
+        "may require more public visibility than some people want",
+        "has a meaningful learning curve"
+      ]
     },
     {
       "id": "P098",
@@ -1780,7 +2275,12 @@
       "selling": 2,
       "physical": 1,
       "scalability": 5,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Build or demonstrate one tiny workflow or prototype for a real user and observe whether the problem is worth solving.",
+      "poor_fit": [
+        "may require more public visibility than some people want",
+        "has a meaningful learning curve"
+      ]
     },
     {
       "id": "P099",
@@ -1798,7 +2298,12 @@
       "selling": 3,
       "physical": 1,
       "scalability": 5,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Build or demonstrate one tiny workflow or prototype for a real user and observe whether the problem is worth solving.",
+      "poor_fit": [
+        "may require more public visibility than some people want",
+        "has a meaningful learning curve"
+      ]
     },
     {
       "id": "P100",
@@ -1816,7 +2321,12 @@
       "selling": 3,
       "physical": 1,
       "scalability": 5,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Build or demonstrate one tiny workflow or prototype for a real user and observe whether the problem is worth solving.",
+      "poor_fit": [
+        "leans on existing expertise rather than offering a clean break",
+        "has a meaningful learning curve"
+      ]
     },
     {
       "id": "P101",
@@ -1834,7 +2344,11 @@
       "selling": 2,
       "physical": 2,
       "scalability": 2,
-      "meaning": 5
+      "meaning": 5,
+      "experiment": "Take on one bounded project for a cause or organization and evaluate the work itself\u2014not just the mission.",
+      "poor_fit": [
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P102",
@@ -1852,7 +2366,11 @@
       "selling": 3,
       "physical": 2,
       "scalability": 2,
-      "meaning": 5
+      "meaning": 5,
+      "experiment": "Take on one bounded project for a cause or organization and evaluate the work itself\u2014not just the mission.",
+      "poor_fit": [
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P103",
@@ -1870,7 +2388,11 @@
       "selling": 2,
       "physical": 2,
       "scalability": 2,
-      "meaning": 5
+      "meaning": 5,
+      "experiment": "Take on one bounded project for a cause or organization and evaluate the work itself\u2014not just the mission.",
+      "poor_fit": [
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P104",
@@ -1888,7 +2410,11 @@
       "selling": 1,
       "physical": 2,
       "scalability": 2,
-      "meaning": 5
+      "meaning": 5,
+      "experiment": "Take on one bounded project for a cause or organization and evaluate the work itself\u2014not just the mission.",
+      "poor_fit": [
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P105",
@@ -1906,7 +2432,12 @@
       "selling": 2,
       "physical": 2,
       "scalability": 3,
-      "meaning": 5
+      "meaning": 5,
+      "experiment": "Take on one bounded project for a cause or organization and evaluate the work itself\u2014not just the mission.",
+      "poor_fit": [
+        "is relatively people-intensive",
+        "leans on existing expertise rather than offering a clean break"
+      ]
     },
     {
       "id": "P106",
@@ -1924,7 +2455,11 @@
       "selling": 2,
       "physical": 2,
       "scalability": 2,
-      "meaning": 5
+      "meaning": 5,
+      "experiment": "Take on one bounded project for a cause or organization and evaluate the work itself\u2014not just the mission.",
+      "poor_fit": [
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P107",
@@ -1942,7 +2477,11 @@
       "selling": 3,
       "physical": 2,
       "scalability": 1,
-      "meaning": 5
+      "meaning": 5,
+      "experiment": "Take on one bounded project for a cause or organization and evaluate the work itself\u2014not just the mission.",
+      "poor_fit": [
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P108",
@@ -1960,7 +2499,11 @@
       "selling": 2,
       "physical": 2,
       "scalability": 2,
-      "meaning": 5
+      "meaning": 5,
+      "experiment": "Take on one bounded project for a cause or organization and evaluate the work itself\u2014not just the mission.",
+      "poor_fit": [
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P109",
@@ -1978,7 +2521,11 @@
       "selling": 2,
       "physical": 2,
       "scalability": 2,
-      "meaning": 5
+      "meaning": 5,
+      "experiment": "Take on one bounded project for a cause or organization and evaluate the work itself\u2014not just the mission.",
+      "poor_fit": [
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P110",
@@ -1996,7 +2543,11 @@
       "selling": 2,
       "physical": 2,
       "scalability": 3,
-      "meaning": 5
+      "meaning": 5,
+      "experiment": "Take on one bounded project for a cause or organization and evaluate the work itself\u2014not just the mission.",
+      "poor_fit": [
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P111",
@@ -2014,7 +2565,11 @@
       "selling": 1,
       "physical": 2,
       "scalability": 2,
-      "meaning": 5
+      "meaning": 5,
+      "experiment": "Take on one bounded project for a cause or organization and evaluate the work itself\u2014not just the mission.",
+      "poor_fit": [
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P112",
@@ -2032,7 +2587,11 @@
       "selling": 3,
       "physical": 2,
       "scalability": 2,
-      "meaning": 5
+      "meaning": 5,
+      "experiment": "Take on one bounded project for a cause or organization and evaluate the work itself\u2014not just the mission.",
+      "poor_fit": [
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P113",
@@ -2050,7 +2609,11 @@
       "selling": 2,
       "physical": 2,
       "scalability": 2,
-      "meaning": 5
+      "meaning": 5,
+      "experiment": "Take on one bounded project for a cause or organization and evaluate the work itself\u2014not just the mission.",
+      "poor_fit": [
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P114",
@@ -2068,7 +2631,11 @@
       "selling": 2,
       "physical": 2,
       "scalability": 1,
-      "meaning": 5
+      "meaning": 5,
+      "experiment": "Take on one bounded project for a cause or organization and evaluate the work itself\u2014not just the mission.",
+      "poor_fit": [
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P115",
@@ -2086,7 +2653,12 @@
       "selling": 2,
       "physical": 2,
       "scalability": 3,
-      "meaning": 5
+      "meaning": 5,
+      "experiment": "Take on one bounded project for a cause or organization and evaluate the work itself\u2014not just the mission.",
+      "poor_fit": [
+        "is relatively people-intensive",
+        "leans on existing expertise rather than offering a clean break"
+      ]
     },
     {
       "id": "P116",
@@ -2104,7 +2676,11 @@
       "selling": 2,
       "physical": 2,
       "scalability": 2,
-      "meaning": 5
+      "meaning": 5,
+      "experiment": "Take on one bounded project for a cause or organization and evaluate the work itself\u2014not just the mission.",
+      "poor_fit": [
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P117",
@@ -2122,7 +2698,11 @@
       "selling": 3,
       "physical": 2,
       "scalability": 2,
-      "meaning": 5
+      "meaning": 5,
+      "experiment": "Take on one bounded project for a cause or organization and evaluate the work itself\u2014not just the mission.",
+      "poor_fit": [
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P118",
@@ -2140,7 +2720,11 @@
       "selling": 1,
       "physical": 2,
       "scalability": 2,
-      "meaning": 5
+      "meaning": 5,
+      "experiment": "Take on one bounded project for a cause or organization and evaluate the work itself\u2014not just the mission.",
+      "poor_fit": [
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P119",
@@ -2158,7 +2742,11 @@
       "selling": 2,
       "physical": 2,
       "scalability": 2,
-      "meaning": 5
+      "meaning": 5,
+      "experiment": "Take on one bounded project for a cause or organization and evaluate the work itself\u2014not just the mission.",
+      "poor_fit": [
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P120",
@@ -2176,7 +2764,12 @@
       "selling": 2,
       "physical": 2,
       "scalability": 3,
-      "meaning": 5
+      "meaning": 5,
+      "experiment": "Take on one bounded project for a cause or organization and evaluate the work itself\u2014not just the mission.",
+      "poor_fit": [
+        "is relatively people-intensive",
+        "leans on existing expertise rather than offering a clean break"
+      ]
     },
     {
       "id": "P121",
@@ -2194,7 +2787,12 @@
       "selling": 3,
       "physical": 2,
       "scalability": 3,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Design and complete one small version of the experience, then decide which part you would willingly repeat.",
+      "poor_fit": [
+        "may require more public visibility than some people want",
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P122",
@@ -2212,7 +2810,13 @@
       "selling": 4,
       "physical": 2,
       "scalability": 3,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Design and complete one small version of the experience, then decide which part you would willingly repeat.",
+      "poor_fit": [
+        "requires comfort with business development or selling",
+        "may require more public visibility than some people want",
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P123",
@@ -2230,7 +2834,12 @@
       "selling": 3,
       "physical": 2,
       "scalability": 3,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Design and complete one small version of the experience, then decide which part you would willingly repeat.",
+      "poor_fit": [
+        "may require more public visibility than some people want",
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P124",
@@ -2248,7 +2857,13 @@
       "selling": 2,
       "physical": 2,
       "scalability": 3,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Design and complete one small version of the experience, then decide which part you would willingly repeat.",
+      "poor_fit": [
+        "may require more public visibility than some people want",
+        "is relatively people-intensive",
+        "has a meaningful learning curve"
+      ]
     },
     {
       "id": "P125",
@@ -2266,7 +2881,12 @@
       "selling": 3,
       "physical": 2,
       "scalability": 4,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Design and complete one small version of the experience, then decide which part you would willingly repeat.",
+      "poor_fit": [
+        "may require more public visibility than some people want",
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P126",
@@ -2284,7 +2904,11 @@
       "selling": 3,
       "physical": 2,
       "scalability": 3,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Design and complete one small version of the experience, then decide which part you would willingly repeat.",
+      "poor_fit": [
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P127",
@@ -2302,7 +2926,13 @@
       "selling": 4,
       "physical": 2,
       "scalability": 2,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Design and complete one small version of the experience, then decide which part you would willingly repeat.",
+      "poor_fit": [
+        "requires comfort with business development or selling",
+        "may require more public visibility than some people want",
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P128",
@@ -2320,7 +2950,12 @@
       "selling": 3,
       "physical": 2,
       "scalability": 3,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Design and complete one small version of the experience, then decide which part you would willingly repeat.",
+      "poor_fit": [
+        "may require more public visibility than some people want",
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P129",
@@ -2338,7 +2973,13 @@
       "selling": 3,
       "physical": 2,
       "scalability": 3,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Design and complete one small version of the experience, then decide which part you would willingly repeat.",
+      "poor_fit": [
+        "may require more public visibility than some people want",
+        "is relatively people-intensive",
+        "has a meaningful learning curve"
+      ]
     },
     {
       "id": "P130",
@@ -2356,7 +2997,12 @@
       "selling": 3,
       "physical": 2,
       "scalability": 4,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Design and complete one small version of the experience, then decide which part you would willingly repeat.",
+      "poor_fit": [
+        "may require more public visibility than some people want",
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P131",
@@ -2374,7 +3020,12 @@
       "selling": 2,
       "physical": 2,
       "scalability": 3,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Design and complete one small version of the experience, then decide which part you would willingly repeat.",
+      "poor_fit": [
+        "may require more public visibility than some people want",
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P132",
@@ -2392,7 +3043,13 @@
       "selling": 4,
       "physical": 2,
       "scalability": 3,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Design and complete one small version of the experience, then decide which part you would willingly repeat.",
+      "poor_fit": [
+        "requires comfort with business development or selling",
+        "may require more public visibility than some people want",
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P133",
@@ -2410,7 +3067,12 @@
       "selling": 3,
       "physical": 2,
       "scalability": 3,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Design and complete one small version of the experience, then decide which part you would willingly repeat.",
+      "poor_fit": [
+        "may require more public visibility than some people want",
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P134",
@@ -2428,7 +3090,12 @@
       "selling": 3,
       "physical": 2,
       "scalability": 2,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Design and complete one small version of the experience, then decide which part you would willingly repeat.",
+      "poor_fit": [
+        "may require more public visibility than some people want",
+        "has a meaningful learning curve"
+      ]
     },
     {
       "id": "P135",
@@ -2446,7 +3113,12 @@
       "selling": 3,
       "physical": 2,
       "scalability": 4,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Design and complete one small version of the experience, then decide which part you would willingly repeat.",
+      "poor_fit": [
+        "may require more public visibility than some people want",
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P136",
@@ -2464,7 +3136,12 @@
       "selling": 3,
       "physical": 2,
       "scalability": 3,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Design and complete one small version of the experience, then decide which part you would willingly repeat.",
+      "poor_fit": [
+        "may require more public visibility than some people want",
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P137",
@@ -2482,7 +3159,13 @@
       "selling": 4,
       "physical": 2,
       "scalability": 3,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Design and complete one small version of the experience, then decide which part you would willingly repeat.",
+      "poor_fit": [
+        "requires comfort with business development or selling",
+        "may require more public visibility than some people want",
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P138",
@@ -2500,7 +3183,12 @@
       "selling": 2,
       "physical": 2,
       "scalability": 3,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Design and complete one small version of the experience, then decide which part you would willingly repeat.",
+      "poor_fit": [
+        "may require more public visibility than some people want",
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P139",
@@ -2518,7 +3206,13 @@
       "selling": 3,
       "physical": 2,
       "scalability": 3,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Design and complete one small version of the experience, then decide which part you would willingly repeat.",
+      "poor_fit": [
+        "may require more public visibility than some people want",
+        "is relatively people-intensive",
+        "has a meaningful learning curve"
+      ]
     },
     {
       "id": "P140",
@@ -2536,7 +3230,11 @@
       "selling": 3,
       "physical": 2,
       "scalability": 4,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Design and complete one small version of the experience, then decide which part you would willingly repeat.",
+      "poor_fit": [
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P141",
@@ -2554,7 +3252,11 @@
       "selling": 3,
       "physical": 1,
       "scalability": 3,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Sketch a 90-day calendar combining two roles and test one paid or committed engagement in each.",
+      "poor_fit": [
+        "leans on existing expertise rather than offering a clean break"
+      ]
     },
     {
       "id": "P142",
@@ -2572,7 +3274,13 @@
       "selling": 4,
       "physical": 1,
       "scalability": 3,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Sketch a 90-day calendar combining two roles and test one paid or committed engagement in each.",
+      "poor_fit": [
+        "requires comfort with business development or selling",
+        "is relatively people-intensive",
+        "leans on existing expertise rather than offering a clean break"
+      ]
     },
     {
       "id": "P143",
@@ -2590,7 +3298,11 @@
       "selling": 3,
       "physical": 1,
       "scalability": 3,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Sketch a 90-day calendar combining two roles and test one paid or committed engagement in each.",
+      "poor_fit": [
+        "could still be a poor fit if the day-to-day work does not create energy"
+      ]
     },
     {
       "id": "P144",
@@ -2608,7 +3320,12 @@
       "selling": 2,
       "physical": 1,
       "scalability": 3,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Sketch a 90-day calendar combining two roles and test one paid or committed engagement in each.",
+      "poor_fit": [
+        "leans on existing expertise rather than offering a clean break",
+        "has a meaningful learning curve"
+      ]
     },
     {
       "id": "P145",
@@ -2626,7 +3343,11 @@
       "selling": 3,
       "physical": 1,
       "scalability": 4,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Sketch a 90-day calendar combining two roles and test one paid or committed engagement in each.",
+      "poor_fit": [
+        "leans on existing expertise rather than offering a clean break"
+      ]
     },
     {
       "id": "P146",
@@ -2644,7 +3365,11 @@
       "selling": 3,
       "physical": 1,
       "scalability": 3,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Sketch a 90-day calendar combining two roles and test one paid or committed engagement in each.",
+      "poor_fit": [
+        "leans on existing expertise rather than offering a clean break"
+      ]
     },
     {
       "id": "P147",
@@ -2662,7 +3387,12 @@
       "selling": 4,
       "physical": 1,
       "scalability": 2,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Sketch a 90-day calendar combining two roles and test one paid or committed engagement in each.",
+      "poor_fit": [
+        "requires comfort with business development or selling",
+        "leans on existing expertise rather than offering a clean break"
+      ]
     },
     {
       "id": "P148",
@@ -2680,7 +3410,11 @@
       "selling": 3,
       "physical": 1,
       "scalability": 3,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Sketch a 90-day calendar combining two roles and test one paid or committed engagement in each.",
+      "poor_fit": [
+        "leans on existing expertise rather than offering a clean break"
+      ]
     },
     {
       "id": "P149",
@@ -2698,7 +3432,12 @@
       "selling": 3,
       "physical": 1,
       "scalability": 3,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Sketch a 90-day calendar combining two roles and test one paid or committed engagement in each.",
+      "poor_fit": [
+        "leans on existing expertise rather than offering a clean break",
+        "has a meaningful learning curve"
+      ]
     },
     {
       "id": "P150",
@@ -2716,7 +3455,11 @@
       "selling": 3,
       "physical": 1,
       "scalability": 4,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Sketch a 90-day calendar combining two roles and test one paid or committed engagement in each.",
+      "poor_fit": [
+        "leans on existing expertise rather than offering a clean break"
+      ]
     },
     {
       "id": "P151",
@@ -2734,7 +3477,11 @@
       "selling": 2,
       "physical": 1,
       "scalability": 3,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Sketch a 90-day calendar combining two roles and test one paid or committed engagement in each.",
+      "poor_fit": [
+        "leans on existing expertise rather than offering a clean break"
+      ]
     },
     {
       "id": "P152",
@@ -2752,7 +3499,13 @@
       "selling": 4,
       "physical": 1,
       "scalability": 3,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Sketch a 90-day calendar combining two roles and test one paid or committed engagement in each.",
+      "poor_fit": [
+        "requires comfort with business development or selling",
+        "is relatively people-intensive",
+        "leans on existing expertise rather than offering a clean break"
+      ]
     },
     {
       "id": "P153",
@@ -2770,7 +3523,11 @@
       "selling": 3,
       "physical": 1,
       "scalability": 3,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Sketch a 90-day calendar combining two roles and test one paid or committed engagement in each.",
+      "poor_fit": [
+        "leans on existing expertise rather than offering a clean break"
+      ]
     },
     {
       "id": "P154",
@@ -2788,7 +3545,12 @@
       "selling": 3,
       "physical": 1,
       "scalability": 2,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Sketch a 90-day calendar combining two roles and test one paid or committed engagement in each.",
+      "poor_fit": [
+        "leans on existing expertise rather than offering a clean break",
+        "has a meaningful learning curve"
+      ]
     },
     {
       "id": "P155",
@@ -2806,7 +3568,11 @@
       "selling": 3,
       "physical": 1,
       "scalability": 4,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Sketch a 90-day calendar combining two roles and test one paid or committed engagement in each.",
+      "poor_fit": [
+        "leans on existing expertise rather than offering a clean break"
+      ]
     },
     {
       "id": "P156",
@@ -2824,7 +3590,11 @@
       "selling": 3,
       "physical": 1,
       "scalability": 3,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Sketch a 90-day calendar combining two roles and test one paid or committed engagement in each.",
+      "poor_fit": [
+        "leans on existing expertise rather than offering a clean break"
+      ]
     },
     {
       "id": "P157",
@@ -2842,7 +3612,12 @@
       "selling": 4,
       "physical": 1,
       "scalability": 3,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Sketch a 90-day calendar combining two roles and test one paid or committed engagement in each.",
+      "poor_fit": [
+        "requires comfort with business development or selling",
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P158",
@@ -2860,7 +3635,11 @@
       "selling": 2,
       "physical": 1,
       "scalability": 3,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Sketch a 90-day calendar combining two roles and test one paid or committed engagement in each.",
+      "poor_fit": [
+        "leans on existing expertise rather than offering a clean break"
+      ]
     },
     {
       "id": "P159",
@@ -2878,7 +3657,12 @@
       "selling": 3,
       "physical": 1,
       "scalability": 3,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Sketch a 90-day calendar combining two roles and test one paid or committed engagement in each.",
+      "poor_fit": [
+        "leans on existing expertise rather than offering a clean break",
+        "has a meaningful learning curve"
+      ]
     },
     {
       "id": "P160",
@@ -2896,7 +3680,11 @@
       "selling": 3,
       "physical": 1,
       "scalability": 4,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Sketch a 90-day calendar combining two roles and test one paid or committed engagement in each.",
+      "poor_fit": [
+        "leans on existing expertise rather than offering a clean break"
+      ]
     },
     {
       "id": "P161",
@@ -2914,7 +3702,11 @@
       "selling": 3,
       "physical": 2,
       "scalability": 2,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Help three people with the same narrowly defined need and note what repeats.",
+      "poor_fit": [
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P162",
@@ -2932,7 +3724,12 @@
       "selling": 4,
       "physical": 2,
       "scalability": 2,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Help three people with the same narrowly defined need and note what repeats.",
+      "poor_fit": [
+        "requires comfort with business development or selling",
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P163",
@@ -2950,7 +3747,11 @@
       "selling": 3,
       "physical": 2,
       "scalability": 2,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Help three people with the same narrowly defined need and note what repeats.",
+      "poor_fit": [
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P164",
@@ -2968,7 +3769,12 @@
       "selling": 2,
       "physical": 2,
       "scalability": 2,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Help three people with the same narrowly defined need and note what repeats.",
+      "poor_fit": [
+        "is relatively people-intensive",
+        "has a meaningful learning curve"
+      ]
     },
     {
       "id": "P165",
@@ -2986,7 +3792,12 @@
       "selling": 3,
       "physical": 2,
       "scalability": 3,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Help three people with the same narrowly defined need and note what repeats.",
+      "poor_fit": [
+        "is relatively people-intensive",
+        "leans on existing expertise rather than offering a clean break"
+      ]
     },
     {
       "id": "P166",
@@ -3004,7 +3815,11 @@
       "selling": 3,
       "physical": 2,
       "scalability": 2,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Help three people with the same narrowly defined need and note what repeats.",
+      "poor_fit": [
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P167",
@@ -3022,7 +3837,12 @@
       "selling": 4,
       "physical": 2,
       "scalability": 1,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Help three people with the same narrowly defined need and note what repeats.",
+      "poor_fit": [
+        "requires comfort with business development or selling",
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P168",
@@ -3040,7 +3860,11 @@
       "selling": 3,
       "physical": 2,
       "scalability": 2,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Help three people with the same narrowly defined need and note what repeats.",
+      "poor_fit": [
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P169",
@@ -3058,7 +3882,12 @@
       "selling": 3,
       "physical": 2,
       "scalability": 2,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Help three people with the same narrowly defined need and note what repeats.",
+      "poor_fit": [
+        "is relatively people-intensive",
+        "has a meaningful learning curve"
+      ]
     },
     {
       "id": "P170",
@@ -3076,7 +3905,11 @@
       "selling": 3,
       "physical": 2,
       "scalability": 3,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Help three people with the same narrowly defined need and note what repeats.",
+      "poor_fit": [
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P171",
@@ -3094,7 +3927,11 @@
       "selling": 2,
       "physical": 2,
       "scalability": 2,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Help three people with the same narrowly defined need and note what repeats.",
+      "poor_fit": [
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P172",
@@ -3112,7 +3949,12 @@
       "selling": 4,
       "physical": 2,
       "scalability": 2,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Help three people with the same narrowly defined need and note what repeats.",
+      "poor_fit": [
+        "requires comfort with business development or selling",
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P173",
@@ -3130,7 +3972,11 @@
       "selling": 3,
       "physical": 2,
       "scalability": 2,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Help three people with the same narrowly defined need and note what repeats.",
+      "poor_fit": [
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P174",
@@ -3148,7 +3994,12 @@
       "selling": 3,
       "physical": 2,
       "scalability": 1,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Help three people with the same narrowly defined need and note what repeats.",
+      "poor_fit": [
+        "is relatively people-intensive",
+        "has a meaningful learning curve"
+      ]
     },
     {
       "id": "P175",
@@ -3166,7 +4017,12 @@
       "selling": 3,
       "physical": 2,
       "scalability": 3,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Help three people with the same narrowly defined need and note what repeats.",
+      "poor_fit": [
+        "is relatively people-intensive",
+        "leans on existing expertise rather than offering a clean break"
+      ]
     },
     {
       "id": "P176",
@@ -3184,7 +4040,11 @@
       "selling": 3,
       "physical": 2,
       "scalability": 2,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Help three people with the same narrowly defined need and note what repeats.",
+      "poor_fit": [
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P177",
@@ -3202,7 +4062,12 @@
       "selling": 4,
       "physical": 2,
       "scalability": 2,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Help three people with the same narrowly defined need and note what repeats.",
+      "poor_fit": [
+        "requires comfort with business development or selling",
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P178",
@@ -3220,7 +4085,11 @@
       "selling": 2,
       "physical": 2,
       "scalability": 2,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Help three people with the same narrowly defined need and note what repeats.",
+      "poor_fit": [
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P179",
@@ -3238,7 +4107,12 @@
       "selling": 3,
       "physical": 2,
       "scalability": 2,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Help three people with the same narrowly defined need and note what repeats.",
+      "poor_fit": [
+        "is relatively people-intensive",
+        "has a meaningful learning curve"
+      ]
     },
     {
       "id": "P180",
@@ -3256,7 +4130,12 @@
       "selling": 3,
       "physical": 2,
       "scalability": 3,
-      "meaning": 4
+      "meaning": 4,
+      "experiment": "Help three people with the same narrowly defined need and note what repeats.",
+      "poor_fit": [
+        "is relatively people-intensive",
+        "leans on existing expertise rather than offering a clean break"
+      ]
     },
     {
       "id": "P181",
@@ -3274,7 +4153,12 @@
       "selling": 3,
       "physical": 4,
       "scalability": 3,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Complete one commissioned or audience-tested project before investing in equipment or inventory.",
+      "poor_fit": [
+        "may require more upfront resources than a low-cost experiment",
+        "may involve meaningful physical activity"
+      ]
     },
     {
       "id": "P182",
@@ -3292,7 +4176,13 @@
       "selling": 4,
       "physical": 4,
       "scalability": 3,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Complete one commissioned or audience-tested project before investing in equipment or inventory.",
+      "poor_fit": [
+        "requires comfort with business development or selling",
+        "may require more upfront resources than a low-cost experiment",
+        "may involve meaningful physical activity"
+      ]
     },
     {
       "id": "P183",
@@ -3310,7 +4200,13 @@
       "selling": 3,
       "physical": 4,
       "scalability": 3,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Complete one commissioned or audience-tested project before investing in equipment or inventory.",
+      "poor_fit": [
+        "may require more public visibility than some people want",
+        "may require more upfront resources than a low-cost experiment",
+        "may involve meaningful physical activity"
+      ]
     },
     {
       "id": "P184",
@@ -3328,7 +4224,13 @@
       "selling": 2,
       "physical": 4,
       "scalability": 3,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Complete one commissioned or audience-tested project before investing in equipment or inventory.",
+      "poor_fit": [
+        "may require more upfront resources than a low-cost experiment",
+        "may involve meaningful physical activity",
+        "has a meaningful learning curve"
+      ]
     },
     {
       "id": "P185",
@@ -3346,7 +4248,12 @@
       "selling": 3,
       "physical": 4,
       "scalability": 4,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Complete one commissioned or audience-tested project before investing in equipment or inventory.",
+      "poor_fit": [
+        "may require more upfront resources than a low-cost experiment",
+        "may involve meaningful physical activity"
+      ]
     },
     {
       "id": "P186",
@@ -3364,7 +4271,12 @@
       "selling": 3,
       "physical": 4,
       "scalability": 3,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Complete one commissioned or audience-tested project before investing in equipment or inventory.",
+      "poor_fit": [
+        "may require more upfront resources than a low-cost experiment",
+        "may involve meaningful physical activity"
+      ]
     },
     {
       "id": "P187",
@@ -3382,7 +4294,13 @@
       "selling": 4,
       "physical": 4,
       "scalability": 2,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Complete one commissioned or audience-tested project before investing in equipment or inventory.",
+      "poor_fit": [
+        "requires comfort with business development or selling",
+        "may require more upfront resources than a low-cost experiment",
+        "may involve meaningful physical activity"
+      ]
     },
     {
       "id": "P188",
@@ -3400,7 +4318,13 @@
       "selling": 3,
       "physical": 4,
       "scalability": 3,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Complete one commissioned or audience-tested project before investing in equipment or inventory.",
+      "poor_fit": [
+        "may require more public visibility than some people want",
+        "may require more upfront resources than a low-cost experiment",
+        "may involve meaningful physical activity"
+      ]
     },
     {
       "id": "P189",
@@ -3418,7 +4342,13 @@
       "selling": 3,
       "physical": 4,
       "scalability": 3,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Complete one commissioned or audience-tested project before investing in equipment or inventory.",
+      "poor_fit": [
+        "may require more upfront resources than a low-cost experiment",
+        "may involve meaningful physical activity",
+        "has a meaningful learning curve"
+      ]
     },
     {
       "id": "P190",
@@ -3436,7 +4366,12 @@
       "selling": 3,
       "physical": 4,
       "scalability": 4,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Complete one commissioned or audience-tested project before investing in equipment or inventory.",
+      "poor_fit": [
+        "may require more upfront resources than a low-cost experiment",
+        "may involve meaningful physical activity"
+      ]
     },
     {
       "id": "P191",
@@ -3454,7 +4389,12 @@
       "selling": 2,
       "physical": 4,
       "scalability": 3,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Complete one commissioned or audience-tested project before investing in equipment or inventory.",
+      "poor_fit": [
+        "may require more upfront resources than a low-cost experiment",
+        "may involve meaningful physical activity"
+      ]
     },
     {
       "id": "P192",
@@ -3472,7 +4412,13 @@
       "selling": 4,
       "physical": 4,
       "scalability": 3,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Complete one commissioned or audience-tested project before investing in equipment or inventory.",
+      "poor_fit": [
+        "requires comfort with business development or selling",
+        "may require more upfront resources than a low-cost experiment",
+        "may involve meaningful physical activity"
+      ]
     },
     {
       "id": "P193",
@@ -3490,7 +4436,12 @@
       "selling": 3,
       "physical": 4,
       "scalability": 3,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Complete one commissioned or audience-tested project before investing in equipment or inventory.",
+      "poor_fit": [
+        "may require more upfront resources than a low-cost experiment",
+        "may involve meaningful physical activity"
+      ]
     },
     {
       "id": "P194",
@@ -3508,7 +4459,13 @@
       "selling": 3,
       "physical": 4,
       "scalability": 2,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Complete one commissioned or audience-tested project before investing in equipment or inventory.",
+      "poor_fit": [
+        "may require more upfront resources than a low-cost experiment",
+        "may involve meaningful physical activity",
+        "has a meaningful learning curve"
+      ]
     },
     {
       "id": "P195",
@@ -3526,7 +4483,12 @@
       "selling": 3,
       "physical": 4,
       "scalability": 4,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Complete one commissioned or audience-tested project before investing in equipment or inventory.",
+      "poor_fit": [
+        "may require more upfront resources than a low-cost experiment",
+        "may involve meaningful physical activity"
+      ]
     },
     {
       "id": "P196",
@@ -3544,7 +4506,12 @@
       "selling": 3,
       "physical": 4,
       "scalability": 3,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Complete one commissioned or audience-tested project before investing in equipment or inventory.",
+      "poor_fit": [
+        "may require more upfront resources than a low-cost experiment",
+        "may involve meaningful physical activity"
+      ]
     },
     {
       "id": "P197",
@@ -3562,7 +4529,13 @@
       "selling": 4,
       "physical": 4,
       "scalability": 3,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Complete one commissioned or audience-tested project before investing in equipment or inventory.",
+      "poor_fit": [
+        "requires comfort with business development or selling",
+        "may require more upfront resources than a low-cost experiment",
+        "may involve meaningful physical activity"
+      ]
     },
     {
       "id": "P198",
@@ -3580,7 +4553,13 @@
       "selling": 2,
       "physical": 4,
       "scalability": 3,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Complete one commissioned or audience-tested project before investing in equipment or inventory.",
+      "poor_fit": [
+        "may require more public visibility than some people want",
+        "may require more upfront resources than a low-cost experiment",
+        "may involve meaningful physical activity"
+      ]
     },
     {
       "id": "P199",
@@ -3598,7 +4577,13 @@
       "selling": 3,
       "physical": 4,
       "scalability": 3,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Complete one commissioned or audience-tested project before investing in equipment or inventory.",
+      "poor_fit": [
+        "may require more upfront resources than a low-cost experiment",
+        "may involve meaningful physical activity",
+        "has a meaningful learning curve"
+      ]
     },
     {
       "id": "P200",
@@ -3616,7 +4601,12 @@
       "selling": 3,
       "physical": 4,
       "scalability": 4,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Complete one commissioned or audience-tested project before investing in equipment or inventory.",
+      "poor_fit": [
+        "may require more upfront resources than a low-cost experiment",
+        "may involve meaningful physical activity"
+      ]
     },
     {
       "id": "P201",
@@ -3634,7 +4624,11 @@
       "selling": 2,
       "physical": 1,
       "scalability": 2,
-      "meaning": 5
+      "meaning": 5,
+      "experiment": "Create one finished legacy artifact for yourself or one volunteer family and assess the process.",
+      "poor_fit": [
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P202",
@@ -3652,7 +4646,11 @@
       "selling": 3,
       "physical": 1,
       "scalability": 2,
-      "meaning": 5
+      "meaning": 5,
+      "experiment": "Create one finished legacy artifact for yourself or one volunteer family and assess the process.",
+      "poor_fit": [
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P203",
@@ -3670,7 +4668,11 @@
       "selling": 2,
       "physical": 1,
       "scalability": 2,
-      "meaning": 5
+      "meaning": 5,
+      "experiment": "Create one finished legacy artifact for yourself or one volunteer family and assess the process.",
+      "poor_fit": [
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P204",
@@ -3688,7 +4690,11 @@
       "selling": 1,
       "physical": 1,
       "scalability": 2,
-      "meaning": 5
+      "meaning": 5,
+      "experiment": "Create one finished legacy artifact for yourself or one volunteer family and assess the process.",
+      "poor_fit": [
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P205",
@@ -3706,7 +4712,11 @@
       "selling": 2,
       "physical": 1,
       "scalability": 3,
-      "meaning": 5
+      "meaning": 5,
+      "experiment": "Create one finished legacy artifact for yourself or one volunteer family and assess the process.",
+      "poor_fit": [
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P206",
@@ -3724,7 +4734,11 @@
       "selling": 2,
       "physical": 1,
       "scalability": 2,
-      "meaning": 5
+      "meaning": 5,
+      "experiment": "Create one finished legacy artifact for yourself or one volunteer family and assess the process.",
+      "poor_fit": [
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P207",
@@ -3742,7 +4756,11 @@
       "selling": 3,
       "physical": 1,
       "scalability": 1,
-      "meaning": 5
+      "meaning": 5,
+      "experiment": "Create one finished legacy artifact for yourself or one volunteer family and assess the process.",
+      "poor_fit": [
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P208",
@@ -3760,7 +4778,11 @@
       "selling": 2,
       "physical": 1,
       "scalability": 2,
-      "meaning": 5
+      "meaning": 5,
+      "experiment": "Create one finished legacy artifact for yourself or one volunteer family and assess the process.",
+      "poor_fit": [
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P209",
@@ -3778,7 +4800,11 @@
       "selling": 2,
       "physical": 1,
       "scalability": 2,
-      "meaning": 5
+      "meaning": 5,
+      "experiment": "Create one finished legacy artifact for yourself or one volunteer family and assess the process.",
+      "poor_fit": [
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P210",
@@ -3796,7 +4822,11 @@
       "selling": 2,
       "physical": 1,
       "scalability": 3,
-      "meaning": 5
+      "meaning": 5,
+      "experiment": "Create one finished legacy artifact for yourself or one volunteer family and assess the process.",
+      "poor_fit": [
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P211",
@@ -3814,7 +4844,11 @@
       "selling": 1,
       "physical": 1,
       "scalability": 2,
-      "meaning": 5
+      "meaning": 5,
+      "experiment": "Create one finished legacy artifact for yourself or one volunteer family and assess the process.",
+      "poor_fit": [
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P212",
@@ -3832,7 +4866,11 @@
       "selling": 3,
       "physical": 1,
       "scalability": 2,
-      "meaning": 5
+      "meaning": 5,
+      "experiment": "Create one finished legacy artifact for yourself or one volunteer family and assess the process.",
+      "poor_fit": [
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P213",
@@ -3850,7 +4888,11 @@
       "selling": 2,
       "physical": 1,
       "scalability": 2,
-      "meaning": 5
+      "meaning": 5,
+      "experiment": "Create one finished legacy artifact for yourself or one volunteer family and assess the process.",
+      "poor_fit": [
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P214",
@@ -3868,7 +4910,11 @@
       "selling": 2,
       "physical": 1,
       "scalability": 1,
-      "meaning": 5
+      "meaning": 5,
+      "experiment": "Create one finished legacy artifact for yourself or one volunteer family and assess the process.",
+      "poor_fit": [
+        "could still be a poor fit if the day-to-day work does not create energy"
+      ]
     },
     {
       "id": "P215",
@@ -3886,7 +4932,11 @@
       "selling": 2,
       "physical": 1,
       "scalability": 3,
-      "meaning": 5
+      "meaning": 5,
+      "experiment": "Create one finished legacy artifact for yourself or one volunteer family and assess the process.",
+      "poor_fit": [
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P216",
@@ -3904,7 +4954,11 @@
       "selling": 2,
       "physical": 1,
       "scalability": 2,
-      "meaning": 5
+      "meaning": 5,
+      "experiment": "Create one finished legacy artifact for yourself or one volunteer family and assess the process.",
+      "poor_fit": [
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P217",
@@ -3922,7 +4976,11 @@
       "selling": 3,
       "physical": 1,
       "scalability": 2,
-      "meaning": 5
+      "meaning": 5,
+      "experiment": "Create one finished legacy artifact for yourself or one volunteer family and assess the process.",
+      "poor_fit": [
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P218",
@@ -3940,7 +4998,11 @@
       "selling": 1,
       "physical": 1,
       "scalability": 2,
-      "meaning": 5
+      "meaning": 5,
+      "experiment": "Create one finished legacy artifact for yourself or one volunteer family and assess the process.",
+      "poor_fit": [
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P219",
@@ -3958,7 +5020,11 @@
       "selling": 2,
       "physical": 1,
       "scalability": 2,
-      "meaning": 5
+      "meaning": 5,
+      "experiment": "Create one finished legacy artifact for yourself or one volunteer family and assess the process.",
+      "poor_fit": [
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P220",
@@ -3976,7 +5042,11 @@
       "selling": 2,
       "physical": 1,
       "scalability": 3,
-      "meaning": 5
+      "meaning": 5,
+      "experiment": "Create one finished legacy artifact for yourself or one volunteer family and assess the process.",
+      "poor_fit": [
+        "is relatively people-intensive"
+      ]
     },
     {
       "id": "P221",
@@ -3994,7 +5064,11 @@
       "selling": 2,
       "physical": 1,
       "scalability": 4,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Produce a five-page briefing on one topic for a real audience and ask whether they would request another.",
+      "poor_fit": [
+        "leans on existing expertise rather than offering a clean break"
+      ]
     },
     {
       "id": "P222",
@@ -4012,7 +5086,11 @@
       "selling": 3,
       "physical": 1,
       "scalability": 4,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Produce a five-page briefing on one topic for a real audience and ask whether they would request another.",
+      "poor_fit": [
+        "leans on existing expertise rather than offering a clean break"
+      ]
     },
     {
       "id": "P223",
@@ -4030,7 +5108,11 @@
       "selling": 2,
       "physical": 1,
       "scalability": 4,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Produce a five-page briefing on one topic for a real audience and ask whether they would request another.",
+      "poor_fit": [
+        "may require more public visibility than some people want"
+      ]
     },
     {
       "id": "P224",
@@ -4048,7 +5130,11 @@
       "selling": 1,
       "physical": 1,
       "scalability": 4,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Produce a five-page briefing on one topic for a real audience and ask whether they would request another.",
+      "poor_fit": [
+        "leans on existing expertise rather than offering a clean break"
+      ]
     },
     {
       "id": "P225",
@@ -4066,7 +5152,11 @@
       "selling": 2,
       "physical": 1,
       "scalability": 5,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Produce a five-page briefing on one topic for a real audience and ask whether they would request another.",
+      "poor_fit": [
+        "leans on existing expertise rather than offering a clean break"
+      ]
     },
     {
       "id": "P226",
@@ -4084,7 +5174,11 @@
       "selling": 2,
       "physical": 1,
       "scalability": 4,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Produce a five-page briefing on one topic for a real audience and ask whether they would request another.",
+      "poor_fit": [
+        "leans on existing expertise rather than offering a clean break"
+      ]
     },
     {
       "id": "P227",
@@ -4102,7 +5196,11 @@
       "selling": 3,
       "physical": 1,
       "scalability": 3,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Produce a five-page briefing on one topic for a real audience and ask whether they would request another.",
+      "poor_fit": [
+        "leans on existing expertise rather than offering a clean break"
+      ]
     },
     {
       "id": "P228",
@@ -4120,7 +5218,12 @@
       "selling": 2,
       "physical": 1,
       "scalability": 4,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Produce a five-page briefing on one topic for a real audience and ask whether they would request another.",
+      "poor_fit": [
+        "may require more public visibility than some people want",
+        "leans on existing expertise rather than offering a clean break"
+      ]
     },
     {
       "id": "P229",
@@ -4138,7 +5241,11 @@
       "selling": 2,
       "physical": 1,
       "scalability": 4,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Produce a five-page briefing on one topic for a real audience and ask whether they would request another.",
+      "poor_fit": [
+        "leans on existing expertise rather than offering a clean break"
+      ]
     },
     {
       "id": "P230",
@@ -4156,7 +5263,11 @@
       "selling": 2,
       "physical": 1,
       "scalability": 5,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Produce a five-page briefing on one topic for a real audience and ask whether they would request another.",
+      "poor_fit": [
+        "leans on existing expertise rather than offering a clean break"
+      ]
     },
     {
       "id": "P231",
@@ -4174,7 +5285,11 @@
       "selling": 1,
       "physical": 1,
       "scalability": 4,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Produce a five-page briefing on one topic for a real audience and ask whether they would request another.",
+      "poor_fit": [
+        "leans on existing expertise rather than offering a clean break"
+      ]
     },
     {
       "id": "P232",
@@ -4192,7 +5307,11 @@
       "selling": 3,
       "physical": 1,
       "scalability": 4,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Produce a five-page briefing on one topic for a real audience and ask whether they would request another.",
+      "poor_fit": [
+        "leans on existing expertise rather than offering a clean break"
+      ]
     },
     {
       "id": "P233",
@@ -4210,7 +5329,11 @@
       "selling": 2,
       "physical": 1,
       "scalability": 4,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Produce a five-page briefing on one topic for a real audience and ask whether they would request another.",
+      "poor_fit": [
+        "leans on existing expertise rather than offering a clean break"
+      ]
     },
     {
       "id": "P234",
@@ -4228,7 +5351,11 @@
       "selling": 2,
       "physical": 1,
       "scalability": 3,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Produce a five-page briefing on one topic for a real audience and ask whether they would request another.",
+      "poor_fit": [
+        "leans on existing expertise rather than offering a clean break"
+      ]
     },
     {
       "id": "P235",
@@ -4246,7 +5373,11 @@
       "selling": 2,
       "physical": 1,
       "scalability": 5,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Produce a five-page briefing on one topic for a real audience and ask whether they would request another.",
+      "poor_fit": [
+        "leans on existing expertise rather than offering a clean break"
+      ]
     },
     {
       "id": "P236",
@@ -4264,7 +5395,11 @@
       "selling": 2,
       "physical": 1,
       "scalability": 4,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Produce a five-page briefing on one topic for a real audience and ask whether they would request another.",
+      "poor_fit": [
+        "leans on existing expertise rather than offering a clean break"
+      ]
     },
     {
       "id": "P237",
@@ -4282,7 +5417,11 @@
       "selling": 3,
       "physical": 1,
       "scalability": 4,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Produce a five-page briefing on one topic for a real audience and ask whether they would request another.",
+      "poor_fit": [
+        "could still be a poor fit if the day-to-day work does not create energy"
+      ]
     },
     {
       "id": "P238",
@@ -4300,7 +5439,12 @@
       "selling": 1,
       "physical": 1,
       "scalability": 4,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Produce a five-page briefing on one topic for a real audience and ask whether they would request another.",
+      "poor_fit": [
+        "may require more public visibility than some people want",
+        "leans on existing expertise rather than offering a clean break"
+      ]
     },
     {
       "id": "P239",
@@ -4318,7 +5462,11 @@
       "selling": 2,
       "physical": 1,
       "scalability": 4,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Produce a five-page briefing on one topic for a real audience and ask whether they would request another.",
+      "poor_fit": [
+        "leans on existing expertise rather than offering a clean break"
+      ]
     },
     {
       "id": "P240",
@@ -4336,7 +5484,11 @@
       "selling": 2,
       "physical": 1,
       "scalability": 5,
-      "meaning": 3
+      "meaning": 3,
+      "experiment": "Produce a five-page briefing on one topic for a real audience and ask whether they would request another.",
+      "poor_fit": [
+        "leans on existing expertise rather than offering a clean break"
+      ]
     }
   ]
 }

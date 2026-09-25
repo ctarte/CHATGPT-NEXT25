@@ -56,3 +56,7 @@ Adds `deep-discovery.html`, a 28-question focused reasoning prototype across sev
 
 ## Phase 9 — NEXT25 Possibility Universe™
 Adds a 240-entry structured possibility universe across 12 families and 13 directional fit dimensions; interactive Expected / Adjacent / Overlooked matching; `possibility-universe.json`; and Phase 9 matching architecture specification. Numeric attributes are prototype metadata, not empirical labor-market claims.
+
+
+## Phase 10 — Matching Engine™ 2.0
+Adds `matching-engine.html` and `matching-engine.js`: priorities, aversions, hard constraints, tension detection, family diversity, and a 9-Possibility Blueprint (3 Strong / 3 Adjacent / 3 Overlooked). Possibility data upgraded to v1.1 with prototype experiment and poor-fit metadata. See `PHASE10-MATCHING-ENGINE-SPEC.txt`.

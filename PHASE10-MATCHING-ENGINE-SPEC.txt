@@ -1,0 +1,39 @@
+NEXT25™ PHASE 10 — MATCHING ENGINE 2.0 + INTELLIGENT BLUEPRINT
+
+PURPOSE
+Move from simple weighted matching to an explainable selection architecture that distinguishes preferences, aversions and true constraints.
+
+MATCHING LAYERS
+1. Positive signals — desired attributes and priorities.
+2. Negative signals / friction — activities or structural features the user wants less of.
+3. Hard constraints — conditions stated as true must-haves. Constraint failure receives a large penalty and normally removes the possibility from the viable pool.
+4. Tension detection — competing desires are surfaced, not averaged away.
+5. Diversity rules — avoid returning nine near-duplicates from one possibility family.
+6. Discovery tiers — 3 Strong Fits, 3 Adjacent Possibilities, 3 Overlooked Possibilities.
+7. Explainability — why surfaced, what could make it wrong, experiment before commitment.
+
+IMPORTANT DISTINCTIONS
+- A preference is not a constraint.
+- A fit score is not a probability.
+- A high aggregate score does not erase a failed must-have.
+- A tension is not a defect in the user.
+- “Overlooked” does not mean “better.”
+- Questionnaire fit is not evidence of real-world enjoyment, demand, earnings or feasibility.
+
+PRODUCTION BLUEPRINT
+For each surfaced possibility:
+Title / family
+Why it surfaced
+Which answers/signals contributed
+Which constraints were checked
+Potential friction / poor-fit conditions
+Confidence / evidence quality (not probability of success)
+30- or 90-day experiment
+Evidence sought
+Adjacent alternatives
+
+FUTURE ENGINE
+Production should ingest the full Deep Discovery assessment automatically rather than ask the user to recreate a short matching profile. It should use normalized signals, separate hard/soft rules, support missing data, record reason codes, version weights, and generate deterministic auditable results before narrative generation.
+
+SECURITY
+Current client-side engine and public JSON are prototypes. Production assessment data, weights, reason codes, full library and customer identity should be protected server-side.
