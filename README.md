@@ -44,3 +44,7 @@ Homepage adds Why NEXT25?, four self-selection pathways, Deferred Dreams narrati
 
 ## Phase 6A Final Positioning
 Homepage now explicitly includes retirement, career change, first-time business ownership, burnout/restlessness and broader life transition. QUESTIONNAIRE-DESIGN-NOTES.txt records the 12-domain architecture for the deeper Second Life Architect assessment expansion.
+
+
+## Phase 7
+Adds NEXT25 Intelligence Engine™, interactive Possibility Lab™, explainable matching prototype, Possibility Library foundation, Intelligence Engine specification, and larger small typography. Production customer data and proprietary matching should eventually move server-side.
