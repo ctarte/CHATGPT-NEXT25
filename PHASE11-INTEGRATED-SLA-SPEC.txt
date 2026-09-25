@@ -1,0 +1,39 @@
+NEXT25™ PHASE 11 — INTEGRATED SECOND LIFE ARCHITECT™ EXPERIENCE
+
+GOAL
+Stop making the customer navigate separate prototypes. Create one continuous experience:
+DISCOVER → UNDERSTAND → EXPAND → TEST → DESIGN.
+
+CORE PRINCIPLE
+Answer once. Carry the information forward. Each stage should deepen the interpretation rather than ask the customer to recreate a profile.
+
+PROTOTYPE FLOW
+1 DISCOVER — current chapter, what to leave, what to preserve, personal definition of improvement.
+2 UNDERSTAND — energy, unwanted competencies, satisfaction, ownership motives/friction, deferred dream, lifestyle conditions, income, uncertainty, identity, expertise.
+3 EXPAND — responses automatically generate Strong / Adjacent / Overlooked possibilities. No separate matching questionnaire.
+4 TEST — nine candidates receive experiments; user creates shortlist and defines safety/evidence.
+5 DESIGN — Personalized NEXT25 Blueprint™ generated from the same profile.
+
+BLUEPRINT SECTIONS
+01 Where You Are Now
+02 What We Noticed
+03 Tensions & Tradeoffs
+04 Nine Possibilities Worth Exploring
+05 Possibility Gap™
+06 90-Day Experiments™
+07 25 for 25™
+08 Questions Still Worth Answering
+09 Your Next 90 Days
+
+PRODUCTION REQUIREMENTS
+- Replace browser-only storage with authenticated encrypted customer data.
+- Keep assessment responses separate from public website analytics.
+- Move proprietary signal extraction, weights, constraints, reason codes and possibility library server-side.
+- Add account save/resume, versioning, consent, deletion/export controls, secure Blueprint generation and PDF/document rendering.
+- Full Deep Discovery should ultimately branch intelligently; the Phase 11 prototype uses a curated integrated question set.
+- Preserve reason codes so narrative generation is auditable.
+- Do not infer clinical state, financial adequacy, or suitability from lifestyle answers.
+- Keep outputs framed as possibilities and experiments, not prescriptions.
+
+PRODUCT EXPERIENCE
+The customer should not perceive Score, Deep Discovery, Intelligence Engine, Possibility Universe and Matching Engine as separate products. Those are internal capabilities. Second Life Architect™ is the customer-facing experience.

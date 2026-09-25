@@ -60,3 +60,7 @@ Adds a 240-entry structured possibility universe across 12 families and 13 direc
 
 ## Phase 10 — Matching Engine™ 2.0
 Adds `matching-engine.html` and `matching-engine.js`: priorities, aversions, hard constraints, tension detection, family diversity, and a 9-Possibility Blueprint (3 Strong / 3 Adjacent / 3 Overlooked). Possibility data upgraded to v1.1 with prototype experiment and poor-fit metadata. See `PHASE10-MATCHING-ENGINE-SPEC.txt`.
+
+
+## Phase 11 — Integrated Second Life Architect™
+Adds `second-life-journey.html` and `second-life-journey.js`, combining discovery, interpretation, automatic possibility matching, experiment shortlisting, and a nine-section Personalized NEXT25 Blueprint™ in one saved browser journey. See `PHASE11-INTEGRATED-SLA-SPEC.txt`.
