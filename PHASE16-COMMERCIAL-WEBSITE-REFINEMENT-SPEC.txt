@@ -1,0 +1,34 @@
+NEXT25™ PHASE 16 — COMMERCIAL WEBSITE & EXPERIENCE REFINEMENT™
+
+PRIMARY GOAL
+Make NEXT25 feel like one premium company rather than a collection of development phases.
+
+PUBLIC INFORMATION ARCHITECTURE
+Home
+How It Works
+Second Life Architect™
+Sample Blueprint
+About NEXT25
+Founding Client
+
+DEVELOPMENT SEPARATION
+Development prototypes remain in the repository and are indexed by development.html, which is intentionally not linked from the commercial navigation. This is organizational separation, not access control. GitHub Pages remains public.
+
+DESIGN PRINCIPLES
+1 Fewer sections with stronger hierarchy.
+2 More whitespace and editorial pacing.
+3 One dominant action per major section.
+4 Customer outcomes before internal technology.
+5 Consistent navigation and footer across principal commercial pages.
+6 Larger readable typography.
+7 Reduce card grids and competing visual boxes.
+8 Editorial imagery should communicate possibility, curiosity, meaningful work, exploration, family and legacy—not stereotypical retirement advertising.
+
+IMAGE STATUS
+Phase 16 uses restrained editorial image placeholders/gradient panels so the information architecture can be judged before committing to photography. Replace these with licensed or original photography in a later visual-production pass.
+
+COMMERCIAL MESSAGE
+NEXT25 helps thoughtful adults discover what they want the next chapter of life to contain, explore possibilities worth investigating, test those possibilities and organize the result through Second Life Architect™ and the Personalized NEXT25 Blueprint™.
+
+IMPORTANT
+development.html is not secure. Proprietary logic/customer data must still move to protected production infrastructure before launch.

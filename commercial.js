@@ -1,0 +1,1 @@
+document.querySelectorAll('.commercial-menu').forEach(b=>b.addEventListener('click',()=>{const n=b.nextElementSibling;const open=n.classList.toggle('open');b.setAttribute('aria-expanded',open?'true':'false')}));

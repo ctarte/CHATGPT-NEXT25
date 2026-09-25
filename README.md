@@ -84,3 +84,7 @@ Defines the commercial architecture separating the public experience, protected 
 
 ## Phase 15 — Founding Client MVP™
 Simplifies the public homepage/navigation, refines the Second Life Architect™ sales page, adds a realistic premium `sample-blueprint.html`, and reframes the product around a clear $595 Founding Client deliverable. Development-stage pages remain available in the repository but are intentionally removed from primary customer navigation.
+
+
+## Phase 16 — Commercial Website & Experience Refinement™
+Reduces public information architecture to six destinations, unifies commercial navigation/footer, adds a dedicated About page, rebuilds How It Works, simplifies the homepage, and moves prototype discovery into an unlinked `development.html` index. This is organizational separation only; GitHub Pages remains public.
