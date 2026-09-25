@@ -33,3 +33,14 @@ Open `index.html` in a browser, or serve this folder with any static web server.
 
 ## Payment integration
 The current button is a safe placeholder. A static GitHub Pages site can link to a hosted Stripe Payment Link/Checkout or similar provider. Never collect raw credit-card numbers with this repository alone.
+
+
+## Phase 6
+Adds assessment.html and assessment.js: an 8-section, 32-question Second Life Architect prototype with browser-local save/resume, progress tracking, mixed question formats and a Blueprint-ready structured answer model. Small typography is increased approximately one point. Photo positions are intentionally restrained placeholders pending final image selection/licensing.
+
+### Phase 6A positioning refinement
+Homepage adds Why NEXT25?, four self-selection pathways, Deferred Dreams narrative, reasons meaningful ambitions get postponed, and a low-risk experimentation bridge into the Possibility Explorer and Second Life Architect.
+
+
+## Phase 6A Final Positioning
+Homepage now explicitly includes retirement, career change, first-time business ownership, burnout/restlessness and broader life transition. QUESTIONNAIRE-DESIGN-NOTES.txt records the 12-domain architecture for the deeper Second Life Architect assessment expansion.

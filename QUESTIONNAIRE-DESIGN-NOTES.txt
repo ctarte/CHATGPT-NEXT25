@@ -1,0 +1,31 @@
+SECOND LIFE ARCHITECT™ — DEEP QUESTIONNAIRE DESIGN DIRECTION
+
+The production questionnaire should move beyond generic retirement questions. The next build should expand the assessment across these domains:
+
+1. Transition & Current Chapter — retirement, career change, burnout, first business, general reinvention.
+2. Energy & Burnout — what drains, restores, excites, bores, and creates anticipation.
+3. Deferred Dreams — ideas postponed by family, finances, timing, peer pressure, confidence, lack of direction.
+4. Experience & Expertise — accumulated knowledge, teachable skills, consulting, mentoring, writing, speaking.
+5. Entrepreneurship & Independence — first business, solo practice, lifestyle business, acquisition, online/service/product models.
+6. Curiosity & Creativity — subjects researched voluntarily, making, writing, design, technology, history, travel, invention.
+7. Freedom & Constraints — time, money, caregiving, property, geography, energy, commitments, risk tolerance.
+8. Lifestyle & Experiences — ideal pace, ordinary-day design, travel, learning, family, adventure, solitude.
+9. People & Relationships — spouse, family, friends, collaborators, community, intellectual peers, independence.
+10. Meaning & Contribution — helping, solving, creating, teaching, building, serving, mastery, exploration.
+11. Organization & Continuity — household knowledge, documents, contacts, digital life, property, business continuity.
+12. Legacy & What Endures — stories, values, traditions, expertise, creative work, philanthropy, family continuity.
+
+ANSWER-DESIGN PRINCIPLES
+- Include conventional and overlooked possibilities.
+- Do not force retirement as the assumed goal.
+- Separate burnout from lack of purpose.
+- Distinguish “leave my old career behind” from “use my expertise differently.”
+- Include first-time entrepreneurship and small/lifestyle business models.
+- Ask what gives energy, not merely what someone is good at.
+- Ask about constraints and desired lifestyle before suggesting opportunities.
+- Use “select any” answers plus open reflections to reveal combinations.
+- Surface possibilities, not prescriptions.
+- Use 90-day experiments to test fit before major commitments.
+- Avoid implying a single perfect career, business, or life choice.
+
+The Blueprint engine should eventually combine these responses into archetype clues, opportunity signals, constraints, fit filters, overlooked possibilities, 25 for 25 priorities, and 90-Day Experiments.
