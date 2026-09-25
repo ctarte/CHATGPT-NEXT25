@@ -1,0 +1,43 @@
+NEXT25™ PHASE 17 — VISUAL IDENTITY & TRUST LAYER™
+
+PURPOSE
+Make the simplified Phase 16 commercial site feel more premium, coherent, human and trustworthy without reintroducing clutter.
+
+VISUAL SYSTEM
+Palette: deep navy, ivory/paper, brushed gold, restrained warm neutrals.
+Typography: editorial serif headlines with highly readable body copy.
+Brand lockup: NEXT25 with DISCOVER • EXPLORE • DESIGN micro-line.
+Imagery: restrained editorial horizon/reflection imagery; avoid stereotypical retirement stock photography.
+Interaction: understated hover treatment, active navigation state, reduced-motion support.
+
+TRUST WITHOUT FABRICATION
+Do not invent testimonials, client counts, awards, credentials, media logos, success rates, scarcity or guarantees.
+Trust is established through:
+- clear methodology
+- Sample Blueprint
+- explainability
+- customer agency
+- experiment-before-commitment
+- transparent prototype status
+- clear advice boundaries
+- privacy/terms destinations
+
+FOUNDING CLIENT PRINCIPLES
+No invented testimonials.
+No guaranteed outcomes.
+No pressure to choose a prescribed path.
+Possibilities are meant to be investigated.
+
+IMAGE NOTE
+Phase 17 includes a generated editorial brand visual in assets/next25-editorial-vision.png. It is a design asset, not documentary evidence or a client photograph. Before final commercial launch, review all imagery for licensing/brand consistency and replace or expand with final approved assets as appropriate.
+
+ACCESSIBILITY / UX
+Mobile menu retained.
+Active page navigation.
+Escape closes open mobile navigation.
+Readable base font.
+Reduced-motion preference respected.
+Decorative/editorial image panels include descriptive labels.
+
+NEXT STEP
+After visual QA, prioritize Founding Client pilot readiness rather than continuing indefinite redesign.

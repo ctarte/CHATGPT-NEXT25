@@ -1,1 +1,3 @@
 document.querySelectorAll('.commercial-menu').forEach(b=>b.addEventListener('click',()=>{const n=b.nextElementSibling;const open=n.classList.toggle('open');b.setAttribute('aria-expanded',open?'true':'false')}));
+const page=(location.pathname.split('/').pop()||'index.html');document.querySelectorAll('.commercial-nav nav a').forEach(a=>{const h=(a.getAttribute('href')||'').split('#')[0];if(h===page)a.setAttribute('aria-current','page')});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')document.querySelectorAll('.commercial-nav nav.open').forEach(n=>{n.classList.remove('open');const b=n.previousElementSibling;if(b)b.setAttribute('aria-expanded','false')})});
