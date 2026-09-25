@@ -1,0 +1,79 @@
+NEXT25™ PHASE 14 — PRODUCTION FOUNDATION™
+
+PURPOSE
+Move NEXT25 from a public static prototype toward a commercial architecture capable of supporting Founding Clients.
+
+TARGET CUSTOMER FLOW
+Public website → NEXT25 Score™ → Second Life Architect™ offer → enrollment + consent → hosted payment → verified payment event → protected customer account → Adaptive Deep Discovery™ → secure saved progress → private intelligence → Personalized NEXT25 Blueprint™ → secure document delivery → 90-Day Experiments™.
+
+THREE LAYERS
+1 PUBLIC EXPERIENCE
+Marketing, Score, samples, FAQs, educational content, product pages and public legal notices.
+
+2 PROTECTED CUSTOMER APPLICATION
+Authentication, authorization, account dashboard, saved assessment, progress, Blueprint library, experiments, privacy controls.
+
+3 PRIVATE INTELLIGENCE SERVICE
+Adaptive routing, signal architecture, reason codes, constraints, matching weights, proprietary Possibility Universe metadata, Blueprint composition. Do not ship proprietary production rules to the browser.
+
+RECOMMENDED PRODUCTION COMPONENTS
+- Front end: current design can be migrated to a modern hosted application.
+- Authentication: managed authentication with verified email and secure session handling.
+- Database: relational database with per-user authorization and encrypted storage.
+- Payments: hosted PCI-compliant checkout. Never create raw card-number fields in NEXT25.
+- Payment fulfillment: verify provider-signed server webhook before granting paid entitlement. Use idempotency.
+- Application/API: server-side endpoints for assessment saves, matching and Blueprint generation.
+- File storage: private object storage for generated Blueprint documents; short-lived signed access.
+- Email: transactional provider for verification, receipts, reminders and Blueprint-ready notices.
+- Monitoring: server logs, error monitoring and security/audit events without leaking assessment text.
+- Secrets: environment/server secret manager; never commit secrets to GitHub.
+
+DATA MODEL — MINIMUM
+users: id, email, verification state, created_at
+customers: user_id, display_name, consent_version, consent_at
+orders: id, user_id, provider, provider_session_id, amount, currency, status
+entitlements: user_id, product, status, granted_at
+assessments: id, user_id, assessment_version, status, current_stage
+responses: assessment_id, question_id, answer_json, saved_at
+signal_runs: assessment_id, engine_version, signal_json, reason_code_json
+match_runs: assessment_id, engine_version, result_json
+blueprints: id, assessment_id, blueprint_version, generated_at, private_file_key
+experiments: id, user_id, blueprint_id, possibility_id, hypothesis, evidence, status
+consents: user_id, document_type, version, accepted_at
+audit_events: user_id, event_type, object_type, object_id, occurred_at
+
+PRIVACY / SECURITY
+- Collect only what is necessary.
+- Separate account/contact information from assessment content where practical.
+- Encrypt data in transit and at rest.
+- Apply authorization on every customer-data request.
+- Use least-privilege service credentials.
+- Never place assessment answers in analytics events or URLs.
+- Define retention, export and deletion workflows before launch.
+- Back up production data and test restoration.
+- Document incident response.
+- Protect proprietary rules and possibility metadata server-side.
+- Do not infer clinical state, financial suitability, mental condition or probability of success.
+
+PAYMENT STATE MACHINE
+created → checkout_started → paid → entitlement_granted
+Alternative terminal/exception states: cancelled, failed, refunded, disputed.
+Do not rely on the browser success redirect as proof of payment. Server must verify signed provider event.
+
+FOUNDING CLIENT RELEASE GATES
+1 Final privacy policy / terms / refund policy reviewed by qualified counsel.
+2 Hosted payment provider configured in test and live modes.
+3 Authentication and email verification working.
+4 Assessment data persisted server-side with authorization tests.
+5 Proprietary matching removed from public bundle.
+6 Blueprint generated server-side and privately delivered.
+7 Data export/deletion process tested.
+8 Backup/restore tested.
+9 Error/security monitoring active.
+10 Human pilot testing completed with documented issues and fixes.
+
+CURRENT PHASE 14 LIMITATION
+This repository remains a static prototype. The portal and checkout states are demonstrations only. Do not accept sensitive assessment data or represent the static portal as a secure account system.
+
+RELEASE STRATEGY
+Begin with a small Founding Client cohort and high-touch support. Use the cohort to validate question clarity, Blueprint usefulness, possibility relevance, experiments and operational workflow before scaling automation.

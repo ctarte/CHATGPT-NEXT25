@@ -76,3 +76,7 @@ Adds adaptive branching from a common discovery foundation into five relevant pa
 
 ## Phase 13 — Signal Architecture™ + Adaptive Integration
 `second-life-journey.html` now hosts the adaptive customer journey and the integrated signal-to-Blueprint experience. `signal-engine.js` contains deterministic, answer-traceable signals and matching. `phase13-blueprint.js` renders the integrated report. The earlier Phase 11 journey is retained as `second-life-journey-legacy.html` for reference. See `PHASE13-SIGNAL-ARCHITECTURE-SPEC.txt`. Browser prototype only.
+
+
+## Phase 14 — Production Foundation™
+Defines the commercial architecture separating the public experience, protected customer application and private NEXT25 intelligence service. Adds `production-foundation.html`, a static `customer-portal.html` preview, hosted-payment safety language and `PHASE14-PRODUCTION-FOUNDATION-SPEC.txt`. This remains a static prototype; no live payment, authentication or secure backend is connected.
