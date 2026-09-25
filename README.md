@@ -52,3 +52,7 @@ Adds NEXT25 Intelligence Engine™, interactive Possibility Lab™, explainable 
 
 ## Phase 8 — Deep Discovery & Blueprint Intelligence
 Adds `deep-discovery.html`, a 28-question focused reasoning prototype across seven domains, tension/tradeoff detection, and an automatically generated Blueprint preview. Also adds `PHASE8-DEEP-DISCOVERY-SPEC.txt` and a homepage Phase 8 bridge.
+
+
+## Phase 9 — NEXT25 Possibility Universe™
+Adds a 240-entry structured possibility universe across 12 families and 13 directional fit dimensions; interactive Expected / Adjacent / Overlooked matching; `possibility-universe.json`; and Phase 9 matching architecture specification. Numeric attributes are prototype metadata, not empirical labor-market claims.

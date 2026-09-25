@@ -1,0 +1,29 @@
+NEXT25™ PHASE 9 — POSSIBILITY UNIVERSE & MATCHING ARCHITECTURE
+
+VERSION: pu_v1.0
+INITIAL UNIVERSE: 240 possibilities / 12 families / 13 directional fit dimensions.
+
+FAMILIES
+Expertise & Advisory; Teaching & Knowledge; Ownership & Small Business; Creative & Publishing; Technology-Enabled; Contribution & Community; Experience & Exploration; Portfolio & Flexible Work; People & Service; Making & Skilled Pursuits; Legacy & Family; Research & Curiosity.
+
+FIT DIMENSIONS (1 LOW — 5 HIGH)
+Startup capital; income orientation; autonomy; schedule flexibility; social intensity; creativity; expertise reuse; learning requirement; public visibility; selling requirement; physical intensity; scalability; meaning/contribution.
+
+THREE-TIER DISCOVERY
+1. Expected Fits — closest structural matches.
+2. Adjacent Possibilities — similar fit characteristics from different families.
+3. Overlooked Possibilities — less obvious ideas with underlying structural fit.
+
+IMPORTANT: “overlooked” is not a higher ranking. Novelty is not treated as quality.
+
+PRODUCTION MATCHING
+A production engine should use hard constraints separately from soft preferences. Hard constraints can exclude or heavily penalize possibilities. Soft preferences should influence ranking without automatically excluding. Tension logic should modify confidence and recommend experiments. Free-text responses should generate signals but remain explainable.
+
+ENTRY SCHEMA SHOULD EVOLVE TO INCLUDE
+id, title, family, description, work_mode, income_model, capital_band, autonomy, flexibility, social_intensity, creativity, expertise_reuse, learning_requirement, visibility, selling_requirement, employee_requirement, physical_intensity, geographic_flexibility, scalability, meaning, uncertainty, typical_experiment, evidence_sought, poor_fit_conditions, adjacent_ids, source/research notes.
+
+RESEARCH REQUIREMENT
+Current numeric attributes are prototype design metadata, not empirical claims. Before commercial use, entries that make labor-market, startup-cost, earnings, licensing, credential, regulatory or physical-demand claims must be researched and sourced. The system should distinguish descriptive metadata from verified external facts.
+
+IP / SECURITY
+The public JSON and client-side matcher are appropriate only for prototyping. Proprietary matching weights, complete production library, assessment responses and customer identity should move server-side before broad commercial launch.
