@@ -1,0 +1,48 @@
+NEXT25™ PHASE 12 — ADAPTIVE DEEP DISCOVERY™ + BLUEPRINT QUALITY LAB
+
+OBJECTIVE
+Increase depth without forcing every customer through the same long questionnaire.
+
+ARCHITECTURE
+COMMON FOUNDATION
+Transition / desired change / what to preserve / energy / unwanted work / definition of success / life conditions / uncertainty.
+
+ADAPTIVE BRANCHES
+1 Ownership & Entrepreneurship
+2 Change, Burnout & Role Redesign
+3 Retirement, Engagement & Purpose
+4 Deferred Dream & Possibility Gap™
+5 Intentional Reinvention
+
+A customer can open up to three relevant branches. Production logic should use answer-level reason codes and thresholds rather than only the simple prototype routing rules.
+
+DESIGN PRINCIPLES
+- Branch because an answer makes a question relevant.
+- Explain why a branch opened.
+- Never equate “I want a business” with business ownership being the answer.
+- Separate profession dissatisfaction from employer, intensity, schedule, management and environment.
+- Retirement questions focus on engagement, identity, rhythm and contribution—not an assumption that work is needed.
+- A deferred dream may matter literally or as a proxy for a deeper value.
+- Reinvention can be expansion rather than escape.
+- Preserve user agency; outputs are hypotheses worth exploring.
+
+QUALITY LAB
+Five fictional stress-test personas:
+Michael — burned-out executive
+Susan — financially comfortable retiree seeking engagement
+David — first-time entrepreneur / deferred ownership dream
+Linda — deferred creative dream
+Robert — intentional reinventor
+
+QUALITY TESTS
+1 Recognition — does it sound like this person?
+2 Differentiation — do materially different people receive materially different outputs?
+3 Explainability — can interpretations trace to answers?
+4 Expansion — is there a plausible non-obvious possibility?
+5 Actionability — is there a bounded experiment?
+
+NEXT PRODUCTION STEP
+Merge adaptive routing into the integrated paid Second Life Architect journey, create a normalized signal/reason-code schema, and generate the Blueprint from those signals. Before launch, test many more synthetic profiles plus human pilot users. Do not treat synthetic personas as validation of psychological or labor-market accuracy.
+
+SECURITY / PRIVACY
+Current browser storage is prototype-only. Production responses and proprietary routing/matching logic belong in authenticated secure server-side infrastructure.

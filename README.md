@@ -64,3 +64,7 @@ Adds `matching-engine.html` and `matching-engine.js`: priorities, aversions, har
 
 ## Phase 11 — Integrated Second Life Architect™
 Adds `second-life-journey.html` and `second-life-journey.js`, combining discovery, interpretation, automatic possibility matching, experiment shortlisting, and a nine-section Personalized NEXT25 Blueprint™ in one saved browser journey. See `PHASE11-INTEGRATED-SLA-SPEC.txt`.
+
+
+## Phase 12 — Adaptive Deep Discovery™ + Blueprint Quality Lab
+Adds adaptive branching from a common discovery foundation into five relevant paths, plus a five-persona Quality Lab for testing recognition, differentiation, explainability, expansion and actionability. See `adaptive-discovery.html`, `blueprint-quality-lab.html`, and `PHASE12-ADAPTIVE-DISCOVERY-SPEC.txt`.
