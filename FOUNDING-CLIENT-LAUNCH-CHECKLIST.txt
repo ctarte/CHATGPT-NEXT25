@@ -1,0 +1,77 @@
+NEXT25™ FOUNDING CLIENT LAUNCH CHECKLIST — PHASE 18
+
+RELEASE RULE
+Do not accept a paid Founding Client until every MUST-BEFORE-FIRST-PAYMENT item is complete and tested end to end.
+
+A. OFFER & CUSTOMER UNDERSTANDING
+[READY] Commercial homepage is focused.
+[READY] Second Life Architect™ offer explains outcome.
+[READY] Sample Blueprint demonstrates deliverable.
+[READY] $595 Founding Client price and planned $995 standard price are clear.
+[REFINE] State exact pilot service scope and expected delivery timing.
+[REFINE] Add real customer-support/contact route before launch.
+
+B. LEGAL, CONSENT & COMMERCIAL TERMS — MUST BEFORE FIRST PAYMENT
+[BLOCKER] Final Privacy Notice reviewed for actual production data flow.
+[BLOCKER] Final Terms of Use/service terms reviewed.
+[BLOCKER] Refund/cancellation policy defined and displayed before payment.
+[BLOCKER] Consent language/versioning finalized.
+[BLOCKER] Data retention/export/deletion process documented.
+[BLOCKER] Confirm business/operator identity and customer contact information on commercial documents.
+
+C. PAYMENT — MUST BEFORE FIRST PAYMENT
+[BLOCKER] Select hosted PCI-compliant payment provider.
+[BLOCKER] Create $595 Founding Client product/price.
+[BLOCKER] Hosted checkout tested.
+[BLOCKER] Signed provider payment event verified server-side.
+[BLOCKER] Duplicate event/idempotency handling tested.
+[BLOCKER] Failed/cancelled/refunded/disputed states documented.
+[BLOCKER] Never collect raw card data in NEXT25-built fields.
+
+D. CUSTOMER DATA — MUST BEFORE COLLECTING PAID ASSESSMENTS
+[BLOCKER] Protected identity/access path OR approved secure high-touch intake.
+[BLOCKER] Authorization tested for every customer record.
+[BLOCKER] Assessment data encrypted in transit and at rest.
+[BLOCKER] Sensitive responses excluded from URLs and ordinary analytics.
+[BLOCKER] Backup/recovery tested.
+[BLOCKER] Export/deletion workflow tested.
+[BLOCKER] Lost-access/support procedure tested.
+
+E. BLUEPRINT PRODUCTION — MUST BEFORE FIRST DELIVERY
+[BLOCKER] Private production copy of routing/signal/matching logic.
+[BLOCKER] Assessment version + engine version recorded.
+[BLOCKER] Human QA checklist for every Founding Client Blueprint.
+[BLOCKER] Review possibility diversity and traceability/reason codes.
+[BLOCKER] Review language for unsupported certainty, diagnosis, suitability or outcome claims.
+[BLOCKER] Private delivery method tested.
+[BLOCKER] Final Blueprint PDF/document rendering tested.
+
+F. PILOT OPERATIONS
+[DO NOW] Start with 5–10 Founding Clients.
+[DO NOW] Maintain high-touch onboarding.
+[DO NOW] Human-review every Blueprint.
+[DO NOW] Track support issues and confusing questions.
+[DO NOW] 30/60/90-day experiment follow-up.
+[DO NOW] Ask what felt surprisingly useful, irrelevant, confusing or missing.
+[LATER] Full portal automation.
+[LATER] Complex CRM automation.
+[LATER] Large-scale analytics.
+[LATER] Subscription billing.
+[LATER] Large-scale infrastructure.
+
+G. GO/NO-GO TEST
+1 Complete a full test purchase using a non-customer test account.
+2 Confirm payment event creates correct entitlement.
+3 Complete assessment on one device; confirm secure save/resume.
+4 Generate Blueprint; confirm correct customer and version.
+5 Human-review Blueprint.
+6 Deliver privately; verify only intended customer can access.
+7 Test refund/revoke path.
+8 Test export/deletion path.
+9 Test lost-access recovery.
+10 Record and fix every critical issue before accepting a real $595 payment.
+
+CURRENT PHASE 18 VERDICT
+NO-GO for paid launch today.
+Reason: live payment, protected assessment persistence, final legal/commercial terms and private Blueprint delivery are not yet production-connected.
+The marketing proposition and prototype intelligence are sufficiently developed to proceed to production implementation and a small high-touch pilot.

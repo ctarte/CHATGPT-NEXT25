@@ -1,0 +1,49 @@
+NEXT25™ FOUNDING CLIENT PILOT OPERATIONS — v1.0
+
+COHORT
+Recommended first cohort: 5–10 customers. Do not advertise an invented scarcity number; this is an internal operating target.
+
+SERVICE MODEL
+High-touch pilot. Automate payment/security/data protection where required. Keep onboarding, Blueprint quality review and follow-up human until real usage validates the workflow.
+
+CUSTOMER RECORD
+Maintain only the minimum data needed to provide the service. Separate contact/account information from assessment content where practical.
+
+BLUEPRINT QA — HUMAN REVIEW
+Before delivery confirm:
+- Customer/assessment/version are correct.
+- Summary is traceable to supplied answers.
+- Preferences are not presented as hard constraints unless the customer made them hard constraints.
+- No medical/psychological diagnosis.
+- No inference of financial adequacy or investment suitability.
+- No prediction of business/career success.
+- Strong/Adjacent/Overlooked possibilities are meaningfully different.
+- Each possibility includes why it surfaced, what could make it wrong and an experiment.
+- Any factual market/licensing/earnings claim is separately researched and sourced or omitted.
+- Tone preserves agency: may, suggests, worth exploring, investigate.
+- 90-Day Experiments are bounded and realistic.
+
+FOLLOW-UP
+Suggested pilot touchpoints:
+Onboarding: confirm access and expectations.
+After assessment: confirm completion and flag technical issues.
+Blueprint delivery: orient customer to how to read it.
+~30 days: what was investigated or tested?
+~60 days: what evidence is emerging?
+~90 days: what would they repeat, stop, modify or explore next?
+
+PILOT LEARNING QUESTIONS
+What felt most personally accurate?
+What surprised you?
+What felt generic?
+Which possibility would you never have considered?
+Which possibility was clearly wrong, and why?
+Was the reason a possibility surfaced understandable?
+Did the Blueprint make the next step easier?
+What did you wish NEXT25 had asked?
+Would you describe the experience as worth the price? Why or why not?
+Do not turn pilot feedback into public testimonials without explicit permission and appropriate review.
+
+INCIDENT / SUPPORT MINIMUM
+Have a named support channel before launch.
+Document who handles: payment failure, refund, lost access, incorrect customer document, deletion/export request, suspected unauthorized access, and incorrect Blueprint.

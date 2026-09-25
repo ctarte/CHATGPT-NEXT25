@@ -1,0 +1,29 @@
+NEXT25™ PHASE 18 — FOUNDING CLIENT PILOT READINESS™
+
+PURPOSE
+Freeze major public-site redesign and determine exactly what separates the current prototype from a safe, coherent first paid Founding Client experience.
+
+AUDIT RESULT
+Commercial proposition: sufficiently developed for pilot preparation.
+Paid launch: NO-GO today.
+
+FIVE LAUNCH BLOCKERS
+1 Final legal/commercial terms and consent for the actual production flow.
+2 Hosted payment with server-side verification and entitlement handling.
+3 Protected customer assessment/data path.
+4 Private Blueprint generation, human QA and private delivery.
+5 Operational support, recovery and incident procedures.
+
+PILOT STRATEGY
+Start with a small 5–10 customer high-touch cohort. This is an internal operating target, not public scarcity. Automate safety-critical infrastructure; keep onboarding, Blueprint QA and follow-up human.
+
+KEY PRINCIPLE
+Do not build for 10,000 customers before learning how to serve the first 10 exceptionally well.
+
+PHASE 18 ARTIFACTS
+pilot-readiness.html
+FOUNDING-CLIENT-LAUNCH-CHECKLIST.txt
+FOUNDING-CLIENT-PILOT-RUNBOOK.txt
+
+IMPORTANT
+The current GitHub Pages assessment remains browser-only and is not an appropriate protected data system for paying customers. Do not accept raw payment card data or sensitive paid-customer assessment data through the static prototype.
