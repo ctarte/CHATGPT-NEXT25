@@ -1,0 +1,41 @@
+NEXT25™ PHASE 8 — DEEP DISCOVERY & BLUEPRINT INTELLIGENCE
+
+OBJECTIVE
+Move from surface preferences to explainable interpretation. The system should distinguish motivations, sources of depletion, desired identity, lifestyle requirements, constraints, uncertainty tolerance and willingness to experiment.
+
+DEEP DISCOVERY DOMAINS
+1. What Is Changing? — retirement, career change, business, burnout, deferred ambition, intentionality.
+2. Energy, Not Just Skill — energizing activities versus competencies the user no longer wants to repeat.
+3. Business: Motive vs. Model — ownership, autonomy, income, asset creation, schedule control, idea expression.
+4. Deferred Dream — literal idea versus underlying value represented by the dream.
+5. The Life It Must Support — schedule, travel, geography, family, income, risk, pace, privacy.
+6. Identity & Expertise — preserve, reshape, selectively use or abandon former identity and knowledge.
+7. Experiment & Activation — preferred test size, reversibility, evidence and activation barriers.
+
+CONTRADICTION / TENSION DETECTION
+Do not call a tension a flaw. Two legitimate preferences may compete.
+Examples:
+- High autonomy + very low uncertainty tolerance.
+- Strong ownership desire + dislike of selling, financial risk and responsibility.
+- High income requirement + low commitment / low visibility.
+- Desire for geographic freedom + place-bound business model.
+- Desire to leave expertise + income expectations dependent on that expertise.
+- Desire for a quiet life + highly social/public opportunity.
+- Strong creative desire + need for predictable structure.
+- Desire to contribute + aversion to people-facing activity.
+
+BLUEPRINT OUTPUT
+1. Current Chapter
+2. What We Noticed
+3. Energy & Motivation Pattern
+4. Tensions & Tradeoffs
+5. Possibilities Worth Exploring
+6. Possibility Gap™
+7. 90-Day Experiments™
+8. Questions Still Worth Answering
+
+EXPLAINABILITY STANDARD
+Every important inference should be traceable to specific answer patterns. Use language such as “may,” “appears,” “suggests,” and “worth exploring.” Avoid diagnostic certainty.
+
+PRODUCTION NOTE
+The browser prototype demonstrates logic only. Production assessment answers, proprietary scoring, matching rules, generated Blueprint content and customer identity should move to authenticated server-side infrastructure before commercial use.

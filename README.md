@@ -48,3 +48,7 @@ Homepage now explicitly includes retirement, career change, first-time business 
 
 ## Phase 7
 Adds NEXT25 Intelligence Engine™, interactive Possibility Lab™, explainable matching prototype, Possibility Library foundation, Intelligence Engine specification, and larger small typography. Production customer data and proprietary matching should eventually move server-side.
+
+
+## Phase 8 — Deep Discovery & Blueprint Intelligence
+Adds `deep-discovery.html`, a 28-question focused reasoning prototype across seven domains, tension/tradeoff detection, and an automatically generated Blueprint preview. Also adds `PHASE8-DEEP-DISCOVERY-SPEC.txt` and a homepage Phase 8 bridge.
