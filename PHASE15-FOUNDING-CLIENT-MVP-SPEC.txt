@@ -1,0 +1,40 @@
+NEXT25™ PHASE 15 — FOUNDING CLIENT MVP™
+
+OBJECTIVE
+Package the intelligence created in Phases 1–14 into a simple customer-facing product that a prospect can understand and value.
+
+MAJOR DECISION: REDUCE CLUTTER
+The Phase 15 homepage intentionally removes development-stage concepts from primary navigation. Customer-facing navigation is:
+Home / How It Works / Second Life Architect™ / Sample Blueprint / About NEXT25 / Founding Client.
+
+Development pages remain in the repository for QA and product development but should not be treated as the commercial navigation model.
+
+CUSTOMER PROMISE
+Second Life Architect™ helps a person discover what the next chapter of life needs to contain, explore possibilities worth investigating, test attractive directions, and organize the result in a Personalized NEXT25 Blueprint™.
+
+FOUNDING CLIENT DELIVERABLE
+1 Next-Chapter Profile
+2 What NEXT25 Noticed
+3 Tensions & Tradeoffs
+4 Nine Possibilities Worth Exploring
+5 Possibility Gap™
+6 90-Day Experiments™
+7 25 for 25™
+8 Questions Still Worth Answering
+9 Next 90 Days
+
+PRICE
+Founding Client: $595
+Planned regular price: $995
+Do not imply scarcity with an invented number or deadline.
+
+SAMPLE BLUEPRINT
+Uses fictional Alex Morgan. It demonstrates structure and editorial quality but does not claim validated fit, market feasibility, earnings, psychological accuracy or predicted success.
+
+CLUTTER REDUCTION ROADMAP
+Phase 15: simplify homepage and SLA sales navigation.
+Phase 16 candidate: full information-architecture cleanup, move development pages to an internal/development index, remove obsolete public CTAs, unify footer/legal, mobile navigation and visual hierarchy.
+Before commercial launch: public site should expose only pages needed to understand, trust, evaluate and purchase the product.
+
+PROTOTYPE BOUNDARY
+No live payment or secure customer account is connected. Do not collect sensitive assessment information from commercial customers until Phase 14 production gates are implemented.

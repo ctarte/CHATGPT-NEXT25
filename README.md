@@ -80,3 +80,7 @@ Adds adaptive branching from a common discovery foundation into five relevant pa
 
 ## Phase 14 — Production Foundation™
 Defines the commercial architecture separating the public experience, protected customer application and private NEXT25 intelligence service. Adds `production-foundation.html`, a static `customer-portal.html` preview, hosted-payment safety language and `PHASE14-PRODUCTION-FOUNDATION-SPEC.txt`. This remains a static prototype; no live payment, authentication or secure backend is connected.
+
+
+## Phase 15 — Founding Client MVP™
+Simplifies the public homepage/navigation, refines the Second Life Architect™ sales page, adds a realistic premium `sample-blueprint.html`, and reframes the product around a clear $595 Founding Client deliverable. Development-stage pages remain available in the repository but are intentionally removed from primary customer navigation.
