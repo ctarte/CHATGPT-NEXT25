@@ -100,3 +100,7 @@ Audits the full first-customer journey, identifies five paid-launch blockers, ad
 
 ## Phase 19 — Founding Client Transaction & Secure Intake™
 Selects a production pilot architecture (Next.js/Vercel + Supabase + Stripe Checkout + Resend), defines payment/data/API security contracts, adds an initial RLS schema scaffold, formalizes the Opportunity Brief™ depth standard for career/business recommendations, and establishes a continuing color/photography completion track. No live secrets or payment credentials are included.
+
+
+## Phase 20 — Production Application Foundation™
+Adds a real Next.js production-app scaffold, server-only secret boundary, Stripe Checkout/webhook scaffolding, Supabase RLS migration scaffolds, customer dashboard/PDF delivery contract, and standards for income research plus finding customers/employers. The final Blueprint is designed to be privately downloadable as a branded PDF after human QA. Visual development continues with expanded color and editorial imagery.

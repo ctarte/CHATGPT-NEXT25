@@ -1,0 +1,1 @@
+import 'server-only'; function need(n:string){const v=process.env[n];if(!v)throw new Error(`Missing server environment variable: ${n}`);return v} export const serverEnv=()=>({stripeSecret:need('STRIPE_SECRET_KEY'),stripeWebhook:need('STRIPE_WEBHOOK_SECRET'),priceId:need('STRIPE_FOUNDING_CLIENT_PRICE_ID'),supabaseSecret:need('SUPABASE_SECRET_KEY')});
