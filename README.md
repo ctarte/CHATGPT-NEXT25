@@ -120,3 +120,7 @@ Adds staged/versioned orchestration from frozen assessment through signal extrac
 
 ## Phase 24 — NEXT25 Intelligence Studio™
 Adds the private reviewer operating model: staff roles, case queue, evidence/research review, QA decisions, release checks, private data scaffolds and reviewer runbook. Also formally preserves the NEXT25 Professional Referral Network™ roadmap for CPAs, attorneys, financial/wealth advisors and other appropriate professionals as a later secondary public path.
+
+
+## Phase 25 — Production Operations & Founding Client Launch System™
+Defines the first real customer operating chain, 14 launch gates, lifecycle/event controls, incident handling, first-customer checklist, Founding Client service standard, 5–10-household pilot plan, 30/60/90 follow-up and the preserved professional-referral channel. Current verdict remains NO-GO for live payment until provider accounts and production controls are configured and tested.

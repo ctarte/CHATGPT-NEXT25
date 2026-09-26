@@ -1,19 +1,18 @@
-# NEXT25 Intelligence Studio™
-The Studio is the private operating console for producing a premium NEXT25 Blueprint.
+# NEXT25 Phase 24 — Intelligence Studio™ & Human Review Workspace
+Phase 24 defines the private operating console behind the customer Blueprint.
 
-Queue -> Case -> Evidence -> Possibilities -> Deep Briefs -> Research -> QA -> Approve -> Render -> Release.
+Studio workflow: Queue -> Case -> Evidence -> Possibilities -> Deep Briefs -> Research -> QA -> Approve -> Render -> Release.
 
-A reviewer can:
-- inspect the frozen assessment and answer evidence;
-- inspect work-style signals with confidence/reason codes;
-- compare Strong / Adjacent / Overlooked possibilities;
-- see fit AND friction before accepting an opportunity;
-- edit customer-facing narrative without changing the immutable evidence;
-- request bounded additional research;
-- inspect claim/source/date/limitation records;
-- run the Blueprint Depth Standard™ and QA rubric;
-- approve, request revision, block, or request research;
-- render only an approved version;
-- release only after entitlement, consent, checksum/private-storage and blocker checks.
+Adds:
+- reviewer/researcher/admin role and permission contracts;
+- fictional Michael Hale Studio case;
+- release checklist separating approval from customer release;
+- private research_tasks, studio_notes and release_events migration;
+- queue/case/research/decision API scaffolds;
+- reviewer operations runbook;
+- visual Studio demonstration;
+- Professional Referral Network™ roadmap for CPAs, attorneys, financial/wealth advisors, succession professionals and selected transition coaches.
 
-Production rules: separate staff auth; least privilege; server-side authorization; audit every view/edit/decision/release; no secrets in browser; immutable evidence/version history; customer data minimized in queue views.
+The professional referral path is intentionally planned as a secondary public navigation experience after the core paid customer workflow is tested. It was removed from primary navigation to reduce clutter, not abandoned.
+
+Production still requires staff authentication, server authorization/RLS implementation, durable workers, interactive editing/reviewer UI, research orchestration, audit logging and private PDF release integration.
