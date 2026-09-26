@@ -1,0 +1,1 @@
+// Internal server/reviewer scaffold. Map explicit answers to directional work-style signals and retain reason codes/evidence. Never infer clinical or mental-health traits. export async function POST(){return Response.json({status:'not_configured',modelVersion:'pws-1.0'},{status:501})}

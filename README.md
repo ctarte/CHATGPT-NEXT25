@@ -108,3 +108,7 @@ Adds a real Next.js production-app scaffold, server-only secret boundary, Stripe
 
 ## Phase 21 — Blueprint Intelligence & Report Engine™
 Formalizes a 14-dimension Personality & Work-Style Profile™, friction/redesign logic, structured Blueprint schema, deep Opportunity Brief contracts, research/source metadata, income and market-access context, and report compilation. Personality is directional and evidence-based—not a diagnosis or simplistic type. Visual development continues with sage/slate/clay/gold and editorial photography.
+
+
+## Phase 22 — Personalized Blueprint PDF & Research Engine™
+Adds a complete fictional end-to-end Blueprint demonstration, current evidence pack, deep Opportunity Briefs, income and customer-market context, research governance, PDF quality/render contracts and a real downloadable sample PDF deliverable. Production automation remains intentionally gated behind human QA and private infrastructure.
