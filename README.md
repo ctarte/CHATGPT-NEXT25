@@ -112,3 +112,7 @@ Formalizes a 14-dimension Personality & Work-Style Profile™, friction/redesign
 
 ## Phase 22 — Personalized Blueprint PDF & Research Engine™
 Adds a complete fictional end-to-end Blueprint demonstration, current evidence pack, deep Opportunity Briefs, income and customer-market context, research governance, PDF quality/render contracts and a real downloadable sample PDF deliverable. Production automation remains intentionally gated behind human QA and private infrastructure.
+
+
+## Phase 23 — Assessment-to-Blueprint Generation Pipeline™
+Adds staged/versioned orchestration from frozen assessment through signal extraction, work style, matching, research, deep briefs, QA, approval, PDF render and private delivery. Includes Blueprint Depth Standard™, human QA rubric, reason-code traceability, pipeline DB/API scaffolds and visual-story rules. Production workers remain intentionally unconnected until the private orchestration/reviewer layer is implemented.
