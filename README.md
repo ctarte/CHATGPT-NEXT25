@@ -116,3 +116,7 @@ Adds a complete fictional end-to-end Blueprint demonstration, current evidence p
 
 ## Phase 23 — Assessment-to-Blueprint Generation Pipeline™
 Adds staged/versioned orchestration from frozen assessment through signal extraction, work style, matching, research, deep briefs, QA, approval, PDF render and private delivery. Includes Blueprint Depth Standard™, human QA rubric, reason-code traceability, pipeline DB/API scaffolds and visual-story rules. Production workers remain intentionally unconnected until the private orchestration/reviewer layer is implemented.
+
+
+## Phase 24 — NEXT25 Intelligence Studio™
+Adds the private reviewer operating model: staff roles, case queue, evidence/research review, QA decisions, release checks, private data scaffolds and reviewer runbook. Also formally preserves the NEXT25 Professional Referral Network™ roadmap for CPAs, attorneys, financial/wealth advisors and other appropriate professionals as a later secondary public path.
