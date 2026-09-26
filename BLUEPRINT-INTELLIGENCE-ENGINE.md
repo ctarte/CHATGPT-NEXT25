@@ -1,0 +1,4 @@
+# Blueprint Intelligence & Report Engine™
+Freeze assessment -> extract evidence-backed signals -> build Personality & Work-Style Profile -> combine with interests/energy/experience/skills/values/lifestyle/income/time/constraints/deferred aspirations -> private matching -> 3 Strong + 3 Adjacent + 3 Overlooked -> select 2–3 for deep Opportunity Briefs -> current implementation research -> income context -> customer/employer acquisition map -> first-30-day actions -> 90-Day Experiments -> structured Blueprint -> human QA -> approval -> branded report -> private PDF download.
+
+Quality test: customer understands WHY a possibility surfaced, WHAT it entails, WHAT it could pay with evidence/assumptions, WHO might hire/buy, HOW to start, WHAT might make it wrong, and HOW to test before major commitment.

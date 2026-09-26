@@ -104,3 +104,7 @@ Selects a production pilot architecture (Next.js/Vercel + Supabase + Stripe Chec
 
 ## Phase 20 — Production Application Foundation™
 Adds a real Next.js production-app scaffold, server-only secret boundary, Stripe Checkout/webhook scaffolding, Supabase RLS migration scaffolds, customer dashboard/PDF delivery contract, and standards for income research plus finding customers/employers. The final Blueprint is designed to be privately downloadable as a branded PDF after human QA. Visual development continues with expanded color and editorial imagery.
+
+
+## Phase 21 — Blueprint Intelligence & Report Engine™
+Formalizes a 14-dimension Personality & Work-Style Profile™, friction/redesign logic, structured Blueprint schema, deep Opportunity Brief contracts, research/source metadata, income and market-access context, and report compilation. Personality is directional and evidence-based—not a diagnosis or simplistic type. Visual development continues with sage/slate/clay/gold and editorial photography.
