@@ -96,3 +96,7 @@ Adds a restrained editorial image asset, refined NEXT25 visual system, active na
 
 ## Phase 18 — Founding Client Pilot Readiness™
 Audits the full first-customer journey, identifies five paid-launch blockers, adds a launch checklist and high-touch pilot runbook, and freezes major public-site redesign in favor of production safety and operations. Current release decision: NO-GO for accepting payment until the documented blockers are resolved.
+
+
+## Phase 19 — Founding Client Transaction & Secure Intake™
+Selects a production pilot architecture (Next.js/Vercel + Supabase + Stripe Checkout + Resend), defines payment/data/API security contracts, adds an initial RLS schema scaffold, formalizes the Opportunity Brief™ depth standard for career/business recommendations, and establishes a continuing color/photography completion track. No live secrets or payment credentials are included.
