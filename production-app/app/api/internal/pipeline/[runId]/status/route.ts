@@ -1,0 +1,1 @@
+// Server/reviewer status. Never expose proprietary weights to customer/browser. export async function GET(){return Response.json({status:'not_configured'},{status:501})}

@@ -1,0 +1,40 @@
+{
+  "id": "fictional-michael-hale",
+  "name": "Michael Hale",
+  "fictional": true,
+  "age": 61,
+  "context": "Former operations and strategy executive considering a transition after a long corporate career.",
+  "goals": [
+    "Meaningful intellectual work without returning to a 55-hour executive role",
+    "Target roughly $60,000\u2013$120,000 of optional annual earned income",
+    "Protect travel and family time",
+    "Use accumulated judgment and mentoring ability",
+    "Avoid building a large staff"
+  ],
+  "workStyle": {
+    "autonomy": "high",
+    "analytical_depth": "high",
+    "teaching_mentoring": "high",
+    "social_energy": "moderate",
+    "selling": "low-to-moderate",
+    "visibility": "moderate",
+    "structure": "moderate",
+    "ambiguity": "moderate",
+    "leadership": "moderate",
+    "pace": "deliberate"
+  },
+  "constraints": [
+    "Prefer 15\u201325 hours/week",
+    "No desire for large capital investment",
+    "Limited appetite for cold prospecting",
+    "Travel should be selective"
+  ],
+  "interests": [
+    "strategy",
+    "operational improvement",
+    "mentoring leaders",
+    "teaching",
+    "research",
+    "small business"
+  ]
+}

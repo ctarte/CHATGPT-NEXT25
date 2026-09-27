@@ -1,0 +1,39 @@
+{
+  "id": "synthetic-elena-brooks-26",
+  "fictional": true,
+  "name": "Elena Brooks",
+  "age": 59,
+  "current": "Regional healthcare operations executive considering a transition within 12\u201318 months.",
+  "goals": [
+    "More control of time",
+    "Meaningful earned income without another 50-hour role",
+    "Use leadership and operational judgment",
+    "Make room for travel, family and creative interests"
+  ],
+  "incomeObjective": "$50,000\u2013$100,000 optional annual earned income; exploratory, not a forecast.",
+  "constraints": [
+    "18\u201324 hours/week preferred",
+    "No large capital commitment",
+    "No constant travel",
+    "Low appetite for cold prospecting",
+    "Does not want to manage a large staff"
+  ],
+  "workstyle": {
+    "autonomy": "high",
+    "analytical_depth": "high",
+    "teaching_mentoring": "high",
+    "social_energy": "moderate",
+    "selling_comfort": "low-moderate",
+    "visibility": "moderate",
+    "structure": "moderate",
+    "novelty": "moderate-high",
+    "risk_uncertainty": "moderate"
+  },
+  "deliberateComplications": [
+    "She says she wants autonomy but also misses being part of a capable team.",
+    "She wants meaningful income but strongly dislikes cold selling.",
+    "She is attracted to a small business but does not want employees or large capital.",
+    "One assessment answer about public speaking is missing.",
+    "She describes both burnout with bureaucracy and continued energy for the underlying work."
+  ]
+}

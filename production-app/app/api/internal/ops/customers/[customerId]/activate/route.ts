@@ -1,0 +1,1 @@
+// Server/admin only. Requires verified paid order + current consent; grant entitlement and enqueue welcome exactly once. export async function POST(){return Response.json({status:'not_configured'},{status:501})}

@@ -1,0 +1,40 @@
+{
+  "asOf": "2026-09-26",
+  "sources": [
+    {
+      "id": "bls-management-analysts",
+      "publisher": "U.S. Bureau of Labor Statistics",
+      "title": "Management Analysts \u2014 Occupational Outlook Handbook",
+      "url": "https://www.bls.gov/ooh/business-and-financial/management-analysts.htm",
+      "facts": [
+        "Median annual wage $101,860 in May 2025",
+        "Lowest 10% below $60,640; highest 10% above $171,640",
+        "Projected employment growth 10% from 2025\u20132035",
+        "Self-employed analysts are typically paid by hour or project"
+      ],
+      "use": "Career-income context only; not a forecast of fractional consulting income."
+    },
+    {
+      "id": "sba-market-research",
+      "publisher": "U.S. Small Business Administration",
+      "title": "Plan your business \u2014 Market research and competitive analysis",
+      "url": "https://www.sba.gov/counseling/plan-your-business/",
+      "facts": [
+        "Market research can assess demand, market size, location, saturation and pricing",
+        "Direct research methods include surveys, questionnaires, focus groups and in-depth interviews"
+      ],
+      "use": "Customer-discovery and validation framework."
+    },
+    {
+      "id": "score-mentoring",
+      "publisher": "SCORE",
+      "title": "Business Mentoring, Resources & Support",
+      "url": "https://www.score.org/score-faqs-business-mentoring-resources-support/",
+      "facts": [
+        "SCORE mentors advise on planning, sales/marketing, operations, technology and starting/growing businesses",
+        "Mentors are volunteers with business experience"
+      ],
+      "use": "Optional external implementation resource."
+    }
+  ]
+}

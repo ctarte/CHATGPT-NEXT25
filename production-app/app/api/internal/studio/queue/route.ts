@@ -1,0 +1,1 @@
+// Private staff queue. Authenticate role and return minimum case metadata only. export async function GET(){return Response.json({status:'not_configured',message:'Connect staff auth and pipeline_runs.'},{status:501})}

@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "NEXT25 Blueprint Content v1",
+  "type": "object",
+  "required": [
+    "blueprintVersion",
+    "customerDisplayName",
+    "executiveNarrative",
+    "workStyleProfile",
+    "possibilities",
+    "opportunityBriefs",
+    "next90Days",
+    "sources"
+  ],
+  "properties": {
+    "blueprintVersion": {
+      "type": "string"
+    },
+    "customerDisplayName": {
+      "type": "string"
+    },
+    "executiveNarrative": {
+      "type": "string"
+    },
+    "whatWeNoticed": {
+      "type": "array"
+    },
+    "workStyleProfile": {
+      "type": "object"
+    },
+    "tensions": {
+      "type": "array"
+    },
+    "possibilities": {
+      "type": "array",
+      "minItems": 9,
+      "maxItems": 9
+    },
+    "opportunityBriefs": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 3
+    },
+    "possibilityGap": {
+      "type": "array"
+    },
+    "experiments": {
+      "type": "array"
+    },
+    "twentyFiveFor25": {
+      "type": "array"
+    },
+    "next90Days": {
+      "type": "array"
+    },
+    "sources": {
+      "type": "array"
+    },
+    "boundaries": {
+      "type": "array"
+    }
+  }
+}

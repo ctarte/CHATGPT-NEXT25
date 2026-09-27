@@ -1,0 +1,52 @@
+{
+  "version": "refinement-26A.0",
+  "customerFacingReactions": [
+    {
+      "id": "explore_more",
+      "label": "Explore More",
+      "meaning": "This feels worth deeper investigation."
+    },
+    {
+      "id": "interesting_unsure",
+      "label": "Interesting, But I'm Not Sure",
+      "meaning": "Keep it in play and help me understand or test it."
+    },
+    {
+      "id": "like_parts",
+      "label": "I Like Parts of This",
+      "meaning": "Capture which elements attract me and redesign around them."
+    },
+    {
+      "id": "not_for_me",
+      "label": "Not For Me",
+      "meaning": "Ask why and reduce similar possibilities."
+    },
+    {
+      "id": "absolutely_not",
+      "label": "Absolutely Not",
+      "meaning": "Treat the stated reason as important evidence; do not assume the title alone is the problem."
+    },
+    {
+      "id": "my_idea",
+      "label": "This Gives Me Another Idea",
+      "meaning": "Capture and analyze the customer's own possibility."
+    },
+    {
+      "id": "already_considered",
+      "label": "I Already Considered This",
+      "meaning": "Ask what happened, what was attractive and what stopped it."
+    },
+    {
+      "id": "show_me_reality",
+      "label": "Show Me What This Actually Looks Like",
+      "meaning": "Expand work reality, typical week, buyers/employers, economics and first steps."
+    }
+  ],
+  "principles": [
+    "Reaction is evidence, not disobedience.",
+    "Never defend a recommendation merely because the matcher ranked it highly.",
+    "Separate rejection of a title from rejection of its underlying attributes.",
+    "One negative reaction must not automatically become a permanent hard constraint.",
+    "Customer agency overrides ranking; matching is exploration support, not prescription."
+  ]
+}

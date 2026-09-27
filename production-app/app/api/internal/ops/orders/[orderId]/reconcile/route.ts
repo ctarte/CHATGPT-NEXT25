@@ -1,0 +1,1 @@
+// Admin-only exception path. Re-read authoritative provider event/payment state; idempotently repair order/entitlement. export async function POST(){return Response.json({status:'not_configured'},{status:501})}

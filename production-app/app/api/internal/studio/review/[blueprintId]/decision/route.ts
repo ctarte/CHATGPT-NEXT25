@@ -1,0 +1,1 @@
+// Reviewer decision endpoint. Validate role, optimistic version, findings and decision; append immutable QA/audit record. Approval does not itself release. export async function POST(){return Response.json({status:'not_configured',message:'Connect QA decision transaction.'},{status:501})}

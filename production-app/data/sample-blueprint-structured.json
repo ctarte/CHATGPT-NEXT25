@@ -1,0 +1,102 @@
+{
+  "blueprintVersion": "21.0-demo",
+  "customerDisplayName": "Alex Morgan (Fictional)",
+  "executiveNarrative": "Alex appears to want continued intellectual engagement without recreating a full-time executive life.",
+  "whatWeNoticed": [
+    "Strategic problem-solving remains energizing.",
+    "Schedule control matters."
+  ],
+  "workStyleProfile": {
+    "modelVersion": "pws-1.0",
+    "signals": [
+      {
+        "id": "autonomy",
+        "value": 0.8,
+        "confidence": 0.8,
+        "evidence": [
+          "Prefers control over calendar."
+        ]
+      }
+    ],
+    "note": "Directional, not diagnostic."
+  },
+  "tensions": [
+    "Meaningful expertise use vs time freedom."
+  ],
+  "possibilities": [
+    {
+      "title": "Fractional Industry Adviser",
+      "level": "Strong"
+    },
+    {
+      "title": "Board Adviser",
+      "level": "Strong"
+    },
+    {
+      "title": "Private Workshop Practice",
+      "level": "Strong"
+    },
+    {
+      "title": "Mentor-in-Residence",
+      "level": "Adjacent"
+    },
+    {
+      "title": "Niche Research Briefing",
+      "level": "Adjacent"
+    },
+    {
+      "title": "Advisory + Teaching Portfolio",
+      "level": "Adjacent"
+    },
+    {
+      "title": "Oral History Producer",
+      "level": "Overlooked"
+    },
+    {
+      "title": "Learning Sabbatical",
+      "level": "Overlooked"
+    },
+    {
+      "title": "Heritage Journey Creator",
+      "level": "Overlooked"
+    }
+  ],
+  "opportunityBriefs": [
+    {
+      "title": "Fractional Industry Adviser",
+      "incomeContext": {
+        "status": "research_required"
+      },
+      "marketAccess": {
+        "status": "research_required"
+      }
+    },
+    {
+      "title": "Private Workshop Practice",
+      "incomeContext": {
+        "status": "research_required"
+      },
+      "marketAccess": {
+        "status": "research_required"
+      }
+    }
+  ],
+  "possibilityGap": [
+    "Portfolio may fit better than a replacement career."
+  ],
+  "experiments": [
+    {
+      "title": "Five buyer interviews"
+    }
+  ],
+  "twentyFiveFor25": [
+    "Teach a small group once"
+  ],
+  "next90Days": [
+    "Test two opportunity shapes."
+  ],
+  "sources": [],
+  "boundaries": [
+    "Educational life-planning guidance; not medical, psychological, legal, tax or investment advice."
+  ]
+}

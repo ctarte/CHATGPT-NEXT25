@@ -1,0 +1,1 @@
+// Server/reviewer only. Freeze completed assessment; create immutable version references and pipeline_run at assessment_frozen. Idempotency key required in production. export async function POST(){return Response.json({status:'not_configured',next:'Connect auth, DB transaction and assessment freeze.'},{status:501})}

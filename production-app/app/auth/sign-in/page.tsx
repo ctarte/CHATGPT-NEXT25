@@ -1,0 +1,1 @@
+export default function SignIn(){return <main className="cardpage"><section><p className="eyebrow">CUSTOMER ACCESS</p><h1>Welcome to My NEXT25.</h1><p>Connect Supabase Auth before launch; do not simulate authentication in production.</p></section></main>}

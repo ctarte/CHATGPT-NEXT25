@@ -1,0 +1,1 @@
+// Admin/reviewer release. Require exact approved version, entitlement, consent, checksum, private path, support route and zero blockers. export async function POST(){return Response.json({status:'not_configured'},{status:501})}

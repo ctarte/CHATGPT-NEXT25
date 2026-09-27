@@ -1,0 +1,104 @@
+{
+  "version": "25.0",
+  "commercialStatus": "NO-GO until blockers/not_configured gates cleared",
+  "gates": [
+    {
+      "id": "legal",
+      "name": "Final terms, privacy, refund/cancellation and service scope",
+      "status": "blocker",
+      "owner": "Founder + counsel",
+      "nextAction": "Finalize customer-facing legal/commercial terms before accepting payment."
+    },
+    {
+      "id": "payment",
+      "name": "Hosted payment provider configured",
+      "status": "not_configured",
+      "owner": "Operations",
+      "nextAction": "Create production Stripe product/price and hosted Checkout."
+    },
+    {
+      "id": "webhook",
+      "name": "Signed payment webhook + idempotency tested",
+      "status": "not_configured",
+      "owner": "Engineering",
+      "nextAction": "Configure endpoint secret and test paid/refund/dispute events."
+    },
+    {
+      "id": "auth",
+      "name": "Customer and staff authentication",
+      "status": "not_configured",
+      "owner": "Engineering",
+      "nextAction": "Configure managed auth and separate staff roles."
+    },
+    {
+      "id": "persistence",
+      "name": "Protected database + RLS",
+      "status": "not_configured",
+      "owner": "Engineering",
+      "nextAction": "Apply migrations and execute two-customer isolation tests."
+    },
+    {
+      "id": "intake",
+      "name": "Secure assessment save/resume",
+      "status": "not_configured",
+      "owner": "Product",
+      "nextAction": "Connect adaptive discovery to authenticated persistence."
+    },
+    {
+      "id": "research",
+      "name": "Research/evidence workflow",
+      "status": "warning",
+      "owner": "Research reviewer",
+      "nextAction": "Connect Phase 22/23 evidence contracts to production tasks."
+    },
+    {
+      "id": "qa",
+      "name": "Human QA workspace",
+      "status": "warning",
+      "owner": "Reviewer",
+      "nextAction": "Connect Phase 24 Studio decisions and immutable approval versions."
+    },
+    {
+      "id": "pdf",
+      "name": "Server-side branded PDF renderer",
+      "status": "not_configured",
+      "owner": "Engineering",
+      "nextAction": "Implement renderer, checksum and private storage."
+    },
+    {
+      "id": "delivery",
+      "name": "Private authenticated Blueprint delivery",
+      "status": "not_configured",
+      "owner": "Engineering",
+      "nextAction": "Signed/authorized download with entitlement checks."
+    },
+    {
+      "id": "support",
+      "name": "Customer support/contact route",
+      "status": "blocker",
+      "owner": "Operations",
+      "nextAction": "Choose support email/inbox and response standard."
+    },
+    {
+      "id": "privacy",
+      "name": "Consent, export and deletion operations",
+      "status": "not_configured",
+      "owner": "Operations + engineering",
+      "nextAction": "Connect consent versions and tested export/deletion workflow."
+    },
+    {
+      "id": "backup",
+      "name": "Backup/restore tested",
+      "status": "not_configured",
+      "owner": "Engineering",
+      "nextAction": "Document recovery target and complete restore test."
+    },
+    {
+      "id": "monitoring",
+      "name": "Error/payment/delivery monitoring",
+      "status": "not_configured",
+      "owner": "Operations + engineering",
+      "nextAction": "Configure alerts and incident ownership."
+    }
+  ]
+}

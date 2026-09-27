@@ -1,0 +1,17 @@
+{
+  "startHere": "Hosting",
+  "reason": "A staging Next.js runtime is the anchor where server-side secrets and provider adapters will live.",
+  "sequence": [
+    "Create staging hosting project",
+    "Confirm staging URL",
+    "Create staging database/auth/storage",
+    "Apply migrations and RLS tests",
+    "Connect Stripe test mode",
+    "Connect transactional email",
+    "Connect private PDF storage",
+    "Run Elena synthetic journey",
+    "Configure monitoring",
+    "Only then prepare production/domain"
+  ],
+  "currentCommercialStatus": "NO-GO for real payments/customers until Phase 25 launch gates have evidence-backed PASS."
+}

@@ -1,0 +1,1 @@
+// Reviewer-only scaffold: gather current authoritative evidence for income, market, licensing and implementation claims; persist claim->source mapping and research date. export async function POST(){return Response.json({status:'not_configured',message:'Connect production research service and reviewer workflow.'},{status:501})}

@@ -1,0 +1,145 @@
+{
+  "version": "signals-23.0",
+  "signals": [
+    {
+      "id": "autonomy",
+      "questions": [
+        "work_control",
+        "schedule_control",
+        "decision_control"
+      ]
+    },
+    {
+      "id": "social_energy",
+      "questions": [
+        "interaction_energy",
+        "solo_time",
+        "group_energy"
+      ]
+    },
+    {
+      "id": "selling_comfort",
+      "questions": [
+        "prospecting",
+        "persuasion",
+        "networking"
+      ]
+    },
+    {
+      "id": "teaching_mentoring",
+      "questions": [
+        "teaching_energy",
+        "mentoring_interest"
+      ]
+    },
+    {
+      "id": "analytical_depth",
+      "questions": [
+        "research_energy",
+        "complex_problem_solving"
+      ]
+    },
+    {
+      "id": "creative_expression",
+      "questions": [
+        "creating",
+        "writing_making",
+        "originality"
+      ]
+    },
+    {
+      "id": "structure",
+      "questions": [
+        "predictability",
+        "routine",
+        "planning"
+      ]
+    },
+    {
+      "id": "novelty",
+      "questions": [
+        "variety",
+        "new_experiences",
+        "learning"
+      ]
+    },
+    {
+      "id": "visibility",
+      "questions": [
+        "speaking",
+        "public_profile",
+        "audience"
+      ]
+    },
+    {
+      "id": "leadership",
+      "questions": [
+        "leading_people",
+        "organizing",
+        "responsibility"
+      ]
+    },
+    {
+      "id": "pace",
+      "questions": [
+        "urgency",
+        "multi_threading",
+        "deep_work"
+      ]
+    },
+    {
+      "id": "risk_uncertainty",
+      "questions": [
+        "uncertainty",
+        "income_variability",
+        "experimentation"
+      ]
+    },
+    {
+      "id": "flexibility",
+      "questions": [
+        "hours",
+        "location",
+        "seasonality"
+      ]
+    },
+    {
+      "id": "meaning",
+      "questions": [
+        "purpose",
+        "contribution",
+        "impact"
+      ]
+    },
+    {
+      "id": "income_objective",
+      "questions": [
+        "income_target",
+        "income_importance"
+      ]
+    },
+    {
+      "id": "capital_tolerance",
+      "questions": [
+        "startup_capital",
+        "loss_tolerance"
+      ]
+    },
+    {
+      "id": "legacy",
+      "questions": [
+        "family_legacy",
+        "knowledge_transfer",
+        "community_impact"
+      ]
+    },
+    {
+      "id": "exploration",
+      "questions": [
+        "travel",
+        "experience",
+        "curiosity"
+      ]
+    }
+  ]
+}

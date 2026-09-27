@@ -1,0 +1,46 @@
+{
+  "version": "qa-23.0",
+  "dimensions": [
+    {
+      "name": "Recognition",
+      "question": "Does the customer recognize their own answers, goals and tensions?"
+    },
+    {
+      "name": "Traceability",
+      "question": "Can every important inference be traced to explicit evidence/reason codes?"
+    },
+    {
+      "name": "Differentiation",
+      "question": "Are Strong, Adjacent and Overlooked meaningfully different?"
+    },
+    {
+      "name": "WorkStyle",
+      "question": "Does the analysis explain fit, friction and possible redesign without fixed labels?"
+    },
+    {
+      "name": "Depth",
+      "question": "Can the customer understand and begin investigating each top opportunity?"
+    },
+    {
+      "name": "IncomeEvidence",
+      "question": "Are income claims sourced/scenario-based and clearly bounded?"
+    },
+    {
+      "name": "MarketAccess",
+      "question": "Does the customer know who to contact and what first action to take?"
+    },
+    {
+      "name": "Actionability",
+      "question": "Are 30-day actions and 90-day experiments concrete and bounded?"
+    },
+    {
+      "name": "Agency",
+      "question": "Does language preserve customer choice rather than prescribe an identity?"
+    },
+    {
+      "name": "ResearchFreshness",
+      "question": "Are time-sensitive claims dated and sourced?"
+    }
+  ],
+  "releaseRule": "No blockers; human reviewer approval required before PDF render."
+}

@@ -1,0 +1,50 @@
+{
+  "name": "NEXT25 Professional Referral Network\u2122",
+  "status": "planned_after_core_paid_workflow",
+  "audiences": [
+    "CPAs and tax professionals",
+    "Estate-planning and elder-law attorneys",
+    "Financial advisors and wealth managers",
+    "Business attorneys and succession professionals",
+    "Executive coaches / career-transition professionals where appropriate"
+  ],
+  "principle": "Professionals should be able to introduce NEXT25 as a complementary life-transition discovery service without implying that NEXT25 replaces their tax, legal, investment or other professional advice.",
+  "publicExperience": {
+    "navLabel": "For Professionals",
+    "pages": [
+      "Why Refer to NEXT25",
+      "Who It May Help",
+      "What the Client Receives",
+      "How the Referral Works",
+      "Professional Boundaries",
+      "Refer a Client"
+    ],
+    "referralModes": [
+      "Shareable private referral link/code",
+      "Permission-based warm introduction",
+      "Professional landing page / co-branded education where approved"
+    ]
+  },
+  "workflow": [
+    "Professional registers or receives approved referral code",
+    "Client chooses whether to visit/enroll",
+    "Consent is captured before linking professional to client record",
+    "Referral source stored separately from assessment answers",
+    "NEXT25 does not disclose Blueprint or personal responses back to referrer without explicit client authorization",
+    "Optional status can be limited to invited/enrolled/completed if client has consented"
+  ],
+  "guardrails": [
+    "No referral compensation unless separately reviewed for applicable professional, securities, insurance, legal, tax and state/federal rules.",
+    "No sharing of client Blueprint, assessment answers or sensitive information merely because a professional referred the client.",
+    "No claims that the professional endorses a specific NEXT25 recommendation.",
+    "Referral source must never alter matching/ranking or Blueprint content.",
+    "Marketing language should make NEXT25 complementary, not a substitute for regulated professional advice."
+  ],
+  "laterData": [
+    "professional_partners",
+    "referral_codes",
+    "referrals",
+    "client_referral_consents",
+    "referral_status_events"
+  ]
+}

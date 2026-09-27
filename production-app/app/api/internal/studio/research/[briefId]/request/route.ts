@@ -1,0 +1,1 @@
+// Reviewer/researcher only. Create bounded research task with claim, jurisdiction, evidence need and freshness requirement. export async function POST(){return Response.json({status:'not_configured',message:'Connect research task queue.'},{status:501})}

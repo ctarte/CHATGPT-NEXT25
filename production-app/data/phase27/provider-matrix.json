@@ -1,0 +1,86 @@
+{
+  "phase": "27",
+  "rule": "No secret values in repository. Configure provider dashboards and encrypted environment variables outside GitHub.",
+  "environments": {
+    "local": {
+      "purpose": "developer checks with test/synthetic data only"
+    },
+    "staging": {
+      "purpose": "full synthetic customer and provider test-mode integration; no real customer PII or live charges"
+    },
+    "production": {
+      "purpose": "real Founding Clients only after all launch gates PASS"
+    }
+  },
+  "providers": [
+    {
+      "capability": "Application hosting",
+      "recommended": "Vercel or equivalent Next.js host",
+      "required": [
+        "staging deployment",
+        "production deployment",
+        "encrypted env vars",
+        "deployment logs",
+        "custom domain support"
+      ],
+      "status": "NOT_CONFIGURED"
+    },
+    {
+      "capability": "Database / authentication / private storage",
+      "recommended": "Supabase or equivalent managed Postgres/Auth/Storage",
+      "required": [
+        "separate staging/production projects",
+        "RLS",
+        "customer auth",
+        "staff roles",
+        "private buckets",
+        "backups"
+      ],
+      "status": "NOT_CONFIGURED"
+    },
+    {
+      "capability": "Payments",
+      "recommended": "Stripe Checkout or equivalent hosted PCI checkout",
+      "required": [
+        "test product/price",
+        "live product/price",
+        "signed webhooks",
+        "idempotency",
+        "refund/dispute events"
+      ],
+      "status": "NOT_CONFIGURED"
+    },
+    {
+      "capability": "Transactional email",
+      "recommended": "Resend or equivalent",
+      "required": [
+        "verified sending domain",
+        "staging recipient safety",
+        "purchase/welcome/clarification/Blueprint/follow-up templates"
+      ],
+      "status": "NOT_CONFIGURED"
+    },
+    {
+      "capability": "Monitoring",
+      "recommended": "host/provider logs + error monitoring",
+      "required": [
+        "server errors",
+        "webhook failures",
+        "delivery failures",
+        "alert owner"
+      ],
+      "status": "NOT_CONFIGURED"
+    },
+    {
+      "capability": "Domain / DNS",
+      "recommended": "Registrar/DNS provider selected by owner",
+      "required": [
+        "production domain",
+        "TLS",
+        "email DNS records",
+        "redirect policy"
+      ],
+      "status": "NOT_CONFIGURED"
+    }
+  ]
+}

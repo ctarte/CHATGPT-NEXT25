@@ -1,0 +1,28 @@
+{
+  "tasks": [
+    {
+      "brief": "Fractional Healthcare Operations Adviser",
+      "claim": "Income potential",
+      "status": "RESEARCH_REQUIRED",
+      "rule": "Use current authoritative employee wage context only as context; consulting revenue requires transparent assumptions and buyer/pricing validation."
+    },
+    {
+      "brief": "Fractional Healthcare Operations Adviser",
+      "claim": "Who buys",
+      "status": "RESEARCH_REQUIRED",
+      "rule": "Identify healthcare organization types, consulting buyers, partner channels and first outreach actions with current evidence."
+    },
+    {
+      "brief": "Leadership Workshop & Manager Lab",
+      "claim": "Pricing",
+      "status": "SCENARIO_ONLY",
+      "rule": "Show editable workshop/customer/frequency assumptions; never call scenario expected income."
+    },
+    {
+      "brief": "Operational Diagnostic Practice",
+      "claim": "Licensing/regulatory scope",
+      "status": "RESEARCH_REQUIRED",
+      "rule": "Review actual services and customer jurisdiction; do not infer that advisory work is unregulated."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "version": "depth-23.0",
+  "requiredSections": [
+    "why_surfaced",
+    "work_reality",
+    "typical_week",
+    "workstyle_fit",
+    "friction_and_redesign",
+    "who_pays_or_hires",
+    "entry_models",
+    "transferable_assets",
+    "gaps_to_investigate",
+    "income_context",
+    "market_access",
+    "first_30_days",
+    "experiment_90",
+    "poor_fit_signals",
+    "questions_before_commitment",
+    "sources"
+  ],
+  "minimums": {
+    "why_surfaced": 3,
+    "work_reality": 4,
+    "market_access": 3,
+    "first_30_days": 5,
+    "poor_fit_signals": 3,
+    "sources_for_time_sensitive_claims": 1
+  },
+  "rules": [
+    "Every recommendation must trace to assessment evidence/reason codes.",
+    "Top 2\u20133 opportunities require deep briefs; remaining nine can be concise.",
+    "Income claims require geography/time/measure/source or explicit business-scenario assumptions.",
+    "Customer/employer channels must include first action and why the channel fits.",
+    "Friction must be disclosed and redesign considered before rejection.",
+    "No guaranteed earnings, perfect-fit language, diagnosis or unsupported licensing claims."
+  ]
+}

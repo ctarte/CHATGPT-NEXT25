@@ -1,0 +1,114 @@
+{
+  "fictional": true,
+  "customer": "Michael Hale",
+  "status": "qa_review",
+  "priority": "normal",
+  "pipeline": "demo-run-23",
+  "nextAction": "Review deep briefs and research evidence before approval.",
+  "summary": {
+    "age": 61,
+    "transition": "Former operations/strategy executive",
+    "incomeObjective": "Approximately $60,000\u2013$120,000 optional annual earned income",
+    "time": "15\u201325 hours/week",
+    "coreDesign": "Selective advisory + teaching/research portfolio with protected freedom"
+  },
+  "signals": [
+    [
+      "Autonomy",
+      "High",
+      "Explicit preference for control of schedule and work design."
+    ],
+    [
+      "Analytical Depth",
+      "High",
+      "Energy from complex problem solving and research."
+    ],
+    [
+      "Teaching & Mentoring",
+      "High",
+      "Strong interest in developing others."
+    ],
+    [
+      "Selling Comfort",
+      "Low\u2013Moderate",
+      "Prospecting is a friction; relationship-based acquisition preferred."
+    ],
+    [
+      "Visibility",
+      "Moderate",
+      "Small/private audiences likely preferable to constant public presence."
+    ]
+  ],
+  "possibilities": {
+    "strong": [
+      "Fractional Operations & Strategy Adviser",
+      "Executive Workshop & Leadership Lab",
+      "Board / Advisory Council Role"
+    ],
+    "adjacent": [
+      "Niche Research & Executive Briefing Practice",
+      "Mentor-in-Residence",
+      "Advisory + Teaching Portfolio"
+    ],
+    "overlooked": [
+      "Founder-Legacy Interviewer",
+      "Learning Sabbatical + Field Notes",
+      "Industry Roundtable Host"
+    ]
+  },
+  "research": [
+    {
+      "claim": "Management analyst employee wage context",
+      "status": "supported",
+      "source": "U.S. Bureau of Labor Statistics",
+      "asOf": "2026-09-26",
+      "limitation": "Employee wage data is not consulting income."
+    },
+    {
+      "claim": "Workshop pricing scenario",
+      "status": "scenario_only",
+      "source": "Customer-editable assumptions",
+      "asOf": "2026-09-26",
+      "limitation": "Requires buyer validation."
+    },
+    {
+      "claim": "Specific licensing requirements",
+      "status": "not_applicable_or_research_if_scope_changes",
+      "source": "Jurisdiction-specific review required",
+      "asOf": "2026-09-26",
+      "limitation": "Do not infer absence of regulation."
+    }
+  ],
+  "qa": [
+    {
+      "id": "q1",
+      "name": "Recognition",
+      "status": "pass"
+    },
+    {
+      "id": "q2",
+      "name": "Traceability",
+      "status": "pass"
+    },
+    {
+      "id": "q3",
+      "name": "Depth",
+      "status": "pass"
+    },
+    {
+      "id": "q4",
+      "name": "Income Evidence",
+      "status": "pass_with_limitation"
+    },
+    {
+      "id": "q5",
+      "name": "Market Access",
+      "status": "pass"
+    },
+    {
+      "id": "q6",
+      "name": "Agency",
+      "status": "pass"
+    }
+  ]
+}

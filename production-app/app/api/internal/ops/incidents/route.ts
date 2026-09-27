@@ -1,0 +1,1 @@
+// Staff-only incident intake/audit scaffold. Never include unnecessary assessment content in alerts/logs. export async function POST(){return Response.json({status:'not_configured'},{status:501})}

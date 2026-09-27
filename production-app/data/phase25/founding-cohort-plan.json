@@ -1,0 +1,31 @@
+{
+  "name": "Founding Client Cohort 01",
+  "recommendedSize": "5\u201310 paying households",
+  "price": "$595",
+  "purpose": "Validate the complete service experience and Blueprint usefulness before scale.",
+  "serviceModel": "High-touch hybrid: secure digital intake + private intelligence + human research/QA + private PDF delivery + 30/60/90 follow-up.",
+  "doNow": [
+    "Hosted payment",
+    "Secure authenticated intake",
+    "Human-reviewed Blueprint",
+    "Private PDF delivery",
+    "Support route",
+    "30/60/90 experiment follow-up",
+    "Structured feedback"
+  ],
+  "defer": [
+    "Complex subscriptions",
+    "Large-scale CRM automation",
+    "Advanced analytics",
+    "10,000-user infrastructure",
+    "Automated professional partner portal"
+  ],
+  "successEvidence": [
+    "Customer completes intake without material confusion.",
+    "Blueprint is individualized enough that the customer recognizes themselves.",
+    "Top opportunities contain actionable market/income/start evidence.",
+    "Customer can select at least one bounded experiment without being prescribed a path.",
+    "Payment, entitlement, data, QA and delivery operations work without manual security workarounds.",
+    "Feedback identifies what is worth improving before broader launch."
+  ]
+}

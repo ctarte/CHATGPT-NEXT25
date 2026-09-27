@@ -1,0 +1,161 @@
+{
+  "id": "synthetic-run-26-elena",
+  "fictional": true,
+  "mode": "DRY_RUN_NO_REAL_PAYMENT_NO_EMAIL",
+  "customer": "synthetic-elena-brooks-26",
+  "events": [
+    {
+      "seq": 1,
+      "event": "checkout_started",
+      "status": "simulated_pass"
+    },
+    {
+      "seq": 2,
+      "event": "payment_verified",
+      "status": "simulated_pass"
+    },
+    {
+      "seq": 3,
+      "event": "entitlement_granted",
+      "status": "simulated_pass"
+    },
+    {
+      "seq": 4,
+      "event": "welcome_sent",
+      "status": "simulated_pass"
+    },
+    {
+      "seq": 5,
+      "event": "intake_started",
+      "status": "simulated_pass"
+    },
+    {
+      "seq": 6,
+      "event": "intake_resumed",
+      "status": "simulated_pass"
+    },
+    {
+      "seq": 7,
+      "event": "intake_complete",
+      "status": "simulated_pass"
+    },
+    {
+      "seq": 8,
+      "event": "assessment_frozen",
+      "status": "simulated_pass"
+    },
+    {
+      "seq": 9,
+      "event": "signals_extracted",
+      "status": "simulated_pass"
+    },
+    {
+      "seq": 10,
+      "event": "clarification_required",
+      "status": "simulated_pass"
+    },
+    {
+      "seq": 11,
+      "event": "clarification_resolved",
+      "status": "simulated_pass"
+    },
+    {
+      "seq": 12,
+      "event": "matched",
+      "status": "simulated_pass"
+    },
+    {
+      "seq": 13,
+      "event": "briefs_selected",
+      "status": "simulated_pass"
+    },
+    {
+      "seq": 14,
+      "event": "research_pending",
+      "status": "simulated_pass"
+    },
+    {
+      "seq": 15,
+      "event": "research_complete",
+      "status": "simulated_pass"
+    },
+    {
+      "seq": 16,
+      "event": "draft_generated",
+      "status": "simulated_pass"
+    },
+    {
+      "seq": 17,
+      "event": "qa_pending",
+      "status": "simulated_pass"
+    },
+    {
+      "seq": 18,
+      "event": "revision_requested",
+      "status": "simulated_pass"
+    },
+    {
+      "seq": 19,
+      "event": "draft_revised",
+      "status": "simulated_pass"
+    },
+    {
+      "seq": 20,
+      "event": "approved",
+      "status": "simulated_pass"
+    },
+    {
+      "seq": 21,
+      "event": "rendered",
+      "status": "simulated_pass"
+    },
+    {
+      "seq": 22,
+      "event": "released",
+      "status": "simulated_pass"
+    },
+    {
+      "seq": 23,
+      "event": "followup_30_scheduled",
+      "status": "simulated_pass"
+    },
+    {
+      "seq": 24,
+      "event": "followup_60_scheduled",
+      "status": "simulated_pass"
+    },
+    {
+      "seq": 25,
+      "event": "followup_90_scheduled",
+      "status": "simulated_pass"
+    }
+  ],
+  "exceptionsTested": [
+    {
+      "case": "duplicate payment webhook",
+      "expected": "idempotently ignored after first authoritative event",
+      "status": "pass_contract"
+    },
+    {
+      "case": "missing public-speaking answer",
+      "expected": "clarification task; do not invent visibility preference",
+      "status": "pass_contract"
+    },
+    {
+      "case": "unsupported income claim",
+      "expected": "research blocker; no approval",
+      "status": "pass_contract"
+    },
+    {
+      "case": "approval version changes after QA",
+      "expected": "approval invalidated; re-review exact version",
+      "status": "pass_contract"
+    },
+    {
+      "case": "wrong customer PDF",
+      "expected": "release blocked by ownership/version/checksum checks",
+      "status": "pass_contract"
+    }
+  ],
+  "limitations": "This is a deterministic contract simulation, not proof that Stripe, Supabase, email, storage or production hosting are connected."
+}

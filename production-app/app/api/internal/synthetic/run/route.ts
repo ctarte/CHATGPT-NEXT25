@@ -1,0 +1,1 @@
+// Staff-only dry-run endpoint. Must never call live payment/email in synthetic mode. export async function POST(){return Response.json({status:'not_configured',message:'Wire staging services and synthetic fixtures before executing.'},{status:501})}

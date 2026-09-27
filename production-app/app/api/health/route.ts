@@ -1,0 +1,1 @@
+export async function GET(){return Response.json({service:'next25',status:'scaffold',environment:process.env.NEXT_PUBLIC_APP_ENV??'unknown'});}

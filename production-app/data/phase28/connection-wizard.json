@@ -1,0 +1,55 @@
+{
+  "title": "NEXT25 Production Connection Wizard\u2122",
+  "version": "28.0",
+  "rule": "Configure external accounts one capability at a time. Never paste secret values into GitHub, static HTML, documentation, screenshots, or chat.",
+  "steps": [
+    {
+      "order": 1,
+      "capability": "Hosting",
+      "recommended": "Vercel",
+      "ownerAction": "Create/import production-app project; keep Preview/Staging distinct from Production.",
+      "proof": "staging URL serves Next.js app and server API health endpoint",
+      "status": "OWNER_ACTION_REQUIRED"
+    },
+    {
+      "order": 2,
+      "capability": "Database + Auth + Private Storage",
+      "recommended": "Supabase",
+      "ownerAction": "Create separate staging and production projects; apply migrations to staging; configure customer/staff auth and private Blueprint bucket.",
+      "proof": "two-customer RLS isolation + private object access test",
+      "status": "OWNER_ACTION_REQUIRED"
+    },
+    {
+      "order": 3,
+      "capability": "Payments",
+      "recommended": "Stripe Checkout",
+      "ownerAction": "Create account/business profile; create $595 Founding Client product in test mode; configure signed webhook.",
+      "proof": "test checkout -> verified webhook -> entitlement exactly once",
+      "status": "OWNER_ACTION_REQUIRED"
+    },
+    {
+      "order": 4,
+      "capability": "Transactional Email",
+      "recommended": "Resend",
+      "ownerAction": "Create account, verify sending domain, configure test-safe sender and support route.",
+      "proof": "welcome/clarification/Blueprint-ready message delivered to approved test inbox",
+      "status": "OWNER_ACTION_REQUIRED"
+    },
+    {
+      "order": 5,
+      "capability": "Monitoring",
+      "recommended": "Host logs + error monitoring",
+      "ownerAction": "Select alert destination and configure server/webhook/render/delivery alerts.",
+      "proof": "intentional staging error produces actionable alert",
+      "status": "OWNER_ACTION_REQUIRED"
+    },
+    {
+      "order": 6,
+      "capability": "Domain + DNS",
+      "recommended": "Owner-selected registrar/DNS",
+      "ownerAction": "Choose NEXT25 domain; connect only after staging passes; configure TLS and email DNS.",
+      "proof": "production domain resolves securely and email authentication records validate",
+      "status": "OWNER_ACTION_REQUIRED"
+    }
+  ]
+}

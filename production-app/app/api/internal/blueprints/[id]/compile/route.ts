@@ -1,0 +1,1 @@
+// Internal reviewer scaffold. Validate approved structured content, compile sections, render branded PDF server-side, store privately, record version/checksum/QA. export async function POST(){return Response.json({status:'not_configured',message:'PDF renderer connection is Phase 22 implementation work.'},{status:501})}

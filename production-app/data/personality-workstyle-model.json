@@ -1,0 +1,63 @@
+{
+  "version": "pws-1.0",
+  "principle": "Directional work-style signals, not clinical diagnosis or fixed personality labels.",
+  "dimensions": [
+    {
+      "id": "social_energy",
+      "label": "Social Energy"
+    },
+    {
+      "id": "collaboration",
+      "label": "Collaboration"
+    },
+    {
+      "id": "structure",
+      "label": "Structure"
+    },
+    {
+      "id": "novelty",
+      "label": "Novelty"
+    },
+    {
+      "id": "ambiguity",
+      "label": "Ambiguity"
+    },
+    {
+      "id": "visibility",
+      "label": "Visibility"
+    },
+    {
+      "id": "selling",
+      "label": "Selling"
+    },
+    {
+      "id": "leadership",
+      "label": "Leadership"
+    },
+    {
+      "id": "creative_expression",
+      "label": "Creative Expression"
+    },
+    {
+      "id": "analytical_depth",
+      "label": "Analytical Depth"
+    },
+    {
+      "id": "teaching_mentoring",
+      "label": "Teaching & Mentoring"
+    },
+    {
+      "id": "pace",
+      "label": "Pace"
+    },
+    {
+      "id": "risk_uncertainty",
+      "label": "Risk & Uncertainty"
+    },
+    {
+      "id": "autonomy",
+      "label": "Autonomy"
+    }
+  ],
+  "rule": "Never infer diagnosis, mental condition, intelligence, competence, or a single fixed type."
+}

@@ -1,0 +1,1 @@
+// Staff-only launch gate status. Read configured checks; never infer readiness from a static checklist. export async function GET(){return Response.json({status:'not_configured',message:'Connect environment/provider/database health checks.'},{status:501})}

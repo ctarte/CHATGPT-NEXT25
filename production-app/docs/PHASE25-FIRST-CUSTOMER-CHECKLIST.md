@@ -1,0 +1,23 @@
+# First Paying Customer Checklist
+- [ ] Legal/commercial terms finalized
+- [ ] Production Stripe checkout configured
+- [ ] Signed webhook/idempotency tested
+- [ ] Customer authentication working
+- [ ] Staff authentication/roles working
+- [ ] RLS/two-customer isolation passed
+- [ ] Secure intake save/resume passed
+- [ ] Consent version stored
+- [ ] Payment -> entitlement verified
+- [ ] Welcome email configured
+- [ ] Pipeline completes without browser-only proprietary logic
+- [ ] Research claims show source/date/limitation
+- [ ] Human QA approval recorded
+- [ ] Exact approved Blueprint version rendered
+- [ ] PDF stored privately and checksum recorded
+- [ ] Authorized customer download passed
+- [ ] Support route tested
+- [ ] Refund/dispute path tested
+- [ ] Export/deletion path tested
+- [ ] Backup/restore test passed
+- [ ] Monitoring/incident alerts tested
+- [ ] 30/60/90 follow-up scheduled

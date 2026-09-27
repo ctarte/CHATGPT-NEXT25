@@ -1,0 +1,40 @@
+{
+  "version": "25.0",
+  "events": [
+    {
+      "event": "payment_received_no_entitlement",
+      "severity": "high",
+      "action": "Reconcile signed provider event; do not ask customer to repay."
+    },
+    {
+      "event": "duplicate_webhook",
+      "severity": "medium",
+      "action": "Idempotently ignore already-processed event and preserve audit record."
+    },
+    {
+      "event": "customer_cannot_access_intake",
+      "severity": "high",
+      "action": "Verify identity/auth without emailing assessment data."
+    },
+    {
+      "event": "research_claim_unsupported",
+      "severity": "high",
+      "action": "Block Blueprint approval until sourced, bounded or removed."
+    },
+    {
+      "event": "pdf_wrong_customer_or_version",
+      "severity": "critical",
+      "action": "Stop delivery, revoke access if possible, open privacy/security incident, investigate audit trail."
+    },
+    {
+      "event": "refund_or_dispute",
+      "severity": "high",
+      "action": "Update order/entitlement according to finalized policy and preserve report history."
+    },
+    {
+      "event": "deletion_request",
+      "severity": "high",
+      "action": "Authenticate request, apply retention/legal policy, execute tested deletion workflow, record completion."
+    }
+  ]
+}

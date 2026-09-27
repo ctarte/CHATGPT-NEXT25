@@ -1,0 +1,1 @@
+// Authenticate customer, authorize approved Blueprint ownership, then return short-lived signed access to private PDF. export async function GET(){return Response.json({status:'not_configured',message:'Connect Supabase Auth + private Storage before enabling downloads.'},{status:501})}

@@ -1,0 +1,74 @@
+{
+  "runId": "demo-run-23",
+  "fictionalCustomer": "Michael Hale",
+  "assessmentVersion": "demo-22.0",
+  "versions": {
+    "signals": "signals-23.0",
+    "workstyle": "pws-1.0",
+    "matcher": "matcher-23.0",
+    "research": "research-22.0",
+    "template": "blueprint-23.0"
+  },
+  "stages": [
+    {
+      "stage": "assessment_frozen",
+      "status": "complete",
+      "artifact": "fictional-customer snapshot"
+    },
+    {
+      "stage": "signals_extracted",
+      "status": "complete",
+      "artifact": "18 directional signals + reason-code contract"
+    },
+    {
+      "stage": "workstyle_built",
+      "status": "complete",
+      "artifact": "Personality & Work-Style Profile\u2122"
+    },
+    {
+      "stage": "matched",
+      "status": "complete",
+      "artifact": "9 possibilities"
+    },
+    {
+      "stage": "briefs_selected",
+      "status": "complete",
+      "artifact": "3 deep-brief candidates"
+    },
+    {
+      "stage": "research_pending",
+      "status": "complete",
+      "artifact": "claim/evidence tasks"
+    },
+    {
+      "stage": "research_complete",
+      "status": "complete",
+      "artifact": "Phase 22 evidence pack"
+    },
+    {
+      "stage": "draft_generated",
+      "status": "complete",
+      "artifact": "structured fictional Blueprint"
+    },
+    {
+      "stage": "qa_pending",
+      "status": "demonstration",
+      "artifact": "rubric created; production reviewer UI not connected"
+    },
+    {
+      "stage": "approved",
+      "status": "demonstration",
+      "artifact": "fictional demo approved for showcase only"
+    },
+    {
+      "stage": "rendered",
+      "status": "complete",
+      "artifact": "Phase 22 sample PDF"
+    },
+    {
+      "stage": "delivered",
+      "status": "demonstration",
+      "artifact": "local/static sample delivery only"
+    }
+  ]
+}

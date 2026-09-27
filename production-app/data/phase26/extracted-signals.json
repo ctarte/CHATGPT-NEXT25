@@ -1,0 +1,75 @@
+{
+  "version": "signals-26.synthetic",
+  "signals": [
+    {
+      "signal": "autonomy",
+      "value": 88,
+      "confidence": 0.94,
+      "reasonCodes": [
+        "time_control",
+        "lean_ownership_interest"
+      ]
+    },
+    {
+      "signal": "analytical_depth",
+      "value": 86,
+      "confidence": 0.91,
+      "reasonCodes": [
+        "operational_problem_solving",
+        "research_energy"
+      ]
+    },
+    {
+      "signal": "teaching_mentoring",
+      "value": 84,
+      "confidence": 0.93,
+      "reasonCodes": [
+        "mentor_leaders",
+        "teach_small_groups"
+      ]
+    },
+    {
+      "signal": "selling_comfort",
+      "value": 32,
+      "confidence": 0.96,
+      "reasonCodes": [
+        "no_cold_prospecting"
+      ]
+    },
+    {
+      "signal": "collaboration",
+      "value": 61,
+      "confidence": 0.76,
+      "reasonCodes": [
+        "misses_capable_team",
+        "autonomy_tension"
+      ]
+    },
+    {
+      "signal": "visibility",
+      "value": 52,
+      "confidence": 0.45,
+      "reasonCodes": [
+        "public_speaking_missing"
+      ],
+      "needsClarification": true
+    },
+    {
+      "signal": "capital_tolerance",
+      "value": 24,
+      "confidence": 0.97,
+      "reasonCodes": [
+        "no_large_capital"
+      ]
+    },
+    {
+      "signal": "flexibility",
+      "value": 90,
+      "confidence": 0.95,
+      "reasonCodes": [
+        "18_24_hours",
+        "selective_travel"
+      ]
+    }
+  ]
+}

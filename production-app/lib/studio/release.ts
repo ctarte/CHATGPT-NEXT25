@@ -1,0 +1,1 @@
+export function releaseChecklist(x:{approved:boolean;pdfChecksum?:string;privateStoragePath?:string;entitled:boolean;consentCurrent:boolean;blockers:string[]}){return {ok:x.approved&&!!x.pdfChecksum&&!!x.privateStoragePath&&x.entitled&&x.consentCurrent&&x.blockers.length===0,checks:x}}

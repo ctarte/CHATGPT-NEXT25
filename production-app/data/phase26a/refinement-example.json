@@ -1,0 +1,28 @@
+{
+  "customer": "Elena Brooks (fictional)",
+  "rejected": "Fractional Healthcare Operations Adviser",
+  "reaction": "absolutely_not",
+  "why": "I do not want clients calling me with urgent operating problems or expecting me to own implementation.",
+  "stillAttractive": [
+    "solving difficult problems",
+    "research",
+    "sharing expertise"
+  ],
+  "newEvidence": [
+    "low client-dependency preference",
+    "low urgency preference",
+    "high schedule-control preference"
+  ],
+  "doNotInfer": [
+    "She dislikes healthcare",
+    "She dislikes all advisory work",
+    "She cannot consult"
+  ],
+  "refinementCandidates": [
+    "Niche Research & Executive Briefing Practice",
+    "Practical Field-Guide Studio",
+    "Advisory Council role with clearly bounded responsibility",
+    "Small-group teaching with no implementation responsibility"
+  ],
+  "lesson": "The rejection narrows the work design, not merely the occupation title."
+}

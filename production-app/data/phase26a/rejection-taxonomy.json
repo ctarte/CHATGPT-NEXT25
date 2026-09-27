@@ -1,0 +1,35 @@
+{
+  "version": "rejection-reasons-26A.0",
+  "reasons": [
+    "work_content",
+    "industry_or_subject",
+    "client_dependency",
+    "urgency_or_emergencies",
+    "selling_or_prospecting",
+    "public_visibility",
+    "people_intensity",
+    "management_responsibility",
+    "schedule_or_hours",
+    "travel",
+    "income_or_economics",
+    "capital_requirement",
+    "risk_or_uncertainty",
+    "training_or_credentialing",
+    "physical_demands",
+    "technology",
+    "values_or_meaning",
+    "identity_or_been_there_done_that",
+    "wants_something_more_different",
+    "family_or_location",
+    "does_not_understand_yet",
+    "other"
+  ],
+  "capture": [
+    "reason",
+    "free_text",
+    "what_was_still_attractive",
+    "new_constraint_or_preference",
+    "confidence",
+    "customer_confirmed"
+  ]
+}

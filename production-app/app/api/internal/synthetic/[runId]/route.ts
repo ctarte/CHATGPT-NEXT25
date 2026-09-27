@@ -1,0 +1,1 @@
+// Staff-only synthetic run status and evidence. Redact secrets and proprietary matcher weights. export async function GET(){return Response.json({status:'not_configured'},{status:501})}

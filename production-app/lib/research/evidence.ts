@@ -1,0 +1,1 @@
+export type Evidence={sourceId:string;publisher:string;title:string;url:string;asOf:string;claim:string;scope:string;limitations:string[]}; export function requireEvidence(e:Evidence){if(!e.publisher||!e.title||!e.asOf||!e.claim)throw new Error('Incomplete evidence');return e}

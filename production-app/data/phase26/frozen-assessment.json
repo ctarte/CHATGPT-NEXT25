@@ -1,0 +1,60 @@
+{
+  "version": "assessment-26.synthetic",
+  "customerId": "synthetic-elena-brooks-26",
+  "status": "frozen",
+  "answers": [
+    {
+      "id": "transition",
+      "value": "I want to leave the bureaucracy, not necessarily the work itself.",
+      "reason": "distinguishes profession from environment"
+    },
+    {
+      "id": "time",
+      "value": "18\u201324 hours/week",
+      "hard": true
+    },
+    {
+      "id": "income",
+      "value": "$50,000\u2013$100,000 optional annual earned income",
+      "hard": false
+    },
+    {
+      "id": "selling",
+      "value": "I do not want to spend my week cold-calling strangers.",
+      "hard": true
+    },
+    {
+      "id": "team",
+      "value": "I want independence, but I miss a smart team around me.",
+      "tension": true
+    },
+    {
+      "id": "ownership",
+      "value": "A small business interests me if it can stay lean.",
+      "hard": false
+    },
+    {
+      "id": "capital",
+      "value": "No large capital commitment.",
+      "hard": true
+    },
+    {
+      "id": "travel",
+      "value": "Selective travel only.",
+      "hard": true
+    },
+    {
+      "id": "public_speaking",
+      "value": null,
+      "missing": true
+    },
+    {
+      "id": "energy",
+      "value": "Solving operational problems, mentoring leaders, researching better systems."
+    },
+    {
+      "id": "deferred",
+      "value": "Write practical field guides and teach smaller groups."
+    }
+  ]
+}

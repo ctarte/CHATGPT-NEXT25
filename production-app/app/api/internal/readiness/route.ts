@@ -1,0 +1,1 @@
+// Staff-only in production. Check configuration + bounded provider connectivity without returning secret values. export async function GET(){return Response.json({status:'not_configured',message:'Connect provider-specific health adapters after accounts are created.'},{status:501});}

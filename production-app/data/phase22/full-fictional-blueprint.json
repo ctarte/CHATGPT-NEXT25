@@ -1,0 +1,292 @@
+{
+  "version": "22.0-demo",
+  "asOf": "2026-09-26",
+  "fictional": true,
+  "customer": "Michael Hale",
+  "age": 61,
+  "title": "Personalized NEXT25 Blueprint\u2122",
+  "subtitle": "A field guide for the next chapter",
+  "executive": "Michael does not appear to need a single replacement career. His strongest pattern points toward a deliberately designed portfolio: selective advisory work that uses accumulated judgment, a teaching component that turns experience into a repeatable asset, and enough open capacity for travel, family and curiosity. The central design challenge is not capability. It is preventing a promising next chapter from recreating the time pressure, organizational politics and constant availability of the role he is leaving.",
+  "noticed": [
+    "Autonomy matters more than status.",
+    "He still wants difficult problems, but not an always-on executive identity.",
+    "Teaching and mentoring are energizing when the group is purposeful.",
+    "Cold prospecting is likely to be a friction point, not proof that ownership is unsuitable.",
+    "Optional earned income matters, but freedom is a co-equal objective."
+  ],
+  "workstyle": [
+    [
+      "Autonomy",
+      "High",
+      "Favor bounded advisory/project structures."
+    ],
+    [
+      "Analytical depth",
+      "High",
+      "Include diagnosis, research and synthesis."
+    ],
+    [
+      "Teaching & mentoring",
+      "High",
+      "Create opportunities to develop others."
+    ],
+    [
+      "Social energy",
+      "Moderate",
+      "Prefer purposeful interaction over continuous networking."
+    ],
+    [
+      "Selling comfort",
+      "Low\u2013Moderate",
+      "Design referral-led acquisition before cold outbound."
+    ],
+    [
+      "Visibility",
+      "Moderate",
+      "Start with small/private audiences."
+    ],
+    [
+      "Pace",
+      "Deliberate",
+      "Avoid high-volume reactive operations."
+    ]
+  ],
+  "tensions": [
+    "Income vs. schedule freedom",
+    "Expertise leverage vs. desire not to recreate old identity",
+    "Entrepreneurial autonomy vs. dislike of continuous selling",
+    "Meaningful engagement vs. protecting unstructured time"
+  ],
+  "nine": [
+    [
+      "Strong",
+      "Fractional Operations & Strategy Adviser"
+    ],
+    [
+      "Strong",
+      "Executive Workshop & Leadership Lab"
+    ],
+    [
+      "Strong",
+      "Board/Advisory Council Role"
+    ],
+    [
+      "Adjacent",
+      "Niche Research & Executive Briefing Practice"
+    ],
+    [
+      "Adjacent",
+      "Mentor-in-Residence"
+    ],
+    [
+      "Adjacent",
+      "Advisory + Teaching Portfolio"
+    ],
+    [
+      "Overlooked",
+      "Oral-History / Founder-Legacy Interviewer"
+    ],
+    [
+      "Overlooked",
+      "Learning Sabbatical with Published Field Notes"
+    ],
+    [
+      "Overlooked",
+      "Industry Problem-Solving Roundtable Host"
+    ]
+  ],
+  "briefs": [
+    {
+      "title": "Fractional Operations & Strategy Adviser",
+      "level": "Strong",
+      "why": [
+        "Leverages Michael\u2019s accumulated operating judgment rather than requiring a complete retraining.",
+        "Can be structured around a small number of bounded client engagements, supporting autonomy and a 15\u201325 hour target.",
+        "The main friction is business development, so the operating model should emphasize warm introductions, referral partners and a narrow expertise proposition rather than high-volume cold outreach."
+      ],
+      "reality": [
+        "Diagnose operating bottlenecks and decision problems",
+        "Facilitate leadership working sessions",
+        "Translate findings into a short action roadmap",
+        "Check progress on a limited cadence rather than becoming the de facto full-time executive"
+      ],
+      "fit": [
+        "High autonomy",
+        "High analytical depth",
+        "Moderate social interaction",
+        "Uses mentoring and judgment"
+      ],
+      "friction": "Selling/prospecting may drain energy. Design around it with former-colleague introductions, CPA/attorney/banker referral relationships, selective speaking, and a small target-account list.",
+      "income": "Closest BLS occupational benchmark: Management Analysts. May 2025 median annual employee wage was $101,860; lowest 10% below $60,640 and highest 10% above $171,640. BLS also notes self-employed analysts are typically paid by the hour or project. These employee wage statistics do not establish consulting revenue or owner income.",
+      "business_model": [
+        "Pilot diagnostic: 1\u20132 weeks, fixed scope",
+        "90-day advisory engagement: defined meetings/deliverables",
+        "Fractional retainer: limited monthly availability with explicit boundaries"
+      ],
+      "market": [
+        "Former employers, vendors and industry peers with 20\u2013250 employees",
+        "Lower-middle-market owners facing growth, process or succession complexity",
+        "Referral partners: CPAs, attorneys, commercial bankers, benefits/HR advisers",
+        "Industry associations and private peer groups",
+        "Selective workshops built around one operational problem"
+      ],
+      "first30": [
+        "Write a one-sentence problem statement: who Michael helps, with what problem, and what changes after the engagement.",
+        "List 20 people who have previously sought Michael\u2019s judgment; select 8 for learning conversations.",
+        "Interview 5 owner/executive prospects about their current operational bottlenecks\u2014do not pitch first.",
+        "Draft one fixed-scope diagnostic offer with deliverables, time boundary and a test price.",
+        "Ask 3 potential referral partners what client situations would cause them to make an introduction."
+      ],
+      "experiment": "Within 90 days, complete 8\u201310 discovery conversations, secure at least one bounded paid or deliberately unpaid pilot, deliver it, and record four pieces of evidence: customer value, personal energy, tolerance for business development, and willingness to repeat the work.",
+      "wrong": [
+        "If Michael strongly dislikes even relationship-based business development",
+        "If client deadlines recreate the corporate pressure he wants to leave",
+        "If buyers consistently want full-time execution rather than advisory judgment"
+      ]
+    },
+    {
+      "title": "Executive Workshop & Leadership Lab",
+      "level": "Strong",
+      "why": [
+        "Matches teaching/mentoring energy and converts expertise into a repeatable intellectual asset.",
+        "Allows controlled scheduling and can complement, rather than replace, advisory work.",
+        "Creates a lower-pressure way to become visible to potential advisory clients."
+      ],
+      "reality": [
+        "Design a 60\u2013120 minute workshop around a narrow executive problem",
+        "Facilitate small groups",
+        "Use cases/exercises rather than generic lectures",
+        "Offer follow-on working sessions only when desired"
+      ],
+      "fit": [
+        "Teaching/mentoring high",
+        "Moderate visibility rather than constant networking",
+        "Creative expression through curriculum design"
+      ],
+      "friction": "Requires some public visibility. Begin with invited small groups, partner-hosted sessions, or private company workshops rather than large-stage speaking.",
+      "income": "Treat workshop economics as a business scenario, not a salary forecast. Example only: 2 workshops/month \u00d7 an illustrative $2,500 fee \u00d7 10 active months = $50,000 gross revenue before preparation, marketing, travel, taxes and other costs. Pricing must be validated with actual buyers before it is treated as market evidence.",
+      "business_model": [
+        "Private company workshop",
+        "Association/member program",
+        "Partner-hosted executive briefing",
+        "Workshop + optional advisory follow-up"
+      ],
+      "market": [
+        "Industry and professional associations",
+        "Accounting, law, banking or benefits firms seeking client education",
+        "Private companies with leadership teams",
+        "Executive peer groups and local business organizations",
+        "Former colleagues who manage teams"
+      ],
+      "first30": [
+        "Choose one problem Michael can teach without extensive new research.",
+        "Create a one-page workshop promise, three learning outcomes and a 60-minute outline.",
+        "Ask 5 potential hosts whether the topic would be useful to their members/clients/team.",
+        "Deliver one invitation-only pilot to 6\u201312 people.",
+        "Collect structured feedback on relevance, energy, clarity and follow-up demand."
+      ],
+      "experiment": "Deliver two small-group pilots within 90 days. Continue only if participants report a specific useful outcome and Michael finds the preparation/facilitation energizing enough to repeat.",
+      "wrong": [
+        "If preparation time overwhelms delivery time",
+        "If visibility feels draining even in small groups",
+        "If buyers value the topic but will not sponsor or pay for it"
+      ]
+    },
+    {
+      "title": "Niche Research & Executive Briefing Practice",
+      "level": "Adjacent",
+      "why": [
+        "Strong fit with analytical depth and deliberate pace.",
+        "Could create a lower-social-intensity portfolio component.",
+        "Can support advisory or workshop work with proprietary insight."
+      ],
+      "reality": [
+        "Track a narrow industry/operating issue",
+        "Interview practitioners",
+        "Synthesize developments into executive briefs",
+        "Offer private briefings or commissioned research"
+      ],
+      "fit": [
+        "High analysis",
+        "Lower social load",
+        "High autonomy"
+      ],
+      "friction": "Monetization may be slower and requires proof that a narrow audience will pay for synthesis rather than obtain information free elsewhere.",
+      "income": "No defensible single income benchmark is assumed. Revenue should be modeled from subscribers, commissioned briefs or briefing engagements only after buyer interviews establish willingness to pay.",
+      "business_model": [
+        "Sponsored research brief",
+        "Commissioned executive briefing",
+        "Paid niche newsletter/briefing",
+        "Research supporting advisory practice"
+      ],
+      "market": [
+        "Trade associations",
+        "Industry vendors",
+        "Private-equity operating teams",
+        "Corporate strategy groups",
+        "Niche professional-service firms"
+      ],
+      "first30": [
+        "Choose one narrow question worth tracking for 90 days.",
+        "Interview 5 executives about what information they cannot easily synthesize.",
+        "Create one 3\u20135 page sample brief.",
+        "Ask interviewees what would make it valuable enough to pay for or sponsor."
+      ],
+      "experiment": "Publish one sample and conduct 8 buyer interviews; proceed only if a specific paid use case emerges.",
+      "wrong": [
+        "If research becomes interesting but commercially unnecessary",
+        "If Michael wants more human interaction than the model provides",
+        "If the niche is too broad to create differentiated insight"
+      ]
+    }
+  ],
+  "gap": [
+    "Michael may be searching for a job-shaped answer to a portfolio-shaped life.",
+    "The overlooked opportunity is not necessarily a new occupation; it may be a designed combination of advisory, teaching, research and deliberately protected freedom."
+  ],
+  "plan90": [
+    "Weeks 1\u20132: choose two hypotheses to test; write narrow problem statements.",
+    "Weeks 2\u20135: conduct 8\u201310 buyer/host interviews across warm contacts and referral partners.",
+    "Weeks 4\u20138: run one advisory diagnostic and one workshop pilot.",
+    "Weeks 8\u201310: review evidence\u2014energy, demand, economics, schedule impact, selling tolerance.",
+    "Weeks 10\u201312: choose continue / redesign / stop for each path; build the next experiment rather than a permanent commitment."
+  ],
+  "sources": [
+    {
+      "id": "bls-management-analysts",
+      "publisher": "U.S. Bureau of Labor Statistics",
+      "title": "Management Analysts \u2014 Occupational Outlook Handbook",
+      "url": "https://www.bls.gov/ooh/business-and-financial/management-analysts.htm",
+      "facts": [
+        "Median annual wage $101,860 in May 2025",
+        "Lowest 10% below $60,640; highest 10% above $171,640",
+        "Projected employment growth 10% from 2025\u20132035",
+        "Self-employed analysts are typically paid by hour or project"
+      ],
+      "use": "Career-income context only; not a forecast of fractional consulting income."
+    },
+    {
+      "id": "sba-market-research",
+      "publisher": "U.S. Small Business Administration",
+      "title": "Plan your business \u2014 Market research and competitive analysis",
+      "url": "https://www.sba.gov/counseling/plan-your-business/",
+      "facts": [
+        "Market research can assess demand, market size, location, saturation and pricing",
+        "Direct research methods include surveys, questionnaires, focus groups and in-depth interviews"
+      ],
+      "use": "Customer-discovery and validation framework."
+    },
+    {
+      "id": "score-mentoring",
+      "publisher": "SCORE",
+      "title": "Business Mentoring, Resources & Support",
+      "url": "https://www.score.org/score-faqs-business-mentoring-resources-support/",
+      "facts": [
+        "SCORE mentors advise on planning, sales/marketing, operations, technology and starting/growing businesses",
+        "Mentors are volunteers with business experience"
+      ],
+      "use": "Optional external implementation resource."
+    }
+  ],
+  "boundaries": "This fictional demonstration is educational. Income figures are context or explicit scenarios, not promises. Licensing, legal, tax, insurance and other professional requirements must be verified for the actual customer and jurisdiction."
+}

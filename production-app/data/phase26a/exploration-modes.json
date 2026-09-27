@@ -1,0 +1,20 @@
+{
+  "modes": [
+    {
+      "id": "build_on_what_i_know",
+      "label": "Build on What I Know",
+      "description": "Use accumulated skills, credibility and experience more directly."
+    },
+    {
+      "id": "take_me_somewhere_adjacent",
+      "label": "Take Me Somewhere Adjacent",
+      "description": "Keep selected strengths while changing role, environment, audience or business model."
+    },
+    {
+      "id": "surprise_me",
+      "label": "Surprise Me",
+      "description": "Deliberately search beyond the customer's career identity while still respecting hard constraints and stated values."
+    }
+  ],
+  "rule": "Search mode changes exploration breadth, never customer safety/privacy boundaries or hard constraints."
+}

@@ -1,0 +1,1 @@
+// Authenticated customer reaction capture. Validate blueprint ownership/version and preserve raw customer wording. export async function POST(){return Response.json({status:'not_configured',message:'Connect authenticated persistence and consent/version controls.'},{status:501})}

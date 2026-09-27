@@ -1,0 +1,1 @@
+// Staff-only production endpoint. Return capability states/evidence metadata, never secret values. export async function GET(){return Response.json({status:'owner_action_required',message:'External provider accounts must be configured before verification.'});}

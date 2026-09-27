@@ -1,0 +1,1 @@
+// Server/reviewer only. Advance exactly one deterministic stage; persist artifact + checksum; stop on missing evidence, research or human gate. export async function POST(){return Response.json({status:'not_configured',next:'Connect stage workers and durable queue.'},{status:501})}
