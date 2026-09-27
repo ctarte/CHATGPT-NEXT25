@@ -1,1 +1,8 @@
-// Staff-only production endpoint. Return capability states/evidence metadata, never secret values. export async function GET(){return Response.json({status:'owner_action_required',message:'External provider accounts must be configured before verification.'});}
+// NEXT25 production scaffold. Intentionally disabled until its private production service is connected.
+// Keep the export on executable code; a prior scaffold placed it after // on the same line, so TypeScript treated the file as comments only.
+export async function GET() {
+  return Response.json(
+    { status: 'not_configured' },
+    { status: 501 }
+  );
+}

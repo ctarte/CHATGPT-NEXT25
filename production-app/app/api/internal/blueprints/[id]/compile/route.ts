@@ -1,1 +1,8 @@
-// Internal reviewer scaffold. Validate approved structured content, compile sections, render branded PDF server-side, store privately, record version/checksum/QA. export async function POST(){return Response.json({status:'not_configured',message:'PDF renderer connection is Phase 22 implementation work.'},{status:501})}
+// NEXT25 production scaffold. Intentionally disabled until its private production service is connected.
+// Keep the export on executable code; a prior scaffold placed it after // on the same line, so TypeScript treated the file as comments only.
+export async function POST() {
+  return Response.json(
+    { status: 'not_configured' },
+    { status: 501 }
+  );
+}
