@@ -1,1 +1,7 @@
-// Authenticated customer reaction capture. Validate blueprint ownership/version and preserve raw customer wording. export async function POST(){return Response.json({status:'not_configured',message:'Connect authenticated persistence and consent/version controls.'},{status:501})}
+// NEXT25 production scaffold. This endpoint is intentionally not connected yet.
+export async function GET() {
+  return Response.json({ status: 'not_configured' }, { status: 501 });
+}
+export async function POST() {
+  return Response.json({ status: 'not_configured' }, { status: 501 });
+}

@@ -1,1 +1,7 @@
-// Reviewer-only scaffold: render only an approved/version-frozen Blueprint, save private PDF, checksum it, create immutable report_version, then enable controlled customer download. export async function POST(){return Response.json({status:'not_configured',message:'Connect production PDF renderer/private storage.'},{status:501})}
+// NEXT25 production scaffold. This endpoint is intentionally not connected yet.
+export async function GET() {
+  return Response.json({ status: 'not_configured' }, { status: 501 });
+}
+export async function POST() {
+  return Response.json({ status: 'not_configured' }, { status: 501 });
+}

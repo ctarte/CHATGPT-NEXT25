@@ -1,1 +1,7 @@
-// Reviewer-only scaffold: gather current authoritative evidence for income, market, licensing and implementation claims; persist claim->source mapping and research date. export async function POST(){return Response.json({status:'not_configured',message:'Connect production research service and reviewer workflow.'},{status:501})}
+// NEXT25 production scaffold. This endpoint is intentionally not connected yet.
+export async function GET() {
+  return Response.json({ status: 'not_configured' }, { status: 501 });
+}
+export async function POST() {
+  return Response.json({ status: 'not_configured' }, { status: 501 });
+}

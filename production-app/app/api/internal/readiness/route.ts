@@ -1,1 +1,7 @@
-// Staff-only in production. Check configuration + bounded provider connectivity without returning secret values. export async function GET(){return Response.json({status:'not_configured',message:'Connect provider-specific health adapters after accounts are created.'},{status:501});}
+// NEXT25 production scaffold. This endpoint is intentionally not connected yet.
+export async function GET() {
+  return Response.json({ status: 'not_configured' }, { status: 501 });
+}
+export async function POST() {
+  return Response.json({ status: 'not_configured' }, { status: 501 });
+}
