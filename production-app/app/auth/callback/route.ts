@@ -1,0 +1,2 @@
+import {NextResponse} from "next/server"; import {createClient} from "@/lib/supabase/server";
+export async function GET(request:Request){const u=new URL(request.url),code=u.searchParams.get("code"),next=u.searchParams.get("next")||"/dashboard";if(code){const s=await createClient();const {error}=await s.auth.exchangeCodeForSession(code);if(!error)return NextResponse.redirect(new URL(next,u.origin))}return NextResponse.redirect(new URL("/auth/sign-in?error=callback",u.origin))}

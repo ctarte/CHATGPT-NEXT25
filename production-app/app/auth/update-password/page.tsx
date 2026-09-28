@@ -1,0 +1,2 @@
+import UpdatePasswordForm from "./update-password-form";
+export default function Page(){return <main className="cardpage"><section className="signin-card"><p className="eyebrow">CUSTOMER ACCESS</p><h1>Set a new password.</h1><p className="lead">Choose a new password for your private My NEXT25 account.</p><UpdatePasswordForm/></section></main>}
