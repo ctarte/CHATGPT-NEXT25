@@ -1,6 +1,7 @@
 import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 import SignInForm from "./sign-in-form";
+import ForgotPasswordForm from "./forgot-password-form";
 
 export default async function SignIn() {
   const supabase = await createClient();
@@ -17,6 +18,7 @@ export default async function SignIn() {
           Sign in to continue your private discovery and Blueprint experience.
         </p>
         <SignInForm />
+        <ForgotPasswordForm />
       </section>
     </main>
   );
