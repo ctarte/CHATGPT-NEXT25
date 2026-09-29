@@ -2,7 +2,7 @@ import type {Possibility} from "./possibilities";
 export type Reaction="NOT ME"|"MAYBE"|"CURIOUS"|"SHOW ME MORE";
 export function buildRound(universe:Possibility[],wanted:string[],avoid:string[],lane:string,seen:string[],positive:string[],size=7){
  const score=(p:Possibility)=>{
-  let n=p.signals.filter(x=>wanted.includes(x)).length*3+p.friction.filter(x=>avoid.includes(x)).length*2;
+  let n=p.signals.filter(x=>wanted.includes(x)).length*3-p.conditions.filter(x=>avoid.includes(x)).length*3;
   if(lane&&p.lane===lane)n+=4;
   if(positive.some(t=>t===p.title))n+=2;
   return n;
