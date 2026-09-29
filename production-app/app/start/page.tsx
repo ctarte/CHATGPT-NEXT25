@@ -1,5 +1,5 @@
 "use client";
-import {useEffect,useMemo,useRef,useState} from "react";
+import {useEffect,useMemo,useRef,useState,type Dispatch,type SetStateAction} from "react";
 import {Chrome} from "../components/SiteChrome";
 import {possibilityUniverse} from "../../lib/discovery/possibilities";
 import {buildDiscoveryProfile} from "../../lib/discovery/profile";
@@ -55,7 +55,7 @@ export default function Page(){
  const [knowledgeOpen,setKnowledgeOpen]=useState(false);
  const [saveState,setSaveState]=useState<"loading"|"ready"|"saving"|"saved"|"signed-out"|"error">("loading");
  const restored=useRef(false);
- const toggle=(x:string,setter:React.Dispatch<React.SetStateAction<string[]>>)=>setter(s=>s.includes(x)?s.filter(v=>v!==x):[...s,x]);
+ const toggle=(x:string,setter:Dispatch<SetStateAction<string[]>>)=>setter(s=>s.includes(x)?s.filter(v=>v!==x):[...s,x]);
  const ordered=useMemo(()=>[...possibilities].sort((a,b)=>{
    const laneBoost=(p:typeof possibilities[number])=>!lane?0:p.lane===lane?4:-1;
    const score=(p:typeof possibilities[number])=>p.signals.filter(x=>wanted.includes(x)).length+p.conditions.filter(x=>avoid.includes(x)).length;
