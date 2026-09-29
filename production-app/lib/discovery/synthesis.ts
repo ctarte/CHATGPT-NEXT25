@@ -19,7 +19,7 @@ export function synthesizeDiscovery(knowledge:Record<string,string>,wanted:strin
  const observations=[
    active.length?("Your answers repeatedly point toward "+active.map(x=>x.theme.toLowerCase()).join(", ")+"."):"Your answers are beginning to reveal where accumulated experience may contain reusable value.",
    wanted.length?("You’ve also asked for more "+wanted.slice(0,3).join(", ").toLowerCase()+"."):"We’re still learning what you want more of.",
-   avoid.length?("At the same time, you appear interested in avoiding "+avoid.slice(0,3).join(", ").toLowerCase()+"."):"We’re still learning what you would prefer to leave behind.",
+   avoid.length?("At the same time, you appear interested in avoiding "+avoid.slice(0,3).join(", ").toLowerCase()+"."):"We’re still learning which conditions you would prefer to discard.",
    lean.length?("Your emerging profile currently leans "+lean.join(" and ")+"."):"Your profile is still deliberately open."
  ];
  const fallback=universe.filter(p=>p.lane==="SURPRISE ME").map(p=>p.title);
