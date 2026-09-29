@@ -23,7 +23,7 @@ export function buildOpportunityBrief(p:Possibility):OpportunityBrief{
   complexity,
   skills:["Relevant subject-matter credibility","Ability to communicate a clear result or value proposition",p.world==="BUSINESS"?"Customer discovery and basic commercial discipline":"Ability to define boundaries and expectations"],
   risks:[p.watch,"Demand, compensation and competitive conditions may differ substantially by niche.","A possibility that sounds attractive conceptually may feel different when tested in real life."],
-  poorFit:["The day-to-day work recreates several things you explicitly want to leave behind.","The economics require a scale, risk level or time commitment you do not want.","You like the idea more than the actual activities required to do it."],
+  poorFit:["The day-to-day work recreates several conditions you explicitly want to discard.","The economics require a scale, risk level or time commitment you do not want.","You like the idea more than the actual activities required to do it."],
   questions:["Who is already doing this successfully—and in what form?","Who pays for it, employs it or participates in it?","What does a realistic week actually look like?","What credentials, licenses, insurance or other requirements could apply?","What would make this economically worthwhile for you?","What is the smallest experiment that could produce useful evidence?"],
   experiment:p.experiment
  };
