@@ -1,5 +1,5 @@
 "use client";
-import {useMemo,useState} from "react";
+import {useEffect,useMemo,useRef,useState} from "react";
 import {Chrome} from "../components/SiteChrome";
 import {possibilityUniverse} from "../../lib/discovery/possibilities";
 import {buildDiscoveryProfile} from "../../lib/discovery/profile";
@@ -8,6 +8,7 @@ import {synthesizeDiscovery} from "../../lib/discovery/synthesis";
 import {buildDiscoveryField} from "../../lib/discovery/field";
 import {buildOpportunityBrief} from "../../lib/discovery/opportunityBrief";
 import {buildRound} from "../../lib/discovery/rounds";
+import {createDiscoveryRecord} from "../../lib/discovery/record";
 
 const choices=["I’m thinking about a new career.","I’d like to explore a business.","I’m curious what I could do with what I know.","I’m looking for something interesting or different.","I’m really not sure.","Surprise me."];
 const more=["Independence","Intellectual challenge","Creativity","Income","Flexibility","Adventure","Meaning","Learning","Teaching","Building something","Travel","Contribution"];
@@ -52,6 +53,8 @@ export default function Page(){
  const [briefsOpened,setBriefsOpened]=useState<string[]>([]);
  const [quickQuestion,setQuickQuestion]=useState(0),[quickAnswers,setQuickAnswers]=useState<Record<number,string>>({});
  const [knowledgeOpen,setKnowledgeOpen]=useState(false);
+ const [saveState,setSaveState]=useState<"loading"|"ready"|"saving"|"saved"|"signed-out"|"error">("loading");
+ const restored=useRef(false);
  const toggle=(x:string,setter:React.Dispatch<React.SetStateAction<string[]>>)=>setter(s=>s.includes(x)?s.filter(v=>v!==x):[...s,x]);
  const ordered=useMemo(()=>[...possibilities].sort((a,b)=>{
    const laneBoost=(p:typeof possibilities[number])=>!lane?0:p.lane===lane?4:-1;
@@ -71,9 +74,14 @@ export default function Page(){
  const field=useMemo(()=>buildDiscoveryField(possibilities,wanted,avoid,profile,synthesis),[wanted,avoid,profile,synthesis]);
  const briefPossibility=possibilities.find(p=>p.title===briefTitle);
  const opportunityBrief=briefPossibility?buildOpportunityBrief(briefPossibility):null;
- const field=useMemo(()=>buildDiscoveryField(possibilities,wanted,avoid,profile,synthesis),[wanted,avoid,profile,synthesis]);
+
  const currentExplanation=useMemo(()=>explainPossibility(current,wanted,avoid,profile,lane,Object.values(rejectData).flat()),[ordered,index,wanted,avoid,profile,lane,rejectData]);
+ const discoveryRecord=useMemo(()=>createDiscoveryRecord({startingPoint:pick,wantMore:wanted,wantLess:avoid,round,seen,reactions:rated,rejectionReasons:rejectData,quickAnswers,knowledge,fieldActions,lane,briefsOpened}),[pick,wanted,avoid,round,seen,rated,rejectData,quickAnswers,knowledge,fieldActions,lane,briefsOpened]);
+ useEffect(()=>{let live=true;fetch("/api/discovery").then(async r=>{if(r.status===401){if(live)setSaveState("signed-out");return}const j=await r.json();const rec=j?.record?.record;if(live&&rec?.version===1){setPick(rec.startingPoint||"");setWanted(rec.wantMore||[]);setAvoid(rec.wantLess||[]);setRound(rec.round||1);setSeen(rec.seen||[]);setRated(rec.reactions||{});setRejectData(rec.rejectionReasons||{});setQuickAnswers(rec.quickAnswers||{});setKnowledge(rec.knowledge||{});setFieldActions(rec.fieldActions||{});setLane(rec.lane||"");setBriefsOpened(rec.briefsOpened||[]);setStage(rec.startingPoint?Math.min(rec.seen?.length?5:3,5):1)}if(live)setSaveState("ready")}).catch(()=>live&&setSaveState("error")).finally(()=>{restored.current=true});return()=>{live=false}},[]);
+ useEffect(()=>{if(!restored.current||saveState==="loading"||saveState==="signed-out")return;setSaveState("saving");const t=setTimeout(()=>fetch("/api/discovery",{method:"PUT",headers:{"content-type":"application/json"},body:JSON.stringify(discoveryRecord)}).then(r=>{if(r.status===401)setSaveState("signed-out");else if(r.ok)setSaveState("saved");else setSaveState("error")}).catch(()=>setSaveState("error")),700);return()=>clearTimeout(t)},[discoveryRecord]);
+
  return <Chrome><main><section className="start-wrap">
+ <div className="save-resume"><span>{saveState==="saving"?"Saving…":saveState==="saved"?"Saved securely":saveState==="ready"?"Ready to save":saveState==="signed-out"?"Sign in to save & resume":saveState==="error"?"Save unavailable":"Checking saved discovery…"}</span>{saveState==="signed-out"&&<a href="/auth/sign-in">Sign in →</a>}</div>
  <div className="discovery-progress"><span>DISCOVER</span><i className={stage>=4?"on":""}>GET INSPIRED</i><i className={stage>=5?"on":""}>IMAGINE</i><i>DESIGN</i></div>
  {stage===1&&<><p className="eyebrow dark">START DISCOVERING</p><h1>Let’s find a place to begin.</h1><p className="lead darklead">You don’t have to know where you’re going. Just tell us what sounds closest to where you are today.</p><div className="choice-grid">{choices.map(x=><button onClick={()=>setPick(x)} className={pick===x?"choice active":"choice"} key={x}>{x}</button>)}</div><button disabled={!pick} className="button gold" onClick={()=>setStage(2)}>Continue →</button></>}
  {stage===2&&<><p className="eyebrow dark">DISCOVER · 01</p><h1>What would you like more of?</h1><p className="lead darklead">Choose anything that catches your attention. Don’t overthink it.</p><div className="tag-grid">{more.map(x=><button onClick={()=>toggle(x,setWanted)} className={wanted.includes(x)?"tag active":"tag"} key={x}>{x}</button>)}</div><div className="start-actions"><button className="button text-button" onClick={()=>setStage(1)}>← Back</button><button disabled={!wanted.length} className="button gold" onClick={()=>setStage(3)}>Continue →</button></div></>}
