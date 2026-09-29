@@ -20,3 +20,11 @@ Build 26 establishes the integration boundary between the GitHub application and
 
 ## Production boundary
 GitHub source code alone does not prove production persistence. A successful Supabase migration, authenticated integration test, and successful Vercel build are required before describing Save & Resume as production-ready.
+
+
+## Build 28 QA findings
+- Corrected Start Discovery compile contracts: recordSummary import and Opportunity Brief property names now match the current data model.
+- Removed stale copy that said secure persistence was not connected.
+- Hardened /api/discovery with explicit unauthenticated GET behavior, basic record-shape validation, and a 250 KB request-size guard.
+- Guarded Field and Experiment pages against unauthenticated API responses.
+- Source-level QA is complete; an actual Next.js production build has not been executed by the GitHub connector and remains a deployment-gate requirement.
