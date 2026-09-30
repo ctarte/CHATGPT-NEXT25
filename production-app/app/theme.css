@@ -290,3 +290,14 @@
 .outside-eyes>div b{padding:14px;background:rgba(255,255,255,.06);font:700 9px/1.45 Arial,sans-serif;letter-spacing:.08em;color:#fff}
 .outside-eyes small{display:block;padding-top:13px;border-top:1px solid rgba(255,255,255,.13);color:#bdc7ca;line-height:1.55}
 @media(max-width:650px){.outside-eyes>div{grid-template-columns:1fr}}
+
+
+/* Build 57 — evidence through other people's eyes */
+.outside-evidence{display:grid!important;grid-template-columns:1fr!important;gap:10px!important}
+.outside-evidence label{display:block;padding:15px;background:rgba(255,255,255,.06)}
+.outside-evidence label b{display:block;margin-bottom:9px;font:700 9px/1.4 Arial,sans-serif;letter-spacing:.08em;color:#fff}
+.outside-evidence textarea{width:100%;box-sizing:border-box;padding:11px 12px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.08);color:#fff;font:400 14px/1.5 Georgia,serif;resize:vertical}
+.outside-evidence textarea::placeholder{color:#aeb9bd}
+.discovery-casting{margin:18px 0 0!important;padding:16px 18px!important;background:#f4f1e9!important;color:var(--ink)!important}
+.discovery-casting span{display:block;margin-bottom:7px;font:800 8px/1.3 Arial,sans-serif;letter-spacing:.12em;color:#8b6b31}
+.discovery-casting p{margin:0!important;color:#465159!important;font-size:13px!important}
