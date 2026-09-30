@@ -311,3 +311,16 @@
 .fascination-reveal>p:not(.fascination-name){max-width:800px;color:#505a60!important}
 .fascination-reveal textarea{width:100%;box-sizing:border-box;margin:15px 0;padding:15px;border:1px solid rgba(23,39,49,.18);background:#fff;color:#172731;font:400 16px/1.55 Georgia,serif;resize:vertical}
 .fascination-reveal blockquote{margin:8px 0 0;padding:14px 0 0;border-top:1px solid rgba(23,39,49,.12);font:italic 17px/1.5 Georgia,serif;color:#6d5935}
+
+
+/* Build 59 — distinctiveness as a discovery lens */
+.distinctive-lens{margin:28px 0 0;padding:25px;background:#fff;border:1px solid rgba(164,125,56,.3)}
+.distinctive-lens>span{display:block;margin-bottom:7px;font:800 8px/1.2 Arial,sans-serif;letter-spacing:.15em;color:#8b6b31}
+.distinctive-lens h3{margin:0 0 8px;font:400 25px/1.25 Georgia,serif;color:#172731}
+.distinctive-lens>p{max-width:760px!important;color:#525d62!important}
+.lens-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:18px 0}
+.lens-grid article{padding:16px;background:#f4f1e9}.lens-grid b{display:block;margin-bottom:7px;font:800 8px/1.3 Arial,sans-serif;letter-spacing:.09em;color:#6e572f}.lens-grid p{margin:0!important;font-size:13px!important;line-height:1.55!important;color:#4d585e!important}
+.lens-equation{display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding:15px 0;border-top:1px solid rgba(23,39,49,.12);border-bottom:1px solid rgba(23,39,49,.12)}
+.lens-equation b,.lens-equation strong{padding:7px 9px;background:#172731;color:#fff;font:800 8px/1.2 Arial,sans-serif;letter-spacing:.08em}.lens-equation strong{background:#9b7839}.lens-equation i{font-style:normal;color:#9b7839}
+.distinctive-lens>small{display:block;margin-top:13px;color:#6b7478;line-height:1.5}
+@media(max-width:700px){.lens-grid{grid-template-columns:1fr}}
