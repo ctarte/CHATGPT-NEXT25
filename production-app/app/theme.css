@@ -204,3 +204,20 @@
 .reaction-instruction span{font:800 9px/1.2 Arial,sans-serif;letter-spacing:.16em;color:#8b6b31}
 .reaction-instruction p{margin:6px 0 0!important;font:italic 400 16px/1.4 Georgia,serif!important;color:#4d575b!important}
 @media(max-width:760px){.clue-recap{grid-template-columns:1fr}.clue-recap i{display:none}.clue-recap span,.clue-recap strong{min-height:auto}}
+
+
+/* Build 47 — Show Me More idea room */
+.idea-room{margin:30px 0 4px;padding:30px;background:#172731;color:white;border-top:2px solid var(--gold2)}
+.idea-room-head{max-width:760px;margin-bottom:24px}
+.idea-room-head>span,.idea-room-test>span{font:800 9px/1.3 Arial,sans-serif;letter-spacing:.17em;color:var(--gold2)}
+.idea-room-head h3{margin:9px 0 8px;font:italic 400 26px/1.2 Georgia,serif;color:white}
+.idea-room-head p{color:#d5dcde!important}
+.idea-shapes{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.idea-shapes article{padding:20px 17px;border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.035)}
+.idea-shapes article>b{display:block;margin-bottom:12px;font:800 9px/1.2 Arial,sans-serif;letter-spacing:.14em;color:var(--gold2)}
+.idea-shapes article>strong{display:block;margin-bottom:8px;font:400 17px/1.25 Georgia,serif;color:white}
+.idea-shapes article>p{margin:0!important;font-size:12px!important;line-height:1.55!important;color:#cbd3d5!important}
+.idea-room-test{margin-top:20px;padding:20px 22px;background:#f4f1e9;color:var(--ink)}
+.idea-room-test strong{display:block;margin:8px 0;font:italic 400 20px/1.3 Georgia,serif}
+.idea-room-test p{margin:0!important;font-size:13px!important;color:#586166!important}
+@media(max-width:850px){.idea-shapes{grid-template-columns:1fr 1fr}}@media(max-width:520px){.idea-room{padding:24px 18px}.idea-shapes{grid-template-columns:1fr}}
