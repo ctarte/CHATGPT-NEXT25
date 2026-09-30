@@ -130,3 +130,12 @@
 .discovery-loop i{font-style:normal;color:var(--gold2);font-size:22px}
 .dark-section .reaction-row{margin-top:20px}
 @media(max-width:800px){.studio-prompt{padding:24px 22px}.discovery-loop{grid-template-columns:1fr 1fr;gap:10px}.discovery-loop i{display:none}.discovery-loop span{min-height:92px}}
+
+
+/* Build 41 — reveal the field of possibilities */
+.home-worlds .world-card{position:relative;overflow:hidden;transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease}
+.home-worlds .world-card:after{content:"";position:absolute;left:0;bottom:0;width:0;height:2px;background:var(--gold2);transition:width .3s ease}
+.home-worlds .world-card:hover{transform:translateY(-4px);border-color:rgba(184,145,72,.65);box-shadow:0 18px 38px rgba(20,28,34,.08)}
+.home-worlds .world-card:hover:after{width:100%}
+.home-worlds .world-card small{display:block;margin-top:18px;padding-top:16px;border-top:1px solid rgba(24,37,46,.12);font:700 9px/1.7 Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#6e7477}
+.home-worlds .world-card.surprise small{border-top-color:rgba(255,255,255,.18);color:#d9d5ca}
