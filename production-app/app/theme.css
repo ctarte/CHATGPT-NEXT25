@@ -301,3 +301,13 @@
 .discovery-casting{margin:18px 0 0!important;padding:16px 18px!important;background:#f4f1e9!important;color:var(--ink)!important}
 .discovery-casting span{display:block;margin-bottom:7px;font:800 8px/1.3 Arial,sans-serif;letter-spacing:.12em;color:#8b6b31}
 .discovery-casting p{margin:0!important;color:#465159!important;font-size:13px!important}
+
+
+/* Build 58 — The Fascination Question reveal */
+.fascination-reveal{margin:28px -26px -26px;padding:34px 30px;background:#f5f0e5;color:var(--ink);border-top:1px solid rgba(164,125,56,.35)}
+.fascination-reveal>span{display:block;margin-bottom:8px;font:800 8px/1.2 Arial,sans-serif;letter-spacing:.17em;color:#8b6b31}
+.fascination-name{margin:0 0 14px!important;font:800 10px/1.2 Arial,sans-serif!important;letter-spacing:.14em;color:#172731!important}
+.fascination-reveal h3{max-width:860px;margin:0 0 15px;font:400 30px/1.25 Georgia,serif;color:#172731}
+.fascination-reveal>p:not(.fascination-name){max-width:800px;color:#505a60!important}
+.fascination-reveal textarea{width:100%;box-sizing:border-box;margin:15px 0;padding:15px;border:1px solid rgba(23,39,49,.18);background:#fff;color:#172731;font:400 16px/1.55 Georgia,serif;resize:vertical}
+.fascination-reveal blockquote{margin:8px 0 0;padding:14px 0 0;border-top:1px solid rgba(23,39,49,.12);font:italic 17px/1.5 Georgia,serif;color:#6d5935}
