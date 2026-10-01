@@ -406,3 +406,10 @@
 .anticipation-visual span{position:relative;z-index:1;color:#fff;font:500 clamp(2rem,3.6vw,4rem)/1.02 Georgia,serif;letter-spacing:-.02em}
 .anticipation-visual em{color:#dbc596;font-style:italic}
 @media(max-width:850px){.anticipation{grid-template-columns:1fr;padding:72px 7vw}.anticipation-visual{min-height:360px}.anticipation h2{font-size:clamp(2.2rem,10vw,3.7rem)}}
+
+/* Build 78 refinement: immediate career/business recognition */
+.hero-77 .hero-recognition-simple{max-width:720px!important;margin:24px 0 28px}
+.hero-recognition-lead{margin:0;color:inherit;font-size:clamp(1.12rem,1.55vw,1.38rem);line-height:1.62;letter-spacing:-.01em}
+.hero-recognition-lead strong{font-weight:650}
+.hero-recognition-quiet{max-width:650px;margin:16px 0 0;font-size:1.02rem;line-height:1.65;opacity:.82}
+@media(max-width:850px){.hero-recognition-lead{font-size:1.08rem}.hero-recognition-quiet{font-size:.98rem}}
