@@ -492,3 +492,5 @@ linear-gradient(145deg,#14253a 0%,#243a4f 55%,#a88950 140%);border-radius:2px}
 @media(max-width:850px){.hero-77 .hero-art{min-height:430px;padding:34px}.hero-77 .lab-label{top:32px;left:34px}.hero-77 .hero-art:before{width:300px;height:300px}.section.knowledge:before{right:6vw;top:40px}}
 
 /* Vercel redeploy trigger — Build 79V */
+
+/* Build 79V deployment check after Vercel root-directory setting update */
