@@ -16,4 +16,4 @@ export default function Page(){return <Chrome><main>
 <section className="final-cta"><p className="eyebrow dark">STILL NOT SURE WHAT YOU’RE LOOKING FOR?</p><h2>Good. You don’t need to be.</h2><p>You don’t need the idea. You don’t need the plan. You don’t need the answer.</p><h3>You just need enough curiosity to begin.</h3><Link className="button dark-button" href="/start">Help me find what’s next →</Link></section>
 </main></Chrome>}
 
-/* Build 77 — simplify hero and separate Think Tank explanation */
+/* Build 77 — simplify hero and separate Think Tank explanation; final copy */
