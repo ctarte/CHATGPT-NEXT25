@@ -389,3 +389,6 @@
 
 /* Build 75: recognition-first hero hierarchy */
 .hero h1{font-size:clamp(2.8rem,5.2vw,5.2rem);line-height:.98;margin:.22em 0 .38em}.hero-recognition{margin:20px 0 24px;padding-left:20px;border-left:2px solid var(--gold2)}.hero-recognition p{margin:8px 0}.think-tank-label{margin:30px 0 6px;font-size:11px!important;font-weight:800;letter-spacing:.15em;color:var(--gold2)}.think-tank-idea{margin:0 0 18px;max-width:720px;font:400 clamp(1.45rem,2.6vw,2.35rem)/1.2 Georgia,serif}.think-tank-idea em{font-style:normal;color:var(--gold2)}
+
+/* Build 77: quieter first screen, Think Tank story gets its own beat */
+.hero-77{min-height:650px;padding-top:11vh;padding-bottom:11vh}.hero-recognition-simple{max-width:690px!important;margin:24px 0 28px;font-size:1.08rem;line-height:1.75}.hero-77 h2{margin-top:12px;max-width:680px}.hero-77 .hero-actions{margin-top:38px}.think-tank-intro{padding:78px 10vw 84px;background:var(--paper);text-align:center}.think-tank-intro h2{max-width:900px;margin:10px auto 20px;font:400 clamp(2rem,4vw,3.8rem)/1.08 Georgia,serif;color:var(--navy)}.think-tank-intro h2 em{font-style:normal;color:var(--gold)}.think-tank-intro>p:not(.eyebrow){max-width:780px;margin:12px auto}.think-tank-promise{font-size:1.12rem}
