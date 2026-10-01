@@ -440,3 +440,16 @@
 .anticipation-visual{min-height:540px;box-shadow:0 24px 55px rgba(20,37,58,.13)}
 .possibility-ribbon{margin-top:0}
 @media(max-width:850px){.hero-77{padding-top:64px;padding-bottom:72px}.hero-77 .hero-recognition-simple{padding-left:18px}.think-tank-intro,.section.knowledge{padding-top:72px;padding-bottom:76px}.anticipation{padding-top:78px;padding-bottom:78px}.anticipation-visual{min-height:380px}}
+
+/* Build 78P2 — refine typography around the hero question */
+.hero-77 .eyebrow{font-size:10px;font-weight:700;letter-spacing:.19em;line-height:1.45;color:#c9ad78;opacity:.95}
+.hero-77 h1{font-weight:400;letter-spacing:-.035em;line-height:.99}
+.hero-77 h1 em{font-weight:400;letter-spacing:-.025em}
+.hero-77 .hero-recognition-simple{border-left:1px solid rgba(209,180,126,.48);padding-top:18px;padding-bottom:18px}
+.hero-recognition-lead{font-family:Georgia,serif;font-size:clamp(1.08rem,1.42vw,1.28rem);font-weight:400;line-height:1.72;letter-spacing:0}
+.hero-recognition-lead strong{font-weight:400}
+.hero-recognition-lead strong:first-child{font-weight:600}
+.hero-recognition-quiet{font-family:Georgia,serif;font-size:1rem;line-height:1.7;font-style:italic;opacity:.72;max-width:620px}
+.hero-77 h2{font-weight:400;opacity:.94}
+.hero-77 h2 strong{font-weight:600}
+@media(max-width:850px){.hero-77 .eyebrow{font-size:9px;letter-spacing:.15em}.hero-recognition-lead{font-size:1.06rem}.hero-recognition-quiet{font-size:.96rem}}
