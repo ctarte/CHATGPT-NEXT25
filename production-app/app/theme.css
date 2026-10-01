@@ -386,3 +386,6 @@
 
 /* Build 73 — executable Journal brief */
 .run-brief{display:block;margin-top:12px;padding:10px 14px;border:0;background:#172731;color:#fff;font:800 9px/1.2 Arial,sans-serif;letter-spacing:.08em;cursor:pointer}.run-brief:hover{opacity:.86}
+
+/* Build 75: recognition-first hero hierarchy */
+.hero h1{font-size:clamp(2.8rem,5.2vw,5.2rem);line-height:.98;margin:.22em 0 .38em}.hero-recognition{margin:20px 0 24px;padding-left:20px;border-left:2px solid var(--gold2)}.hero-recognition p{margin:8px 0}.think-tank-label{margin:30px 0 6px;font-size:11px!important;font-weight:800;letter-spacing:.15em;color:var(--gold2)}.think-tank-idea{margin:0 0 18px;max-width:720px;font:400 clamp(1.45rem,2.6vw,2.35rem)/1.2 Georgia,serif}.think-tank-idea em{font-style:normal;color:var(--gold2)}
