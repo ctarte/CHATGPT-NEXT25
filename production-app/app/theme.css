@@ -461,3 +461,5 @@
 .hero-recognition-lead strong{font-weight:700;color:var(--gold)}
 .hero-recognition-quiet{margin-top:18px;font-family:Georgia,serif;font-size:1.02rem;line-height:1.7;font-weight:400;font-style:italic;opacity:.68;max-width:650px}
 @media(max-width:850px){.hero-77 h1{margin-bottom:16px}.hero-recognition-lead{font-size:1.14rem;line-height:1.68}.hero-recognition-quiet{margin-top:15px;font-size:.96rem}}
+
+/* Vercel redeploy trigger — Build 78P3 */
