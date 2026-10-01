@@ -413,3 +413,30 @@
 .hero-recognition-lead strong{font-weight:650}
 .hero-recognition-quiet{max-width:650px;margin:16px 0 0;font-size:1.02rem;line-height:1.65;opacity:.82}
 @media(max-width:850px){.hero-recognition-lead{font-size:1.08rem}.hero-recognition-quiet{font-size:.98rem}}
+
+/* Build 78P — homepage polish: hierarchy, rhythm, restraint */
+.hero-77{min-height:0;padding-top:10vh;padding-bottom:10vh}
+.hero-77 .eyebrow{margin-bottom:18px}
+.hero-77 h1{max-width:760px;margin-top:0;margin-bottom:26px}
+.hero-77 .hero-recognition-simple{margin:0 0 26px;padding:22px 0 22px 24px;border-left:1px solid rgba(209,180,126,.7)}
+.hero-recognition-lead{line-height:1.72}
+.hero-recognition-quiet{margin-top:13px;max-width:610px}
+.hero-77 h2{margin:0;max-width:620px;font-size:clamp(1.18rem,1.7vw,1.48rem);line-height:1.5}
+.hero-77 .hero-actions{margin-top:30px}
+.hero-77 .hero-art{align-self:center}
+.think-tank-intro{padding-top:92px;padding-bottom:96px}
+.think-tank-intro h2{max-width:860px;margin-top:14px;margin-bottom:24px}
+.think-tank-intro>p:not(.eyebrow){font-size:1.05rem;line-height:1.72}
+.think-tank-promise{margin-top:24px!important;font-size:1.22rem!important;color:var(--navy)}
+.section.knowledge{padding-top:96px;padding-bottom:104px}
+.section.knowledge>h2{margin-bottom:20px}
+.section.knowledge .studio-intro{max-width:850px;font-size:1.08rem;line-height:1.8}
+.section.knowledge .studio-prompt{margin-top:34px;margin-bottom:34px}
+.section.knowledge .steps.compact{margin-top:38px}
+.anticipation{margin:0;padding-top:112px;padding-bottom:112px;gap:8vw}
+.anticipation-copy{padding:18px 0}
+.anticipation h2{margin-top:16px;margin-bottom:30px}
+.anticipation-close{padding-top:24px;margin-top:28px!important;border-top:1px solid rgba(23,39,49,.14)}
+.anticipation-visual{min-height:540px;box-shadow:0 24px 55px rgba(20,37,58,.13)}
+.possibility-ribbon{margin-top:0}
+@media(max-width:850px){.hero-77{padding-top:64px;padding-bottom:72px}.hero-77 .hero-recognition-simple{padding-left:18px}.think-tank-intro,.section.knowledge{padding-top:72px;padding-bottom:76px}.anticipation{padding-top:78px;padding-bottom:78px}.anticipation-visual{min-height:380px}}
