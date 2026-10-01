@@ -453,3 +453,11 @@
 .hero-77 h2{font-weight:400;opacity:.94}
 .hero-77 h2 strong{font-weight:600}
 @media(max-width:850px){.hero-77 .eyebrow{font-size:9px;letter-spacing:.15em}.hero-recognition-lead{font-size:1.06rem}.hero-recognition-quiet{font-size:.96rem}}
+
+/* Build 78P3 — recognition panel: stronger, cleaner, closer to hero */
+.hero-77 h1{margin-bottom:18px}
+.hero-77 .hero-recognition-simple{margin:0 0 28px;padding:4px 0 0;border-left:0}
+.hero-recognition-lead{font-family:Arial,Helvetica,sans-serif;font-size:clamp(1.28rem,1.75vw,1.55rem);font-weight:500;line-height:1.72;letter-spacing:-.012em;color:var(--navy)}
+.hero-recognition-lead strong{font-weight:700;color:var(--gold)}
+.hero-recognition-quiet{margin-top:18px;font-family:Georgia,serif;font-size:1.02rem;line-height:1.7;font-weight:400;font-style:italic;opacity:.68;max-width:650px}
+@media(max-width:850px){.hero-77 h1{margin-bottom:16px}.hero-recognition-lead{font-size:1.14rem;line-height:1.68}.hero-recognition-quiet{margin-top:15px;font-size:.96rem}}
