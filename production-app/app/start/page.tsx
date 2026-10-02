@@ -1,6 +1,6 @@
 "use client";
 import {useEffect,useMemo,useRef,useState,type Dispatch,type SetStateAction} from "react";
-import {useSearchParams} from "next/navigation";
+
 import {Chrome} from "../components/SiteChrome";
 import {possibilityUniverse} from "../../lib/discovery/possibilities";
 import {buildDiscoveryProfile} from "../../lib/discovery/profile";
@@ -51,7 +51,7 @@ const lanes=[
 type Reaction=typeof reactions[number];
 
 export default function Page(){
- const searchParams=useSearchParams(); const path=searchParams.get("path")||""; const pathway=pathwayBriefs[path];
+ const [path,setPath]=useState(""); const pathway=pathwayBriefs[path];
  const [stage,setStage]=useState(1),[pick,setPick]=useState("");
  const [lastRefinement,setLastRefinement]=useState<{reaction:Reaction;title:string;message:string}|null>(null);
  const [wanted,setWanted]=useState<string[]>([]),[avoid,setAvoid]=useState<string[]>([]);
@@ -73,6 +73,7 @@ export default function Page(){
  const [reentry,setReentry]=useState("");
  const [saveState,setSaveState]=useState<"loading"|"ready"|"saving"|"saved"|"signed-out"|"error">("loading");
  const restored=useRef(false);
+ useEffect(()=>{setPath(new URLSearchParams(window.location.search).get("path")||"")},[]);
  useEffect(()=>{if(!pathway)return;setPick(v=>v||pathway.pick);setWanted(v=>v.length?v:pathway.more);setAvoid(v=>v.length?v:pathway.less)},[path]);
  const toggle=(x:string,setter:Dispatch<SetStateAction<string[]>>)=>setter(s=>s.includes(x)?s.filter(v=>v!==x):[...s,x]);
  const ordered=useMemo(()=>[...possibilities].sort((a,b)=>{
