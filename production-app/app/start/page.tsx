@@ -56,7 +56,8 @@ export default function Page(){
  const [lastRefinement,setLastRefinement]=useState<{reaction:Reaction;title:string;message:string}|null>(null);
  const [intersectionReactions,setIntersectionReactions]=useState<Record<string,"THAT DOESN’T FEEL RIGHT"|"I’M CURIOUS"|"SHOW ME MORE">>({});
  const [secretDirection,setSecretDirection]=useState("");
- const [secretRevealed,setSecretRevealed]=useState(false);\n const [blindOutcome,setBlindOutcome]=useState("");
+ const [secretRevealed,setSecretRevealed]=useState(false);
+ const [blindOutcome,setBlindOutcome]=useState("");
  const [wanted,setWanted]=useState<string[]>([]),[avoid,setAvoid]=useState<string[]>([]);
  const [index,setIndex]=useState(0),[rated,setRated]=useState<Record<string,Reaction>>({});
  const [rejecting,setRejecting]=useState(false),[rejectData,setRejectData]=useState<Record<string,string[]>>({});
