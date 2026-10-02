@@ -50,7 +50,7 @@ const lanes=[
 ];
 type Reaction=typeof reactions[number];
 
-export default function Page(){
+function activeTitles(rated:Record<string,Reaction>){return Object.entries(rated).filter(([,r])=>r==="THAT DOESN’T FEEL RIGHT"||r==="MAYBE").map(([id])=>possibilities.find(p=>p.id===id)?.title).filter((x):x is string=>Boolean(x));}\n\nexport default function Page(){
  const [path,setPath]=useState(""); const pathway=pathwayBriefs[path];
  const [stage,setStage]=useState(1),[pick,setPick]=useState("");
  const [lastRefinement,setLastRefinement]=useState<{reaction:Reaction;title:string;message:string}|null>(null);
@@ -92,7 +92,10 @@ export default function Page(){
    const score=(p:typeof possibilities[number])=>p.signals.filter(x=>wanted.includes(x)).length-p.conditions.filter(x=>avoid.includes(x)).length;
    return (score(b)+laneBoost(b))-(score(a)+laneBoost(a));
  }),[wanted,avoid,lane]);
- const roundItems=useMemo(()=>buildRound(ordered,wanted,avoid,lane,seen,Object.entries(rated).filter(([,r])=>r==="CURIOUS"||r==="SHOW ME MORE").map(([id])=>possibilities.find(p=>p.id===id)?.title).filter((title):title is string=>Boolean(title)),7,reentry as any,path as any),[ordered,wanted,avoid,lane,seen,rated,reentry,path]);
+ const persistenceSeen=useMemo(()=>persistenceMode==="DIFFERENT"?[...new Set([...seen,...activeTitles(rated)])]:seen,[persistenceMode,seen,rated]);
+ const persistenceLane=persistenceMode==="DIFFERENT"||persistenceMode==="CHALLENGE"?"":lane;
+ const persistenceReentry=useMemo(()=>persistenceMode==="LIFE"?{...reentry,focus:"Design around desired life conditions before prior experience."}:persistenceMode==="CHALLENGE"?{...reentry,focus:"Challenge earlier assumptions and deliberately search for contradictory evidence."}:persistenceMode==="LEARNED"?{...reentry,focus:"Preserve positive and negative reaction evidence as constraints for the next search."}:reentry,[persistenceMode,reentry]);
+ const roundItems=useMemo(()=>buildRound(ordered,wanted,avoid,persistenceLane,persistenceSeen,Object.entries(rated).filter(([,r])=>r==="CURIOUS"||r==="SHOW ME MORE").map(([id])=>possibilities.find(p=>p.id===id)?.title).filter((title):title is string=>Boolean(title)),7,persistenceReentry as any,path as any),[ordered,wanted,avoid,persistenceLane,persistenceSeen,rated,persistenceReentry,path]);
  const activeItems=roundItems.length?roundItems:ordered.filter(p=>!seen.includes(p.title)).slice(0,7);
  const current=activeItems[Math.min(index,Math.max(0,activeItems.length-1))]||ordered[0];
  const advance=()=>{setRejecting(false);setPreview(false);setDeepDive(false);const nextSeen=[...new Set([...seen,current.title])];setSeen(nextSeen);if(index<activeItems.length-1)setIndex(index+1);else setStage(5)};
