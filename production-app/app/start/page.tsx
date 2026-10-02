@@ -81,7 +81,7 @@ export default function Page(){
    const score=(p:typeof possibilities[number])=>p.signals.filter(x=>wanted.includes(x)).length-p.conditions.filter(x=>avoid.includes(x)).length;
    return (score(b)+laneBoost(b))-(score(a)+laneBoost(a));
  }),[wanted,avoid,lane]);
- const roundItems=useMemo(()=>buildRound(ordered,wanted,avoid,lane,seen,Object.entries(rated).filter(([,r])=>r==="CURIOUS"||r==="SHOW ME MORE").map(([id])=>possibilities.find(p=>p.id===id)?.title).filter((title):title is string=>Boolean(title)),7,reentry as any),[ordered,wanted,avoid,lane,seen,rated,reentry]);
+ const roundItems=useMemo(()=>buildRound(ordered,wanted,avoid,lane,seen,Object.entries(rated).filter(([,r])=>r==="CURIOUS"||r==="SHOW ME MORE").map(([id])=>possibilities.find(p=>p.id===id)?.title).filter((title):title is string=>Boolean(title)),7,reentry as any,path as any),[ordered,wanted,avoid,lane,seen,rated,reentry,path]);
  const activeItems=roundItems.length?roundItems:ordered.filter(p=>!seen.includes(p.title)).slice(0,7);
  const current=activeItems[Math.min(index,Math.max(0,activeItems.length-1))]||ordered[0];
  const advance=()=>{setRejecting(false);setPreview(false);setDeepDive(false);const nextSeen=[...new Set([...seen,current.title])];setSeen(nextSeen);if(index<activeItems.length-1)setIndex(index+1);else setStage(5)};
