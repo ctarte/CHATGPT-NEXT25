@@ -1,6 +1,7 @@
 import type {OpportunityIntelligence} from "./opportunityIntelligence";
 import type {ExperimentInterpretation,ExperimentResult} from "./experimentLearning";
 import type {Experiment} from "./experimentDesigner";
+import {assessResearchConfidence,type ResearchConfidence} from "./researchStandards";
 
 export type ReadinessState="STRONG_SIGNAL"|"PROMISING"|"MIXED"|"UNRESOLVED"|"CAUTION";
 export type CommitmentLevel="EXPLORE"|"TEST"|"PILOT"|"PREPARE"|"COMMIT";
@@ -20,6 +21,8 @@ export type OpportunityReadiness={
  headline:string;
  explanation:string;
  unresolved:string[];
+ researchConfidence:ResearchConfidence;
+ researchLanguage:string;
 };
 
 const evidenceState=(intel:OpportunityIntelligence,lens:string):ReadinessState=>{
@@ -32,6 +35,8 @@ const evidenceState=(intel:OpportunityIntelligence,lens:string):ReadinessState=>
 
 export function buildReadiness(intel:OpportunityIntelligence,experiment?:Experiment,result?:ExperimentResult,interpretation?:ExperimentInterpretation):OpportunityReadiness{
  const unresolved=intel.dossier.items.filter(i=>i.status==="UNRESOLVED").map(i=>i.question);
+ const allSources=intel.dossier.items.flatMap(i=>i.sources||[]);
+ const research=assessResearchConfidence(allSources);
  const realWorld:ReadinessState=!interpretation?"UNRESOLVED":interpretation.state==="EXPAND"?"STRONG_SIGNAL":interpretation.state==="REFINE"?"MIXED":interpretation.state==="REDESIGN"?"CAUTION":"UNRESOLVED";
  const dimensions:ReadinessDimension[]=[
   {key:"PERSON_FIT",label:"PERSONAL FIT",state:"PROMISING",basis:"The opportunity earned investigation through Discovery reactions and fit signals.",unresolved:"Personal fit should continue to be tested through behavior, not assumed from assessment answers alone."},
@@ -45,13 +50,16 @@ export function buildReadiness(intel:OpportunityIntelligence,experiment?:Experim
  const caution=dimensions.some(d=>d.state==="CAUTION");
  const open=dimensions.some(d=>d.state==="UNRESOLVED");
  const strong=realWorld==="STRONG_SIGNAL"&&!caution&&!open;
- const commitment:CommitmentLevel=caution?"EXPLORE":open?"TEST":strong?"PILOT":"TEST";
+ const researchTooWeak=research.confidence==="INSUFFICIENT_EVIDENCE"||research.confidence==="EARLY_SIGNAL";
+ const commitment:CommitmentLevel=caution?"EXPLORE":researchTooWeak?"EXPLORE":open?"TEST":strong?"PILOT":"TEST";
  return {
   opportunity:intel.dossier.opportunity,
   dimensions,
   commitment,
-  headline:caution?"THIS VERSION NEEDS WORK BEFORE YOU INVEST MORE.":open?"INTERESTING SIGNALS. IMPORTANT QUESTIONS ARE STILL OPEN.":strong?"THE EVIDENCE JUSTIFIES A LARGER—but still controlled—TEST.":"PROMISING ENOUGH TO KEEP TESTING. NOT ENOUGH TO MAKE A LEAP.",
+  headline:caution?"THIS VERSION NEEDS WORK BEFORE YOU INVEST MORE.":researchTooWeak?"THE RESEARCH IS NOT STRONG ENOUGH YET. KEEP INVESTIGATING.":open?"INTERESTING SIGNALS. IMPORTANT QUESTIONS ARE STILL OPEN.":strong?"THE EVIDENCE JUSTIFIES A LARGER—but still controlled—TEST.":"PROMISING ENOUGH TO KEEP TESTING. NOT ENOUGH TO MAKE A LEAP.",
   explanation:"Readiness is shown by dimension rather than compressed into a single match score. Different kinds of evidence deserve different weight.",
-  unresolved
+  unresolved,
+  researchConfidence:research.confidence,
+  researchLanguage:research.language
  };
 }
