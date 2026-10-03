@@ -17,6 +17,7 @@ export type EvidenceSource={
 
 export type EvidenceItem={
   lens:EvidenceLens;
+  scope?:"SHARED"|"CAREER"|"BUSINESS";
   question:string;
   whyItMatters:string;
   status:EvidenceStatus;
@@ -44,13 +45,13 @@ const shared:EvidenceItem[]=[
 
 export function createEvidenceDossier(opportunity:string,path:"CAREER"|"BUSINESS"|"BOTH"):EvidenceDossier{
  const career:EvidenceItem[]=[
-  {lens:"BUYER",question:"Which employers are hiring for work that resembles this direction?",whyItMatters:"Named employers and adjacent roles make demand concrete.",status:"UNRESOLVED"},
-  {lens:"ENTRY",question:"Which skills or credentials are truly required, and which are merely preferred?",whyItMatters:"We should distinguish real barriers from intimidating job-description language.",status:"UNRESOLVED"}
+  {lens:"BUYER",scope:"CAREER",question:"Which employers are hiring for work that resembles this direction?",whyItMatters:"Named employers and adjacent roles make demand concrete.",status:"UNRESOLVED"},
+  {lens:"ENTRY",scope:"CAREER",question:"Which skills or credentials are truly required, and which are merely preferred?",whyItMatters:"We should distinguish real barriers from intimidating job-description language.",status:"UNRESOLVED"}
  ];
  const business:EvidenceItem[]=[
-  {lens:"BUYER",question:"Who has the problem, budget and reason to buy this?",whyItMatters:"A business opportunity becomes real only when a specific customer has a reason to pay.",status:"UNRESOLVED"},
-  {lens:"COMPETITION",question:"What alternatives are customers already paying for?",whyItMatters:"Competition can validate demand while revealing how the offer must differ.",status:"UNRESOLVED"},
-  {lens:"ENTRY",question:"What capital, licensing, suppliers or operating capabilities are actually required?",whyItMatters:"Startup effort should be visible before the customer becomes attached to the idea.",status:"UNRESOLVED"}
+  {lens:"BUYER",scope:"BUSINESS",question:"Who has the problem, budget and reason to buy this?",whyItMatters:"A business opportunity becomes real only when a specific customer has a reason to pay.",status:"UNRESOLVED"},
+  {lens:"COMPETITION",scope:"BUSINESS",question:"What alternatives are customers already paying for?",whyItMatters:"Competition can validate demand while revealing how the offer must differ.",status:"UNRESOLVED"},
+  {lens:"ENTRY",scope:"BUSINESS",question:"What capital, licensing, suppliers or operating capabilities are actually required?",whyItMatters:"Startup effort should be visible before the customer becomes attached to the idea.",status:"UNRESOLVED"}
  ];
  const items=[...shared,...(path==="CAREER"?career:path==="BUSINESS"?business:[...career,...business])];
  return {opportunity,path,hypothesis:"This direction has earned investigation because it fits discovery evidence. It has not yet earned a recommendation.",items};
@@ -96,11 +97,11 @@ export function dossierAudit(dossier:EvidenceDossier){
 }
 
 
-export type EvidenceUpdate={lens:EvidenceLens;finding:string;status:EvidenceStatus;sources:EvidenceSource[];uncertainty?:string;nextVerification?:string};
+export type EvidenceUpdate={lens:EvidenceLens;scope?:"SHARED"|"CAREER"|"BUSINESS";finding:string;status:EvidenceStatus;sources:EvidenceSource[];uncertainty?:string;nextVerification?:string};
 
 export function applyEvidenceUpdates(dossier:EvidenceDossier,updates:EvidenceUpdate[]):EvidenceDossier{
  return {...dossier,items:dossier.items.map(item=>{
-  const matches=updates.filter(u=>u.lens===item.lens);
+  const matches=updates.filter(u=>u.lens===item.lens&&(!item.scope||!u.scope||u.scope===item.scope));
   if(!matches.length)return item;
   const statuses=matches.map(m=>m.status);
   const status:EvidenceStatus=statuses.includes("MIXED")||(statuses.includes("SUPPORTED")&&statuses.includes("CONTRADICTED"))?"MIXED":statuses.includes("CONTRADICTED")?"CONTRADICTED":statuses.every(s=>s==="SUPPORTED")?"SUPPORTED":"UNRESOLVED";
@@ -111,8 +112,8 @@ export function applyEvidenceUpdates(dossier:EvidenceDossier,updates:EvidenceUpd
 export function evidenceDecisionState(dossier:EvidenceDossier){
  const summary=evidenceSummary(dossier);
  const audit=dossierAudit(dossier);
- if(summary.unresolved>0)return {state:"KEEP_RESEARCHING",language:"We do not know enough yet to treat this opportunity as validated."};
  if(summary.contradicted>0)return {state:"RETHINK",language:"Important evidence argues against this version. Redesign or replace it before moving forward."};
+ if(summary.unresolved>0)return {state:"KEEP_RESEARCHING",language:"We do not know enough yet to treat this opportunity as validated."};
  if(summary.mixed>0)return {state:"TEST_CAREFULLY",language:"The evidence is mixed. A small real-world test should decide what research alone cannot."};
  if(audit.sourceCount===0)return {state:"KEEP_RESEARCHING",language:"The dossier has conclusions but no auditable outside evidence."};
  return {state:"READY_TO_TEST",language:"The evidence supports taking a controlled next step—not making a leap."};
