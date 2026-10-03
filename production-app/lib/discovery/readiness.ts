@@ -40,13 +40,15 @@ export function buildReadiness(intel:OpportunityIntelligence,experiment?:Experim
  const hardConstraints=intel.dossier.items.filter(i=>i.status==="CONTRADICTED"&&["ENTRY","ECONOMICS","COUNTER_EVIDENCE"].includes(i.lens)).map(i=>`${i.lens}: ${i.finding||i.question}`);
  if(interpretation?.state==="REDESIGN")hardConstraints.push(`REAL_WORLD: ${interpretation.language}`);
  const research=assessResearchConfidence(allSources);
- const realWorld:ReadinessState=!interpretation?"UNRESOLVED":interpretation.state==="EXPAND"?"STRONG_SIGNAL":interpretation.state==="REFINE"?"MIXED":interpretation.state==="REDESIGN"?"CAUTION":"UNRESOLVED";
+ const resultMismatch=Boolean(result&&experiment&&result.experimentId!==experiment.id);
+ const resultIncomplete=Boolean(result&&experiment&&result.attempts<experiment.targetCount);
+ const realWorld:ReadinessState=resultMismatch||resultIncomplete?"UNRESOLVED":!interpretation?"UNRESOLVED":interpretation.state==="EXPAND"?"STRONG_SIGNAL":interpretation.state==="REFINE"?"MIXED":interpretation.state==="REDESIGN"?"CAUTION":"UNRESOLVED";
  const dimensions:ReadinessDimension[]=[
   {key:"PERSON_FIT",label:"PERSONAL FIT",state:"PROMISING",basis:"The opportunity earned investigation through Discovery reactions and fit signals.",unresolved:"Personal fit should continue to be tested through behavior, not assumed from assessment answers alone."},
   {key:"MARKET",label:"MARKET EVIDENCE",state:evidenceState(intel,"MARKET"),basis:"Current outside-world demand evidence in the Opportunity Dossier."},
   {key:"ECONOMICS",label:"ECONOMIC REALITY",state:evidenceState(intel,"ECONOMICS"),basis:"Compensation, pricing, cost and margin evidence in the Opportunity Dossier."},
   {key:"ENTRY",label:"ENTRY FEASIBILITY",state:evidenceState(intel,"ENTRY"),basis:"Required credentials, capital, capabilities or access."},
-  {key:"REAL_WORLD",label:"REAL-WORLD RESPONSE",state:realWorld,basis:interpretation?.language||"No completed behavioral experiment has been interpreted yet."},
+  {key:"REAL_WORLD",label:"REAL-WORLD RESPONSE",state:realWorld,basis:resultMismatch?"The recorded result does not belong to this experiment.":resultIncomplete&&experiment?`The experiment has ${result?.attempts||0} of ${experiment.targetCount} planned attempts. Complete the test before treating the result as decision evidence.`:interpretation?.language||"No completed behavioral experiment has been interpreted yet."},
   {key:"RISK",label:"UNRESOLVED RISK",state:unresolved.length?"UNRESOLVED":"PROMISING",basis:unresolved.length?`${unresolved.length} important evidence questions remain open.`:"No required evidence question remains unresolved."},
   {key:"REVERSIBILITY",label:"REVERSIBILITY",state:experiment&&experiment.maxSpend<=500&&experiment.timeboxDays<=21?"STRONG_SIGNAL":"PROMISING",basis:experiment?`Current test is capped at $${experiment.maxSpend} and ${experiment.timeboxDays} days.`:"The next step should remain small and reversible."}
  ];
