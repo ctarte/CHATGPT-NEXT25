@@ -102,7 +102,8 @@ export default function Page(){
  const roundItems=useMemo(()=>buildRound(ordered,wanted,avoid,persistenceLane,persistenceSeen,Object.entries(rated).filter(([,r])=>r==="CURIOUS"||r==="SHOW ME MORE").map(([id])=>possibilities.find(p=>p.id===id)?.title).filter((title):title is string=>Boolean(title)),7,persistenceReentry as any,path as any),[ordered,wanted,avoid,persistenceLane,persistenceSeen,rated,persistenceReentry,path]);
  const activeItems=roundItems.length?roundItems:ordered.filter(p=>!seen.includes(p.title)).slice(0,7);
  const current=activeItems[Math.min(index,Math.max(0,activeItems.length-1))]||ordered[0];
- const evidenceDossier=useMemo(()=>createEvidenceDossier("Independent Specialized Service",(opportunityPath||"BOTH") as "CAREER"|"BUSINESS"|"BOTH"),[opportunityPath]);
+ const investigatedOpportunity=briefTitle||current?.title||"Opportunity under investigation";
+ const evidenceDossier=useMemo(()=>createEvidenceDossier(investigatedOpportunity,(opportunityPath||"BOTH") as "CAREER"|"BUSINESS"|"BOTH"),[investigatedOpportunity,opportunityPath]);
  const evidenceState=useMemo(()=>evidenceSummary(evidenceDossier),[evidenceDossier]);
  const researchPlan=useMemo(()=>buildResearchPlan(evidenceDossier.opportunity,evidenceDossier.path),[evidenceDossier]);
  const advance=()=>{setRejecting(false);setPreview(false);setDeepDive(false);const nextSeen=[...new Set([...seen,current.title])];setSeen(nextSeen);if(index<activeItems.length-1)setIndex(index+1);else setStage(5)};
