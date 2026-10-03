@@ -1,6 +1,6 @@
 import type {EvidenceDossier} from "./evidence";
 import {createEvidenceDossier} from "./evidence";
-import {buildResearchPlan} from "./researchIntelligence";
+import {buildResearchPlan,type ResearchQuery} from "./researchIntelligence";
 import {createResearchJob,type RawResearchResult,synthesizeFinding} from "./liveResearch";
 import {assembleOpportunityIntelligence,type OpportunityIntelligence} from "./opportunityIntelligence";
 import {nextResearchTasks,discoveryReentry} from "./researchOrchestrator";
@@ -11,7 +11,7 @@ import type {Experiment} from "./experimentDesigner";
 import type {ExperimentResult,ExperimentInterpretation} from "./experimentLearning";
 
 export type ResearchProvider=(
- query:{opportunity:string;path:"CAREER"|"BUSINESS"|"BOTH";lens:string;scope?:string;searches:string[];contradictionSearch?:string}
+ query:ResearchQuery & {opportunity:string;path:"CAREER"|"BUSINESS"|"BOTH"}
 )=>Promise<RawResearchResult[]>;
 
 export type LiveIntelligencePackage={
