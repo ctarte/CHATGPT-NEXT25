@@ -2,6 +2,7 @@ import type {EvidenceLens,SourceAuthority} from "./evidence";
 
 export type ResearchQuery={
  lens:EvidenceLens;
+ scope?:"SHARED"|"CAREER"|"BUSINESS";
  question:string;
  searches:string[];
  preferredAuthorities:SourceAuthority[];
@@ -59,5 +60,11 @@ const categoryQueries=(category:ResearchPlan["category"],opportunity:string):Res
 
 export function buildResearchPlan(opportunity:string,path:ResearchPlan["path"]):ResearchPlan{
  const category=classify(opportunity,path);
- return {opportunity,path,category,queries:[...base(opportunity),...categoryQueries(category,opportunity),{lens:"COUNTER_EVIDENCE",question:"What would make us stop pursuing this version?",searches:[`${opportunity} failure challenges complaints declining demand`],preferredAuthorities:["PRIMARY","AUTHORITATIVE","INDUSTRY","MARKET_SIGNAL"],freshnessDays:730,minimumIndependentSources:2,contradictionSearch:`${opportunity} evidence of durable demand growth`}]};
+ const specific=path==="BOTH"
+  ?[
+    ...categoryQueries("EMPLOYMENT",opportunity).map(q=>({...q,scope:"CAREER" as const})),
+    ...categoryQueries("SERVICE_BUSINESS",opportunity).map(q=>({...q,scope:"BUSINESS" as const}))
+   ]
+  :categoryQueries(category,opportunity).map(q=>({...q,scope:path as "CAREER"|"BUSINESS"}));
+ return {opportunity,path,category,queries:[...base(opportunity).map(q=>({...q,scope:"SHARED" as const})),...specific,{lens:"COUNTER_EVIDENCE",scope:"SHARED",question:"What would make us stop pursuing this version?",searches:[`${opportunity} failure challenges complaints declining demand`],preferredAuthorities:["PRIMARY","AUTHORITATIVE","INDUSTRY","MARKET_SIGNAL"],freshnessDays:730,minimumIndependentSources:2,contradictionSearch:`${opportunity} evidence of durable demand growth`}]};
 }
