@@ -1,5 +1,19 @@
 export type EvidenceStatus="SUPPORTED"|"MIXED"|"UNRESOLVED"|"CONTRADICTED";
 export type EvidenceLens="MARKET"|"BUYER"|"ECONOMICS"|"ENTRY"|"GEOGRAPHY"|"COMPETITION"|"CHANGE"|"COUNTER_EVIDENCE"|"TEST";
+export type SourceAuthority="PRIMARY"|"AUTHORITATIVE"|"INDUSTRY"|"MARKET_SIGNAL"|"ANECDOTAL";
+export type EvidenceBasis="DIRECT"|"INFERRED"|"SYNTHESIZED";
+
+export type EvidenceSource={
+ label:string;
+ url:string;
+ publisher?:string;
+ publishedAt?:string;
+ checkedAt:string;
+ authority:SourceAuthority;
+ basis:EvidenceBasis;
+ supports:"SUPPORTS"|"CHALLENGES"|"CONTEXT";
+ note?:string;
+};
 
 export type EvidenceItem={
   lens:EvidenceLens;
@@ -7,9 +21,9 @@ export type EvidenceItem={
   whyItMatters:string;
   status:EvidenceStatus;
   finding?:string;
-  sourceLabel?:string;
-  sourceUrl?:string;
-  checkedAt?:string;
+  sources?:EvidenceSource[];
+  uncertainty?:string;
+  nextVerification?:string;
 };
 
 export type EvidenceDossier={
@@ -52,5 +66,31 @@ export function evidenceSummary(dossier:EvidenceDossier){
   unresolved,
   ready:unresolved===0,
   language:unresolved?"RESEARCH IN PROGRESS — IMPORTANT QUESTIONS ARE STILL OPEN.":"THE EVIDENCE HAS BEEN ASSEMBLED. NOW WE INTERPRET WHAT IT MEANS."
+ };
+}
+
+
+export function auditEvidenceItem(item:EvidenceItem){
+ const sources=item.sources||[];
+ const primary=sources.filter(s=>s.authority==="PRIMARY"||s.authority==="AUTHORITATIVE").length;
+ const challenges=sources.filter(s=>s.supports==="CHALLENGES").length;
+ const dated=sources.filter(s=>Boolean(s.publishedAt)).length;
+ return {
+  sourceCount:sources.length,
+  primaryOrAuthoritative:primary,
+  contradictorySources:challenges,
+  datedSources:dated,
+  auditable:sources.length>0&&sources.every(s=>Boolean(s.url&&s.checkedAt)),
+  caution:sources.length===0?"NO OUTSIDE EVIDENCE ATTACHED YET.":challenges>0?"CONTRADICTORY EVIDENCE IS PRESENT — INTERPRET, DON’T AVERAGE IT AWAY.":primary===0?"EVIDENCE EXISTS, BUT NO PRIMARY OR AUTHORITATIVE SOURCE IS ATTACHED YET.":"SOURCE TRAIL PRESENT."
+ };
+}
+
+export function dossierAudit(dossier:EvidenceDossier){
+ const audits=dossier.items.map(auditEvidenceItem);
+ return {
+  sourceCount:audits.reduce((n,a)=>n+a.sourceCount,0),
+  auditableItems:audits.filter(a=>a.auditable).length,
+  challengedItems:audits.filter(a=>a.contradictorySources>0).length,
+  totalItems:audits.length
  };
 }
