@@ -5,7 +5,7 @@ import {createResearchJob,type RawResearchResult,synthesizeFinding} from "./live
 import {assembleOpportunityIntelligence,type OpportunityIntelligence} from "./opportunityIntelligence";
 import {nextResearchTasks,discoveryReentry} from "./researchOrchestrator";
 import {buildReadiness,type OpportunityReadiness} from "./readiness";
-import {buildExecutiveReadinessBrief} from "./readinessBrief";
+import {executiveReadinessBrief} from "./readinessBrief";
 import {buildOpportunityDecisionPage,type OpportunityDecisionPage} from "./decisionPage";
 import type {Experiment} from "./experimentDesigner";
 import type {ExperimentResult,ExperimentInterpretation} from "./experimentLearning";
@@ -47,7 +47,7 @@ export async function runLiveIntelligence(input:{
  const intelligence=assembleOpportunityIntelligence(job,base,findings,now.toISOString());
  const remainingResearch=nextResearchTasks(intelligence.job,intelligence.findings,now);
  const readiness=buildReadiness(intelligence,input.experiment,input.result,input.interpretation);
- const executive=buildExecutiveReadinessBrief(readiness);
+ const executive=executiveReadinessBrief(readiness);
  const reentry=discoveryReentry(intelligence);
  const decisionBrief=buildOpportunityDecisionPage(input.opportunity,readiness,executive,base.hypothesis,input.experiment,reentry);
  return {opportunity:input.opportunity,dossier:intelligence.dossier,intelligence,readiness,decisionBrief,researchComplete:remainingResearch.length===0,remainingResearch,generatedAt:now.toISOString()};
