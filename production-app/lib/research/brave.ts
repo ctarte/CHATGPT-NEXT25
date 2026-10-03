@@ -1,0 +1,39 @@
+import "server-only";
+import type {RawResearchResult} from "../discovery/liveResearch";
+import type {ResearchProvider} from "../discovery/liveIntelligenceWorkflow";
+
+type BraveResult={title?:string;url?:string;description?:string;page_age?:string;profile?:{long_name?:string};language?:string};
+type BraveResponse={web?:{results?:BraveResult[]}};
+
+function publisher(url:string){
+ try{return new URL(url).hostname.replace(/^www\./,"")}catch{return undefined}
+}
+function sourceKind(url:string):RawResearchResult["sourceKind"]{
+ const h=publisher(url)||"";
+ if(/\.gov$|\.gov\./.test(h))return "GOVERNMENT";
+ if(/\.edu$|\.edu\./.test(h))return "ACADEMIC";
+ return "OTHER";
+}
+async function search(q:string,freshnessDays?:number){
+ const key=process.env.BRAVE_SEARCH_API_KEY;
+ if(!key)throw new Error("BRAVE_SEARCH_API_KEY is not configured.");
+ const u=new URL("https://api.search.brave.com/res/v1/web/search");
+ u.searchParams.set("q",q);u.searchParams.set("count","10");u.searchParams.set("country","US");u.searchParams.set("search_lang","en");u.searchParams.set("safesearch","moderate");u.searchParams.set("text_decorations","false");
+ if(freshnessDays&&freshnessDays<=365)u.searchParams.set("freshness",freshnessDays<=1?"pd":freshnessDays<=7?"pw":freshnessDays<=31?"pm":"py");
+ const r=await fetch(u,{headers:{Accept:"application/json","X-Subscription-Token":key},cache:"no-store"});
+ if(!r.ok)throw new Error(`Brave Search failed with status ${r.status}.`);
+ return await r.json() as BraveResponse;
+}
+function normalize(data:BraveResponse,relation:RawResearchResult["relation"],retrievedAt:string):RawResearchResult[]{
+ return (data.web?.results||[]).filter(x=>x.url&&x.title).map(x=>({
+  title:x.title!,url:x.url!,publisher:publisher(x.url!),publishedAt:x.page_age,retrievedAt,
+  excerpt:x.description,claim:x.description||x.title!,relation,sourceKind:sourceKind(x.url!),basis:"DIRECT"
+ }));
+}
+export const braveResearchProvider:ResearchProvider=async ({searches,contradictionSearch})=>{
+ const retrievedAt=new Date().toISOString();
+ const primary=await Promise.all(searches.slice(0,2).map(q=>search(q)));
+ const support=primary.flatMap(x=>normalize(x,"SUPPORTS",retrievedAt));
+ const challenge=contradictionSearch?normalize(await search(contradictionSearch),"CHALLENGES",retrievedAt):[];
+ return [...support,...challenge];
+};
