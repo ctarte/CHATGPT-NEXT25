@@ -58,7 +58,7 @@ export function synthesizeFinding(query:ResearchQuery,results:RawResearchResult[
  const sources=results.map(normalizeSource);
  const supports=sources.filter(s=>s.supports==="SUPPORTS").length;
  const challenges=sources.filter(s=>s.supports==="CHALLENGES").length;
- const independent=new Set(sources.map(s=>s.publisher||new URL(s.url).hostname)).size;
+ const independent=new Set(sources.map(s=>{if(s.publisher)return s.publisher;try{return new URL(s.url).hostname}catch{return s.url}})).size;
  let status:EvidenceStatus="UNRESOLVED";
  if(supports>0&&challenges>0)status="MIXED";
  else if(challenges>=query.minimumIndependentSources&&supports===0)status="CONTRADICTED";
