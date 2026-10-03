@@ -1,4 +1,27 @@
 import type {CustomerIntelligenceBridge} from "./customerOpportunityIntelligence";
+import type {EvidenceSource} from "./evidence";
+import {assessResearchConfidence,type ResearchConfidence} from "./researchStandards";
+
+export type FindingEvidenceTrail={
+ finding:string;
+ researchStrength:ResearchConfidence;
+ whatSourcesShow:string[];
+ ourInterpretation:string;
+ counterEvidence:string[];
+ sources:Array<{label:string;publisher?:string;publishedAt?:string;authority:string;url:string}>;
+};
+
+export function buildFindingEvidenceTrail(finding:string,sources:EvidenceSource[],interpretation:string):FindingEvidenceTrail{
+ const quality=assessResearchConfidence(sources);
+ return {
+  finding,
+  researchStrength:quality.confidence,
+  whatSourcesShow:sources.filter(s=>s.supports!=="CHALLENGES").map(s=>s.note||s.label),
+  ourInterpretation:interpretation,
+  counterEvidence:sources.filter(s=>s.supports==="CHALLENGES").map(s=>s.note||s.label),
+  sources:sources.map(s=>({label:s.label,publisher:s.publisher,publishedAt:s.publishedAt,authority:s.authority,url:s.url}))
+ };
+}
 
 export type OpportunityIntelligenceBrief={
  eyebrow:"OPPORTUNITY INTELLIGENCE BRIEF";
@@ -13,6 +36,7 @@ export type OpportunityIntelligenceBrief={
  nextTests:string[];
  methodology:string;
  researchStrengthLegend:Array<{label:string;meaning:string}>;
+ evidenceTransparency:{headline:string;principle:string;labels:string[]};
  researchStandard:string;
  footer:string;
 };
@@ -44,6 +68,11 @@ export function buildOpportunityIntelligenceBrief(opportunity:string,bridges:Cus
   unanswered:unresolved.map(b=>b.nextQuestion),
   nextTests:[...new Set(bridges.map(b=>b.lowRiskTest))].slice(0,5),
   methodology:"We examine emerging and declining fields, technology, demographics, business models, skill shifts, geography, regulation and value migration. We search for evidence both for and against the opportunity, then connect those findings back to the customer's Discovery clues.",
+  evidenceTransparency:{
+   headline:"EVIDENCE BEHIND THE FINDING",
+   principle:"The conclusion comes first. When you want to inspect it, we show what the sources directly support, what we infer, what challenges the finding, and how strong the research is.",
+   labels:["WHAT THE SOURCES SHOW","OUR INTERPRETATION","WHAT CHALLENGES IT","RESEARCH STRENGTH"]
+  },
   researchStrengthLegend:[
    {label:"STRONG EVIDENCE",meaning:"Multiple independent and current sources, including stronger direct or authoritative evidence."},
    {label:"USEFUL SIGNAL",meaning:"Enough evidence to shape the next question or test, but not a major commitment."},
