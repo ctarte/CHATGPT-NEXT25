@@ -16,7 +16,9 @@ export function assembleOpportunityIntelligence(job:ResearchJob,base:EvidenceDos
 }
 
 export function researchCoverage(intel:OpportunityIntelligence){
- const planned=intel.job.plan.queries.length;
- const researched=new Set(intel.findings.map(f=>f.lens)).size;
+ const plannedLenses=new Set(intel.job.plan.queries.map(q=>q.lens));
+ const researchedLenses=new Set(intel.findings.map(f=>f.lens));
+ const planned=plannedLenses.size;
+ const researched=[...plannedLenses].filter(l=>researchedLenses.has(l)).length;
  return {planned,researched,complete:researched>=planned,remaining:Math.max(0,planned-researched)};
 }
