@@ -5,7 +5,7 @@ export default function Page(){
  return <Chrome><main>
   <section className="page-hero blueprint-hero">
    <p className="eyebrow">CHOOSE HOW FAR YOU WANT TO GO</p>
-   <h1>Start with Discovery.<br/><em>Investigate when something earns it.</em></h1>
+   <h1>Start with Discovery.<br/><em>Go deeper when you find a direction worth exploring.</em></h1>
    <p className="lead">Both versions begin with the same personalized Think Tank process. The difference is simple: one helps you discover directions worth considering; the other goes further and investigates whether the strongest directions hold up in the real world.</p>
   </section>
   <section className="section">
