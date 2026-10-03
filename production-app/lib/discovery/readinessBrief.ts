@@ -12,6 +12,7 @@ export type ExecutiveReadinessBrief={
 export function executiveReadinessBrief(r:OpportunityReadiness):ExecutiveReadinessBrief{
  const encouraging=r.dimensions.filter(d=>d.state==="STRONG_SIGNAL"||d.state==="PROMISING");
  const needs=r.dimensions.filter(d=>d.state==="UNRESOLVED"||d.state==="MIXED");
+ const researchNeedsProof=r.researchConfidence==="EARLY_SIGNAL"||r.researchConfidence==="INSUFFICIENT_EVIDENCE";
  const caution=r.dimensions.filter(d=>d.state==="CAUTION");
  const action:Record<OpportunityReadiness["commitment"],string>={
   EXPLORE:"Keep investigating. Do not make a material commitment yet.",
@@ -24,7 +25,7 @@ export function executiveReadinessBrief(r:OpportunityReadiness):ExecutiveReadine
   title:`${r.opportunity} — Opportunity Readiness`,
   statusLine:r.headline,
   whatLooksEncouraging:encouraging.map(d=>`${d.label}: ${d.basis}`),
-  whatNeedsProof:needs.map(d=>`${d.label}: ${d.unresolved||d.basis}`),
+  whatNeedsProof:[...(researchNeedsProof?[`RESEARCH STRENGTH: ${r.researchLanguage}`]:[]),...needs.map(d=>`${d.label}: ${d.unresolved||d.basis}`)],
   whatWouldChangeOurMind:caution.map(d=>`${d.label}: ${d.basis}`),
   nextCommitment:action[r.commitment]
  };
