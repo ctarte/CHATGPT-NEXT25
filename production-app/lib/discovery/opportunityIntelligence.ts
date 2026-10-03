@@ -1,6 +1,7 @@
 import type {EvidenceDossier} from "./evidence";
 import type {ResearchJob,NormalizedFinding} from "./liveResearch";
 import {applyEvidenceUpdates,evidenceDecisionState} from "./evidence";
+import {buildOpportunityIntelligencePlan,type OpportunityIntelligencePlan} from "./opportunityChangeIntelligence";
 
 export type OpportunityIntelligence={
  job:ResearchJob;
@@ -8,11 +9,12 @@ export type OpportunityIntelligence={
  dossier:EvidenceDossier;
  decision:ReturnType<typeof evidenceDecisionState>;
  refreshedAt?:string;
+ changePlan:OpportunityIntelligencePlan;
 };
 
 export function assembleOpportunityIntelligence(job:ResearchJob,base:EvidenceDossier,findings:NormalizedFinding[],refreshedAt=new Date().toISOString()):OpportunityIntelligence{
  const dossier=applyEvidenceUpdates(base,findings.map(f=>({lens:f.lens,finding:f.claim,status:f.status,sources:f.sources,uncertainty:f.uncertainty,nextVerification:f.nextVerification})));
- return {job:{...job,state:findings.length?"PARTIAL":"PLANNED"},findings,dossier,decision:evidenceDecisionState(dossier),refreshedAt};
+ return {job:{...job,state:findings.length?"PARTIAL":"PLANNED"},findings,dossier,decision:evidenceDecisionState(dossier),refreshedAt,changePlan:buildOpportunityIntelligencePlan(base.opportunity)};
 }
 
 export function researchCoverage(intel:OpportunityIntelligence){
