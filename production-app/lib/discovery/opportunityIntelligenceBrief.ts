@@ -6,7 +6,7 @@ export type OpportunityIntelligenceBrief={
  researchQuestion:string;
  executiveView:string;
  whatIsChanging:Array<{signal:string;finding:string;direction:string}>;
- whereValueIsMoving:string[];
+ whereOpportunitiesAre:string[];
  whyItMattersToYou:Array<{clues:string[];implication:string}>;
  warnings:string[];
  unanswered:string[];
@@ -36,7 +36,7 @@ export function buildOpportunityIntelligenceBrief(opportunity:string,bridges:Cus
   researchQuestion:`Where is the world creating—or closing—opportunities around ${opportunity}, and what does that mean for this customer?`,
   executiveView,
   whatIsChanging:bridges.map(b=>({signal:label(b.signal),finding:b.worldSignal,direction:b.changeDirection})),
-  whereValueIsMoving:value.map(b=>b.worldSignal),
+  whereOpportunitiesAre:value.map(b=>b.worldSignal),
   whyItMattersToYou:bridges.filter(b=>b.customerClues.length).map(b=>({clues:b.customerClues,implication:b.implication})),
   warnings:[...redesigns,...protectedTests].map(b=>b.implication),
   unanswered:unresolved.map(b=>b.nextQuestion),
