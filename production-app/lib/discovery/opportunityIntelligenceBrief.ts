@@ -12,6 +12,7 @@ export type OpportunityIntelligenceBrief={
  unanswered:string[];
  nextTests:string[];
  methodology:string;
+ researchStrengthLegend:Array<{label:string;meaning:string}>;
  researchStandard:string;
  footer:string;
 };
@@ -43,6 +44,12 @@ export function buildOpportunityIntelligenceBrief(opportunity:string,bridges:Cus
   unanswered:unresolved.map(b=>b.nextQuestion),
   nextTests:[...new Set(bridges.map(b=>b.lowRiskTest))].slice(0,5),
   methodology:"We examine emerging and declining fields, technology, demographics, business models, skill shifts, geography, regulation and value migration. We search for evidence both for and against the opportunity, then connect those findings back to the customer's Discovery clues.",
+  researchStrengthLegend:[
+   {label:"STRONG EVIDENCE",meaning:"Multiple independent and current sources, including stronger direct or authoritative evidence."},
+   {label:"USEFUL SIGNAL",meaning:"Enough evidence to shape the next question or test, but not a major commitment."},
+   {label:"EARLY SIGNAL",meaning:"Something worth investigating further, not yet a durable trend."},
+   {label:"INSUFFICIENT EVIDENCE",meaning:"Not enough current, independent evidence to draw a useful conclusion."}
+  ],
   researchStandard:"We prefer direct and authoritative sources, require independent evidence streams, match freshness to the question, search for counter-evidence, and keep uncertainty visible. Repetition is not corroboration.",
   footer:"This brief is research for decision support, not a prediction or guarantee. Trends matter only when current evidence shows why they change the opportunity for this person."
  };
