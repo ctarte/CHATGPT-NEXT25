@@ -94,3 +94,26 @@ export function dossierAudit(dossier:EvidenceDossier){
   totalItems:audits.length
  };
 }
+
+
+export type EvidenceUpdate={lens:EvidenceLens;finding:string;status:EvidenceStatus;sources:EvidenceSource[];uncertainty?:string;nextVerification?:string};
+
+export function applyEvidenceUpdates(dossier:EvidenceDossier,updates:EvidenceUpdate[]):EvidenceDossier{
+ return {...dossier,items:dossier.items.map(item=>{
+  const matches=updates.filter(u=>u.lens===item.lens);
+  if(!matches.length)return item;
+  const statuses=matches.map(m=>m.status);
+  const status:EvidenceStatus=statuses.includes("MIXED")||(statuses.includes("SUPPORTED")&&statuses.includes("CONTRADICTED"))?"MIXED":statuses.includes("CONTRADICTED")?"CONTRADICTED":statuses.every(s=>s==="SUPPORTED")?"SUPPORTED":"UNRESOLVED";
+  return {...item,status,finding:matches.map(m=>m.finding).join(" "),sources:matches.flatMap(m=>m.sources),uncertainty:matches.map(m=>m.uncertainty).filter(Boolean).join(" ")||undefined,nextVerification:matches.map(m=>m.nextVerification).filter(Boolean).join(" | ")||undefined};
+ })};
+}
+
+export function evidenceDecisionState(dossier:EvidenceDossier){
+ const summary=evidenceSummary(dossier);
+ const audit=dossierAudit(dossier);
+ if(summary.unresolved>0)return {state:"KEEP_RESEARCHING",language:"We do not know enough yet to treat this opportunity as validated."};
+ if(summary.contradicted>0)return {state:"RETHINK",language:"Important evidence argues against this version. Redesign or replace it before moving forward."};
+ if(summary.mixed>0)return {state:"TEST_CAREFULLY",language:"The evidence is mixed. A small real-world test should decide what research alone cannot."};
+ if(audit.sourceCount===0)return {state:"KEEP_RESEARCHING",language:"The dossier has conclusions but no auditable outside evidence."};
+ return {state:"READY_TO_TEST",language:"The evidence supports taking a controlled next step—not making a leap."};
+}
