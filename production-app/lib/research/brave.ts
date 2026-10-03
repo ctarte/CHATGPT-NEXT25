@@ -30,10 +30,10 @@ function normalize(data:BraveResponse,relation:RawResearchResult["relation"],ret
   excerpt:x.description,claim:x.description||x.title!,relation,sourceKind:sourceKind(x.url!),basis:"DIRECT"
  }));
 }
-export const braveResearchProvider:ResearchProvider=async ({searches,contradictionSearch})=>{
+export const braveResearchProvider:ResearchProvider=async ({searches,contradictionSearch,freshnessDays})=>{
  const retrievedAt=new Date().toISOString();
- const primary=await Promise.all(searches.slice(0,2).map(q=>search(q)));
+ const primary=await Promise.all(searches.slice(0,2).map(q=>search(q,freshnessDays)));
  const support=primary.flatMap(x=>normalize(x,"SUPPORTS",retrievedAt));
- const challenge=contradictionSearch?normalize(await search(contradictionSearch),"CHALLENGES",retrievedAt):[];
+ const challenge=contradictionSearch?normalize(await search(contradictionSearch,freshnessDays),"CHALLENGES",retrievedAt):[];
  return [...support,...challenge];
 };
