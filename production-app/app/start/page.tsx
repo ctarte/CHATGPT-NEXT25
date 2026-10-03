@@ -50,7 +50,9 @@ const lanes=[
 ];
 type Reaction=typeof reactions[number];
 
-function activeTitles(rated:Record<string,Reaction>){return Object.entries(rated).filter(([,r])=>r==="THAT DOESN’T FEEL RIGHT"||r==="MAYBE").map(([id])=>possibilities.find(p=>p.id===id)?.title).filter((x):x is string=>Boolean(x));}\n\nexport default function Page(){
+function activeTitles(rated:Record<string,Reaction>){return Object.entries(rated).filter(([,r])=>r==="THAT DOESN’T FEEL RIGHT"||r==="MAYBE").map(([id])=>possibilities.find(p=>p.id===id)?.title).filter((x):x is string=>Boolean(x));}
+
+export default function Page(){
  const [path,setPath]=useState(""); const pathway=pathwayBriefs[path];
  const [stage,setStage]=useState(1),[pick,setPick]=useState("");
  const [lastRefinement,setLastRefinement]=useState<{reaction:Reaction;title:string;message:string}|null>(null);
