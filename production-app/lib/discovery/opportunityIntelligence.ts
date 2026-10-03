@@ -13,7 +13,7 @@ export type OpportunityIntelligence={
 };
 
 export function assembleOpportunityIntelligence(job:ResearchJob,base:EvidenceDossier,findings:NormalizedFinding[],refreshedAt=new Date().toISOString()):OpportunityIntelligence{
- const dossier=applyEvidenceUpdates(base,findings.map(f=>({lens:f.lens,finding:f.claim,status:f.status,sources:f.sources,uncertainty:f.uncertainty,nextVerification:f.nextVerification})));
+ const dossier=applyEvidenceUpdates(base,findings.map(f=>({lens:f.lens,scope:f.scope,finding:f.claim,status:f.status,sources:f.sources,uncertainty:f.uncertainty,nextVerification:f.nextVerification})));
  return {job:{...job,state:findings.length?"PARTIAL":"PLANNED"},findings,dossier,decision:evidenceDecisionState(dossier),refreshedAt,changePlan:buildOpportunityIntelligencePlan(base.opportunity)};
 }
 
