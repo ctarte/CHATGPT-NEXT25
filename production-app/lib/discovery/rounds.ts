@@ -23,6 +23,24 @@ export function buildRound(universe:Possibility[],wanted:string[],avoid:string[]
  const ranked=[...fresh].sort((a,b)=>score(b)-score(a));
  const surprise=ranked.find(p=>p.lane==="SURPRISE ME");
  if(reentry==="SURPRISE ME AGAIN"||reentry==="INVESTIGATE THE SURPRISE")return ranked.slice(0,size);
- const core=ranked.filter(p=>p!==surprise).slice(0,Math.max(0,size-(surprise?1:0)));
- return surprise?[...core,surprise]:core.slice(0,size);
+
+ // The opening set should feel curated, not merely sorted. Lead with a credible fit,
+ // then deliberately widen the frame and include one explainable surprise.
+ const take=(predicate:(p:Possibility)=>boolean,used:Set<string>)=>ranked.find(p=>!used.has(p.id)&&predicate(p));
+ const used=new Set<string>();
+ const selected:Possibility[]=[];
+ const add=(p:Possibility|undefined)=>{if(p&&!used.has(p.id)){selected.push(p);used.add(p.id)}};
+
+ add(take(p=>p.lane==="BUILD ON WHAT I KNOW",used));
+ add(take(p=>p.lane==="ONE STEP BEYOND",used));
+ add(take(p=>p.lane==="SURPRISE ME",used));
+
+ // Add breadth before adding near-duplicates: prefer worlds not already represented.
+ while(selected.length<size){
+  const worlds=new Set(selected.map(p=>p.world));
+  const next=take(p=>!worlds.has(p.world),used)||take(()=>true,used);
+  if(!next)break;
+  add(next);
+ }
+ return selected;
 }
