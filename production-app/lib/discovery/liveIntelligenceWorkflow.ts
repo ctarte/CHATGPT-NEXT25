@@ -1,7 +1,7 @@
 import type {EvidenceDossier} from "./evidence";
 import {createEvidenceDossier} from "./evidence";
 import {buildResearchPlan,type ResearchQuery} from "./researchIntelligence";
-import {createResearchJob,type RawResearchResult,synthesizeFinding} from "./liveResearch";
+import {createResearchJob,type RawResearchResult,type NormalizedFinding,synthesizeFinding} from "./liveResearch";
 import {assembleOpportunityIntelligence,type OpportunityIntelligence} from "./opportunityIntelligence";
 import {nextResearchTasks,discoveryReentry} from "./researchOrchestrator";
 import {buildReadiness,type OpportunityReadiness} from "./readiness";
@@ -38,9 +38,9 @@ export async function runLiveIntelligence(input:{
  const base=createEvidenceDossier(input.opportunity,input.path);
  const plan=buildResearchPlan(input.opportunity,input.path);
  const job=createResearchJob(`research-${now.getTime()}`,plan,now.toISOString());
- const findings=[];
+ const findings:NormalizedFinding[]=[];
  for(const q of plan.queries){
-  const raw=await input.provider({opportunity:input.opportunity,path:input.path,lens:q.lens,scope:q.scope,searches:q.searches,contradictionSearch:q.contradictionSearch});
+  const raw=await input.provider({...q,opportunity:input.opportunity,path:input.path});
   const finding=synthesizeFinding(q,raw);
   findings.push({...finding,scope:q.scope});
  }
