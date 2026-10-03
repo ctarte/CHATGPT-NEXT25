@@ -56,13 +56,17 @@ export function normalizeSource(raw:RawResearchResult):EvidenceSource{
 
 export function synthesizeFinding(query:ResearchQuery,results:RawResearchResult[]):NormalizedFinding{
  const sources=results.map(normalizeSource);
- const supports=sources.filter(s=>s.supports==="SUPPORTS").length;
- const challenges=sources.filter(s=>s.supports==="CHALLENGES").length;
- const independent=new Set(sources.map(s=>{if(s.publisher)return s.publisher;try{return new URL(s.url).hostname}catch{return s.url}})).size;
+ const publisherKey=(s:EvidenceSource)=>{if(s.publisher)return s.publisher.trim().toLowerCase();try{return new URL(s.url).hostname.replace(/^www\\./,"").toLowerCase()}catch{return s.url.toLowerCase()}};
+ const supporting=sources.filter(s=>s.supports==="SUPPORTS");
+ const challenging=sources.filter(s=>s.supports==="CHALLENGES");
+ const supports=supporting.length;
+ const challenges=challenging.length;
+ const independentSupport=new Set(supporting.map(publisherKey)).size;
+ const independentChallenges=new Set(challenging.map(publisherKey)).size;
  let status:EvidenceStatus="UNRESOLVED";
  if(supports>0&&challenges>0)status="MIXED";
- else if(challenges>=query.minimumIndependentSources&&supports===0)status="CONTRADICTED";
- else if(supports>=query.minimumIndependentSources&&independent>=query.minimumIndependentSources)status="SUPPORTED";
+ else if(challenges>=query.minimumIndependentSources&&independentChallenges>=query.minimumIndependentSources&&supports===0)status="CONTRADICTED";
+ else if(supports>=query.minimumIndependentSources&&independentSupport>=query.minimumIndependentSources)status="SUPPORTED";
  return {
   lens:query.lens,
   claim:results[0]?.claim||query.question,
