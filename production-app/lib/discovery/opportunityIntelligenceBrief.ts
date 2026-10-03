@@ -12,6 +12,7 @@ export type OpportunityIntelligenceBrief={
  unanswered:string[];
  nextTests:string[];
  methodology:string;
+ researchStandard:string;
  footer:string;
 };
 
@@ -42,6 +43,7 @@ export function buildOpportunityIntelligenceBrief(opportunity:string,bridges:Cus
   unanswered:unresolved.map(b=>b.nextQuestion),
   nextTests:[...new Set(bridges.map(b=>b.lowRiskTest))].slice(0,5),
   methodology:"We examine emerging and declining fields, technology, demographics, business models, skill shifts, geography, regulation and value migration. We search for evidence both for and against the opportunity, then connect those findings back to the customer's Discovery clues.",
+  researchStandard:"We prefer direct and authoritative sources, require independent evidence streams, match freshness to the question, search for counter-evidence, and keep uncertainty visible. Repetition is not corroboration.",
   footer:"This brief is research for decision support, not a prediction or guarantee. Trends matter only when current evidence shows why they change the opportunity for this person."
  };
 }
