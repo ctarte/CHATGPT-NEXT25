@@ -16,6 +16,7 @@ export type RawResearchResult={
 
 export type NormalizedFinding={
  lens:EvidenceLens;
+ scope?:"SHARED"|"CAREER"|"BUSINESS";
  claim:string;
  status:EvidenceStatus;
  sources:EvidenceSource[];
@@ -69,6 +70,7 @@ export function synthesizeFinding(query:ResearchQuery,results:RawResearchResult[
  else if(supports>=query.minimumIndependentSources&&independentSupport>=query.minimumIndependentSources)status="SUPPORTED";
  return {
   lens:query.lens,
+  scope:query.scope,
   claim:results[0]?.claim||query.question,
   status,
   sources,
