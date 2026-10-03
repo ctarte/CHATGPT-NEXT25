@@ -96,7 +96,7 @@ export default function Page(){
  }),[wanted,avoid,lane]);
  const persistenceSeen=useMemo(()=>persistenceMode==="DIFFERENT"?[...new Set([...seen,...activeTitles(rated)])]:seen,[persistenceMode,seen,rated]);
  const persistenceLane=persistenceMode==="DIFFERENT"||persistenceMode==="CHALLENGE"?"":lane;
- const persistenceReentry=useMemo(()=>persistenceMode==="LIFE"?{...reentry,focus:"Design around desired life conditions before prior experience."}:persistenceMode==="CHALLENGE"?{...reentry,focus:"Challenge earlier assumptions and deliberately search for contradictory evidence."}:persistenceMode==="LEARNED"?{...reentry,focus:"Preserve positive and negative reaction evidence as constraints for the next search."}:reentry,[persistenceMode,reentry]);
+ const persistenceReentry=useMemo(()=>persistenceMode==="LIFE"?"Design around desired life conditions before prior experience.":persistenceMode==="CHALLENGE"?"Challenge earlier assumptions and deliberately search for contradictory evidence.":persistenceMode==="LEARNED"?"Preserve positive and negative reaction evidence as constraints for the next search.":reentry,[persistenceMode,reentry]);
  const roundItems=useMemo(()=>buildRound(ordered,wanted,avoid,persistenceLane,persistenceSeen,Object.entries(rated).filter(([,r])=>r==="CURIOUS"||r==="SHOW ME MORE").map(([id])=>possibilities.find(p=>p.id===id)?.title).filter((title):title is string=>Boolean(title)),7,persistenceReentry as any,path as any),[ordered,wanted,avoid,persistenceLane,persistenceSeen,rated,persistenceReentry,path]);
  const activeItems=roundItems.length?roundItems:ordered.filter(p=>!seen.includes(p.title)).slice(0,7);
  const current=activeItems[Math.min(index,Math.max(0,activeItems.length-1))]||ordered[0];
