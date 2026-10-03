@@ -14,6 +14,7 @@ export function executiveReadinessBrief(r:OpportunityReadiness):ExecutiveReadine
  const needs=r.dimensions.filter(d=>d.state==="UNRESOLVED"||d.state==="MIXED");
  const researchNeedsProof=r.researchConfidence==="EARLY_SIGNAL"||r.researchConfidence==="INSUFFICIENT_EVIDENCE";
  const caution=r.dimensions.filter(d=>d.state==="CAUTION");
+ const constraints=r.hardConstraints||[];
  const action:Record<OpportunityReadiness["commitment"],string>={
   EXPLORE:"Keep investigating. Do not make a material commitment yet.",
   TEST:"Run the next small, reversible experiment.",
@@ -26,7 +27,7 @@ export function executiveReadinessBrief(r:OpportunityReadiness):ExecutiveReadine
   statusLine:r.headline,
   whatLooksEncouraging:encouraging.map(d=>`${d.label}: ${d.basis}`),
   whatNeedsProof:[...(researchNeedsProof?[`RESEARCH STRENGTH: ${r.researchLanguage}`]:[]),...needs.map(d=>`${d.label}: ${d.unresolved||d.basis}`)],
-  whatWouldChangeOurMind:caution.map(d=>`${d.label}: ${d.basis}`),
+  whatWouldChangeOurMind:[...constraints.map(x=>`MATERIAL CONSTRAINT: ${x}`),...caution.map(d=>`${d.label}: ${d.basis}`)],
   nextCommitment:action[r.commitment]
  };
 }
