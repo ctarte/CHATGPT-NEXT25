@@ -99,17 +99,24 @@ export function synthesizeFinding(query:ResearchQuery,results:RawResearchResult[
  const challenges=challenging.length;
  const independentSupport=new Set(supporting.map(publisherKey)).size;
  const independentChallenges=new Set(challenging.map(publisherKey)).size;
+ const strongAuthorities=new Set<SourceAuthority>(["PRIMARY","AUTHORITATIVE","INDUSTRY"]);
+ const strongSupport=supporting.filter(s=>strongAuthorities.has(s.authority));
+ const strongChallenges=challenging.filter(s=>strongAuthorities.has(s.authority));
+ const independentStrongSupport=new Set(strongSupport.map(publisherKey)).size;
+ const independentStrongChallenges=new Set(strongChallenges.map(publisherKey)).size;
+ const hasStrongSupport=independentStrongSupport>0;
+ const hasStrongChallenge=independentStrongChallenges>0;
  let status:EvidenceStatus="UNRESOLVED";
  if(supports>0&&challenges>0)status="MIXED";
- else if(challenges>=query.minimumIndependentSources&&independentChallenges>=query.minimumIndependentSources&&supports===0)status="CONTRADICTED";
- else if(supports>=query.minimumIndependentSources&&independentSupport>=query.minimumIndependentSources)status="SUPPORTED";
+ else if(challenges>=query.minimumIndependentSources&&independentChallenges>=query.minimumIndependentSources&&hasStrongChallenge&&supports===0)status="CONTRADICTED";
+ else if(supports>=query.minimumIndependentSources&&independentSupport>=query.minimumIndependentSources&&hasStrongSupport)status="SUPPORTED";
  return {
   lens:query.lens,
   scope:query.scope,
   claim:evaluated.find(r=>r.relation!=="CONTEXT")?.claim||evaluated[0]?.claim||query.question,
   status,
   sources,
-  uncertainty:status==="UNRESOLVED"?"The minimum independent evidence threshold has not been met.":status==="MIXED"?"Credible evidence points in more than one direction.":undefined,
+  uncertainty:status==="UNRESOLVED"?"The evidence is relevant, but the minimum combination of independent and higher-authority support has not been met.":status==="MIXED"?"Credible evidence points in more than one direction.":undefined,
   nextVerification:status==="UNRESOLVED"?(query.contradictionSearch||query.searches[0]):undefined
  };
 }
