@@ -30,16 +30,22 @@ export type ClaimEvaluation={
  rationale:string;
 };
 
+const STOP=new Set(["demand","market","hiring","customers","compensation","rates","pricing","revenue","costs","technology","regulation","trends","jobs","employers","qualifications","requirements","clients","companies","consultant","services","challenges","decline","growth","evidence","durable"]);
 const words=(s:string)=>new Set(s.toLowerCase().replace(/[^a-z0-9 ]/g," ").split(/\s+/).filter(w=>w.length>3));
 const overlap=(a:string,b:string)=>{const x=words(a),y=words(b);return [...x].filter(w=>y.has(w)).length};
+const opportunityTerms=(query:ResearchQuery)=>{
+ const first=(query.searches[0]||"").toLowerCase().replace(/[^a-z0-9 ]/g," ").split(/\s+/).filter(w=>w.length>3&&!STOP.has(w)&&!/^(202[0-9])$/.test(w));
+ return new Set(first);
+};
 
 export function evaluateResearchResult(query:ResearchQuery,result:RawResearchResult):ClaimEvaluation{
  const text=`${result.title} ${result.excerpt||""} ${result.claim||""}`;
  const relevance=overlap(query.question+" "+query.searches.join(" "),text);
- const opportunityTerms=words(query.searches.join(" "));
+ const coreTerms=opportunityTerms(query);
  const textTerms=words(text);
- const opportunityOverlap=[...opportunityTerms].filter(w=>textTerms.has(w)).length;
- if(relevance<2||opportunityOverlap<2)return {relation:"CONTEXT",confidence:"LOW",rationale:"The source may be authoritative, but it does not contain enough opportunity-specific language to count as evidence."};
+ const coreOverlap=[...coreTerms].filter(w=>textTerms.has(w)).length;
+ const requiredCore=coreTerms.size>=2?2:1;
+ if(relevance<2||coreOverlap<requiredCore)return {relation:"CONTEXT",confidence:"LOW",rationale:"The source may be authoritative, but it does not directly address the opportunity closely enough to count as evidence."};
  const t=text.toLowerCase();
  const challengeTerms=["decline","declining","layoff","closure","challenge","risk","displace","obsolete","low pay","margin pressure","complaint","failure","barrier","shortage","weak demand","falling"];
  const supportTerms=["growth","growing","demand","hiring","hire","jobs","revenue","market","clients","customers","increased","expanding","opportunity"];
