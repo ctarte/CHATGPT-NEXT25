@@ -2,6 +2,7 @@ import {NextResponse} from "next/server";
 import {runLiveIntelligence} from "../../../lib/discovery/liveIntelligenceWorkflow";
 import {braveResearchProvider} from "../../../lib/research/brave";
 import {loadDiscoveryRecord,saveDiscoveryRecord} from "../../../lib/discovery/persistence";
+import type {DiscoveryRecord} from "../../../lib/discovery/record";
 
 export const maxDuration=60;
 
@@ -15,7 +16,7 @@ export async function POST(req:Request){
   const stored=await loadDiscoveryRecord();
   if(!stored?.record)return NextResponse.json({error:"Sign in before starting Opportunity Intelligence."},{status:401});
   const pkg=await runLiveIntelligence({opportunity,path,provider:braveResearchProvider});
-  const record=stored.record;
+  const record=stored.record as unknown as DiscoveryRecord;
   await saveDiscoveryRecord({...record,version:2,
    evidenceDossiers:{...(record.evidenceDossiers||{}),[opportunity]:pkg.dossier},
    readiness:{...(record.readiness||{}),[opportunity]:pkg.readiness},
