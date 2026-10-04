@@ -4,7 +4,13 @@ import { NextRequest, NextResponse } from "next/server";
 export async function GET(request: NextRequest) {
   const url = new URL(request.url);
   const code = url.searchParams.get("code");
-  const next = url.searchParams.get("next") || "/dashboard";
+  const requestedNext = url.searchParams.get("next") || "/dashboard";
+  // Only permit same-site relative destinations. Never allow the callback
+  // query string to redirect authentication to an external origin.
+  const next =
+    requestedNext.startsWith("/") && !requestedNext.startsWith("//")
+      ? requestedNext
+      : "/dashboard";
   const response = NextResponse.redirect(
     new URL(code ? next : "/auth/sign-in?error=callback", url.origin)
   );
