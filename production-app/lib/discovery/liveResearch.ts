@@ -36,7 +36,10 @@ const overlap=(a:string,b:string)=>{const x=words(a),y=words(b);return [...x].fi
 export function evaluateResearchResult(query:ResearchQuery,result:RawResearchResult):ClaimEvaluation{
  const text=`${result.title} ${result.excerpt||""} ${result.claim||""}`;
  const relevance=overlap(query.question+" "+query.searches.join(" "),text);
- if(relevance<2)return {relation:"CONTEXT",confidence:"LOW",rationale:"The search result does not contain enough question-specific language to classify it as evidence."};
+ const opportunityTerms=words(query.searches.join(" "));
+ const textTerms=words(text);
+ const opportunityOverlap=[...opportunityTerms].filter(w=>textTerms.has(w)).length;
+ if(relevance<2||opportunityOverlap<2)return {relation:"CONTEXT",confidence:"LOW",rationale:"The source may be authoritative, but it does not contain enough opportunity-specific language to count as evidence."};
  const t=text.toLowerCase();
  const challengeTerms=["decline","declining","layoff","closure","challenge","risk","displace","obsolete","low pay","margin pressure","complaint","failure","barrier","shortage","weak demand","falling"];
  const supportTerms=["growth","growing","demand","hiring","hire","jobs","revenue","market","clients","customers","increased","expanding","opportunity"];
@@ -81,7 +84,8 @@ export function normalizeSource(raw:RawResearchResult):EvidenceSource{
 export function synthesizeFinding(query:ResearchQuery,results:RawResearchResult[]):NormalizedFinding{
  const evaluated=results.map(r=>{const e=evaluateResearchResult(query,r);return {...r,relation:e.relation,basis:e.confidence==="LOW"?"INFERRED":(r.basis||"INFERRED")} as RawResearchResult});
  const sourceRank:Record<SourceAuthority,number>={PRIMARY:5,AUTHORITATIVE:4,INDUSTRY:3,MARKET_SIGNAL:2,ANECDOTAL:1};
- const sources=evaluated.map(normalizeSource).sort((a,b)=>sourceRank[b.authority]-sourceRank[a.authority]);
+ const relationRank:Record<RawResearchResult["relation"],number>={SUPPORTS:3,CHALLENGES:3,CONTEXT:1};
+ const sources=evaluated.map(normalizeSource).sort((a,b)=>relationRank[b.supports]-relationRank[a.supports]||sourceRank[b.authority]-sourceRank[a.authority]);
  const publisherKey=(s:EvidenceSource)=>{if(s.publisher)return s.publisher.trim().toLowerCase();try{return new URL(s.url).hostname.replace(/^www\\./,"").toLowerCase()}catch{return s.url.toLowerCase()}};
  const supporting=sources.filter(s=>s.supports==="SUPPORTS");
  const challenging=sources.filter(s=>s.supports==="CHALLENGES");
