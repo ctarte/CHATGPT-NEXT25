@@ -30,11 +30,19 @@ function normalize(data:BraveResponse,relation:RawResearchResult["relation"],ret
   excerpt:x.description,claim:x.description||x.title!,relation,sourceKind:sourceKind(x.url!),basis:"DIRECT"
  }));
 }
-export const braveResearchProvider:ResearchProvider=async ({searches,contradictionSearch,freshnessDays})=>{
+const authoritySearches=(q:string)=>[
+ `${q} site:bls.gov OR site:census.gov OR site:bea.gov OR site:sba.gov`,
+ `${q} site:.edu`
+];
+
+export const braveResearchProvider:ResearchProvider=async ({searches,contradictionSearch,freshnessDays,preferredAuthorities})=>{
  const retrievedAt=new Date().toISOString();
- const primary=await Promise.all(searches.slice(0,2).map(q=>search(q,freshnessDays)));
- // Search retrieval identifies candidate sources; it does not establish whether a source supports or challenges the hypothesis.
- // Keep results as CONTEXT until a claim-level classifier or human review evaluates the source content.
+ const authorityQueries=(preferredAuthorities||[]).some(a=>a==="PRIMARY"||a==="AUTHORITATIVE")
+  ? authoritySearches(searches[0]).slice(0,2):[];
+ const primaryQueries=[...authorityQueries,...searches].slice(0,3);
+ const primary=await Promise.all(primaryQueries.map(q=>search(q,freshnessDays)));
+ // Retrieval only supplies candidates. The claim evaluator decides whether each result supports,
+ // challenges, or merely contextualizes the research question.
  const primaryCandidates=primary.flatMap(x=>normalize(x,"CONTEXT",retrievedAt));
  const contradictionCandidates=contradictionSearch?normalize(await search(contradictionSearch,freshnessDays),"CONTEXT",retrievedAt):[];
  return [...primaryCandidates,...contradictionCandidates];
