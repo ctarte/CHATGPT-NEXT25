@@ -61,7 +61,7 @@ export default function SignInForm() {
         {busy ? "Signing in…" : "Sign in securely"}
       </button>
       <p className="auth-note">
-        NEXT25 customer access is private. Do not share your password with NEXT25 staff.
+        Discovered by Design™ customer access is private. Never share your password with anyone.
       </p>
     </form>
   );
