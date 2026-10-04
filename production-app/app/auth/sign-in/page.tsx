@@ -13,7 +13,7 @@ export default async function SignIn() {
     <main className="cardpage">
       <section className="signin-card">
         <p className="eyebrow">CUSTOMER ACCESS</p>
-        <h1>Welcome to My NEXT25.</h1>
+        <h1>Welcome back to Discovered by Design™.</h1>
         <p className="lead">
           Sign in to continue your private discovery and Blueprint experience.
         </p>
