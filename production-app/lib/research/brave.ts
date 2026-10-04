@@ -33,7 +33,9 @@ function normalize(data:BraveResponse,relation:RawResearchResult["relation"],ret
 export const braveResearchProvider:ResearchProvider=async ({searches,contradictionSearch,freshnessDays})=>{
  const retrievedAt=new Date().toISOString();
  const primary=await Promise.all(searches.slice(0,2).map(q=>search(q,freshnessDays)));
- const support=primary.flatMap(x=>normalize(x,"SUPPORTS",retrievedAt));
- const challenge=contradictionSearch?normalize(await search(contradictionSearch,freshnessDays),"CHALLENGES",retrievedAt):[];
- return [...support,...challenge];
+ // Search retrieval identifies candidate sources; it does not establish whether a source supports or challenges the hypothesis.
+ // Keep results as CONTEXT until a claim-level classifier or human review evaluates the source content.
+ const primaryCandidates=primary.flatMap(x=>normalize(x,"CONTEXT",retrievedAt));
+ const contradictionCandidates=contradictionSearch?normalize(await search(contradictionSearch,freshnessDays),"CONTEXT",retrievedAt):[];
+ return [...primaryCandidates,...contradictionCandidates];
 };
