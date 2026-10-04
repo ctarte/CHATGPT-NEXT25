@@ -7,7 +7,8 @@ export default function ForgotPasswordForm(){
   e.preventDefault(); setBusy(true); setMessage("");
   try{
    const supabase=createClient();
-   const {error}=await supabase.auth.resetPasswordForEmail(email,{redirectTo:`${window.location.origin}/auth/update-password`});
+   const next=encodeURIComponent("/auth/update-password");
+   const {error}=await supabase.auth.resetPasswordForEmail(email,{redirectTo:`${window.location.origin}/auth/callback?next=${next}`});
    if(error){
     const detail = [error.message, error.code].filter(Boolean).join(" · ");
     const rateLimited = /rate|limit|too many|seconds|minute/i.test(detail);
