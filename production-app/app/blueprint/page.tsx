@@ -40,7 +40,8 @@ export default function Page(){
  }
  useEffect(()=>{fetch("/api/discovery").then(async r=>{if(r.status===401){setState("signed-out");return}if(!r.ok)throw new Error();const j=await r.json();setRecord(j?.record?.record||null);setState("ready")}).catch(()=>setState("error"))},[]);
  const input=useMemo(()=>{if(!record)return fallback;
-  const preserved=Object.entries(record.fieldActions||{}).filter(([,v])=>v!=="DISCARD").map(([k])=>k);\n  const field=[...new Set([...preserved,...(record.briefsOpened||[])])];
+  const preserved=Object.entries(record.fieldActions||{}).filter(([,v])=>v!=="DISCARD").map(([k])=>k);
+  const field=[...new Set([...preserved,...(record.briefsOpened||[])])];
   const unexpected=field.filter(t=>possibilityUniverse.find(p=>p.title===t)?.lane==="SURPRISE ME");
   const knowledge=Object.values(record.knowledge||{}).map(x=>x.trim()).filter(Boolean).slice(0,6);
   const experiments=(record.experiments||[]).map(x=>`${x.possibility} · ${x.time} · ${x.status}`);
