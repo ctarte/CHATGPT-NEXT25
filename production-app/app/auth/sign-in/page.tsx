@@ -2,6 +2,7 @@ import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 import SignInForm from "./sign-in-form";
 import ForgotPasswordForm from "./forgot-password-form";
+import { Chrome } from "../../components/SiteChrome";
 
 export default async function SignIn() {
   const supabase = await createClient();
@@ -10,7 +11,7 @@ export default async function SignIn() {
   if (user) redirect("/dashboard");
 
   return (
-    <main className="cardpage">
+    <Chrome><main className="cardpage">
       <section className="signin-card">
         <p className="eyebrow">CUSTOMER ACCESS</p>
         <h1>Welcome back to Discovered by Design™.</h1>
@@ -20,6 +21,6 @@ export default async function SignIn() {
         <SignInForm />
         <ForgotPasswordForm />
       </section>
-    </main>
+    </main></Chrome>
   );
 }
