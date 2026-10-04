@@ -80,10 +80,8 @@ export function normalizeSource(raw:RawResearchResult):EvidenceSource{
 
 export function synthesizeFinding(query:ResearchQuery,results:RawResearchResult[]):NormalizedFinding{
  const evaluated=results.map(r=>{const e=evaluateResearchResult(query,r);return {...r,relation:e.relation,basis:e.confidence==="LOW"?"INFERRED":(r.basis||"INFERRED")} as RawResearchResult});
- const sources=evaluated.map(normalizeSource).sort((a,b)=>{
-  const rank={HIGH:3,MEDIUM:2,LOW:1} as const;
-  return rank[b.sourceQuality]-rank[a.sourceQuality];
- });
+ const sourceRank:Record<SourceAuthority,number>={PRIMARY:5,AUTHORITATIVE:4,INDUSTRY:3,MARKET_SIGNAL:2,ANECDOTAL:1};
+ const sources=evaluated.map(normalizeSource).sort((a,b)=>sourceRank[b.authority]-sourceRank[a.authority]);
  const publisherKey=(s:EvidenceSource)=>{if(s.publisher)return s.publisher.trim().toLowerCase();try{return new URL(s.url).hostname.replace(/^www\\./,"").toLowerCase()}catch{return s.url.toLowerCase()}};
  const supporting=sources.filter(s=>s.supports==="SUPPORTS");
  const challenging=sources.filter(s=>s.supports==="CHALLENGES");
