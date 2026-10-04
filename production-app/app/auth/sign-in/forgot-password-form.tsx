@@ -8,7 +8,15 @@ export default function ForgotPasswordForm(){
   try{
    const supabase=createClient();
    const {error}=await supabase.auth.resetPasswordForEmail(email,{redirectTo:`${window.location.origin}/auth/update-password`});
-   setMessage(error?"We couldn't send the reset email. Please try again.":"Check your email for a password-reset link. Use the newest email only.");
+   if(error){
+    const detail = [error.message, error.code].filter(Boolean).join(" · ");
+    const rateLimited = /rate|limit|too many|seconds|minute/i.test(detail);
+    setMessage(rateLimited
+      ? "A password-reset email was requested recently. Please wait a few minutes before trying again."
+      : `Password reset could not be sent. Supabase: ${detail || "Unknown recovery error"}`);
+   }else{
+    setMessage("Check your email for a password-reset link. Use the newest email only.");
+   }
   }catch{setMessage("Password recovery is temporarily unavailable. Please try again later.");}
   finally{setBusy(false);}
  }
