@@ -9,7 +9,7 @@ import {synthesizeDiscovery} from "../../lib/discovery/synthesis";
 import {buildDiscoveryField} from "../../lib/discovery/field";
 import {buildOpportunityBrief} from "../../lib/discovery/opportunityBrief";
 import {buildRound} from "../../lib/discovery/rounds";
-import {createDiscoveryRecord,recordSummary} from "../../lib/discovery/record";
+import {createDiscoveryRecord,recordSummary,type DiscoveryRecord} from "../../lib/discovery/record";
 import {createEvidenceDossier,evidenceSummary} from "../../lib/discovery/evidence";
 import {buildResearchPlan} from "../../lib/discovery/researchIntelligence";
 
