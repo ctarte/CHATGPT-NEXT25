@@ -152,7 +152,7 @@ export function synthesizeFinding(query:ResearchQuery,results:RawResearchResult[
  return {
   lens:query.lens,
   scope:query.scope,
-  claim:evaluated.find(r=>r.relation!=="CONTEXT")?.claim||(query.lens==="GEOGRAPHY"?"Current evidence does not yet establish a dominant geographic market, remote-access pattern, or material location constraint for this opportunity.":query.lens==="BUYER"?"Current evidence does not yet establish a specific buyer who demonstrably hires, retains, or pays for this outside expertise.":evaluated[0]?.claim||query.question),
+  claim:evaluated.find(r=>r.relation!=="CONTEXT")?.claim||(query.lens==="GEOGRAPHY"?"Current evidence does not yet establish a dominant geographic market, remote-access pattern, or material location constraint for this opportunity.":query.lens==="BUYER"?"Current evidence does not yet establish a specific buyer who demonstrably hires, retains, or pays for this outside expertise.":query.lens==="COUNTER_EVIDENCE"?"Current research has not yet identified sufficiently relevant evidence that materially challenges this opportunity.":evaluated[0]?.claim||query.question),
   status,
   sources,
   uncertainty:status==="UNRESOLVED"?"The evidence is relevant, but the minimum combination of independent and higher-authority support has not been met.":status==="MIXED"?"Credible evidence points in more than one direction.":undefined,
