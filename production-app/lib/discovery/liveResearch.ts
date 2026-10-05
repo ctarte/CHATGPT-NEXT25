@@ -87,8 +87,18 @@ export function normalizeSource(raw:RawResearchResult):EvidenceSource{
  };
 }
 
+const geographyClaimSignal=(r:RawResearchResult)=>{
+ const t=`${r.title} ${r.excerpt||""} ${r.claim||""}`.toLowerCase();
+ const access=/\b(remote|hybrid|onsite|on-site|work from home|nationwide|nationally|across the united states|anywhere in the united states)\b/.test(t);
+ const constraint=/\b(license|licensing|licensed|state restriction|travel required|must reside|residency|local presence|in-person|commute|relocation)\b/.test(t);
+ const activity=/\b(demand|jobs?|openings?|clients?|customers?|employers?|market|concentration|hiring|opportunities|workforce)\b/.test(t);
+ const place=/\b(alabama|alaska|arizona|arkansas|california|colorado|connecticut|delaware|florida|georgia|hawaii|idaho|illinois|indiana|iowa|kansas|kentucky|louisiana|maine|maryland|massachusetts|michigan|minnesota|mississippi|missouri|montana|nebraska|nevada|new hampshire|new jersey|new mexico|new york|north carolina|north dakota|ohio|oklahoma|oregon|pennsylvania|rhode island|south carolina|south dakota|tennessee|texas|utah|vermont|virginia|washington|west virginia|wisconsin|wyoming)\b/.test(t);
+ const headquarters=/\b(hq|headquarters|founded|based in)\b/.test(t);
+ return access||constraint||(place&&activity&&!headquarters);
+};
+
 export function synthesizeFinding(query:ResearchQuery,results:RawResearchResult[]):NormalizedFinding{
- const evaluated=results.map(r=>{const e=evaluateResearchResult(query,r);return {...r,relation:e.relation,basis:e.confidence==="LOW"?"INFERRED":(r.basis||"INFERRED")} as RawResearchResult});
+ const evaluated=results.map(r=>{const e=evaluateResearchResult(query,r);const relation=query.lens==="GEOGRAPHY"&&!geographyClaimSignal(r)?"CONTEXT":e.relation;return {...r,relation,basis:e.confidence==="LOW"?"INFERRED":(r.basis||"INFERRED")} as RawResearchResult});
  const sourceRank:Record<SourceAuthority,number>={PRIMARY:5,AUTHORITATIVE:4,INDUSTRY:3,MARKET_SIGNAL:2,ANECDOTAL:1};
  const relationRank:Record<RawResearchResult["relation"],number>={SUPPORTS:3,CHALLENGES:3,CONTEXT:1};
  const sources=evaluated.map(normalizeSource).sort((a,b)=>relationRank[b.supports]-relationRank[a.supports]||sourceRank[b.authority]-sourceRank[a.authority]);
@@ -113,7 +123,7 @@ export function synthesizeFinding(query:ResearchQuery,results:RawResearchResult[
  return {
   lens:query.lens,
   scope:query.scope,
-  claim:evaluated.find(r=>r.relation!=="CONTEXT")?.claim||evaluated[0]?.claim||query.question,
+  claim:evaluated.find(r=>r.relation!=="CONTEXT")?.claim||(query.lens==="GEOGRAPHY"?"Current evidence does not yet establish a dominant geographic market, remote-access pattern, or material location constraint for this opportunity.":evaluated[0]?.claim||query.question),
   status,
   sources,
   uncertainty:status==="UNRESOLVED"?"The evidence is relevant, but the minimum combination of independent and higher-authority support has not been met.":status==="MIXED"?"Credible evidence points in more than one direction.":undefined,
