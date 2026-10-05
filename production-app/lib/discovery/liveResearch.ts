@@ -97,8 +97,16 @@ const geographyClaimSignal=(r:RawResearchResult)=>{
  return access||constraint||(place&&activity&&!headquarters);
 };
 
+const buyerClaimSignal=(r:RawResearchResult)=>{
+ const t=`${r.title} ${r.excerpt||""} ${r.claim||""}`.toLowerCase();
+ const buyer=/\b(founder|owner|ceo|executive|leadership team|management team|employer|company|companies|business|businesses|organization|organizations|client|clients|customer|customers|buyer|buyers)\b/.test(t);
+ const purchase=/\b(hire|hires|hiring|hired|retain|retains|retained|engage|engages|engaged|contract|contracts|contracted|pay|pays|paid|purchase|purchases|buy|buys|employ|employs|employed|seeking|looking for)\b/.test(t);
+ const outsideExpertise=/\b(adviser|advisor|advisory|consultant|consulting|fractional|interim|outsourced|external|independent|expert|specialist|executive)\b/.test(t);
+ return buyer&&purchase&&outsideExpertise;
+};
+
 export function synthesizeFinding(query:ResearchQuery,results:RawResearchResult[]):NormalizedFinding{
- const evaluated=results.map(r=>{const e=evaluateResearchResult(query,r);const relation=query.lens==="GEOGRAPHY"&&!geographyClaimSignal(r)?"CONTEXT":e.relation;return {...r,relation,basis:e.confidence==="LOW"?"INFERRED":(r.basis||"INFERRED")} as RawResearchResult});
+ const evaluated=results.map(r=>{const e=evaluateResearchResult(query,r);const relation=(query.lens==="GEOGRAPHY"&&!geographyClaimSignal(r))||(query.lens==="BUYER"&&!buyerClaimSignal(r))?"CONTEXT":e.relation;return {...r,relation,basis:e.confidence==="LOW"?"INFERRED":(r.basis||"INFERRED")} as RawResearchResult});
  const sourceRank:Record<SourceAuthority,number>={PRIMARY:5,AUTHORITATIVE:4,INDUSTRY:3,MARKET_SIGNAL:2,ANECDOTAL:1};
  const relationRank:Record<RawResearchResult["relation"],number>={SUPPORTS:3,CHALLENGES:3,CONTEXT:1};
  const sources=evaluated.map(normalizeSource).sort((a,b)=>relationRank[b.supports]-relationRank[a.supports]||sourceRank[b.authority]-sourceRank[a.authority]);
@@ -123,7 +131,7 @@ export function synthesizeFinding(query:ResearchQuery,results:RawResearchResult[
  return {
   lens:query.lens,
   scope:query.scope,
-  claim:evaluated.find(r=>r.relation!=="CONTEXT")?.claim||(query.lens==="GEOGRAPHY"?"Current evidence does not yet establish a dominant geographic market, remote-access pattern, or material location constraint for this opportunity.":evaluated[0]?.claim||query.question),
+  claim:evaluated.find(r=>r.relation!=="CONTEXT")?.claim||(query.lens==="GEOGRAPHY"?"Current evidence does not yet establish a dominant geographic market, remote-access pattern, or material location constraint for this opportunity.":query.lens==="BUYER"?"Current evidence does not yet establish a specific buyer who demonstrably hires, retains, or pays for this outside expertise.":evaluated[0]?.claim||query.question),
   status,
   sources,
   uncertainty:status==="UNRESOLVED"?"The evidence is relevant, but the minimum combination of independent and higher-authority support has not been met.":status==="MIXED"?"Credible evidence points in more than one direction.":undefined,
