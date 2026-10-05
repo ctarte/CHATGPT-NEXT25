@@ -9,9 +9,15 @@ function publisher(url:string){
  try{return new URL(url).hostname.replace(/^www\./,"")}catch{return undefined}
 }
 function sourceKind(url:string):RawResearchResult["sourceKind"]{
- const h=publisher(url)||"";
+ const h=(publisher(url)||"").toLowerCase();
  if(/\.gov$|\.gov\./.test(h))return "GOVERNMENT";
  if(/\.edu$|\.edu\./.test(h))return "ACADEMIC";
+ // Recognized job/talent marketplaces are market signals, not primary authorities.
+ if(/(^|\.)(linkedin\.com|indeed\.com|glassdoor\.com|ziprecruiter\.com|monster\.com|careerbuilder\.com|dice\.com|wellfound\.com|flexjobs\.com|upwork\.com|fiverr\.com)$/.test(h))return "MARKETPLACE";
+ // Established journalism/business publications are useful industry evidence.
+ if(/(^|\.)(reuters\.com|apnews\.com|bloomberg\.com|wsj\.com|ft\.com|forbes\.com|fortune\.com|cnbc\.com|businessinsider\.com|fastcompany\.com|inc\.com)$/.test(h))return "NEWS";
+ // Known professional/trade bodies are industry evidence. Keep this allowlist narrow.
+ if(/(^|\.)(shrm\.org|ama\.org|aicpa-cima\.com|aicpa\.org|cfainstitute\.org|pmi\.org|score\.org)$/.test(h))return "TRADE";
  return "OTHER";
 }
 async function search(q:string,freshnessDays?:number){
