@@ -111,6 +111,13 @@ const lensClaimSignal=(lens:EvidenceLens,r:RawResearchResult)=>{
  return test?test.test(t):true;
 };
 
+const counterEvidenceClaimSignal=(r:RawResearchResult)=>{
+ const t=`${r.title} ${r.excerpt||""} ${r.claim||""}`.toLowerCase();
+ const opportunityRisk=/\b(weak demand|falling demand|declining demand|low demand|client acquisition|acquire clients|customer acquisition|pricing pressure|price pressure|fee pressure|margin pressure|oversupply|saturated|saturation|competition|competitive|regulatory barrier|regulatory barriers|licensing barrier|licensing barriers|displace|displacement|obsolete|obsolescence|layoff|layoffs|closure|closures|low pay|poor economics|unprofitable|profitability|failure rate|business failure|client churn|retention problem|lack of clients|lack of customers)\b/.test(t);
+ const opportunityActor=/\b(adviser|advisor|advisory|consultant|consulting|fractional|executive|specialist|practice|firm|firms|service|services|client|clients|customer|customers|buyer|buyers|employer|employers)\b/.test(t);
+ return opportunityRisk&&opportunityActor;
+};
+
 const buyerClaimSignal=(r:RawResearchResult)=>{
  const t=`${r.title} ${r.excerpt||""} ${r.claim||""}`.toLowerCase();
  const buyer=/\b(founder|owner|ceo|executive|leadership team|management team|employer|company|companies|business|businesses|organization|organizations|client|clients|customer|customers|buyer|buyers)\b/.test(t);
@@ -120,7 +127,7 @@ const buyerClaimSignal=(r:RawResearchResult)=>{
 };
 
 export function synthesizeFinding(query:ResearchQuery,results:RawResearchResult[]):NormalizedFinding{
- const evaluated=results.map(r=>{const e=evaluateResearchResult(query,r);const relation=(query.lens==="GEOGRAPHY"&&!geographyClaimSignal(r))||(query.lens==="BUYER"&&!buyerClaimSignal(r))||!lensClaimSignal(query.lens,r)?"CONTEXT":e.relation;return {...r,relation,basis:e.confidence==="LOW"?"INFERRED":(r.basis||"INFERRED")} as RawResearchResult});
+ const evaluated=results.map(r=>{const e=evaluateResearchResult(query,r);const relation=(query.lens==="GEOGRAPHY"&&!geographyClaimSignal(r))||(query.lens==="BUYER"&&!buyerClaimSignal(r))||(query.lens==="COUNTER_EVIDENCE"&&!counterEvidenceClaimSignal(r))||!lensClaimSignal(query.lens,r)?"CONTEXT":e.relation;return {...r,relation,basis:e.confidence==="LOW"?"INFERRED":(r.basis||"INFERRED")} as RawResearchResult});
  const sourceRank:Record<SourceAuthority,number>={PRIMARY:5,AUTHORITATIVE:4,INDUSTRY:3,MARKET_SIGNAL:2,ANECDOTAL:1};
  const relationRank:Record<RawResearchResult["relation"],number>={SUPPORTS:3,CHALLENGES:3,CONTEXT:1};
  const sources=evaluated.map(normalizeSource).sort((a,b)=>relationRank[b.supports]-relationRank[a.supports]||sourceRank[b.authority]-sourceRank[a.authority]);
