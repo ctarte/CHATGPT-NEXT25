@@ -4,6 +4,7 @@ import {createClient} from "@/lib/supabase/server";
 import {loadDiscoveryRecord} from "@/lib/discovery/persistence";
 import {possibilityUniverse} from "@/lib/discovery/possibilities";
 import {recordSummary,type DiscoveryRecord} from "@/lib/discovery/record";
+import {hasFoundingClientEntitlement} from "@/lib/entitlements";
 
 function titleFor(id:string){return possibilityUniverse.find(p=>p.id===id)?.title||id}
 function keptField(record:DiscoveryRecord){
@@ -16,6 +17,7 @@ export default async function Dashboard(){
  const supabase=await createClient();
  const {data:{user}}=await supabase.auth.getUser();
  if(!user)redirect("/auth/sign-in");
+ const entitled=await hasFoundingClientEntitlement();
  const stored=await loadDiscoveryRecord();
  const record=(stored?.record||null) as DiscoveryRecord|null;
  const summary=record?recordSummary(record):null;
@@ -29,7 +31,7 @@ export default async function Dashboard(){
  const briefs=summary?.decisionBriefs||summary?.briefsOpened||0;
  return <main className="discovery-dash">
   <aside><b>DISCOVERED BY DESIGN™</b><nav><span className="active">Where You Are Now</span><span>My Discovery</span><Link href="/dashboard/field">My Field</Link><Link href="/dashboard/briefs">Opportunity Briefs</Link><Link href="/blueprint">My Blueprint</Link><span>90-Day Experiments</span></nav><form action="/auth/sign-out" method="post"><button type="submit">Sign out</button></form></aside>
-  <section className="dash-main"><p className="eyebrow dark">WELCOME BACK</p><h1>Here’s where your discovery stands.</h1><p className="dash-lead">Your Discovery Record keeps the evidence together as your field takes shape.</p>
+  <section className="dash-main"><p className="eyebrow dark">WELCOME BACK</p>{entitled?<div className="dash-note"><b>FOUNDING CLIENT ACCESS</b><p>Your verified purchase is connected to this account.</p></div>:null}<h1>Here’s where your discovery stands.</h1><p className="dash-lead">Your Discovery Record keeps the evidence together as your field takes shape.</p>
    <div className="dash-metrics"><article><b>{String(rounds).padStart(2,"0")}</b><span>Discovery Rounds</span></article><article><b>{String(explored).padStart(2,"0")}</b><span>Possibilities Explored</span></article><article><b>{String(field.length).padStart(2,"0")}</b><span>Kept in Your Field</span></article><article><b>{String(briefs).padStart(2,"0")}</b><span>Opportunity Briefs</span></article></div>
    <div className="dash-grid"><article><p className="eyebrow dark">YOUR STRONGEST SIGNALS</p><h2>{signals.length?signals.join(" · "):"Your strongest signals will appear as you continue Discovery."}</h2><p>{signals.length?"These are drawn from what you said you want more of.":"Continue Discovery to give the Think Tank more evidence to work with."}</p></article><article><p className="eyebrow dark">CONDITIONS TO DISCARD</p><h2>{avoid.length?avoid.join(" · "):"No conditions recorded yet."}</h2><p>These are conditions you indicated you would prefer not to recreate.</p></article></div>
    <div className="dash-field"><div><p className="eyebrow">YOUR FIELD IS TAKING SHAPE</p><h2>Directions currently worth keeping in view.</h2></div><div className="dash-possibilities">{field.length?field.map(x=><span key={x}>{x}</span>):<span>Your field will appear here as you react to directions.</span>}</div></div>
