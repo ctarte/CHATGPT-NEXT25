@@ -1,5 +1,5 @@
 "use client";
-import {useEffect,useMemo,useRef,useState} from "react";
+import {useEffect,useLayoutEffect,useMemo,useRef,useState} from "react";
 import Link from "next/link";
 import {Chrome} from "../components/SiteChrome";
 import {assembleBlueprint} from "../../lib/discovery/blueprintAssembly";
@@ -41,7 +41,8 @@ export default function Page(){
   }catch(e){setResearchError(e instanceof Error?e.message:"Unable to complete live research.")}
   finally{setResearching(null)}
  }
- useEffect(()=>{if(researching!==null||!researchAnchor.current)return;const {opportunity,top}=researchAnchor.current;requestAnimationFrame(()=>requestAnimationFrame(()=>{const card=document.querySelector(`[data-research-opportunity="${CSS.escape(opportunity)}"]`);if(card instanceof HTMLElement){window.scrollBy({top:card.getBoundingClientRect().top-top,behavior:"auto"})}researchAnchor.current=null}))},[record,researching]);
+ useLayoutEffect(()=>{if(!researchAnchor.current)return;const {opportunity,top}=researchAnchor.current;const card=document.querySelector(`[data-research-opportunity="${CSS.escape(opportunity)}"]`);if(card instanceof HTMLElement){window.scrollBy({top:card.getBoundingClientRect().top-top,behavior:"auto"})}},[record,researching]);
+ useEffect(()=>{if(researching!==null||!researchAnchor.current)return;const anchor=researchAnchor.current;let frames=0;const hold=()=>{const card=document.querySelector(`[data-research-opportunity="${CSS.escape(anchor.opportunity)}"]`);if(card instanceof HTMLElement){window.scrollBy({top:card.getBoundingClientRect().top-anchor.top,behavior:"auto"})}frames+=1;if(frames<12)requestAnimationFrame(hold);else researchAnchor.current=null};requestAnimationFrame(hold)},[record,researching]);
  useEffect(()=>{fetch("/api/discovery").then(async r=>{if(r.status===401){setState("signed-out");return}if(!r.ok)throw new Error();const j=await r.json();setRecord(j?.record?.record||null);setState("ready")}).catch(()=>setState("error"))},[]);
  const input=useMemo(()=>{if(!record)return fallback;
   const preserved=Object.entries(record.fieldActions||{}).filter(([,v])=>v!=="DISCARD").map(([k])=>k);
