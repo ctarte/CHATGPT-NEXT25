@@ -30,6 +30,8 @@ export default function Page(){
   const match=possibilityUniverse.find(p=>p.title===opportunity);
   const card=document.querySelector(`[data-research-opportunity="${CSS.escape(opportunity)}"]`);
   researchAnchor.current={opportunity,top:card instanceof HTMLElement?card.getBoundingClientRect().top:0};
+  document.documentElement.style.overflowAnchor="none";
+  document.body.style.overflowAnchor="none";
   setResearching(opportunity);setResearchError("");
   try{
    const path=match?.world==="CAREER"?"CAREER":match?.world==="BUSINESS"?"BUSINESS":"BOTH";
@@ -42,7 +44,7 @@ export default function Page(){
   finally{setResearching(null)}
  }
  useLayoutEffect(()=>{if(!researchAnchor.current)return;const {opportunity,top}=researchAnchor.current;const card=document.querySelector(`[data-research-opportunity="${CSS.escape(opportunity)}"]`);if(card instanceof HTMLElement){window.scrollBy({top:card.getBoundingClientRect().top-top,behavior:"auto"})}},[record,researching]);
- useEffect(()=>{if(researching!==null||!researchAnchor.current)return;const anchor=researchAnchor.current;let frames=0;const hold=()=>{const card=document.querySelector(`[data-research-opportunity="${CSS.escape(anchor.opportunity)}"]`);if(card instanceof HTMLElement){window.scrollBy({top:card.getBoundingClientRect().top-anchor.top,behavior:"auto"})}frames+=1;if(frames<12)requestAnimationFrame(hold);else researchAnchor.current=null};requestAnimationFrame(hold)},[record,researching]);
+ useEffect(()=>{if(researching!==null||!researchAnchor.current)return;const anchor=researchAnchor.current;let frames=0;const hold=()=>{const card=document.querySelector(`[data-research-opportunity="${CSS.escape(anchor.opportunity)}"]`);if(card instanceof HTMLElement){window.scrollBy({top:card.getBoundingClientRect().top-anchor.top,behavior:"auto"})}frames+=1;if(frames<60)requestAnimationFrame(hold);else {researchAnchor.current=null;document.documentElement.style.overflowAnchor="";document.body.style.overflowAnchor=""}};requestAnimationFrame(hold)},[record,researching]);
  useEffect(()=>{fetch("/api/discovery").then(async r=>{if(r.status===401){setState("signed-out");return}if(!r.ok)throw new Error();const j=await r.json();setRecord(j?.record?.record||null);setState("ready")}).catch(()=>setState("error"))},[]);
  const input=useMemo(()=>{if(!record)return fallback;
   const preserved=Object.entries(record.fieldActions||{}).filter(([,v])=>v!=="DISCARD").map(([k])=>k);
