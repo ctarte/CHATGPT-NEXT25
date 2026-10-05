@@ -97,6 +97,20 @@ const geographyClaimSignal=(r:RawResearchResult)=>{
  return access||constraint||(place&&activity&&!headquarters);
 };
 
+const lensClaimSignal=(lens:EvidenceLens,r:RawResearchResult)=>{
+ const t=`${r.title} ${r.excerpt||""} ${r.claim||""}`.toLowerCase();
+ const tests:Partial<Record<EvidenceLens,RegExp>>={
+  MARKET:/\b(demand|market|customers?|clients?|hiring|jobs?|openings?|adoption|spending|revenue|growth|growing|decline|declining)\b/,
+  ECONOMICS:/\b(rate|rates|pricing|price|fee|fees|compensation|salary|revenue|margin|cost|costs|hourly|monthly|annual|retainer|pay|paid|earnings?)\b/,
+  CHANGE:/\b(ai|automation|technology|regulation|regulatory|trend|trends|change|changing|disrupt|disruption|replace|replacement|evolve|evolving|future)\b/,
+  ENTRY:/\b(experience|skills?|qualification|qualifications|credential|credentials|certification|certifications|degree|degrees|track record|expertise|requirements?|barrier|barriers)\b/,
+  COMPETITION:/\b(competitor|competitors|alternative|alternatives|consulting firms?|services?|pricing|positioning|marketplace)\b/,
+  COUNTER_EVIDENCE:/\b(failure|failures|risk|risks|challenge|challenges|complaint|complaints|decline|declining|barrier|barriers|weak demand|layoff|layoffs|closure|closures|cost pressure|margin pressure)\b/
+ };
+ const test=tests[lens];
+ return test?test.test(t):true;
+};
+
 const buyerClaimSignal=(r:RawResearchResult)=>{
  const t=`${r.title} ${r.excerpt||""} ${r.claim||""}`.toLowerCase();
  const buyer=/\b(founder|owner|ceo|executive|leadership team|management team|employer|company|companies|business|businesses|organization|organizations|client|clients|customer|customers|buyer|buyers)\b/.test(t);
@@ -106,7 +120,7 @@ const buyerClaimSignal=(r:RawResearchResult)=>{
 };
 
 export function synthesizeFinding(query:ResearchQuery,results:RawResearchResult[]):NormalizedFinding{
- const evaluated=results.map(r=>{const e=evaluateResearchResult(query,r);const relation=(query.lens==="GEOGRAPHY"&&!geographyClaimSignal(r))||(query.lens==="BUYER"&&!buyerClaimSignal(r))?"CONTEXT":e.relation;return {...r,relation,basis:e.confidence==="LOW"?"INFERRED":(r.basis||"INFERRED")} as RawResearchResult});
+ const evaluated=results.map(r=>{const e=evaluateResearchResult(query,r);const relation=(query.lens==="GEOGRAPHY"&&!geographyClaimSignal(r))||(query.lens==="BUYER"&&!buyerClaimSignal(r))||!lensClaimSignal(query.lens,r)?"CONTEXT":e.relation;return {...r,relation,basis:e.confidence==="LOW"?"INFERRED":(r.basis||"INFERRED")} as RawResearchResult});
  const sourceRank:Record<SourceAuthority,number>={PRIMARY:5,AUTHORITATIVE:4,INDUSTRY:3,MARKET_SIGNAL:2,ANECDOTAL:1};
  const relationRank:Record<RawResearchResult["relation"],number>={SUPPORTS:3,CHALLENGES:3,CONTEXT:1};
  const sources=evaluated.map(normalizeSource).sort((a,b)=>relationRank[b.supports]-relationRank[a.supports]||sourceRank[b.authority]-sourceRank[a.authority]);
