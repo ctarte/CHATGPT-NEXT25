@@ -42,7 +42,7 @@ const categoryQueries=(category:ResearchPlan["category"],opportunity:string):Res
   {lens:"ENTRY",question:"Which qualifications recur across actual openings?",searches:[`${opportunity} job requirements qualifications`],preferredAuthorities:["PRIMARY"],freshnessDays:90,minimumIndependentSources:5}
  ];
  if(category==="ADVISORY")return [
-  {lens:"BUYER",question:"Which buyers retain outside expertise for this problem?",searches:[`${opportunity} clients companies hire consultant fractional`],preferredAuthorities:["PRIMARY","INDUSTRY"],freshnessDays:365,minimumIndependentSources:3},
+  {lens:"BUYER",question:"Who actually hires, retains, or pays for this outside expertise, who makes the buying decision, and what business problem triggers the purchase?",searches:[`${opportunity} companies hire retain fractional consultant CEO founder clients`,`${opportunity} buyer CEO founder owner decision maker engage outside adviser`,`${opportunity} client case study hired retained fractional adviser business problem`],preferredAuthorities:["PRIMARY","INDUSTRY","MARKET_SIGNAL"],freshnessDays:365,minimumIndependentSources:3,contradictionSearch:`${opportunity} companies do not hire fractional consultant objections alternatives in-house`},
   {lens:"COMPETITION",question:"How are comparable experts positioned and sold?",searches:[`${opportunity} consulting firms fractional services pricing`],preferredAuthorities:["PRIMARY","INDUSTRY","MARKET_SIGNAL"],freshnessDays:365,minimumIndependentSources:3}
  ];
  if(category==="EDUCATION")return [
