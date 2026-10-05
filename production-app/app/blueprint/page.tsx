@@ -1,5 +1,5 @@
 "use client";
-import {useEffect,useMemo,useState} from "react";
+import {useEffect,useMemo,useRef,useState} from "react";
 import Link from "next/link";
 import {Chrome} from "../components/SiteChrome";
 import {assembleBlueprint} from "../../lib/discovery/blueprintAssembly";
@@ -25,8 +25,10 @@ const fallback={signals:["Complete more discovery to reveal your strongest signa
 export default function Page(){
  const [record,setRecord]=useState<DiscoveryRecord|null>(null),[state,setState]=useState<"loading"|"ready"|"signed-out"|"error">("loading");
  const [researching,setResearching]=useState<string|null>(null),[researchError,setResearchError]=useState("");
+ const researchScrollY=useRef<number|null>(null);
  async function investigate(opportunity:string){
   const match=possibilityUniverse.find(p=>p.title===opportunity);
+  researchScrollY.current=window.scrollY;
   setResearching(opportunity);setResearchError("");
   try{
    const path=match?.world==="CAREER"?"CAREER":match?.world==="BUSINESS"?"BUSINESS":"BOTH";
@@ -34,7 +36,7 @@ export default function Page(){
    const j=await r.json();
    if(!r.ok)throw new Error(j?.error||"Unable to complete live research.");
    const refreshed=await fetch("/api/discovery",{cache:"no-store"});
-   if(refreshed.ok){const d=await refreshed.json();setRecord(d?.record?.record||null)}
+   if(refreshed.ok){const d=await refreshed.json();setRecord(d?.record?.record||null);requestAnimationFrame(()=>requestAnimationFrame(()=>{if(researchScrollY.current!==null)window.scrollTo({top:researchScrollY.current,behavior:"auto"})}))}
   }catch(e){setResearchError(e instanceof Error?e.message:"Unable to complete live research.")}
   finally{setResearching(null)}
  }
