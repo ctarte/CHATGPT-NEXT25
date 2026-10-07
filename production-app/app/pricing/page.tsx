@@ -26,7 +26,7 @@ export default function Page(){
      <p>Everything in Discovery, plus an outward-looking research layer that studies where the world is going—and connects those changes back to the directions that earned your attention.</p>
      <p><b>ADDS</b></p>
      <p>Emerging fields · declining fields · AI & technology disruption · demographic change · new business models · skills in rising demand · geographic shifts · market, career or business evidence · counter-evidence · low-risk experiment design · Opportunity Decision Brief · 90-day intelligence plan</p>
-     <Link className="button gold" href="/start">Start Discovery + Opportunity Intelligence →</Link>
+     <Link className="button gold" href="/founding-client">Start Discovery + Opportunity Intelligence →</Link>
     </article>
    </div>
   </section>
