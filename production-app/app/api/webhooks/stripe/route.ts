@@ -45,7 +45,15 @@ export async function POST(req:Request){
     entitlement:"FOUNDING_CLIENT"
    },{onConflict:"stripe_session_id",ignoreDuplicates:true});
    if(error)throw error;
-  }catch{return new Response("Unable to record purchase",{status:500})}
+  }catch(error:unknown){
+   // Log only allowlisted diagnostic fields. Never log payloads, credentials, user IDs or session IDs.
+   const diagnostic=error&&typeof error==="object"?error as Record<string,unknown>:null;
+   const code=diagnostic&&typeof diagnostic.code==="string"&&/^[A-Za-z0-9_]{1,32}$/.test(diagnostic.code)?diagnostic.code:"unknown";
+   const status=diagnostic&&typeof diagnostic.status==="number"&&Number.isInteger(diagnostic.status)?diagnostic.status:null;
+   const kind=diagnostic&&typeof diagnostic.name==="string"&&/^[A-Za-z]{1,40}$/.test(diagnostic.name)?diagnostic.name:"unknown";
+   console.error("Stripe purchase persistence failed",{code,status,kind});
+   return new Response("Unable to record purchase",{status:500});
+  }
  }
  return new Response("ok");
 }
