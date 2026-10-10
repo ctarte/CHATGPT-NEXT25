@@ -1,5 +1,6 @@
 import Link from "next/link";
 import {Chrome} from "../components/SiteChrome";
+import PurchaseButton from "../components/PurchaseButton";
 
 export default function Page(){
  return <Chrome><main>
@@ -17,7 +18,7 @@ export default function Page(){
      <p>A complete Discovery experience for people who want outside eyes, fresh thinking and personalized directions they may not have found on their own.</p>
      <p><b>INCLUDES</b></p>
      <p>Full Discovery process · Think Tank Reveals · personalized opportunity directions · reaction and refinement rounds · why each direction surfaced · Personalized Discovery Blueprint</p>
-     <Link className="button dark-button" href="/start">Start with Discovery →</Link>
+     <PurchaseButton className="button dark-button" tier="DISCOVERY" label="Start with Discovery →"/>
     </article>
     <article>
      <p className="eyebrow dark">DISCOVERY + OPPORTUNITY INTELLIGENCE</p>
@@ -26,7 +27,7 @@ export default function Page(){
      <p>Everything in Discovery, plus an outward-looking research layer that studies where the world is going—and connects those changes back to the directions that earned your attention.</p>
      <p><b>ADDS</b></p>
      <p>Emerging fields · declining fields · AI & technology disruption · demographic change · new business models · skills in rising demand · geographic shifts · market, career or business evidence · counter-evidence · low-risk experiment design · Opportunity Decision Brief · 90-day intelligence plan</p>
-     <Link className="button gold" href="/founding-client">Start Discovery + Opportunity Intelligence →</Link>
+     <PurchaseButton className="button gold" tier="OPPORTUNITY_INTELLIGENCE" label="Start Discovery + Opportunity Intelligence →"/>
     </article>
    </div>
   </section>
@@ -47,6 +48,7 @@ export default function Page(){
     <p>“Where is the world creating—or closing—opportunities for someone like me?”</p>
     <b>UPGRADE LATER</b>
     <p>Add Opportunity Intelligence for $400 without repeating Discovery.</p>
+    <PurchaseButton className="button dark-button" tier="OPPORTUNITY_INTELLIGENCE_UPGRADE" label="Upgrade for $400 →"/>
    </div>
   </section>
   <section className="section blueprint-close">
