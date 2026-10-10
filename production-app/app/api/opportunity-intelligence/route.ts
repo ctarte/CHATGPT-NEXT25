@@ -1,4 +1,5 @@
 import {NextResponse} from "next/server";
+import {hasFoundingClientEntitlement} from "../../../lib/entitlements";
 import {runLiveIntelligence} from "../../../lib/discovery/liveIntelligenceWorkflow";
 import {braveResearchProvider} from "../../../lib/research/brave";
 import {loadDiscoveryRecord,saveDiscoveryRecord} from "../../../lib/discovery/persistence";
@@ -15,6 +16,8 @@ export async function POST(req:Request){
   if(opportunity.length>180)return NextResponse.json({error:"Opportunity name is too long."},{status:400});
   const stored=await loadDiscoveryRecord();
   if(!stored?.record)return NextResponse.json({error:"Sign in before starting Opportunity Intelligence."},{status:401});
+  // Enforce premium access on the server, independently of the page UI.
+  if(!(await hasFoundingClientEntitlement()))return NextResponse.json({error:"Opportunity Intelligence requires an active premium purchase.",code:"PREMIUM_ACCESS_REQUIRED"},{status:403});
   const pkg=await runLiveIntelligence({opportunity,path,provider:braveResearchProvider});
   const record=stored.record as unknown as DiscoveryRecord;
   await saveDiscoveryRecord({...record,version:2,
