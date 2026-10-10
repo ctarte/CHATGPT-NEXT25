@@ -9,7 +9,7 @@ export default function Page(){
  async function beginCheckout(){
   setBusy(true);setError("");
   try{
-   const res=await fetch("/api/checkout/session",{method:"POST"});
+   const res=await fetch("/api/checkout/session",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({tier:"OPPORTUNITY_INTELLIGENCE"})});
    const data=await res.json();
    if(!res.ok||!data.checkoutUrl)throw new Error(data.error||"Unable to start checkout.");
    window.location.assign(data.checkoutUrl);
