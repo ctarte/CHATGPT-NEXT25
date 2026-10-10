@@ -591,3 +591,11 @@ linear-gradient(145deg,#14253a 0%,#243a4f 55%,#a88950 140%);border-radius:2px}
 .hero.hero-77 .hero-art .lab-method-line{font:600 10px/1.85 Arial,sans-serif;letter-spacing:.15em;color:#dfc18c;margin:31px 0 0;padding-top:20px;border-top:1px solid rgba(214,177,113,.48);width:100%}
 .hero.hero-77 .hero-art .lab-method-line span{color:#f2e8d5}
 @media(max-width:650px){.hero.hero-77 .hero-opportunity-list li{font-size:1.45rem;padding-left:26px}.hero.hero-77 .hero-opportunity-list li:before{width:9px;height:9px}.hero.hero-77 .hero-art{padding:43px 24px}.hero.hero-77 .hero-art .lab-promise{font-size:2.45rem}}
+
+/* Preview typography refinement: consistent headline flow and stronger opportunity contrast */
+.hero.hero-77 h1{font:400 clamp(3.4rem,5.75vw,6.75rem)/1.08 Georgia,serif;letter-spacing:-.045em;max-width:860px;margin:.14em 0 .32em;text-wrap:balance}
+.hero.hero-77 h1 em{display:inline;font-style:italic;white-space:normal}
+.hero.hero-77 .hero-opportunity-list li{color:#061a2a;font-weight:600;text-shadow:0 1px 3px rgba(255,255,255,.8),0 0 18px rgba(255,251,240,.6)}
+.hero.hero-77 .hero-opportunity-list li:before{background:#8d5c1d;box-shadow:0 0 0 3px rgba(255,249,238,.85)}
+.hero.hero-77 .hero-art .lab-promise{font-size:clamp(2.05rem,2.85vw,3.1rem);line-height:1.17}
+@media(max-width:650px){.hero.hero-77 h1{font-size:clamp(3rem,10vw,4.3rem);line-height:1.1;letter-spacing:-.04em}.hero.hero-77 .hero-opportunity-list li{font-weight:600}.hero.hero-77 .hero-art .lab-promise{font-size:2.25rem}}
