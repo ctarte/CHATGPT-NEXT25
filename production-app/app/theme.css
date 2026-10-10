@@ -634,3 +634,12 @@ linear-gradient(145deg,#14253a 0%,#243a4f 55%,#a88950 140%);border-radius:2px}
 .hero.hero-77 .hero-art .lab-output{box-sizing:border-box;font:400 clamp(17px,1.3vw,19px)/1.55 Georgia,serif!important;font-style:normal!important;color:#fff!important;max-width:100%;margin:0 auto;text-align:center}
 .hero.hero-77 .hero-art .think-tank-steps{margin-top:26px}
 @media(max-width:650px){.hero.hero-77 .hero-art{padding:34px 25px 37px}.hero.hero-77 .hero-art .lab-label{font-size:14px!important;line-height:1.5!important}.hero.hero-77 .hero-art .lab-promise{font-size:2.1rem!important}.hero.hero-77 .hero-art .lab-output{font-size:17px!important}}
+
+/* Preview: fix true horizontal centering of every Think Tank element */
+.hero.hero-77 .hero-art{display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;text-align:center!important}
+.hero.hero-77 .hero-art .lab-label{display:block!important;width:100%!important;max-width:100%!important;align-self:center!important;margin:0 auto 18px!important;text-align:center!important;white-space:normal!important}
+.hero.hero-77 .hero-art .think-tank-ornament{align-self:center!important;width:100%;text-align:center!important}
+.hero.hero-77 .hero-art .lab-promise{display:block!important;width:100%!important;max-width:100%!important;align-self:center!important;text-align:center!important;margin-left:auto!important;margin-right:auto!important}
+.hero.hero-77 .hero-art .lab-output{display:block!important;width:100%!important;max-width:100%!important;align-self:center!important;text-align:center!important;margin-left:auto!important;margin-right:auto!important}
+.hero.hero-77 .hero-art .think-tank-steps{box-sizing:border-box;align-self:center!important;width:max-content!important;max-width:100%!important;min-width:185px!important;margin-left:auto!important;margin-right:auto!important;padding-left:0!important;padding-right:0!important}
+.hero.hero-77 .hero-art .think-tank-steps li{text-align:left!important}
