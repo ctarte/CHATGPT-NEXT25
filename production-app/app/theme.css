@@ -662,3 +662,9 @@ linear-gradient(145deg,#14253a 0%,#243a4f 55%,#a88950 140%);border-radius:2px}
 .hero.hero-77 .hero-recognition-quiet{color:#1a3347!important;font-weight:500!important;text-shadow:0 1px 12px rgba(255,250,240,.65)}
 .hero.hero-77 .hero-recognition-quiet strong{color:#0a253b!important;font-weight:700!important}
 .hero.hero-77 .hero-recognition-close{color:#80521c!important;font-weight:700!important}
+
+/* Preview-only sunrise photograph experiment; retain approved panel and typography */
+.hero.hero-77{background:linear-gradient(90deg,rgba(251,247,238,.95) 0%,rgba(251,247,238,.83) 30%,rgba(251,247,238,.30) 57%,rgba(8,35,58,.04) 100%),url("https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=2400&q=88") center 52%/cover no-repeat}
+.hero.hero-77 .hero-recognition-quiet{color:#122b40!important;font-size:clamp(1.12rem,1.35vw,1.3rem)!important;line-height:1.48!important;font-weight:600!important}
+.hero.hero-77 .hero-recognition-quiet strong{color:#071f35!important;font-weight:700!important}
+@media(max-width:650px){.hero.hero-77{background:linear-gradient(180deg,rgba(251,247,238,.96),rgba(251,247,238,.84)),url("https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=1200&q=85") center/cover no-repeat}.hero.hero-77 .hero-recognition-quiet{font-size:1.08rem!important}}
