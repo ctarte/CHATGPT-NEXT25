@@ -19,6 +19,10 @@ export async function POST(req:Request){
  try{event=stripe.webhooks.constructEvent(await req.text(),sig,e.stripeWebhook)}
  catch{return new Response("Invalid signature",{status:400})}
  if(event.type!=="checkout.session.completed")return new Response("ok");
+ // Preview currently shares database credentials with Production. Fail closed until
+ // a dedicated test database is configured and this guard is deliberately enabled.
+ if(process.env.VERCEL_ENV==="preview"&&process.env.NEXT25_ALLOW_PREVIEW_ENTITLEMENT_WRITES!=="true")
+  return new Response("Preview entitlement persistence is disabled until test data is isolated",{status:503});
 
  const session=event.data.object as Stripe.Checkout.Session;
  const userId=session.client_reference_id;
