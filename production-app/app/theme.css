@@ -617,3 +617,11 @@ linear-gradient(145deg,#14253a 0%,#243a4f 55%,#a88950 140%);border-radius:2px}
 .hero.hero-77 .hero-art .think-tank-steps li{display:list-item;width:100%;font-size:13px;font-weight:700;letter-spacing:.12em;line-height:1.5;color:#f5d99e;padding-left:25px}
 .hero.hero-77 .hero-art .think-tank-steps li:before{width:8px;height:8px;top:.42em}
 @media(max-width:650px){.hero.hero-77 .hero-art .lab-label{font-size:12px}.hero.hero-77 .hero-art .lab-output{font-size:1.2rem;line-height:1.55}.hero.hero-77 .hero-art .think-tank-steps{max-width:210px}.hero.hero-77 .hero-art .think-tank-steps li{font-size:12px}}
+
+/* Preview: prominent centered Think Tank signature heading */
+.hero.hero-77 .hero-art{padding-top:34px}
+.hero.hero-77 .hero-art .lab-label{display:block!important;align-self:stretch!important;width:100%!important;max-width:none!important;text-align:center!important;margin:0 auto 25px!important;padding:0 0 22px!important;border-bottom:1px solid rgba(214,177,113,.58)!important;color:#edca8c!important;font:700 clamp(18px,1.55vw,21px)/1.45 Georgia,serif!important;letter-spacing:.055em!important}
+.hero.hero-77 .hero-art .think-tank-ornament{margin:4px 0 20px}
+.hero.hero-77 .hero-art .lab-promise{font-size:clamp(2.05rem,2.7vw,3.1rem);line-height:1.15}
+.hero.hero-77 .hero-art .lab-output{font-size:clamp(1.18rem,1.4vw,1.4rem);line-height:1.55}
+@media(max-width:650px){.hero.hero-77 .hero-art .lab-label{font-size:18px!important;line-height:1.4!important}.hero.hero-77 .hero-art .lab-output{font-size:1.2rem}}
