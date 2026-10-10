@@ -516,3 +516,21 @@ linear-gradient(145deg,#14253a 0%,#243a4f 55%,#a88950 140%);border-radius:2px}
 .final-cta{background:linear-gradient(180deg,#fbfaf6,#f1ece3)}
 @media(max-width:1000px){.hero.hero-77 .hero-art{display:flex;min-height:270px;max-width:650px;margin-top:12px}.hero.hero-77{gap:20px}}
 @media(max-width:650px){.hero.hero-77 .hero-art{padding:30px 25px;min-height:235px}.hero.hero-77 .lab-question{font-size:2.5rem}.hero.hero-77 .lab-output{font-size:17px}.hero.hero-77{padding-bottom:58px}}
+
+/* Phase III photographic hero concept — Preview only; remotely hosted editorial photo */
+.hero.hero-77{background:linear-gradient(90deg,rgba(250,245,234,.93) 0%,rgba(249,242,226,.80) 42%,rgba(7,28,47,.10) 73%,rgba(6,26,45,.22) 100%),url("https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=2200&q=85") center 48%/cover no-repeat;color:#0b2540;min-height:720px}
+.hero.hero-77 .eyebrow{color:#936525}
+.hero.hero-77 h1{color:#092440;text-shadow:0 1px 18px rgba(255,249,236,.34)}
+.hero.hero-77 h1 em{color:#a27328}
+.hero.hero-77 .hero-copy h2{color:#092440}
+.hero.hero-77 .hero-recognition-lead{font:400 clamp(1.45rem,2.35vw,2.3rem)/1.25 Georgia,serif;color:#102b43;max-width:690px}
+.hero.hero-77 .hero-recognition-quiet{max-width:640px;color:#163247;font:400 clamp(1.05rem,1.35vw,1.25rem)/1.55 Georgia,serif}
+.hero.hero-77 .hero-recognition-close{color:#8b5e21;font:italic 400 clamp(1.3rem,1.7vw,1.6rem) Georgia,serif}
+.hero.hero-77 .hero-art{background:linear-gradient(145deg,#061c31 0%,#092941 100%);color:#fff;min-height:440px;padding:52px 42px;border:1px solid rgba(220,183,112,.28);box-shadow:0 24px 54px rgba(4,21,34,.32)}
+.hero.hero-77 .hero-art:before{opacity:.48}
+.hero.hero-77 .hero-art .lab-label{color:#e0b76e}
+.hero.hero-77 .hero-art .lab-question{font-size:clamp(2.5rem,4vw,4.8rem);color:white}
+.hero.hero-77 .hero-art .lab-output{color:#e7e0d4}
+.hero.hero-77 .hero-actions .text-link{color:#102b43}
+@media(max-width:1000px){.hero.hero-77{background-position:57% center}.hero.hero-77 .hero-art{max-width:580px;min-height:260px}}
+@media(max-width:650px){.hero.hero-77{background:linear-gradient(180deg,rgba(251,247,239,.95),rgba(251,247,239,.84) 69%,rgba(251,247,239,.75)),url("https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1200&q=80") center/cover no-repeat}.hero.hero-77 .hero-art{padding:32px 27px}.hero.hero-77 .hero-art .lab-question{font-size:2.6rem}}
