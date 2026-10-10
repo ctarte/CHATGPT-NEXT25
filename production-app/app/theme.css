@@ -577,3 +577,17 @@ linear-gradient(145deg,#14253a 0%,#243a4f 55%,#a88950 140%);border-radius:2px}
 .hero.hero-77 .hero-art .think-tank-method span{font:600 11px/1.35 Arial,sans-serif;letter-spacing:.09em;color:#dfbd7d}
 @media(max-width:1100px){.hero.hero-77{grid-template-columns:1fr}.hero.hero-77 .hero-art{margin-top:10px;max-width:550px;width:100%;justify-self:start}}
 @media(max-width:650px){.hero.hero-77 .hero-art{padding:36px 26px 39px}.hero.hero-77 .hero-art .lab-promise{font-size:2.2rem}}
+
+/* Preview experiment: editorial opportunity bullets and restrained signature panel */
+.hero.hero-77 .hero-opportunity-list{list-style:none;padding:0;margin:25px 0 24px;display:grid;gap:12px;max-width:730px}
+.hero.hero-77 .hero-opportunity-list li{position:relative;padding-left:32px;font:400 clamp(1.45rem,2.25vw,2.35rem)/1.23 Georgia,serif;color:#0b2940;text-shadow:0 1px 16px rgba(255,249,238,.5)}
+.hero.hero-77 .hero-opportunity-list li:before{content:"";position:absolute;left:0;top:.45em;width:11px;height:11px;background:#bd8c42;border-radius:50%;box-shadow:0 0 0 3px rgba(250,245,233,.7)}
+.hero.hero-77 .hero-art{max-width:405px;min-height:0;padding:53px 35px 48px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;background:linear-gradient(160deg,#071f36 0%,#08253e 100%);border:1px solid #d3aa65;box-shadow:0 22px 55px rgba(3,18,32,.4),inset 0 0 0 7px #0b2a42}
+.hero.hero-77 .hero-art .lab-label{font:600 12px/1.8 Arial,sans-serif;letter-spacing:.2em;color:#e3c38a;margin:0;padding:0;border:0}
+.hero.hero-77 .hero-art .think-tank-ornament{font:400 42px/1 Georgia,serif;color:#d2a85e;margin:27px 0 18px}
+.hero.hero-77 .hero-art .lab-promise{font:400 clamp(2.1rem,3vw,3.3rem)/1.13 Georgia,serif;color:#fff;margin:0 0 22px}
+.hero.hero-77 .hero-art .lab-promise em{color:#e3c38a;font-style:italic}
+.hero.hero-77 .hero-art .lab-output{font:400 1.16rem/1.55 Georgia,serif;color:#e9e6df;margin:0;max-width:310px}
+.hero.hero-77 .hero-art .lab-method-line{font:600 10px/1.85 Arial,sans-serif;letter-spacing:.15em;color:#dfc18c;margin:31px 0 0;padding-top:20px;border-top:1px solid rgba(214,177,113,.48);width:100%}
+.hero.hero-77 .hero-art .lab-method-line span{color:#f2e8d5}
+@media(max-width:650px){.hero.hero-77 .hero-opportunity-list li{font-size:1.45rem;padding-left:26px}.hero.hero-77 .hero-opportunity-list li:before{width:9px;height:9px}.hero.hero-77 .hero-art{padding:43px 24px}.hero.hero-77 .hero-art .lab-promise{font-size:2.45rem}}
