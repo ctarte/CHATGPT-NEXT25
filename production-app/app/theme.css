@@ -599,3 +599,12 @@ linear-gradient(145deg,#14253a 0%,#243a4f 55%,#a88950 140%);border-radius:2px}
 .hero.hero-77 .hero-opportunity-list li:before{background:#8d5c1d;box-shadow:0 0 0 3px rgba(255,249,238,.85)}
 .hero.hero-77 .hero-art .lab-promise{font-size:clamp(2.05rem,2.85vw,3.1rem);line-height:1.17}
 @media(max-width:650px){.hero.hero-77 h1{font-size:clamp(3rem,10vw,4.3rem);line-height:1.1;letter-spacing:-.04em}.hero.hero-77 .hero-opportunity-list li{font-weight:600}.hero.hero-77 .hero-art .lab-promise{font-size:2.25rem}}
+
+/* Preview: legible supporting copy and centered four-bullet Discovery Method */
+.hero.hero-77 .hero-art .lab-label{display:block;width:100%;text-align:center;letter-spacing:.12em;font-size:12px;line-height:1.7;color:#f1d19b}
+.hero.hero-77 .hero-art .lab-output{color:#fff;font:400 clamp(1.15rem,1.35vw,1.32rem)/1.55 Georgia,serif;max-width:340px;text-align:center;text-shadow:0 1px 2px rgba(0,0,0,.2)}
+.hero.hero-77 .hero-art .lab-promise{font-size:clamp(1.95rem,2.45vw,2.8rem);line-height:1.18}
+.hero.hero-77 .hero-art .think-tank-steps{width:100%;display:grid;grid-template-columns:1fr 1fr;gap:13px 12px;list-style:none;margin:27px 0 0;padding:22px 0 0;border-top:1px solid rgba(214,177,113,.65);text-align:left}
+.hero.hero-77 .hero-art .think-tank-steps li{position:relative;padding-left:20px;color:#f0d4a0;font:700 11px/1.4 Arial,sans-serif;letter-spacing:.11em}
+.hero.hero-77 .hero-art .think-tank-steps li:before{content:"";position:absolute;left:0;top:.45em;width:7px;height:7px;border-radius:50%;background:#d9b46d}
+@media(max-width:650px){.hero.hero-77 .hero-art .lab-output{font-size:1.15rem}.hero.hero-77 .hero-art .think-tank-steps{gap:13px 8px}.hero.hero-77 .hero-art .think-tank-steps li{font-size:10px;letter-spacing:.08em}}
