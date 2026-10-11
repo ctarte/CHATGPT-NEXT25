@@ -801,3 +801,9 @@ linear-gradient(145deg,#14253a 0%,#243a4f 55%,#a88950 140%);border-radius:2px}
 
 /* Highlight the brand-defining word without changing the approved headline. */
 .think-tank-intro h2 em .niche-emphasis{color:#0a2b47!important;font-style:normal;font-weight:700;text-decoration:underline;text-decoration-color:#bc965b;text-decoration-thickness:2px;text-underline-offset:6px}
+
+/* Prominent, accessible save-and-resume action for signed-out Discovery visitors. */
+.save-resume .save-resume-cta{display:inline-flex;align-items:center;justify-content:space-between;gap:18px;background:#103958;color:#fff!important;padding:13px 20px;border-radius:9px;text-decoration:none!important;font-weight:750;box-shadow:0 5px 16px rgba(16,57,88,.2);border:1px solid #103958;min-height:48px;transition:background .18s ease,transform .18s ease}
+.save-resume .save-resume-cta:hover{background:#082a44;transform:translateY(-1px)}
+.save-resume .save-resume-cta:focus-visible{outline:3px solid #c49b56;outline-offset:3px}
+@media(max-width:600px){.save-resume .save-resume-cta{width:100%;justify-content:center}}
