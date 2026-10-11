@@ -798,3 +798,6 @@ linear-gradient(145deg,#14253a 0%,#243a4f 55%,#a88950 140%);border-radius:2px}
   .hero.hero-77 .hero-world-question{font-size:clamp(1.38rem,5vw,1.75rem)!important}
   .hero.hero-77 .hero-recognition-quiet:nth-of-type(2){padding:12px 15px}
 }
+
+/* Highlight the brand-defining word without changing the approved headline. */
+.think-tank-intro h2 em .niche-emphasis{color:#0a2b47!important;font-style:normal;font-weight:700;text-decoration:underline;text-decoration-color:#bc965b;text-decoration-thickness:2px;text-underline-offset:6px}
