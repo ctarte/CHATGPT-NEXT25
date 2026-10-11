@@ -758,3 +758,43 @@ linear-gradient(145deg,#14253a 0%,#243a4f 55%,#a88950 140%);border-radius:2px}
 .future-perspective-grid article p{font-size:clamp(1.04rem,1.12vw,1.16rem);line-height:1.65;color:#354c5d}
 .future-perspective-close{max-width:890px;margin:29px auto 0;font-size:clamp(1.03rem,1.15vw,1.16rem);line-height:1.7;color:#354c5d}
 @media(max-width:800px){.future-perspective-grid{grid-template-columns:1fr}.future-perspective{text-align:left}.future-perspective h2,.future-perspective-lead,.future-perspective-close{margin-left:0;margin-right:0}}
+
+
+/* Development: give the newly approved first-screen message a clear editorial hierarchy. */
+.hero.hero-77 .hero-world-question{
+  max-width:720px;
+  margin:16px 0 20px!important;
+  font:600 clamp(1.5rem,2.05vw,2.15rem)/1.33 Georgia,serif!important;
+  letter-spacing:-.018em;
+  color:#09283e!important;
+  opacity:1!important;
+  text-shadow:0 1px 12px rgba(255,250,239,.95);
+}
+.hero.hero-77 .hero-recognition-simple{
+  max-width:750px;
+}
+.hero.hero-77 .hero-recognition-quiet{
+  font-size:clamp(1.08rem,1.18vw,1.23rem)!important;
+  line-height:1.58!important;
+  opacity:1!important;
+  margin-top:18px!important;
+  color:#102c42!important;
+}
+.hero.hero-77 .hero-recognition-quiet:nth-of-type(2){
+  padding:14px 19px;
+  margin:22px 0 20px!important;
+  border-left:4px solid #b88b47;
+  background:rgba(255,250,239,.83);
+  box-shadow:0 8px 26px rgba(13,35,53,.07);
+  font:600 clamp(1.19rem,1.45vw,1.48rem)/1.48 Georgia,serif!important;
+}
+.hero.hero-77 .hero-recognition-close{
+  font-size:clamp(1.1rem,1.2vw,1.27rem)!important;
+  line-height:1.6!important;
+  margin-top:21px!important;
+}
+.hero.hero-77 .hero-actions{margin-top:25px!important}
+@media(max-width:760px){
+  .hero.hero-77 .hero-world-question{font-size:clamp(1.38rem,5vw,1.75rem)!important}
+  .hero.hero-77 .hero-recognition-quiet:nth-of-type(2){padding:12px 15px}
+}
