@@ -683,3 +683,18 @@ linear-gradient(145deg,#14253a 0%,#243a4f 55%,#a88950 140%);border-radius:2px}
 .hero.hero-77 .hero-recognition-quiet strong{color:#081e32!important;font-weight:750!important}
 .hero.hero-77 .hero-recognition-close{color:#754311!important;font-weight:750!important;text-shadow:0 1px 8px rgba(255,250,239,.7)!important}
 @media(max-width:1000px){.hero.hero-77{padding-top:clamp(45px,7vw,80px)!important}.hero.hero-77 .hero-art{margin-top:28px!important}}
+
+/* Preview: fit primary CTA in typical desktop viewport while preserving approved scene and panel. */
+@media(min-width:1001px){
+.hero.hero-77{min-height:690px!important;padding-top:clamp(32px,4vw,58px)!important;padding-bottom:clamp(32px,4vw,58px)!important;align-items:center!important}
+.hero.hero-77 .hero-copy{align-self:center!important}
+.hero.hero-77 .hero-art{align-self:center!important;margin-top:0!important}
+.hero.hero-77 .hero-recognition-simple{margin-top:clamp(18px,2vw,30px)!important}
+.hero.hero-77 .hero-opportunity-list{margin-bottom:clamp(12px,1.3vw,19px)!important}
+.hero.hero-77 .hero-recognition-quiet{margin-top:9px!important;margin-bottom:9px!important;line-height:1.4!important}
+.hero.hero-77 .hero-recognition-close{margin-top:9px!important;margin-bottom:10px!important}
+.hero.hero-77 .hero-actions{margin-top:16px!important}
+}
+.hero.hero-77 .hero-recognition-quiet{color:#0a243b!important;font-weight:700!important;text-shadow:0 1px 9px rgba(255,251,242,.92)!important}
+.hero.hero-77 .hero-recognition-quiet strong{color:#061c31!important;font-weight:750!important}
+@media(max-width:1000px){.hero.hero-77 .hero-recognition-quiet{font-weight:650!important}}
