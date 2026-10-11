@@ -817,3 +817,14 @@ linear-gradient(145deg,#14253a 0%,#243a4f 55%,#a88950 140%);border-radius:2px}
 .discovery-expand[open]>summary{border-bottom:1px solid #d8dee4}
 .discovery-expand .profile-card{margin:0;border:0;box-shadow:none}
 @media(max-width:600px){.discovery-expand>summary{align-items:flex-start;flex-direction:column}}
+
+/* Discovery orientation and optional page guide */
+.discovery-orientation{max-width:850px;margin:24px 0;padding:24px 28px;background:#f5f7f8;border-left:3px solid #b39a66;color:#243849}
+.discovery-orientation h2{font-size:clamp(1.45rem,2.4vw,1.85rem);line-height:1.3;margin:0 0 14px}
+.discovery-orientation p{font-size:1.1rem;line-height:1.7;margin:0 0 12px}
+.discovery-guide ol{padding:10px 32px 5px;margin:0}
+.discovery-guide li{font-size:1.05rem;line-height:1.7;margin:0 0 12px;padding-left:5px}
+.discovery-guide>p{font-size:1.05rem;line-height:1.6;margin:0;padding:0 28px 24px}
+.discovery-expand>summary{font-size:1.1rem}
+.discovery-expand>summary span{font-size:.95rem}
+@media(max-width:600px){.discovery-orientation{padding:20px}.discovery-guide ol{padding-left:29px;padding-right:15px}}
