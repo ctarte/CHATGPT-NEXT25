@@ -672,3 +672,14 @@ linear-gradient(145deg,#14253a 0%,#243a4f 55%,#a88950 140%);border-radius:2px}
 /* Approved Mediterranean terrace photo — development preview only. Live text and CTA controls remain in HTML. */
 .hero.hero-77{background:linear-gradient(90deg,rgba(251,247,238,.78) 0%,rgba(251,247,238,.62) 27%,rgba(251,247,238,.14) 51%,rgba(8,35,58,0) 75%),url("/discovered-by-design-homepage-background%2010-10-26.jpg") center center/cover no-repeat!important}
 @media(max-width:650px){.hero.hero-77{background:linear-gradient(180deg,rgba(251,247,238,.91) 0%,rgba(251,247,238,.78) 55%,rgba(251,247,238,.42) 100%),url("/discovered-by-design-homepage-background%2010-10-26.jpg") 61% center/cover no-repeat!important}}
+
+/* Preview refinement: restore hero breathing room, avoid panel clipping, clarify supporting copy. */
+@media(min-width:1001px){
+.hero.hero-77{box-sizing:border-box!important;min-height:820px!important;padding-top:clamp(75px,7vw,116px)!important;padding-bottom:clamp(60px,6vw,94px)!important;align-items:center!important}
+.hero.hero-77 .hero-copy{align-self:center!important}
+.hero.hero-77 .hero-art{align-self:center!important;margin-top:0!important;transform:none!important}
+}
+.hero.hero-77 .hero-recognition-quiet{color:#10283e!important;font-size:clamp(1.14rem,1.38vw,1.32rem)!important;line-height:1.53!important;font-weight:650!important;text-shadow:0 1px 8px rgba(255,250,239,.8)!important}
+.hero.hero-77 .hero-recognition-quiet strong{color:#081e32!important;font-weight:750!important}
+.hero.hero-77 .hero-recognition-close{color:#754311!important;font-weight:750!important;text-shadow:0 1px 8px rgba(255,250,239,.7)!important}
+@media(max-width:1000px){.hero.hero-77{padding-top:clamp(45px,7vw,80px)!important}.hero.hero-77 .hero-art{margin-top:28px!important}}
