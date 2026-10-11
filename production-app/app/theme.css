@@ -808,3 +808,12 @@ linear-gradient(145deg,#14253a 0%,#243a4f 55%,#a88950 140%);border-radius:2px}
 .save-resume .save-resume-cta:hover{background:#204562}
 .save-resume .save-resume-cta:focus-visible{outline:3px solid #bc965b;outline-offset:3px}
 @media(max-width:600px){.save-resume.save-resume-signed-out{align-items:stretch}.save-resume .save-resume-cta{width:100%}}
+
+/* Progressive disclosure for the Discovery results: show the headline signals first. */
+.discovery-expand{margin:24px 0;border:1px solid #d8dee4;background:#fff}
+.discovery-expand>summary{display:flex;align-items:center;justify-content:space-between;gap:16px;cursor:pointer;padding:19px 22px;color:#102b43;font-weight:700;list-style:none}
+.discovery-expand>summary::-webkit-details-marker{display:none}
+.discovery-expand>summary span{font-size:.83rem;font-weight:500;color:#526678}
+.discovery-expand[open]>summary{border-bottom:1px solid #d8dee4}
+.discovery-expand .profile-card{margin:0;border:0;box-shadow:none}
+@media(max-width:600px){.discovery-expand>summary{align-items:flex-start;flex-direction:column}}
