@@ -728,3 +728,20 @@ linear-gradient(145deg,#14253a 0%,#243a4f 55%,#a88950 140%);border-radius:2px}
 .discovery-choice-grid article>p:not(:first-child){line-height:1.7;color:#425467;font-size:1rem;flex:1}
 .discovery-choice-grid .button{margin-top:14px}
 @media(max-width:760px){.discovery-choice-grid{grid-template-columns:1fr}.blueprint-preview .blueprint-sample{margin-top:20px}.think-tank-intro .direction-lead{font-size:1.25rem}}
+
+/* Preview readability pass: increase secondary typography while preserving approved hero image/layout */
+.think-tank-intro>p:not(.eyebrow),.dark-section>p:not(.eyebrow),.possibility-demo .demo-lead,.possibility-demo .demo-close,.possibility-demo .reaction-moment>p,.blueprint-preview>div:first-child>p:not(.eyebrow),.final-cta>p:not(.eyebrow){font-size:clamp(1.08rem,1.25vw,1.25rem)!important;line-height:1.65!important}
+.think-tank-intro .steps.compact article p,.possibility-demo .idea-board p,.possibility-demo .idea-board b{font-size:clamp(1.03rem,1.17vw,1.18rem)!important;line-height:1.6!important}
+.possibility-demo .idea-board .clue-panel>span,.possibility-demo .idea-board .connection-panel>span,.possibility-demo .idea-board .possibility-panel>span,.reaction-moment>span{font-size:clamp(.82rem,.93vw,.98rem)!important;line-height:1.4!important;letter-spacing:.07em!important}
+.possibility-demo .reaction-choices b{font-size:clamp(.84rem,.93vw,1rem)!important;line-height:1.4!important}
+.dark-section .discovery-loop span{font-size:clamp(.9rem,1.05vw,1.08rem)!important}
+.blueprint-sample-header small,.blueprint-sample-row span{font-size:clamp(.8rem,.9vw,.94rem)!important;line-height:1.45!important}
+.blueprint-sample-header em{font-size:1.03rem!important}
+.blueprint-sample-row p{font-size:clamp(1rem,1.1vw,1.16rem)!important;line-height:1.55!important}
+.blueprint-sample-note{font-size:.92rem!important;line-height:1.6!important}
+.discovery-choice-grid article>p:first-child{font-size:.92rem!important}
+.discovery-choice-grid article>p:not(:first-child){font-size:1.1rem!important}
+.second-discovery-example{max-width:1050px;margin:42px auto 30px;padding:clamp(26px,3vw,44px);background:#f3eee4;border-left:4px solid #b78d4c;text-align:left;box-shadow:0 12px 30px rgba(12,39,59,.06)}
+.second-discovery-example h3{font:400 clamp(1.6rem,2.2vw,2.4rem)/1.25 Georgia,serif;color:#143149;margin:12px 0 18px}
+.second-discovery-example p:not(.eyebrow){font-size:clamp(1.06rem,1.17vw,1.18rem);line-height:1.7;color:#243d50;margin:12px 0}
+@media(max-width:760px){.second-discovery-example{margin:28px auto 22px}.possibility-demo .reaction-choices{gap:9px!important}}
