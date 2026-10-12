@@ -873,3 +873,15 @@ linear-gradient(145deg,#14253a 0%,#243a4f 55%,#a88950 140%);border-radius:2px}
 .discovery-expand#discovery-profile>summary .discovery-profile-byline{display:block!important;font-family:Georgia,serif!important;font-size:clamp(1.35rem,2.2vw,1.85rem)!important;font-weight:400!important;line-height:1.25!important;letter-spacing:-.015em!important;color:#19334b!important;text-transform:none!important}
 .discovery-expand#discovery-profile>summary .discovery-profile-action{flex-shrink:0!important}
 @media(max-width:520px){.discovery-expand#discovery-profile>summary{align-items:flex-start!important;flex-direction:column!important}}
+
+/* Distinct, easy-to-find Discovery navigation guide */
+.discovery-guide{background:#dfe8ee!important;color:#19334b!important;border:1px solid #b8cbd5!important;border-left:4px solid #b68b42!important;border-radius:3px!important}
+.discovery-guide>summary{background:transparent!important;color:#19334b!important;font-size:1.05rem!important;font-weight:700!important;line-height:1.5!important;padding:15px 18px!important}
+.discovery-guide>summary span{color:#36556b!important;font-size:.94rem!important}
+.discovery-guide ol,.discovery-guide li,.discovery-guide li a,.discovery-guide p{color:#19334b!important}
+.discovery-guide li,.discovery-guide li a{font-size:1rem!important;line-height:1.65!important}
+.discovery-guide li a{text-decoration:underline!important;text-underline-offset:3px}
+/* Accessible minimum reading sizes for Discovery detail cards, annotations and choices */
+.discovery-journal .journal-intro p,.discovery-journal .journal-grid p,.discovery-journal .journal-grid small,.discovery-journal .journal-intro small,.discovery-journal .journal-question p,.discovery-map .map-open p,.discovery-map .map-challenge small,.discovery-field .field-lead{font-size:1rem!important;line-height:1.6!important}
+.discovery-journal .journal-grid span,.discovery-journal .journal-grid b,.discovery-journal .journal-question span,.discovery-map .map-grid article span,.discovery-map .map-open span,.discovery-field .discovery-section-label{font-size:.9rem!important;line-height:1.5!important}
+.discovery-journal button,.discovery-journal .journal-question button,.discovery-map .map-challenge button,.knowledge-module button{font-size:.94rem!important;line-height:1.4!important}
