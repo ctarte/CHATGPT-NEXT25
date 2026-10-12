@@ -839,3 +839,10 @@ linear-gradient(145deg,#14253a 0%,#243a4f 55%,#a88950 140%);border-radius:2px}
 .discovery-guide li a:hover{color:#f4dca7}
 .discovery-section-label{scroll-margin-top:100px;font-size:1rem!important;letter-spacing:.075em}
 #discovery-profile{scroll-margin-top:100px}
+
+/* Clearer reading size and more discoverable navigation in Discovery results */
+.discovery-guide li,.discovery-guide>p,.discovery-map .map-head p,.discovery-map .map-grid p,.discovery-map .map-challenge p{font-size:1.125rem;line-height:1.7}
+.discovery-map .map-head span,.discovery-map .map-grid article span,.discovery-map .map-challenge>span,.discovery-section-label{font-size:1.05rem!important;line-height:1.5;letter-spacing:.055em}
+.discovery-map .map-grid strong,.discovery-map .map-challenge button{font-size:1.075rem;line-height:1.5}
+.discovery-guide li a{display:inline-block;padding:4px 0;cursor:pointer}
+#discovery-signals,#discovery-profile,#discovery-raw-material,#discovery-map,#discovery-journal,#discovery-field,#discovery-next{scroll-margin-top:110px}
