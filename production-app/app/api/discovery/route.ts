@@ -10,4 +10,15 @@ function validRecord(x:unknown):x is DiscoveryRecord{
 export const dynamic="force-dynamic";
 export const revalidate=0;
 export async function GET(){try{const record=await loadDiscoveryRecord();return NextResponse.json({record:record??null})}catch(e){const m=e instanceof Error?e.message:"Unable to load discovery record.";return NextResponse.json({error:m},{status:m.includes("Authentication")?401:500})}}
-export async function PUT(req:Request){try{const raw=await req.text();if(raw.length>MAX_BYTES)return NextResponse.json({error:"Discovery record is too large."},{status:413});const record=JSON.parse(raw) as unknown;if(!validRecord(record))return NextResponse.json({error:"Invalid or unsupported discovery record."},{status:400});await saveDiscoveryRecord({...record,version:2});return NextResponse.json({saved:true})}catch(e){const m=e instanceof Error?e.message:"Unable to save discovery record.";return NextResponse.json({error:m},{status:m.includes("Authentication")?401:500})}}
+export async function PUT(req:Request){try{const raw=await req.text();if(raw.length>MAX_BYTES)return NextResponse.json({error:"Discovery record is too large."},{status:413});const record=JSON.parse(raw) as unknown;if(!validRecord(record))return NextResponse.json({error:"Invalid or unsupported discovery record."},{status:400});// Fail closed on client-driven round progression until transactional purchase-bound
+ // completion events are available. Existing same-round edits remain permitted.
+ const requestedRound=(record as DiscoveryRecord).round;
+ if(!Number.isSafeInteger(requestedRound)||requestedRound<1||requestedRound>5)
+  return NextResponse.json({error:"Invalid Discovery round."},{status:400});
+ const existing=await loadDiscoveryRecord();
+ const storedRound=existing?.record?.round;
+ if(existing&&(!Number.isSafeInteger(storedRound)||requestedRound!==storedRound))
+  return NextResponse.json({error:"Round changes require verified server authorization.",code:"ROUND_ADVANCEMENT_NOT_ENABLED"},{status:409});
+ if(!existing&&requestedRound!==1)
+  return NextResponse.json({error:"A new Discovery must begin at round one.",code:"ROUND_ADVANCEMENT_NOT_ENABLED"},{status:409});
+ await saveDiscoveryRecord({...record,version:2});return NextResponse.json({saved:true})}catch(e){const m=e instanceof Error?e.message:"Unable to save discovery record.";return NextResponse.json({error:m},{status:m.includes("Authentication")?401:500})}}
