@@ -899,3 +899,15 @@ linear-gradient(145deg,#14253a 0%,#243a4f 55%,#a88950 140%);border-radius:2px}
 .discovery-journal .journal-intro p,.discovery-journal .journal-grid p,.discovery-journal .journal-grid small,.discovery-journal .journal-intro small,.discovery-journal .journal-question p,.discovery-field .field-lead,.discovery-field p,.next-lanes p{font-size:calc(.96rem + 1pt)!important}
 .discovery-journal .journal-grid span,.discovery-journal .journal-grid b,.discovery-journal .journal-question span,.discovery-field .field-grid span,.discovery-field small,.next-lanes small{font-size:calc(.84rem + 1pt)!important}
 .discovery-journal button,.discovery-journal .journal-question button,.discovery-field button,.next-lanes button{font-size:calc(.875rem + 1pt)!important}
+
+/* Discovery editorial typography audit: consistent hierarchy across the entire results page.
+   Scoped to Discovery modules; leave homepage, pricing and production untouched. */
+.discovery-chapter-heading h1,.discovery-chapter-heading h2,.discovery-expand#discovery-profile>summary .discovery-profile-byline{font-family:Georgia,"Times New Roman",serif!important;font-size:clamp(1.4rem,2.1vw,1.75rem)!important;font-weight:400!important;line-height:1.27!important;letter-spacing:-.012em!important;color:#19334b!important}
+.discovery-expand#discovery-profile>summary .discovery-profile-title{flex:1 1 auto!important}
+.discovery-expand#discovery-profile>summary .discovery-profile-action{flex:0 0 auto!important;max-width:110px!important;text-align:right!important;line-height:1.4!important}
+.discovery-journal .journal-intro p,.discovery-journal .journal-pages p,.discovery-journal .journal-next p,.discovery-journal .thinking-shift p,.discovery-journal .journal-question p,.discovery-field .field-lead,.discovery-field .field-columns p,.discovery-field .field-card p,.next-lanes .lane small,.next-lanes .lane-confirm p{font-size:15px!important;line-height:1.58!important}
+.discovery-journal .journal-pages small,.discovery-journal .journal-next span,.discovery-journal .thinking-shift small,.discovery-journal .thinking-shift span,.discovery-field .field-stats span,.discovery-field .field-columns>section>b,.discovery-field .field-columns article small,.discovery-field .field-card small,.discovery-field .field-card label,.next-lanes .lane span{font-size:12px!important;line-height:1.4!important;letter-spacing:.065em!important}
+.discovery-journal .journal-pages h3,.discovery-journal .journal-next strong,.discovery-field .field-card h2{font-size:18px!important;line-height:1.4!important}
+.discovery-journal button,.discovery-field button,.next-lanes button,.discovery-field select{font-size:14px!important;line-height:1.45!important}
+.discovery-journal .journal-pages article,.discovery-field .field-columns article,.discovery-field .field-card{overflow-wrap:anywhere}
+@media(max-width:600px){.discovery-expand#discovery-profile>summary{flex-direction:column!important;align-items:flex-start!important}.discovery-expand#discovery-profile>summary .discovery-profile-action{max-width:none!important;text-align:left!important}}
