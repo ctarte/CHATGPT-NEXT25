@@ -894,3 +894,8 @@ linear-gradient(145deg,#14253a 0%,#243a4f 55%,#a88950 140%);border-radius:2px}
 .discovery-journal .journal-grid span,.discovery-journal .journal-grid b,.discovery-journal .journal-question span,.discovery-map .map-grid article span,.discovery-map .map-open span{font-size:.84rem!important;line-height:1.5!important}
 .discovery-journal button,.discovery-journal .journal-question button,.knowledge-module button{font-size:.875rem!important;line-height:1.45!important}
 .discovery-map .map-challenge>div:first-of-type button{font-size:.84rem!important;line-height:1.4!important}
+
+/* One-point readability adjustment for detail text in Discovery sections 05–07 */
+.discovery-journal .journal-intro p,.discovery-journal .journal-grid p,.discovery-journal .journal-grid small,.discovery-journal .journal-intro small,.discovery-journal .journal-question p,.discovery-field .field-lead,.discovery-field p,.next-lanes p{font-size:calc(.96rem + 1pt)!important}
+.discovery-journal .journal-grid span,.discovery-journal .journal-grid b,.discovery-journal .journal-question span,.discovery-field .field-grid span,.discovery-field small,.next-lanes small{font-size:calc(.84rem + 1pt)!important}
+.discovery-journal button,.discovery-journal .journal-question button,.discovery-field button,.next-lanes button{font-size:calc(.875rem + 1pt)!important}
