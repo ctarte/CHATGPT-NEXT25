@@ -867,3 +867,9 @@ linear-gradient(145deg,#14253a 0%,#243a4f 55%,#a88950 140%);border-radius:2px}
 .discovery-chapter-heading h1,.discovery-chapter-heading h2{margin:4px 0 0!important;color:#19334b!important;font-size:clamp(1.45rem,2.4vw,2rem)!important;line-height:1.23!important;letter-spacing:-.015em!important}
 .discovery-expand#discovery-profile>summary{min-height:74px!important;display:flex!important;align-items:center!important;justify-content:space-between!important;gap:12px!important}
 @media(max-width:520px){.discovery-chapter-heading,.discovery-expand#discovery-profile>summary{padding:14px!important}}
+
+/* Section 02 gets the same chapter subtitle hierarchy as other sections */
+.discovery-expand#discovery-profile>summary .discovery-profile-title{display:flex!important;flex-direction:column!important;align-items:flex-start!important;gap:5px!important;min-width:0!important}
+.discovery-expand#discovery-profile>summary .discovery-profile-byline{display:block!important;font-family:Georgia,serif!important;font-size:clamp(1.35rem,2.2vw,1.85rem)!important;font-weight:400!important;line-height:1.25!important;letter-spacing:-.015em!important;color:#19334b!important;text-transform:none!important}
+.discovery-expand#discovery-profile>summary .discovery-profile-action{flex-shrink:0!important}
+@media(max-width:520px){.discovery-expand#discovery-profile>summary{align-items:flex-start!important;flex-direction:column!important}}
