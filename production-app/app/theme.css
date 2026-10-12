@@ -828,3 +828,14 @@ linear-gradient(145deg,#14253a 0%,#243a4f 55%,#a88950 140%);border-radius:2px}
 .discovery-expand>summary{font-size:1.1rem}
 .discovery-expand>summary span{font-size:.95rem}
 @media(max-width:600px){.discovery-orientation{padding:20px}.discovery-guide ol{padding-left:29px;padding-right:15px}}
+
+/* Navy orientation panel and navigable numbered Discovery guide */
+.discovery-orientation{background:#173752;color:#fff;border-left:4px solid #c6a76a;border-radius:4px}
+.discovery-orientation h2,.discovery-orientation p{color:#fff}
+.discovery-guide{background:#173752;border-color:#36566c;color:#fff}
+.discovery-guide>summary,.discovery-guide>summary span,.discovery-guide li,.discovery-guide>p{color:#fff}
+.discovery-guide>summary{font-size:1.16rem}
+.discovery-guide li a{color:#fff;text-decoration:underline;text-decoration-color:#c6a76a;text-underline-offset:4px}
+.discovery-guide li a:hover{color:#f4dca7}
+.discovery-section-label{scroll-margin-top:100px;font-size:1rem!important;letter-spacing:.075em}
+#discovery-profile{scroll-margin-top:100px}
