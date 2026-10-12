@@ -846,3 +846,12 @@ linear-gradient(145deg,#14253a 0%,#243a4f 55%,#a88950 140%);border-radius:2px}
 .discovery-map .map-grid strong,.discovery-map .map-challenge button{font-size:1.075rem;line-height:1.5}
 .discovery-guide li a{display:inline-block;padding:4px 0;cursor:pointer}
 #discovery-signals,#discovery-profile,#discovery-raw-material,#discovery-map,#discovery-journal,#discovery-field,#discovery-next{scroll-margin-top:110px}
+
+/* Consistent numbered headings across all seven Discovery sections */
+.discovery-section-label, .discovery-map .map-head .discovery-section-label, .discovery-expand summary .discovery-section-label {
+  color:#ad7b24!important;font-family:inherit!important;font-size:1rem!important;font-weight:800!important;letter-spacing:.09em!important;line-height:1.5!important;text-transform:uppercase!important;
+}
+/* Four balanced, legible choices for challenging the Discovery Map */
+.discovery-map .map-challenge>div:first-of-type{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important;align-items:stretch!important}
+.discovery-map .map-challenge>div:first-of-type button{width:100%!important;min-width:0!important;min-height:54px!important;padding:11px 9px!important;font-size:.82rem!important;line-height:1.35!important;font-weight:700!important;letter-spacing:.015em!important;white-space:normal!important;text-align:center!important;overflow-wrap:break-word!important}
+@media(max-width:520px){.discovery-map .map-challenge>div:first-of-type{grid-template-columns:1fr!important}}
