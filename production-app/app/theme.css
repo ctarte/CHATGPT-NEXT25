@@ -885,3 +885,12 @@ linear-gradient(145deg,#14253a 0%,#243a4f 55%,#a88950 140%);border-radius:2px}
 .discovery-journal .journal-intro p,.discovery-journal .journal-grid p,.discovery-journal .journal-grid small,.discovery-journal .journal-intro small,.discovery-journal .journal-question p,.discovery-map .map-open p,.discovery-map .map-challenge small,.discovery-field .field-lead{font-size:1rem!important;line-height:1.6!important}
 .discovery-journal .journal-grid span,.discovery-journal .journal-grid b,.discovery-journal .journal-question span,.discovery-map .map-grid article span,.discovery-map .map-open span,.discovery-field .discovery-section-label{font-size:.9rem!important;line-height:1.5!important}
 .discovery-journal button,.discovery-journal .journal-question button,.discovery-map .map-challenge button,.knowledge-module button{font-size:.94rem!important;line-height:1.4!important}
+
+/* Refined editorial type scale: readable but restrained */
+.discovery-guide>summary{font-size:1rem!important}
+.discovery-guide>summary span{font-size:.85rem!important}
+.discovery-guide li,.discovery-guide li a{font-size:.94rem!important;line-height:1.6!important}
+.discovery-journal .journal-intro p,.discovery-journal .journal-grid p,.discovery-journal .journal-grid small,.discovery-journal .journal-intro small,.discovery-journal .journal-question p,.discovery-map .map-open p,.discovery-map .map-challenge small,.discovery-field .field-lead{font-size:.96rem!important;line-height:1.6!important}
+.discovery-journal .journal-grid span,.discovery-journal .journal-grid b,.discovery-journal .journal-question span,.discovery-map .map-grid article span,.discovery-map .map-open span{font-size:.84rem!important;line-height:1.5!important}
+.discovery-journal button,.discovery-journal .journal-question button,.knowledge-module button{font-size:.875rem!important;line-height:1.45!important}
+.discovery-map .map-challenge>div:first-of-type button{font-size:.84rem!important;line-height:1.4!important}
