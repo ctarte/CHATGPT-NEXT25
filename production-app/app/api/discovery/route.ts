@@ -15,6 +15,11 @@ export async function PUT(req:Request){try{const raw=await req.text();if(raw.len
  const requestedRound=(record as DiscoveryRecord).round;
  if(!Number.isSafeInteger(requestedRound)||requestedRound<1||requestedRound>5)
   return NextResponse.json({error:"Invalid Discovery round."},{status:400});
+ // The browser also stores a round inside progress. Do not allow two conflicting
+ // round numbers to be persisted as a way around the primary round guard.
+ const progressRound=(record as DiscoveryRecord).progress?.round;
+ if(progressRound!==undefined&&progressRound!==requestedRound)
+  return NextResponse.json({error:"Discovery progress round does not match the active round."},{status:400});
  const existing=await loadDiscoveryRecord();
  const storedRound=existing?.record?.round;
  if(existing&&(!Number.isSafeInteger(storedRound)||requestedRound!==storedRound))
