@@ -920,3 +920,23 @@ linear-gradient(145deg,#14253a 0%,#243a4f 55%,#a88950 140%);border-radius:2px}
 .reentry-brief b{font-size:11px!important;font-weight:700!important;letter-spacing:.045em!important}
 .reentry-brief p{font-size:14px!important;line-height:1.55!important}
 .map-challenge small{font-size:13px!important;line-height:1.5!important}
+
+/* Discovery final editorial polish — consistent legibility, restrained controls and rhythm.
+   Scoped to /start Discovery modules only. */
+.start-wrap .discovery-chapter-heading{margin-bottom:18px!important}
+.start-wrap .discovery-chapter-heading .discovery-section-label{font-size:12px!important;font-weight:700!important;letter-spacing:.095em!important;line-height:1.5!important}
+.start-wrap .discovery-expand#discovery-profile>summary .discovery-section-label{font-size:12px!important;font-weight:700!important;letter-spacing:.095em!important}
+.start-wrap .discovery-chapter-heading h1,.start-wrap .discovery-chapter-heading h2,.start-wrap .discovery-expand#discovery-profile>summary .discovery-profile-byline{font-family:Georgia,"Times New Roman",serif!important;font-size:clamp(21px,2vw,27px)!important;font-weight:400!important;line-height:1.3!important}
+.start-wrap .discovery-expand#discovery-profile>summary .discovery-profile-action{font-size:12px!important;font-weight:500!important;color:#36556b!important;max-width:120px!important}
+.start-wrap .discovery-journal .journal-pages small,.start-wrap .discovery-journal .thinking-shift small,.start-wrap .discovery-journal .journal-next span,.start-wrap .discovery-field .field-card small,.start-wrap .discovery-field .field-columns article small,.start-wrap .discovery-field .field-stats span,.start-wrap .next-lanes .lane span{font-size:11px!important;font-weight:700!important;line-height:1.5!important;letter-spacing:.065em!important}
+.start-wrap .discovery-journal .journal-pages p,.start-wrap .discovery-journal .thinking-shift p,.start-wrap .discovery-journal .journal-next p,.start-wrap .discovery-field .field-card p,.start-wrap .discovery-field .field-columns p,.start-wrap .next-lanes .lane small{font-size:14px!important;line-height:1.6!important}
+.start-wrap .discovery-journal .journal-pages h3,.start-wrap .discovery-field .field-card h2{font-family:Georgia,"Times New Roman",serif!important;font-weight:400!important;line-height:1.35!important}
+.start-wrap .journal-reentry button,.start-wrap .wildcard-actions button,.start-wrap .map-challenge button,.start-wrap .discovery-field button,.start-wrap .next-lanes button{font-family:Arial,Helvetica,sans-serif!important;font-size:12px!important;font-weight:600!important;letter-spacing:.015em!important;line-height:1.4!important;padding:10px 12px!important;text-align:center!important;white-space:normal!important}
+.start-wrap .journal-reentry{gap:8px!important}
+.start-wrap .journal-reentry>span{font-size:11px!important;font-weight:700!important;letter-spacing:.07em!important}
+.start-wrap .journal-reentry button{border-color:rgba(255,255,255,.3)!important;background:rgba(255,255,255,.035)!important}
+.start-wrap .journal-reentry button:hover,.start-wrap .journal-reentry button.active{background:#f2eee5!important;color:#19334b!important}
+.start-wrap .discovery-field .field-stats{gap:8px!important}
+.start-wrap .discovery-journal article,.start-wrap .discovery-field article,.start-wrap .discovery-map article{overflow-wrap:break-word}
+.start-wrap .discovery-journal button:focus-visible,.start-wrap .discovery-field button:focus-visible,.start-wrap .discovery-map button:focus-visible,.start-wrap .next-lanes button:focus-visible,.start-wrap .discovery-guide a:focus-visible{outline:2px solid #b68b42!important;outline-offset:3px!important}
+@media(max-width:600px){.start-wrap .discovery-chapter-heading{padding:15px 16px!important}.start-wrap .discovery-expand#discovery-profile>summary{padding:15px 16px!important}.start-wrap .discovery-field .field-stats{flex-wrap:wrap!important}}
