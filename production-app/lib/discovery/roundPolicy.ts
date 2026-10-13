@@ -20,6 +20,11 @@ export function isAuthorizedDiscoveryRound(input: {
   if (!Number.isSafeInteger(refinementsGranted) || refinementsGranted < 0 || refinementsGranted > 2) return false;
   if (!Array.isArray(completedRounds) || new Set(completedRounds).size !== completedRounds.length ||
       completedRounds.some(n => !Number.isSafeInteger(n) || n < 1 || n > 5)) return false;
+  // A trusted ledger must represent a contiguous sequence starting at round one.
+  // Reject future or out-of-order completion entries rather than trusting a client list.
+  const ordered = [...completedRounds].sort((a, b) => a - b);
+  if (ordered.some((n, i) => n !== i + 1)) return false;
+  if (ordered.some(n => n > 3 + refinementsGranted)) return false;
   if (requestedRound > 3 + refinementsGranted) return false;
   for (let n = 1; n < requestedRound; n++) if (!completedRounds.includes(n)) return false;
   return true;
