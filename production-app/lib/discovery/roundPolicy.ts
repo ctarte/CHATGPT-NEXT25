@@ -6,16 +6,19 @@ export function isAuthorizedDiscoveryRound(input: {
   authenticatedUserId: string;
   purchaseUserId: string;
   purchaseStatus: string;
+  purchaseEntitlement: string;
   purchaseId: string;
   ledgerPurchaseId: string;
   completedRounds: number[];
   refinementsGranted: number;
   requestedRound: number;
 }): boolean {
-  const {authenticatedUserId, purchaseUserId, purchaseStatus, purchaseId,
+  const {authenticatedUserId, purchaseUserId, purchaseStatus, purchaseEntitlement, purchaseId,
     ledgerPurchaseId, completedRounds, refinementsGranted, requestedRound} = input;
   if (!authenticatedUserId || authenticatedUserId !== purchaseUserId ||
       !purchaseId || purchaseId !== ledgerPurchaseId || purchaseStatus !== 'paid') return false;
+  // A paid unrelated product or upgrade-only row is not a Discovery purchase.
+  if (!['DISCOVERY', 'OPPORTUNITY_INTELLIGENCE', 'FOUNDING_CLIENT'].includes(purchaseEntitlement)) return false;
   if (!Number.isSafeInteger(requestedRound) || requestedRound < 1 || requestedRound > 5) return false;
   if (!Number.isSafeInteger(refinementsGranted) || refinementsGranted < 0 || refinementsGranted > 2) return false;
   if (!Array.isArray(completedRounds) || new Set(completedRounds).size !== completedRounds.length ||
