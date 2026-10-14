@@ -990,3 +990,16 @@ linear-gradient(145deg,#14253a 0%,#243a4f 55%,#a88950 140%);border-radius:2px}
 .start-wrap .push-prompt{overflow-wrap:anywhere}
 .start-wrap .push-prompt strong{font-size:1rem!important;line-height:1.5!important}
 @media(max-width:900px){.start-wrap .wildcard-grid{grid-template-columns:minmax(0,1fr)}.start-wrap .wildcards{margin-left:0;margin-right:0;padding:22px 16px}}
+
+/* Shared premium editorial type scale for Discovery: eliminate 8–12px text and faded captions. */
+.start-wrap{--discovery-ink:#182e3d;--discovery-muted:#465560;--discovery-gold:#77551e}
+.start-wrap .discovery-chapter-heading h1,.start-wrap .discovery-chapter-heading h2,.start-wrap .discovery-map .map-head h2,.start-wrap .journal-intro h2,.start-wrap .discovery-field h2,.start-wrap .next-lanes h2{font-family:Georgia,"Times New Roman",serif!important;font-size:clamp(1.55rem,2.4vw,2.05rem)!important;font-weight:400!important;line-height:1.28!important;letter-spacing:-.012em!important}
+.start-wrap .discovery-section-label,.start-wrap .discovery-chapter-heading .discovery-section-label,.start-wrap .wildcard-head>span,.start-wrap .wildcard-grid small,.start-wrap .discovery-journal .journal-pages small,.start-wrap .discovery-journal .thinking-shift small,.start-wrap .discovery-journal .journal-next span,.start-wrap .discovery-field .field-card small,.start-wrap .discovery-field .field-columns article small,.start-wrap .discovery-field .field-stats span,.start-wrap .next-lanes .lane span,.start-wrap .journal-reentry>span,.start-wrap .map-challenge small{font-family:Arial,Helvetica,sans-serif!important;font-size:.82rem!important;font-weight:700!important;line-height:1.5!important;letter-spacing:.045em!important}
+.start-wrap .discovery-journal .journal-pages p,.start-wrap .discovery-journal .thinking-shift p,.start-wrap .discovery-journal .journal-next p,.start-wrap .discovery-field .field-card p,.start-wrap .discovery-field .field-columns p,.start-wrap .next-lanes .lane small,.start-wrap .discovery-map .map-head p,.start-wrap .knowledge-module .knowledge-intro{font-size:1rem!important;line-height:1.65!important}
+.start-wrap .journal-reentry button,.start-wrap .wildcard-actions button,.start-wrap .map-challenge button,.start-wrap .discovery-field button,.start-wrap .next-lanes button{font-family:Arial,Helvetica,sans-serif!important;font-size:.88rem!important;font-weight:650!important;line-height:1.4!important;letter-spacing:.005em!important;min-height:42px}
+.start-wrap .discovery-profile-action{font-size:.85rem!important;line-height:1.45!important;max-width:175px!important}
+.start-wrap .discovery-journal .journal-pages article,.start-wrap .discovery-field article,.start-wrap .discovery-map article{min-width:0}
+.start-wrap .wildcard-head h3{color:var(--discovery-ink)!important}
+.start-wrap .wildcard-head p,.start-wrap .wildcard-grid article p{color:var(--discovery-muted)!important}
+.start-wrap .wildcard-head>span,.start-wrap .wildcard-grid small{color:var(--discovery-gold)!important}
+@media(max-width:700px){.start-wrap .discovery-chapter-heading h1,.start-wrap .discovery-chapter-heading h2{font-size:1.55rem!important}.start-wrap .discovery-profile-action{max-width:none!important}}
