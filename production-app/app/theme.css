@@ -1071,3 +1071,48 @@ main :where(small){line-height:1.5}
 .start-wrap .first-reveal .notice-insight .connection-engine>div b,.start-wrap .first-reveal .notice-insight .contradiction-lab>div b{overflow-wrap:anywhere}
 .start-wrap .first-reveal .notice-insight .missing-grid,.start-wrap .first-reveal .notice-insight .outside-grid{margin-top:8px}
 @media(max-width:700px){.start-wrap .first-reveal .notice-insight{padding:16px!important;gap:12px}.start-wrap .first-reveal .notice-insight>:where(.connection-engine,.assumption-challenge,.contradiction-lab,.missing-evidence,.outside-eyes-test){padding:19px 16px!important}}
+
+/* Site-wide private-advisory design pass: public page rhythm, reading widths and contrast. */
+:root{--office-navy:#102b40;--office-gold:#916c35;--office-ivory:#fbfaf6;--office-text:#203747;--office-muted:#4d5c64;--office-border:#dcd4c6}
+.page-hero{padding:clamp(76px,8vw,116px) clamp(26px,8vw,120px);background:linear-gradient(135deg,#102b40,#193d55);color:#fff}
+.page-hero>h1{max-width:1050px;line-height:1.04!important;letter-spacing:-.025em;text-wrap:balance}
+.page-hero>.lead{max-width:790px;font-size:clamp(1.1rem,1.6vw,1.32rem);line-height:1.65;color:#e8ebec}
+.page-hero .eyebrow{color:#e0be81;font-size:.84rem;letter-spacing:.11em}
+main>.section{padding:clamp(65px,7vw,108px) clamp(26px,8vw,120px)}
+main>.section :where(p,li){color:inherit;line-height:1.68}
+main>.section>h2{max-width:950px;line-height:1.16!important}
+main>.section :where(h2,h3){text-wrap:balance}
+main>.section :where(.steps,.world-grid,.beliefs) article{min-width:0;overflow-wrap:break-word}
+main>.section .steps article,main>.section .world-card,main>.section.beliefs article{padding:clamp(24px,2.4vw,36px);border:1px solid var(--office-border);border-top:3px solid var(--office-gold);background:#fff;box-shadow:0 12px 28px rgba(16,43,64,.045)}
+main>.section .steps article h2{font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.45rem,2vw,1.9rem);line-height:1.22;margin:12px 0}
+main>.section .steps article h3{font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.15rem,1.55vw,1.4rem);line-height:1.35;margin:12px 0}
+main>.section .steps article p,main>.section .world-card p,main>.section .beliefs article p{font-size:1rem;line-height:1.65;color:#344957}
+main>.section.world-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+main>.section.world-grid .world-card{min-height:0}
+main>.section.world-grid .world-card>span{font-size:.82rem;letter-spacing:.065em;color:#76541d}
+main>.section.world-grid .world-card small{font-size:.93rem;line-height:1.6;color:#4d5c64}
+main>.section.world-grid .world-card.surprise{background:#102b40;border-color:#36566c;color:#fff}
+main>.section.world-grid .world-card.surprise :where(p,small){color:#e6ebed}
+main>.section .steps.pricing-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;max-width:1160px;margin-inline:auto}
+main>.section .steps.pricing-grid article{padding:clamp(28px,3vw,44px);display:flex;flex-direction:column;gap:12px}
+main>.section .steps.pricing-grid article>p{margin:0}
+main>.section .steps.pricing-grid article>.button{margin-top:auto;align-self:flex-start}
+main>.section.editorial{max-width:1120px;margin-inline:auto}
+main>.section.editorial p{max-width:76ch;font-size:1.1rem;line-height:1.8;color:#354a58}
+main>.section.editorial h2{font-size:clamp(1.85rem,3vw,2.8rem);line-height:1.22;margin:1.2em 0 .45em}
+main>.section .sample-page{padding:clamp(26px,3vw,48px);box-shadow:12px 15px 0 #f0e9dc}
+main>.section .sample-page :where(p,li){font-size:1rem!important;line-height:1.65!important;color:#344957}
+main>.section .sample-page :where(>span,>b){font-size:.82rem;line-height:1.45;color:#76541d}
+main>.section .sample-page h3{font-size:clamp(1.55rem,2.5vw,2.25rem);line-height:1.25}
+main .belief-band,main .cta-band{padding:clamp(65px,7vw,100px) clamp(26px,8vw,120px)}
+main .belief-band h2{font-family:Georgia,serif;font-size:clamp(2rem,3.7vw,3.3rem);line-height:1.2}
+main .belief-band p,main .cta-band p{font-size:1.08rem;line-height:1.7}
+main .blueprint-preview{gap:clamp(28px,5vw,85px);grid-template-columns:minmax(0,1fr) minmax(0,.88fr)}
+main .blueprint-preview>*,main .blueprint-preview .mini-sheet{min-width:0}
+main .blueprint-preview .mini-sheet{box-shadow:12px 12px 0 rgba(212,177,108,.18)}
+main .blueprint-preview .mini-sheet span{font-size:.9rem;line-height:1.55}
+main .final-cta h2{font-family:Georgia,serif;font-size:clamp(2rem,4vw,3.65rem);line-height:1.18}
+main .final-cta p{font-size:1.08rem;line-height:1.7}
+.site-footer{font-size:.9rem;line-height:1.65}
+@media(max-width:1050px){main>.section.world-grid{grid-template-columns:repeat(2,minmax(0,1fr))}main>.section .steps:not(.pricing-grid){grid-template-columns:repeat(2,minmax(0,1fr))}main>.section.beliefs{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:700px){.page-hero{padding:62px 24px}.page-hero>h1{font-size:clamp(2.6rem,10vw,4rem)!important}main>.section{padding:62px 22px}main>.section.world-grid,main>.section .steps,main>.section .steps.pricing-grid,main>.section.beliefs,main .blueprint-preview{grid-template-columns:minmax(0,1fr)}main>.section .steps.pricing-grid article>.button{align-self:stretch}main .blueprint-preview{padding:65px 24px}main .blueprint-preview .mini-sheet{padding:25px}}
