@@ -971,3 +971,22 @@ linear-gradient(145deg,#14253a 0%,#243a4f 55%,#a88950 140%);border-radius:2px}
 .knowledge-module .knowledge-prompts span{font-size:.9rem!important;line-height:1.55!important}
 .knowledge-module .knowledge-prompts textarea{font-size:1rem!important;line-height:1.55!important}
 @media(max-width:720px){.discovery-section-help{font-size:.97rem!important}.knowledge-module .discovery-casting{display:block!important}.knowledge-module .discovery-casting>*{display:block;width:auto!important;max-width:100%!important}}
+
+/* Discovery editorial polish: contrast, readable idea cards, and responsive layout. */
+.start-wrap .wildcards{background:#f4f1e9!important;color:#172731!important}
+.start-wrap .wildcard-head h3{color:#172731!important;font-family:Georgia,serif!important;font-size:clamp(1.55rem,2.3vw,2rem)!important;line-height:1.25!important;opacity:1!important;text-shadow:none!important}
+.start-wrap .wildcard-head>span{color:#76541d!important;font-size:.82rem!important;line-height:1.45!important;letter-spacing:.08em!important}
+.start-wrap .wildcard-head p{color:#34434b!important;font-size:1rem!important;line-height:1.6!important;opacity:1!important}
+.start-wrap .wildcard-head .wildcard-key{margin-top:10px!important;padding:11px 14px;background:#fff;border-left:3px solid #b08b4d}
+.start-wrap .wildcard-head .wildcard-key strong{color:#173047}
+.start-wrap .wildcard-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.start-wrap .wildcard-grid article{min-width:0;padding:20px 18px;background:#fff;border:1px solid #ded7c9;border-top:3px solid #aa8445;overflow-wrap:anywhere}
+.start-wrap .wildcard-grid article>b{color:#172731!important;font-size:1.14rem!important;line-height:1.4!important}
+.start-wrap .wildcard-grid small{color:#76541d!important;font-size:.8rem!important;line-height:1.4!important;letter-spacing:.055em!important}
+.start-wrap .wildcard-grid article p{color:#34434b!important;font-size:.94rem!important;line-height:1.6!important}
+.start-wrap .wildcard-grid article p strong{color:#172731!important;font-size:.81rem!important;letter-spacing:.035em!important}
+.start-wrap .wildcard-reaction>p,.start-wrap .wildcard-next>p{font-size:1rem!important;line-height:1.6!important}
+.start-wrap .wildcard-actions button{font-size:.85rem!important;line-height:1.35!important;min-height:42px}
+.start-wrap .push-prompt{overflow-wrap:anywhere}
+.start-wrap .push-prompt strong{font-size:1rem!important;line-height:1.5!important}
+@media(max-width:900px){.start-wrap .wildcard-grid{grid-template-columns:minmax(0,1fr)}.start-wrap .wildcards{margin-left:0;margin-right:0;padding:22px 16px}}
