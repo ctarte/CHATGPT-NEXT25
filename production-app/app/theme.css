@@ -1170,3 +1170,7 @@ main .final-cta p{font-size:1.08rem;line-height:1.7}
 .start-wrap .discovery-field .field-columns article p strong{display:block;color:#8a652e;font-family:Arial,Helvetica,sans-serif;font-size:.79rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;margin-bottom:3px}
 .start-wrap .discovery-field .field-columns .field-actions{padding-top:16px;margin-top:20px;border-top:1px solid rgba(21,47,63,.16);gap:9px}
 .start-wrap .discovery-field .field-columns .field-actions button{font-size:.78rem;line-height:1.35;padding:11px 13px;border-radius:3px;letter-spacing:.025em}
+
+/* Explain combinations as additions rather than a dismiss/close control. */
+.start-wrap .connection-engine>div i,.start-wrap .intersection-equation i,.possibility-demo .connection-panel i{font-style:normal;font-weight:800;font-family:Arial,Helvetica,sans-serif;color:#a77b34;font-size:1.15rem;line-height:1.5}
+.start-wrap .intersection-explanation{max-width:74ch;font-size:1rem;line-height:1.65;margin:14px 0 22px;color:inherit}
