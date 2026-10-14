@@ -1140,3 +1140,19 @@ main .final-cta p{font-size:1.08rem;line-height:1.7}
 .start-wrap .deep-preview .preview-kicker,.start-wrap .preview-grid b{font-size:.84rem!important;line-height:1.5!important;letter-spacing:.045em!important}
 .start-wrap .preview-grid p{font-size:1rem!important;line-height:1.65!important}
 @media(max-width:760px){.start-wrap .intelligence-grid{grid-template-columns:minmax(0,1fr)}.start-wrap .intelligence-box{padding:20px 16px}.start-wrap .intelligence-grid article{padding:20px}}
+
+/* Editorial simplification: homepage invitation and chapter-level customer guidance. */
+.hero-77 .hero-recognition-simple{max-width:600px}
+.hero-77 .hero-recognition-quiet{font-size:clamp(1.05rem,1.2vw,1.15rem)!important;line-height:1.58!important;margin:15px 0!important;max-width:57ch}
+.hero-77 .hero-recognition-focus{padding:16px 20px;margin:19px 0!important;background:rgba(255,252,242,.91);border-left:3px solid #ac8346;color:#102b40!important}
+.hero-77 .hero-recognition-close{font-size:clamp(1.05rem,1.2vw,1.15rem)!important;line-height:1.58!important;margin:17px 0 21px!important;max-width:58ch}
+.hero-77 .hero-opportunity-list{margin-bottom:14px}
+.hero-77 .hero-actions{margin-top:20px}
+.start-wrap .discovery-chapter-heading .discovery-section-help{max-width:78ch;padding:16px 20px!important;margin:18px 0 24px!important;border-left:3px solid #a78248;background:#f5f1e8;color:#203747!important;font:400 1rem/1.65 Arial,Helvetica,sans-serif!important;letter-spacing:normal!important}
+.start-wrap .discovery-chapter-heading .discovery-section-help strong{color:#102b40;font-weight:700}
+.start-wrap .discovery-chapter-heading{margin-bottom:24px}
+.start-wrap .discovery-chapter-heading .discovery-section-label{color:#76541d!important;font-size:.84rem!important;letter-spacing:.065em!important}
+.start-wrap .discovery-orientation{max-width:100%;padding:clamp(22px,2.5vw,34px);background:#f8f5ed;border-left:3px solid #aa8445}
+.start-wrap .discovery-orientation h2{font:400 clamp(1.3rem,1.9vw,1.65rem)/1.35 Georgia,serif!important}
+.start-wrap .discovery-orientation p{font-size:1rem!important;line-height:1.65!important}
+@media(max-width:700px){.hero-77 .hero-recognition-focus{padding:14px 16px}.start-wrap .discovery-chapter-heading .discovery-section-help{padding:15px 16px!important}}
