@@ -1,14 +1,36 @@
 import type {Possibility} from "./possibilities";
 import type {DiscoveryProfile} from "./profile";
 import type {Synthesis} from "./synthesis";
+
 export type FieldItem={title:string;world:string;lane:string;reason:string};
 export type DiscoveryField={curiosities:string[];explore:FieldItem[];unexpected:FieldItem[];knowledge:FieldItem|null};
+
 export function buildDiscoveryField(universe:Possibility[],wanted:string[],avoid:string[],profile:DiscoveryProfile,synthesis:Synthesis):DiscoveryField{
- const score=(p:Possibility)=>p.signals.filter(x=>wanted.includes(x)).length*3-p.conditions.filter(x=>avoid.includes(x)).length*3+(synthesis.directions.includes(p.title)?5:0);
+ const score=(p:Possibility)=>
+  p.signals.filter(x=>wanted.includes(x)).length*3
+  -p.conditions.filter(x=>avoid.includes(x)).length*3
+  +(synthesis.directions.includes(p.title)?5:0);
  const ranked=[...universe].sort((a,b)=>score(b)-score(a));
- const toItem=(p:Possibility):FieldItem=>({title:p.title,world:p.world,lane:p.lane,reason:p.signals.filter(x=>wanted.includes(x)).slice(0,2).length?("Connects with "+p.signals.filter(x=>wanted.includes(x)).slice(0,2).join(" and ").toLowerCase()+"."):p.desc});
- const explore=ranked.filter(p=>p.lane!=="SURPRISE ME").slice(0,5).map(toItem);
- const unexpected=ranked.filter(p=>p.lane==="SURPRISE ME"&&!explore.some(x=>x.title===p.title)).slice(0,2).map(toItem);
- const knowledgeCandidate=ranked.find(p=>p.world==="WHAT YOU KNOW");
+ const toItem=(p:Possibility):FieldItem=>{
+  const matches=p.signals.filter(x=>wanted.includes(x)).slice(0,2);
+  const conflicts=p.conditions.filter(x=>avoid.includes(x)).slice(0,2);
+  const why=matches.length
+   ?"Connects with your interest in "+matches.join(" and ").toLowerCase()+"."
+   :p.desc;
+  return {title:p.title,world:p.world,lane:p.lane,reason:why+(conflicts.length?" Worth examining carefully because it may involve "+conflicts.join(" and ").toLowerCase()+".":"")};
+ };
+ // Show credible matches first, then widen the field rather than filling it with near-identical options.
+ const candidates=ranked.filter(p=>p.lane!=="SURPRISE ME");
+ const selected:Possibility[]=[];
+ const used=new Set<string>();
+ const add=(p:Possibility|undefined)=>{if(p&&!used.has(p.title)){selected.push(p);used.add(p.title)}};
+ add(candidates[0]);
+ while(selected.length<Math.min(5,candidates.length)){
+  const represented=new Set(selected.map(p=>p.world));
+  add(candidates.find(p=>!used.has(p.title)&&!represented.has(p.world))||candidates.find(p=>!used.has(p.title)));
+ }
+ const explore=selected.map(toItem);
+ const unexpected=ranked.filter(p=>p.lane==="SURPRISE ME"&&!used.has(p.title)).slice(0,2).map(toItem);
+ const knowledgeCandidate=ranked.find(p=>p.world==="WHAT YOU KNOW"&&!used.has(p.title)&&!unexpected.some(x=>x.title===p.title));
  return {curiosities:wanted.slice(0,3),explore,unexpected,knowledge:knowledgeCandidate?toItem(knowledgeCandidate):null};
 }
