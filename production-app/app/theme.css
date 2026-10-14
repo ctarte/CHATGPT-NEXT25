@@ -1174,3 +1174,13 @@ main .final-cta p{font-size:1.08rem;line-height:1.7}
 /* Explain combinations as additions rather than a dismiss/close control. */
 .start-wrap .connection-engine>div i,.start-wrap .intersection-equation i,.possibility-demo .connection-panel i{font-style:normal;font-weight:800;font-family:Arial,Helvetica,sans-serif;color:#a77b34;font-size:1.15rem;line-height:1.5}
 .start-wrap .intersection-explanation{max-width:74ch;font-size:1rem;line-height:1.65;margin:14px 0 22px;color:inherit}
+
+/* Homepage demonstration: clearly separated examples and non-interactive sample reactions. */
+.possibility-demo .idea-board{align-items:stretch;overflow:visible}
+.possibility-demo .idea-board>div{min-width:0;min-height:0}
+.possibility-demo .second-discovery-example{clear:both;position:relative;max-width:900px;margin:48px auto 30px}
+.possibility-demo .demo-close{max-width:900px;margin:22px auto 30px;line-height:1.65}
+.possibility-demo .reaction-moment{max-width:1000px;margin:36px auto 8px;padding:clamp(26px,3vw,42px)}
+.possibility-demo .reaction-moment .demo-reaction-note{max-width:660px;margin:0 auto 22px!important;font-size:1rem!important;line-height:1.65!important}
+.possibility-demo .reaction-choices b{cursor:default;background:#f5f2eb;border-color:#ddd5c8;color:#283f4e;font-size:.78rem!important;letter-spacing:.04em!important;line-height:1.35!important}
+@media(max-width:760px){.possibility-demo .second-discovery-example{margin:30px auto 20px}.possibility-demo .reaction-moment{padding:26px 18px}}
