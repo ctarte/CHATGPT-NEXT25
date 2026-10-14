@@ -1189,3 +1189,9 @@ main .final-cta p{font-size:1.08rem;line-height:1.7}
 .journey-intro{max-width:840px;margin:0 auto 36px;color:#284052;font-size:clamp(1.03rem,1.25vw,1.18rem);line-height:1.75;text-align:left}
 .section:has(>.journey-intro){padding-top:clamp(42px,5vw,76px)}
 .section:has(>.journey-intro)>.world-grid{margin-top:26px}
+
+/* Homepage hero: deliberate text hierarchy and dependable contrast on photography. */
+.hero.hero-77 .hero-world-question{max-width:660px!important;padding:13px 19px!important;background:rgba(255,250,239,.90)!important;border-left:4px solid #b58a49!important;box-shadow:0 8px 24px rgba(15,39,57,.08)!important;font-size:clamp(1.38rem,1.9vw,1.85rem)!important;line-height:1.35!important;font-weight:600!important;text-shadow:none!important;color:#0b2a42!important}
+.hero.hero-77 .hero-recognition-simple>.hero-recognition-quiet,.hero.hero-77 .hero-recognition-simple>.hero-recognition-close{max-width:660px!important;background:rgba(255,250,240,.89)!important;padding:12px 17px!important;margin:12px 0!important;color:#102c43!important;text-shadow:none!important;font-family:Georgia,serif!important;font-size:clamp(1.04rem,1.16vw,1.18rem)!important;font-weight:600!important;line-height:1.52!important;border-left:3px solid rgba(169,124,59,.55)}
+.hero.hero-77 .hero-recognition-simple>.hero-recognition-close{color:#14344b!important;font-weight:650!important}
+@media(max-width:700px){.hero.hero-77 .hero-world-question{padding:12px 15px!important}.hero.hero-77 .hero-recognition-simple>.hero-recognition-quiet,.hero.hero-77 .hero-recognition-simple>.hero-recognition-close{padding:11px 14px!important}}
