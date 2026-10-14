@@ -24,10 +24,19 @@ export function buildDiscoveryField(universe:Possibility[],wanted:string[],avoid
  const selected:Possibility[]=[];
  const used=new Set<string>();
  const add=(p:Possibility|undefined)=>{if(p&&!used.has(p.title)){selected.push(p);used.add(p.title)}};
- add(candidates[0]);
- while(selected.length<Math.min(5,candidates.length)){
-  const represented=new Set(selected.map(p=>p.world));
-  add(candidates.find(p=>!used.has(p.title)&&!represented.has(p.world))||candidates.find(p=>!used.has(p.title)));
+ // Category variety is valuable only when it does not displace a substantially stronger fit.
+ // With no customer signals, avoid implying that a ranked list is personalized.
+ const hasEvidence=wanted.length>0||avoid.length>0||synthesis.directions.length>0;
+ if(hasEvidence){
+  add(candidates[0]);
+  while(selected.length<Math.min(5,candidates.length)){
+   const remaining=candidates.filter(p=>!used.has(p.title));
+   if(!remaining.length)break;
+   const best=score(remaining[0]);
+   const represented=new Set(selected.map(p=>p.world));
+   const alternate=remaining.find(p=>!represented.has(p.world)&&score(p)>=Math.max(0,best-3));
+   add(alternate||remaining[0]);
+  }
  }
  const explore=selected.map(toItem);
  const unexpected=ranked.filter(p=>p.lane==="SURPRISE ME"&&!used.has(p.title)).slice(0,2).map(toItem);
