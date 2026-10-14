@@ -1102,7 +1102,7 @@ main>.section.editorial p{max-width:76ch;font-size:1.1rem;line-height:1.8;color:
 main>.section.editorial h2{font-size:clamp(1.85rem,3vw,2.8rem);line-height:1.22;margin:1.2em 0 .45em}
 main>.section .sample-page{padding:clamp(26px,3vw,48px);box-shadow:12px 15px 0 #f0e9dc}
 main>.section .sample-page :where(p,li){font-size:1rem!important;line-height:1.65!important;color:#344957}
-main>.section .sample-page :where(>span,>b){font-size:.82rem;line-height:1.45;color:#76541d}
+main>.section .sample-page>span,main>.section .sample-page>b{font-size:.82rem;line-height:1.45;color:#76541d}
 main>.section .sample-page h3{font-size:clamp(1.55rem,2.5vw,2.25rem);line-height:1.25}
 main .belief-band,main .cta-band{padding:clamp(65px,7vw,100px) clamp(26px,8vw,120px)}
 main .belief-band h2{font-family:Georgia,serif;font-size:clamp(2rem,3.7vw,3.3rem);line-height:1.2}
