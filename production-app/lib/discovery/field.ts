@@ -26,7 +26,7 @@ export function buildDiscoveryField(universe:Possibility[],wanted:string[],avoid
  const add=(p:Possibility|undefined)=>{if(p&&!used.has(p.title)){selected.push(p);used.add(p.title)}};
  // Category variety is valuable only when it does not displace a substantially stronger fit.
  // With no customer signals, avoid implying that a ranked list is personalized.
- const hasEvidence=wanted.length>0||avoid.length>0||synthesis.directions.length>0;
+ const hasEvidence=wanted.length>0||avoid.length>0;
  if(hasEvidence){
   add(candidates[0]);
   while(selected.length<Math.min(5,candidates.length)){
@@ -39,7 +39,7 @@ export function buildDiscoveryField(universe:Possibility[],wanted:string[],avoid
   }
  }
  const explore=selected.map(toItem);
- const unexpected=ranked.filter(p=>p.lane==="SURPRISE ME"&&!used.has(p.title)).slice(0,2).map(toItem);
- const knowledgeCandidate=ranked.find(p=>p.world==="WHAT YOU KNOW"&&!used.has(p.title)&&!unexpected.some(x=>x.title===p.title));
+ const unexpected=hasEvidence?ranked.filter(p=>p.lane==="SURPRISE ME"&&!used.has(p.title)).slice(0,2).map(toItem):[];
+ const knowledgeCandidate=hasEvidence?ranked.find(p=>p.world==="WHAT YOU KNOW"&&!used.has(p.title)&&!unexpected.some(x=>x.title===p.title)):undefined;
  return {curiosities:wanted.slice(0,3),explore,unexpected,knowledge:knowledgeCandidate?toItem(knowledgeCandidate):null};
 }
