@@ -73,3 +73,15 @@ input:not([type=checkbox]):not([type=radio]),textarea,select{min-height:44px}
 .start-wrap .discovery-progress{gap:12px 20px;line-height:1.5}
 .start-wrap .discovery-resume-guide{scroll-margin-top:105px}
 @media(max-width:700px){.start-wrap .session-rule,.start-wrap .clue-note{padding:17px 18px}.start-wrap .choice-grid{gap:10px}.start-wrap .choice{padding:17px}.start-wrap .start-actions .button{min-height:46px}}
+
+/* Blueprint: concise private-advisory reading guide */
+.blueprint-reading-guide{max-width:1160px;margin:26px auto 22px;padding:clamp(24px,3.4vw,44px);background:#faf7f1;border:1px solid #e0d8cb;border-top:3px solid #987444}
+.blueprint-reading-guide h2{font:400 clamp(1.6rem,2.6vw,2.45rem)/1.23 Georgia,serif;color:#102a3d;letter-spacing:-.025em;margin:10px 0 14px}
+.blueprint-reading-guide>p:not(.eyebrow){max-width:80ch;line-height:1.7;color:#334b59}
+.blueprint-reading-guide-actions{display:flex;flex-wrap:wrap;gap:12px;margin:22px 0}
+.blueprint-reading-guide-actions a{display:inline-flex;align-items:center;min-height:44px;padding:11px 17px;border:1px solid #b8a587;background:#fff;color:#18364a;font-size:14px;font-weight:650;text-decoration:none}
+.blueprint-reading-guide-actions a:hover{background:#f1e9da}
+.blueprint-reading-guide .blueprint-reading-guide-note{font-size:13px;color:#64727b;margin:16px 0 0}
+.blueprint-quick-nav{position:relative;flex-wrap:wrap;gap:12px 20px}
+#summary,#research,#details{scroll-margin-top:105px}
+@media(max-width:700px){.blueprint-reading-guide{margin:18px 16px;padding:24px 20px}.blueprint-reading-guide-actions{flex-direction:column}.blueprint-reading-guide-actions a{width:100%}}
