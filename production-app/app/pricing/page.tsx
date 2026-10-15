@@ -16,20 +16,21 @@ export default function Page(){
      <h2>$595</h2>
      <h3>Discover what else you could become.</h3>
      <p>A complete Discovery experience for people who want outside eyes, fresh thinking and personalized directions they may not have found on their own.</p>
-     <p><b>INCLUDES</b></p>
-     <p>Full Discovery process · Think Tank Reveals · personalized opportunity directions · reaction and refinement rounds · why each direction surfaced · Personalized Discovery Blueprint</p>
-     <PurchaseButton className="button dark-button" tier="DISCOVERY" label="Start with Discovery →"/>
+     <p><b>YOUR DISCOVERY INCLUDES</b></p>
+     <ul className="pricing-benefits"><li>Guided questions about your experience, interests and goals</li><li>Personalized career, business and other directions—with reasons each surfaced</li><li>Opportunities to react, reconsider and refine the ideas</li><li>Your personalized Discovery Blueprint</li></ul>
+     <PurchaseButton className="button dark-button" tier="DISCOVERY" label="Continue to secure checkout →"/>
     </article>
     <article>
      <p className="eyebrow dark">DISCOVERY + OPPORTUNITY INTELLIGENCE</p>
      <h2>$995</h2>
      <h3>Discover what could come next—and where the world may be creating or closing opportunities for someone like you.</h3>
      <p>Everything in Discovery, plus an outward-looking research layer that studies where the world is going—and connects those changes back to the directions that earned your attention.</p>
-     <p><b>ADDS</b></p>
-     <p>Emerging fields · declining fields · AI & technology disruption · demographic change · new business models · skills in rising demand · geographic shifts · market, career or business evidence · counter-evidence · low-risk experiment design · Opportunity Decision Brief · 90-day intelligence plan</p>
-     <PurchaseButton className="button gold" tier="OPPORTUNITY_INTELLIGENCE" label="Start Discovery + Opportunity Intelligence →"/>
+     <p><b>EVERYTHING IN DISCOVERY, PLUS</b></p>
+     <ul className="pricing-benefits"><li>Research into emerging and declining fields, technology and market shifts</li><li>Evidence and counter-evidence for promising directions</li><li>Practical questions about demand, customers, employers and geography</li><li>An Opportunity Decision Brief and 90-day intelligence plan</li></ul>
+     <PurchaseButton className="button gold" tier="OPPORTUNITY_INTELLIGENCE" label="Continue to secure checkout →"/>
     </article>
    </div>
+   <p className="pricing-checkout-note">The buttons above open secure checkout. If you are not signed in, you may need to sign in before completing your purchase. Payment and access are verified before your purchased service is unlocked.</p>
   </section>
   <section className="section blueprint-summary">
    <div>
