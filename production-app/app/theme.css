@@ -1324,3 +1324,14 @@ main :where(.section,.page-section,.pricing-section,.about-section,.how-section,
 .blueprint-readiness-items p{margin:6px 0 0;color:#53636d;font:400 .94rem/1.6 Arial,Helvetica,sans-serif}
 .blueprint-readiness-note{max-width:1140px;margin:18px auto 0;color:#556471;font:400 .9rem/1.6 Arial,Helvetica,sans-serif}
 @media(max-width:750px){.blueprint-readiness-heading{display:block}.blueprint-readiness-count{display:inline-block;margin-top:10px}.blueprint-readiness-items{grid-template-columns:1fr}}
+
+/* Blueprint-only vertical rhythm: less scrolling, without crowding the content. */
+main:has(.blueprint-hero)>.blueprint-readiness{padding-top:clamp(24px,3vw,38px);padding-bottom:clamp(24px,3vw,38px)}
+main:has(.blueprint-hero)>:is(.blueprint-summary-concise,.live-opportunity-research,.blueprint-details-concise,.blueprint-close){padding-top:clamp(32px,4vw,58px)!important;padding-bottom:clamp(32px,4vw,58px)!important}
+main:has(.blueprint-hero)>.blueprint-summary-concise{gap:clamp(18px,3vw,38px)}
+main:has(.blueprint-hero)>.blueprint-readiness .blueprint-readiness-heading{margin-bottom:17px}
+main:has(.blueprint-hero)>.blueprint-readiness .blueprint-readiness-note{margin-top:12px}
+main:has(.blueprint-hero)>.blueprint-details-concise .blueprint-detail-expand{margin:12px 0}
+main:has(.blueprint-hero)>.live-opportunity-research .intelligence-reading-guide{margin:12px 0 18px}
+main:has(.blueprint-hero)>.blueprint-close :is(h2,p){margin-top:10px;margin-bottom:12px}
+@media(max-width:700px){main:has(.blueprint-hero)>:is(.blueprint-summary-concise,.live-opportunity-research,.blueprint-details-concise,.blueprint-close){padding-top:30px!important;padding-bottom:30px!important}}
