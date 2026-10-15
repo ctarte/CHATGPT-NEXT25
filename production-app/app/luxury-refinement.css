@@ -159,3 +159,22 @@ body{font-size:17px;line-height:1.7}
 .experiment-page .experiment-question button,.experiment-page .time-options button{min-height:46px;font-size:16px}
 :is(a,button,input,select,textarea,summary):focus-visible{outline:3px solid #a77b42;outline-offset:3px}
 @media(max-width:760px){.brief-example-disclosure{margin:18px 16px;padding:20px}.experiment-page .experiment-question button{min-height:48px}}
+
+/* Client review 2026-10-15: remove ambiguity and restore restrained editorial scale. */
+.sample-not-personal{display:block!important;margin:0 0 14px!important;padding:11px 13px!important;border:1px solid #ac854d!important;background:#f1e5d1!important;color:#503b20!important;font:700 14px/1.45 Arial,sans-serif!important;letter-spacing:.06em!important;text-align:center!important}
+.blueprint-sample-header>strong{font-size:clamp(1.2rem,1.65vw,1.65rem)!important;line-height:1.3!important}
+.world-grid{grid-template-columns:repeat(5,minmax(0,1fr))!important;gap:12px!important}
+.world-grid .world-card{min-width:0!important;padding:clamp(19px,1.6vw,29px)!important}
+.world-grid .world-card h2{font:400 clamp(1.35rem,1.75vw,1.85rem)/1.2 Georgia,serif!important;letter-spacing:-.035em!important;overflow-wrap:normal!important;word-break:normal!important;hyphens:auto!important;text-transform:none!important}
+.world-grid .world-card h3{font-size:clamp(1rem,1.2vw,1.22rem)!important;line-height:1.4!important}
+.world-grid .world-card p,.world-grid .world-card small{font-size:15px!important;line-height:1.6!important}
+.world-grid .world-card.surprise h2{color:#fff!important}
+.think-tank-intro .future-perspective-grid h3{font-size:clamp(1.3rem,1.7vw,1.85rem)!important;line-height:1.25!important}
+.think-tank-intro .future-perspective-grid p{font-size:16px!important;line-height:1.6!important}
+.think-tank-intro{padding-top:clamp(48px,5vw,76px)!important;padding-bottom:clamp(50px,5vw,78px)!important}
+.think-tank-intro .direction-lead{margin-bottom:12px!important}
+.blueprint-preview .blueprint-sample{position:relative}
+.blueprint-preview .blueprint-sample-note{font-size:15px!important}
+@media(max-width:1150px){.world-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important}}
+@media(max-width:760px){.world-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}.world-grid .world-card h2{font-size:1.35rem!important}}
+@media(max-width:480px){.world-grid{grid-template-columns:1fr!important}}
