@@ -85,3 +85,21 @@ input:not([type=checkbox]):not([type=radio]),textarea,select{min-height:44px}
 .blueprint-quick-nav{position:relative;flex-wrap:wrap;gap:12px 20px}
 #summary,#research,#details{scroll-margin-top:105px}
 @media(max-width:700px){.blueprint-reading-guide{margin:18px 16px;padding:24px 20px}.blueprint-reading-guide-actions{flex-direction:column}.blueprint-reading-guide-actions a{width:100%}}
+
+/* Blueprint: executive-summary hierarchy and restrained supporting detail */
+.blueprint-summary-concise{gap:clamp(26px,3vw,48px);align-items:start}
+.blueprint-summary-concise h2{font:400 clamp(2rem,3.5vw,3rem)/1.18 Georgia,serif;letter-spacing:-.035em;color:#102a3d}
+.blueprint-summary-concise .blueprint-interpretation{padding:17px 21px;background:#f7f2e9;border-left:3px solid #987444;line-height:1.7}
+.blueprint-summary-concise .sample-signals{gap:12px}
+.blueprint-summary-concise .sample-signals>div{background:#fff;border:1px solid #e4ded4;padding:20px 22px;min-width:0}
+.blueprint-summary-concise .sample-signals>div span{font-size:11px;letter-spacing:.12em;color:#64717a}
+.blueprint-summary-concise .sample-signals>div strong{display:block;font-size:16px;line-height:1.55;margin-top:8px;color:#1c3445}
+.blueprint-summary-concise .blueprint-summary-aside{background:#f8f5ef;border:1px solid #e1d9cc;padding:clamp(24px,2.8vw,36px)}
+.blueprint-summary-concise .blueprint-summary-aside h3{font:400 1.65rem/1.3 Georgia,serif;color:#102a3d}
+.blueprint-details-concise{padding-top:clamp(42px,5vw,72px);padding-bottom:clamp(50px,6vw,80px)}
+.blueprint-details-concise h2{font:400 clamp(1.8rem,3vw,2.6rem)/1.25 Georgia,serif;color:#102a3d}
+.blueprint-detail-expand{border:1px solid #e0d9cf;background:#fff;margin-top:15px}
+.blueprint-detail-expand>summary{cursor:pointer;min-height:56px;padding:18px 22px;font-weight:600;color:#1a3447}
+.blueprint-detail-expand>summary:hover{background:#f9f5ef}
+.blueprint-detail-expand[open]>summary{border-bottom:1px solid #e0d9cf;background:#f8f4ed}
+@media(max-width:760px){.blueprint-summary-concise .sample-signals>div{padding:17px}.blueprint-summary-concise .blueprint-summary-aside{padding:22px}}
