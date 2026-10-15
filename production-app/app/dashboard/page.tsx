@@ -10,7 +10,8 @@ function titleFor(id:string){return possibilityUniverse.find(p=>p.id===id)?.titl
 function keptField(record:DiscoveryRecord){
  const explicit=Object.entries(record.fieldActions||{}).filter(([,v])=>v!=="DISCARD").map(([k])=>k);
  const reactions=Object.entries(record.reactions||{}).filter(([,v])=>v==="SHOW ME MORE"||v==="CURIOUS").map(([id])=>titleFor(id));
- return [...new Set([...explicit,...(record.briefsOpened||[]),...reactions])].slice(0,6);
+ const discarded=new Set(Object.entries(record.fieldActions||{}).filter(([,v])=>v==="DISCARD").map(([k])=>k));
+ return [...new Set([...explicit,...(record.briefsOpened||[]),...reactions])].filter(title=>!discarded.has(title)).slice(0,6);
 }
 
 export default async function Dashboard(){
