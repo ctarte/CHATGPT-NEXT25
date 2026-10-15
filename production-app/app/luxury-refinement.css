@@ -54,3 +54,22 @@ input:not([type=checkbox]):not([type=radio]),textarea,select{min-height:44px}
 .discovery-dash .dash-guidance .dash-guidance-reassurance{font-size:14px;color:#586774;margin:16px 0 22px}
 .discovery-dash .dash-guidance .button{display:inline-flex;align-items:center;min-height:46px}
 @media(max-width:650px){.discovery-dash .dash-guidance{margin:20px 0;padding:23px 20px}.discovery-dash .dash-guidance .button{width:100%;justify-content:center;text-align:center}}
+
+/* Discovery: make existing customer instructions prominent, readable and calm */
+.start-wrap{max-width:1150px}
+.start-wrap .session-opening{max-width:850px}
+.start-wrap .session-opening .lead{font-size:clamp(17px,1.6vw,20px);line-height:1.65}
+.start-wrap .session-rule,.start-wrap .clue-note{border-left:3px solid #a38657;background:#f7f2e9;padding:20px 24px;margin:24px 0}
+.start-wrap .session-rule strong,.start-wrap .clue-note p{line-height:1.65}
+.start-wrap .start-question{font:400 clamp(1.35rem,2.2vw,1.9rem)/1.35 Georgia,serif;color:#102a3d}
+.start-wrap .choice-grid{gap:14px;margin:26px 0}
+.start-wrap .choice,.start-wrap .tag{transition:border-color .16s ease,background .16s ease;line-height:1.45}
+.start-wrap .choice:hover,.start-wrap .tag:hover{border-color:#987444;background:#fbf7ee}
+.start-wrap .choice:focus-visible,.start-wrap .tag:focus-visible{outline:3px solid #b58b4c;outline-offset:2px}
+.start-wrap .choice.active,.start-wrap .tag.active{background:#f5eee0;border-color:#987444;box-shadow:inset 4px 0 0 #987444}
+.start-wrap .start-actions{margin-top:28px;flex-wrap:wrap}
+.start-wrap .start-actions .button{min-height:46px}
+.start-wrap .save-resume{font-size:14px;line-height:1.5}
+.start-wrap .discovery-progress{gap:12px 20px;line-height:1.5}
+.start-wrap .discovery-resume-guide{scroll-margin-top:105px}
+@media(max-width:700px){.start-wrap .session-rule,.start-wrap .clue-note{padding:17px 18px}.start-wrap .choice-grid{gap:10px}.start-wrap .choice{padding:17px}.start-wrap .start-actions .button{min-height:46px}}
