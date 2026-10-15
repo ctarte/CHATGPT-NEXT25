@@ -1207,3 +1207,8 @@ main .final-cta p{font-size:1.08rem;line-height:1.7}
 .hero.hero-77 .hero-world-question{font-family:Arial,Helvetica,sans-serif!important;font-size:clamp(1.08rem,1.36vw,1.32rem)!important;line-height:1.5!important;font-weight:500!important;letter-spacing:0!important;color:#193a4f!important;max-width:625px!important;padding:11px 16px!important;border-left-width:2px!important;background:rgba(255,250,240,.88)!important}
 .hero.hero-77 .hero-opportunity-list li{font-family:Georgia,'Times New Roman',serif!important;font-size:clamp(1.55rem,2.22vw,2.22rem)!important;font-weight:700!important;line-height:1.25!important;letter-spacing:-.015em!important;color:#082840!important;text-shadow:none!important}
 @media(max-width:700px){.hero.hero-77 .hero-world-question{font-size:1.08rem!important}.hero.hero-77 .hero-opportunity-list li{font-size:clamp(1.45rem,5.1vw,1.85rem)!important}}
+
+/* Warm Mediterranean palette for hero copy panels: softer than stark white. */
+.hero.hero-77 .hero-world-question{background:rgba(239,229,211,.87)!important;border-left-color:#b99b6b!important;box-shadow:0 8px 24px rgba(40,35,28,.055)!important}
+.hero.hero-77 .hero-opportunity-list{background:rgba(245,234,214,.87)!important;border-left-color:#b08a53!important;box-shadow:0 9px 27px rgba(45,34,24,.075)!important}
+.hero.hero-77 .hero-lower-explanation{background:rgba(240,229,210,.91)!important;border-left-color:#b99b6b!important;box-shadow:0 9px 26px rgba(40,35,28,.075)!important}
