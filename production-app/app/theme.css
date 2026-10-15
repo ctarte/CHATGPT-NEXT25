@@ -1226,3 +1226,11 @@ main .final-cta p{font-size:1.08rem;line-height:1.7}
 .hero.hero-77 .hero-lower-explanation>.hero-recognition-close{padding:0!important;border:0!important;border-top:0!important;background:transparent!important;text-shadow:0 1px 7px rgba(255,249,236,.9)!important}
 .hero.hero-77 .hero-lower-explanation>.hero-recognition-close{margin-top:10px!important}
 @media(max-width:650px){.hero.hero-77{background:linear-gradient(180deg,rgba(250,243,230,.92) 0%,rgba(250,243,230,.80) 57%,rgba(250,243,230,.43) 100%),url("/discovered-by-design-homepage-background%2010-10-26.jpg") 61% center/cover no-repeat!important}}
+
+/* Pricing: easy-to-scan premium service comparison. */
+.pricing-grid .pricing-benefits{list-style:none;padding:0;margin:18px 0 26px;display:grid;gap:13px}
+.pricing-grid .pricing-benefits li{position:relative;padding-left:23px;color:#263d4b;font-size:1rem;line-height:1.55}
+.pricing-grid .pricing-benefits li:before{content:'✓';position:absolute;left:0;top:0;color:#99733e;font-weight:800}
+.pricing-grid article{display:flex;flex-direction:column;align-items:flex-start}
+.pricing-grid article>.button,.pricing-grid article>button{margin-top:auto}
+.pricing-checkout-note{max-width:840px;margin:25px auto 0;color:#465864;font-size:.98rem;line-height:1.6;text-align:center}
