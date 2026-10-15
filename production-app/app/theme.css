@@ -1299,3 +1299,13 @@ main :where(.section,.page-section,.pricing-section,.about-section,.how-section,
 /* Personalized executive interpretation: distinguish the insight from raw discovery clues. */
 .blueprint-summary-concise .blueprint-interpretation{margin:20px 0 24px;padding:16px 20px;background:#f3eee5;border-left:3px solid #b08a53;color:#19384b;font:400 1.05rem/1.65 Arial,Helvetica,sans-serif}
 .blueprint-summary-concise .blueprint-interpretation strong{color:#8b652f;font-weight:800}
+
+/* Opportunity Intelligence: concise executive research guidance and states. */
+.live-opportunity-research .intelligence-reading-guide{max-width:850px;margin:18px 0 26px;padding:17px 21px;background:#f5f0e7;border-left:3px solid #a9844c;color:#233e51;font:400 1rem/1.65 Arial,Helvetica,sans-serif}
+.live-opportunity-research .intelligence-reading-guide strong{color:#173449}
+.live-opportunity-research .intelligence-empty{padding:25px 29px;margin:20px 0 27px;background:#fbf8f2;border:1px solid #e4d9c7;max-width:800px}
+.live-opportunity-research .intelligence-empty h3{font:500 1.45rem/1.35 Georgia,serif;color:#173449;margin:0 0 8px}
+.live-opportunity-research .intelligence-empty p{font:400 1rem/1.65 Arial,Helvetica,sans-serif;color:#344b5b}
+.live-opportunity-research .intelligence-status{font:400 .92rem/1.6 Arial,Helvetica,sans-serif;color:#516271;margin:13px 0 0}
+.live-opportunity-research .steps.compact article>p{line-height:1.65}
+.live-opportunity-research .evidence-trail p{font-size:1rem;line-height:1.65;overflow-wrap:anywhere}
