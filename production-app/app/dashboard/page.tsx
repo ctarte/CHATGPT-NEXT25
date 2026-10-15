@@ -29,6 +29,7 @@ export default async function Dashboard(){
  const rounds=record?.round||0;
  const explored=new Set([...(record?.seen||[]),...reactedTitles]).size;
  const briefs=summary?.decisionBriefs||summary?.briefsOpened||0;
+ const blueprintStatus=!record?"Not started":field.length?"Working Blueprint available":"Discovery in progress";
  return <main className="discovery-dash">
   <aside><b>DISCOVERED BY DESIGN™</b><nav><span className="active">Where You Are Now</span><Link href="/start">My Discovery</Link><Link href="/dashboard/field">My Field</Link><Link href="/dashboard/briefs">Opportunity Briefs</Link><Link href="/blueprint">My Blueprint</Link><Link href="/dashboard/briefs">Investigate Directions</Link></nav><form action="/auth/sign-out" method="post"><button type="submit">Sign out</button></form></aside>
   <section className="dash-main"><p className="eyebrow dark">WELCOME BACK</p>{entitled?<div className="dash-note"><b>FOUNDING CLIENT ACCESS</b><p>Your verified purchase is connected to this account.</p></div>:null}<h1>Your personal Think Tank</h1><p className="dash-lead">Here’s what we’re discovering about you—and where your thinking might take you next.</p>
@@ -37,7 +38,7 @@ export default async function Dashboard(){
    <div className="dash-field"><div><p className="eyebrow">DIRECTIONS WORTH EXPLORING</p><h2>Ideas you have kept in view as your field takes shape.</h2></div><div className="dash-possibilities">{field.length?field.map(x=><span key={x}>{x}</span>):<span>Your field will appear here as you react to directions.</span>}</div></div>
    <div className="dash-note"><b>YOUR NEXT STEP</b><p>{!record?"Begin Discovery so your Think Tank can learn what matters to you.":field.length?"Explore the directions you have kept, or continue refining your Discovery.":"Continue Discovery to uncover directions worth exploring."}</p></div>
    <div className="dash-actions"><Link className="button dark-button" href="/start">Continue discovering →</Link><Link className="button outline-button" href="/dashboard/field">Explore my field →</Link><Link className="button outline-button" href="/blueprint">View my Blueprint →</Link></div>
-   <div className="dash-note"><b>YOUR PERSONALIZED BLUEPRINT</b><p>{record?"Your Discovery progress is saved. Open your Blueprint to review its current status and available content.":"Your Blueprint begins with Discovery. Start when you are ready; no final document has been issued yet."}</p></div>
+   <div className="dash-note"><b>YOUR PERSONALIZED BLUEPRINT · {blueprintStatus}</b><p>{record?"Your working Blueprint reflects your saved Discovery. It is not a finalized or approved PDF. Continue refining your directions before final delivery.":"Your Blueprint begins with Discovery. Start when you are ready; no final document has been issued yet."}</p></div>
   </section>
  </main>
 }
