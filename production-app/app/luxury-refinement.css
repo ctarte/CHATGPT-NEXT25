@@ -178,3 +178,11 @@ body{font-size:17px;line-height:1.7}
 @media(max-width:1150px){.world-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important}}
 @media(max-width:760px){.world-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}.world-grid .world-card h2{font-size:1.35rem!important}}
 @media(max-width:480px){.world-grid{grid-template-columns:1fr!important}}
+
+/* Clear, restrained onward navigation in How It Works */
+.how-next-step{max-width:1120px;margin:0 auto;padding:clamp(42px,5vw,70px) clamp(24px,5vw,60px);background:#f7f2e9;border-top:3px solid #a7834d}
+.how-next-step h2{font:400 clamp(1.85rem,3vw,2.8rem)/1.2 Georgia,serif;color:#102c40;margin:10px 0 16px}
+.how-next-step p:not(.eyebrow){font-size:17px;line-height:1.7;max-width:780px}
+.how-next-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:24px}
+.how-next-actions .button{font-size:16px;min-height:46px;display:inline-flex;align-items:center}
+@media(max-width:600px){.how-next-actions{flex-direction:column}.how-next-actions .button{justify-content:center}}
