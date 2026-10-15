@@ -1212,3 +1212,17 @@ main .final-cta p{font-size:1.08rem;line-height:1.7}
 .hero.hero-77 .hero-world-question{background:rgba(239,229,211,.87)!important;border-left-color:#b99b6b!important;box-shadow:0 8px 24px rgba(40,35,28,.055)!important}
 .hero.hero-77 .hero-opportunity-list{background:rgba(245,234,214,.87)!important;border-left-color:#b08a53!important;box-shadow:0 9px 27px rgba(45,34,24,.075)!important}
 .hero.hero-77 .hero-lower-explanation{background:rgba(240,229,210,.91)!important;border-left-color:#b99b6b!important;box-shadow:0 9px 26px rgba(40,35,28,.075)!important}
+
+/* Editorial hero experiment: no copy boxes, with a quiet gradient for legibility. */
+.hero.hero-77{background:linear-gradient(90deg,rgba(250,243,230,.88) 0%,rgba(250,243,230,.72) 27%,rgba(250,243,230,.20) 53%,rgba(250,243,230,0) 75%),url("/discovered-by-design-homepage-background%2010-10-26.jpg") center center/cover no-repeat!important}
+.hero.hero-77 .hero-world-question,
+.hero.hero-77 .hero-opportunity-list,
+.hero.hero-77 .hero-lower-explanation{background:transparent!important;border:0!important;border-left:0!important;box-shadow:none!important}
+.hero.hero-77 .hero-world-question{padding:0!important;color:#102b42!important}
+.hero.hero-77 .hero-opportunity-list{padding:0!important;margin:23px 0 22px!important;gap:14px!important}
+.hero.hero-77 .hero-opportunity-list li{color:#092a43!important;text-shadow:0 1px 5px rgba(255,248,235,.68)!important}
+.hero.hero-77 .hero-lower-explanation{padding:0!important;margin:17px 0 15px!important}
+.hero.hero-77 .hero-lower-explanation>.hero-recognition-quiet,
+.hero.hero-77 .hero-lower-explanation>.hero-recognition-close{padding:0!important;border:0!important;border-top:0!important;background:transparent!important;text-shadow:0 1px 7px rgba(255,249,236,.9)!important}
+.hero.hero-77 .hero-lower-explanation>.hero-recognition-close{margin-top:10px!important}
+@media(max-width:650px){.hero.hero-77{background:linear-gradient(180deg,rgba(250,243,230,.92) 0%,rgba(250,243,230,.80) 57%,rgba(250,243,230,.43) 100%),url("/discovered-by-design-homepage-background%2010-10-26.jpg") 61% center/cover no-repeat!important}}
