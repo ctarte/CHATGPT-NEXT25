@@ -147,3 +147,15 @@ body{font-size:17px;line-height:1.7}
 .field-workspace .workspace-boundary{font-size:15px;line-height:1.6}
 .field-card select{min-height:46px;padding:10px 12px}
 .field-card select:focus-visible,.field-card a:focus-visible{outline:3px solid #a77b42;outline-offset:3px}
+
+/* Site-wide audit: customer clarity, readable research and accessible controls */
+.brief-example-disclosure{max-width:1160px;margin:24px auto;padding:22px 26px;background:#f8f3e9;border-left:4px solid #987444;color:#243d4c;font-size:17px;line-height:1.65}
+.brief-example-disclosure strong{color:#102a3d}
+.brief-center .brief-list button,.brief-center .brief-detail p,.brief-center .investigation-rail dd{font-size:16px;line-height:1.6}
+.brief-center .brief-list button small,.brief-center .brief-detail section>span,.brief-center .investigation-rail dt{font-size:14px;line-height:1.5}
+.brief-center textarea,.experiment-page input{font-size:17px;line-height:1.6;min-height:48px}
+.brief-center .evidence-grid label,.experiment-page .learning-grid button,.experiment-page .test-grid button{font-size:16px;line-height:1.55}
+.experiment-save-error{font-size:16px;line-height:1.6;color:#7b3228;background:#fff5f1;border-left:4px solid #a34e40;padding:16px 20px}
+.experiment-page .experiment-question button,.experiment-page .time-options button{min-height:46px;font-size:16px}
+:is(a,button,input,select,textarea,summary):focus-visible{outline:3px solid #a77b42;outline-offset:3px}
+@media(max-width:760px){.brief-example-disclosure{margin:18px 16px;padding:20px}.experiment-page .experiment-question button{min-height:48px}}
