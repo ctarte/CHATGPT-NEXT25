@@ -1309,3 +1309,18 @@ main :where(.section,.page-section,.pricing-section,.about-section,.how-section,
 .live-opportunity-research .intelligence-status{font:400 .92rem/1.6 Arial,Helvetica,sans-serif;color:#516271;margin:13px 0 0}
 .live-opportunity-research .steps.compact article>p{line-height:1.65}
 .live-opportunity-research .evidence-trail p{font-size:1rem;line-height:1.65;overflow-wrap:anywhere}
+
+/* Blueprint completion: restrained, client-readable progress instead of a false final label. */
+.blueprint-readiness{padding:clamp(28px,4vw,55px) clamp(22px,6vw,85px);background:#faf7f1;border-bottom:1px solid #e8dfd2}
+.blueprint-readiness-heading{display:flex;align-items:start;justify-content:space-between;gap:24px;max-width:1140px;margin:0 auto 22px}
+.blueprint-readiness-heading h2{font:500 clamp(1.55rem,2.5vw,2.25rem)/1.25 Georgia,serif;color:#173449;margin:8px 0 10px}
+.blueprint-readiness-heading p{max-width:790px;color:#435767;font:400 1rem/1.65 Arial,Helvetica,sans-serif}
+.blueprint-readiness-count{flex-shrink:0;font:700 .88rem/1.5 Arial,Helvetica,sans-serif;color:#85622f;padding:9px 13px;border:1px solid #dfd1b9;background:#fffaf0}
+.blueprint-readiness-items{max-width:1140px;margin:auto;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.blueprint-readiness-items>div{display:flex;gap:13px;align-items:start;background:#fff;border:1px solid #e8e0d4;padding:16px 18px}
+.blueprint-readiness-items>div>span{display:grid;place-items:center;flex-shrink:0;width:29px;height:29px;border:1px solid #c9b89b;color:#876638;font:700 .8rem Arial,Helvetica,sans-serif}
+.blueprint-readiness-items>div.is-complete>span{background:#183a4f;color:#fff;border-color:#183a4f}
+.blueprint-readiness-items strong{font:700 1rem/1.5 Arial,Helvetica,sans-serif;color:#173449}
+.blueprint-readiness-items p{margin:6px 0 0;color:#53636d;font:400 .94rem/1.6 Arial,Helvetica,sans-serif}
+.blueprint-readiness-note{max-width:1140px;margin:18px auto 0;color:#556471;font:400 .9rem/1.6 Arial,Helvetica,sans-serif}
+@media(max-width:750px){.blueprint-readiness-heading{display:block}.blueprint-readiness-count{display:inline-block;margin-top:10px}.blueprint-readiness-items{grid-template-columns:1fr}}
