@@ -1,13 +1,22 @@
 "use client";
-import {useEffect} from "react";
+import {useEffect,useLayoutEffect} from "react";
 import {usePathname} from "next/navigation";
 
-/** Preserve explicit section anchors while starting new pages at their beginning. */
+/** A new page starts at the top; in-page anchors retain their intended position. */
 export function RouteScrollReset(){
  const pathname=usePathname();
+ useLayoutEffect(()=>{
+   if(window.location.hash)return;
+   const root=document.documentElement;
+   const previous=root.style.scrollBehavior;
+   root.style.scrollBehavior="auto";
+   window.scrollTo(0,0);
+   root.style.scrollBehavior=previous;
+ },[pathname]);
  useEffect(()=>{
-   if(typeof window==="undefined"||window.location.hash)return;
-   window.scrollTo({top:0,left:0,behavior:"instant"});
+   if(window.location.hash)return;
+   const id=window.requestAnimationFrame(()=>window.scrollTo(0,0));
+   return ()=>window.cancelAnimationFrame(id);
  },[pathname]);
  return null;
 }
