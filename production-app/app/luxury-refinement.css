@@ -1,0 +1,30 @@
+/* Discovered by Design — quiet-luxury design system, Development only.
+   A restrained finishing layer over the established layout. */
+:root{--navy:#102a3d;--navy2:#234255;--gold:#987444;--gold2:#c7aa78;--ivory:#fcfaf6;--paper:#f3efe7;--ink:#1b3040;--muted:#526371;--rule:#ded8ce}
+html{scroll-padding-top:92px}
+body{font-family:Arial,Helvetica,sans-serif;font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+h1,h2,h3{letter-spacing:-.025em}
+:focus-visible{outline:3px solid #b58b4c;outline-offset:4px}
+.site-header{height:auto;min-height:82px;padding:13px clamp(22px,5vw,86px);background:rgba(252,250,246,.98);box-shadow:0 1px 0 rgba(20,44,61,.05)}
+.brand span{font-size:19px;letter-spacing:.095em}.brand small{font-size:10px;letter-spacing:.24em}
+.site-header nav{gap:clamp(13px,1.65vw,26px)}
+.site-header nav a{font-size:13px;font-weight:600;transition:color .18s ease,background .18s ease}
+.site-header nav a:hover{color:var(--gold)}
+.site-header nav .nav-cta{padding:12px 19px;letter-spacing:.015em}
+.button{border-radius:2px;line-height:1.35;transition:filter .2s ease,transform .2s ease}
+.button:hover{filter:brightness(1.06);transform:translateY(-1px)}
+.hero h1,.page-hero h1{letter-spacing:-.045em}
+.hero .hero-actions{gap:20px}
+.hero-world-question,.hero-recognition-quiet,.hero-recognition-close{line-height:1.65}
+.eyebrow{letter-spacing:.16em;font-size:11px}
+.think-tank-intro,.possibility-demo,.discovery-choice,.final-cta{padding-top:clamp(56px,6vw,92px);padding-bottom:clamp(56px,6vw,92px)}
+.think-tank-intro>p,.final-cta>p{line-height:1.7}
+.future-perspective-grid article,.discovery-choice-grid article{border-color:var(--rule)}
+.site-footer{padding:42px clamp(22px,6vw,95px);align-items:start;gap:32px}
+.site-footer strong{font-size:15px;letter-spacing:.1em}
+.site-footer p{line-height:1.6}
+.site-footer .footer-note{max-width:340px}
+.blueprint-readiness,.blueprint-summary-concise{scroll-margin-top:95px}
+@media(max-width:1100px){.site-header nav{gap:12px}.site-header nav a{font-size:12px}}
+@media(max-width:760px){.site-header{min-height:72px;padding:12px 5vw}.hero h1,.page-hero h1{letter-spacing:-.035em}.site-footer{padding:34px 6vw}.button{min-height:44px}.hero-actions{flex-wrap:wrap}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button,.site-header nav a{transition:none}.button:hover{transform:none}}
