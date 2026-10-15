@@ -110,3 +110,34 @@ input:not([type=checkbox]):not([type=radio]),textarea,select{min-height:44px}
 .field-empty-guide p:not(.eyebrow){max-width:68ch;line-height:1.75;color:#354a58}
 .field-empty-guide .button{display:inline-flex;min-height:46px;align-items:center;margin-top:14px}
 .field-board:empty{display:none}
+
+/* Phase 3: accessibility-led type scale for mature and discerning readers.
+   Keep decorative overlines distinct; never make instructions microscopic. */
+:root{font-size:16px}
+body{font-size:17px;line-height:1.7}
+.site-header nav a{font-size:15px;line-height:1.4}
+.brand small{font-size:12px;letter-spacing:.18em}
+.eyebrow{font-size:13px;line-height:1.5;letter-spacing:.12em}
+.button,.start-wrap button,.field-workspace button{font-size:16px}
+.site-footer,.site-footer p,.site-footer a{font-size:15px}
+.pricing-grid .pricing-benefits li{font-size:16px}
+.pricing-checkout-note{font-size:15px}
+.discovery-dash .dash-guidance .dash-guidance-reassurance{font-size:16px}
+.start-wrap .save-resume{font-size:16px}
+.start-wrap .discovery-progress{font-size:14px}
+.start-wrap .choice,.start-wrap .tag{font-size:16px;line-height:1.5}
+.start-wrap .clue-note span,.start-wrap .session-rule span{font-size:13px}
+.blueprint-reading-guide-actions a{font-size:16px}
+.blueprint-reading-guide .blueprint-reading-guide-note{font-size:15px}
+.blueprint-summary-concise .sample-signals>div span{font-size:13px;letter-spacing:.09em}
+.blueprint-summary-concise .sample-signals>div strong{font-size:17px}
+.blueprint-detail-expand>summary{font-size:17px}
+.blueprint-quick-nav a,.blueprint-quick-nav span{font-size:15px}
+.blueprint-readiness-items strong,.blueprint-readiness-items p{font-size:16px;line-height:1.55}
+.blueprint-readiness-note,.blueprint-boundary-note{font-size:15px;line-height:1.65}
+.field-workspace-hero p,.field-column-head p,.field-card p,.field-workspace-footer p{font-size:16px;line-height:1.65}
+.field-card small,.field-column-head span,.workspace-boundary{font-size:14px;line-height:1.5}
+.field-card select,.field-card label,.field-card a{font-size:16px}
+.field-empty-guide p:not(.eyebrow){font-size:17px}
+@media(max-width:1100px){.site-header nav a{font-size:14px}}
+@media(max-width:760px){body{font-size:17px}.site-header nav a{font-size:15px}.blueprint-reading-guide-actions a{font-size:16px}.start-wrap .choice,.start-wrap .tag{font-size:16px}}
