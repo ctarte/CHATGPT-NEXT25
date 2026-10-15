@@ -103,3 +103,10 @@ input:not([type=checkbox]):not([type=radio]),textarea,select{min-height:44px}
 .blueprint-detail-expand>summary:hover{background:#f9f5ef}
 .blueprint-detail-expand[open]>summary{border-bottom:1px solid #e0d9cf;background:#f8f4ed}
 @media(max-width:760px){.blueprint-summary-concise .sample-signals>div{padding:17px}.blueprint-summary-concise .blueprint-summary-aside{padding:22px}}
+
+/* Field: empty states must be honest, calm and action-oriented */
+.field-empty-guide{max-width:850px;margin:24px auto 36px;padding:clamp(26px,4vw,48px);background:#f9f5ee;border:1px solid #ded6c9;border-top:3px solid #987444}
+.field-empty-guide h2{font:400 clamp(1.7rem,2.8vw,2.45rem)/1.22 Georgia,serif;color:#102a3d;margin:12px 0}
+.field-empty-guide p:not(.eyebrow){max-width:68ch;line-height:1.75;color:#354a58}
+.field-empty-guide .button{display:inline-flex;min-height:46px;align-items:center;margin-top:14px}
+.field-board:empty{display:none}
