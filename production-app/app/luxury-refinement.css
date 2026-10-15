@@ -46,3 +46,11 @@ h1,h2,h3{letter-spacing:-.025em}
 input,select,textarea{max-width:100%;font-family:inherit}
 input:not([type=checkbox]):not([type=radio]),textarea,select{min-height:44px}
 @media(max-width:850px){.pricing-grid{grid-template-columns:1fr}.pricing-grid article{padding:28px 24px}}
+
+/* Private client portal: an unmistakable, calm guided next step */
+.discovery-dash .dash-guidance{margin:26px 0 30px;padding:clamp(24px,3vw,42px);background:#f8f4ed;border:1px solid #ded4c4;border-left:4px solid #987444;max-width:1000px}
+.discovery-dash .dash-guidance h2{font:400 clamp(1.6rem,2.5vw,2.35rem)/1.2 Georgia,serif;color:#102a3d;margin:9px 0 13px}
+.discovery-dash .dash-guidance p{max-width:760px;font-size:16px;line-height:1.7;color:#263f4d}
+.discovery-dash .dash-guidance .dash-guidance-reassurance{font-size:14px;color:#586774;margin:16px 0 22px}
+.discovery-dash .dash-guidance .button{display:inline-flex;align-items:center;min-height:46px}
+@media(max-width:650px){.discovery-dash .dash-guidance{margin:20px 0;padding:23px 20px}.discovery-dash .dash-guidance .button{width:100%;justify-content:center;text-align:center}}
