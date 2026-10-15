@@ -1259,3 +1259,13 @@ main :where(.section,.page-section,.pricing-section,.about-section,.how-section,
 .blueprint-quick-nav>a:hover,.blueprint-quick-nav>a:focus-visible{background:#173449;color:#fff;outline-offset:3px}
 #summary,#evidence,#intelligence,#chapters{scroll-margin-top:105px}
 @media(max-width:650px){.blueprint-quick-nav{justify-content:flex-start;gap:8px}.blueprint-quick-nav>span{width:100%}.blueprint-quick-nav>a{font-size:.82rem}}
+
+/* Blueprint chapter assembly: one readable size for all supporting content. */
+.blueprint-preview .blueprint-chapters{column-gap:24px;row-gap:0}
+.blueprint-preview .blueprint-chapters article{grid-template-columns:38px minmax(0,1fr);gap:13px;padding-top:27px;padding-bottom:27px;min-width:0}
+.blueprint-preview .blueprint-chapters article>b{font:700 1rem/1.5 Arial,Helvetica,sans-serif;color:#e1b76c}
+.blueprint-preview .blueprint-chapters article h3{font-family:Georgia,"Times New Roman",serif;font-size:1.22rem;line-height:1.4;font-weight:500;letter-spacing:0;color:#fff;margin:0 0 10px}
+.blueprint-preview .blueprint-chapters article :is(p,small){display:block;font-family:Arial,Helvetica,sans-serif;font-size:1rem!important;line-height:1.62!important;letter-spacing:0!important;color:#e4eaf0!important;font-weight:400;overflow-wrap:anywhere}
+.blueprint-preview .blueprint-chapters article p{margin:9px 0}
+.blueprint-preview .blueprint-chapters article small{margin:12px 0 10px;font-weight:700;color:#e6c58d!important}
+@media(max-width:900px){.blueprint-preview .blueprint-chapters{grid-template-columns:1fr}.blueprint-preview .blueprint-chapters article:nth-child(odd){border-right:0}.blueprint-preview .blueprint-chapters article:nth-child(even){padding-left:0}}
