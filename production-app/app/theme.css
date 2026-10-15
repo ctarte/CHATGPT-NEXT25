@@ -1269,3 +1269,29 @@ main :where(.section,.page-section,.pricing-section,.about-section,.how-section,
 .blueprint-preview .blueprint-chapters article p{margin:9px 0}
 .blueprint-preview .blueprint-chapters article small{margin:12px 0 10px;font-weight:700;color:#e6c58d!important}
 @media(max-width:900px){.blueprint-preview .blueprint-chapters{grid-template-columns:1fr}.blueprint-preview .blueprint-chapters article:nth-child(odd){border-right:0}.blueprint-preview .blueprint-chapters article:nth-child(even){padding-left:0}}
+
+/* Condensed personal Blueprint: the summary comes first, details remain optional. */
+.blueprint-hero .blueprint-purpose{max-width:780px;margin:18px auto 0;color:#e5e7e5;font:400 clamp(1rem,1.2vw,1.16rem)/1.65 Arial,Helvetica,sans-serif}
+.blueprint-summary-concise{align-items:start;gap:clamp(24px,4vw,60px)}
+.blueprint-summary-concise .sample-signals strong{font:500 clamp(1.05rem,1.25vw,1.2rem)/1.55 Georgia,serif;overflow-wrap:anywhere}
+.blueprint-summary-aside{padding:clamp(24px,3vw,40px);background:#f4efe6;border-left:3px solid #ae8b54}
+.blueprint-summary-aside h3{font:500 clamp(1.5rem,2vw,2rem)/1.25 Georgia,serif;color:#173449;margin:12px 0}
+.blueprint-summary-aside p{font:400 1rem/1.65 Arial,Helvetica,sans-serif;color:#314859}
+.blueprint-summary-aside .button{margin-top:12px}
+.blueprint-details-concise{max-width:1160px;margin:auto}
+.blueprint-details-concise>p{max-width:850px;line-height:1.65}
+.blueprint-detail-expand{margin:16px 0;border:1px solid #ded4c5;background:#fffdf9}
+.blueprint-detail-expand>summary{display:flex;justify-content:space-between;gap:20px;align-items:center;cursor:pointer;padding:20px 24px;font:600 clamp(1.08rem,1.4vw,1.25rem)/1.4 Georgia,serif;color:#19354b}
+.blueprint-detail-expand>summary span{font:700 .82rem/1.4 Arial,Helvetica,sans-serif;color:#99753d}
+.blueprint-detail-expand[open]>summary{border-bottom:1px solid #ded4c5}
+.blueprint-detail-expand .blueprint-chapters{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 28px;padding:16px 26px 28px;border-top:0}
+.blueprint-detail-expand .blueprint-chapters article{display:grid;grid-template-columns:38px minmax(0,1fr);gap:12px;padding:20px 0;border-bottom:1px solid #e5dfd4}
+.blueprint-detail-expand .blueprint-chapters article:nth-child(odd){border-right:0}
+.blueprint-detail-expand .blueprint-chapters article:nth-child(even){padding-left:0}
+.blueprint-detail-expand .blueprint-chapters article>b{font:700 1rem Arial,Helvetica,sans-serif;color:#977039}
+.blueprint-detail-expand .blueprint-chapters h3{font:500 1.2rem/1.4 Georgia,serif;color:#173449}
+.blueprint-detail-expand .blueprint-chapters :is(p,small){font:400 1rem/1.6 Arial,Helvetica,sans-serif;color:#344958;overflow-wrap:anywhere}
+.blueprint-open-questions{padding:12px 25px 24px}
+.blueprint-open-questions p{font-size:1rem;line-height:1.65}
+.blueprint-boundary-note{font-size:.93rem;color:#54616c}
+@media(max-width:800px){.blueprint-detail-expand .blueprint-chapters{grid-template-columns:1fr}}
