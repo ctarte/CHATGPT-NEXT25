@@ -1295,3 +1295,7 @@ main :where(.section,.page-section,.pricing-section,.about-section,.how-section,
 .blueprint-open-questions p{font-size:1rem;line-height:1.65}
 .blueprint-boundary-note{font-size:.93rem;color:#54616c}
 @media(max-width:800px){.blueprint-detail-expand .blueprint-chapters{grid-template-columns:1fr}}
+
+/* Personalized executive interpretation: distinguish the insight from raw discovery clues. */
+.blueprint-summary-concise .blueprint-interpretation{margin:20px 0 24px;padding:16px 20px;background:#f3eee5;border-left:3px solid #b08a53;color:#19384b;font:400 1.05rem/1.65 Arial,Helvetica,sans-serif}
+.blueprint-summary-concise .blueprint-interpretation strong{color:#8b652f;font-weight:800}
