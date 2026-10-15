@@ -4,6 +4,6 @@ export function Header(){
   return <header className="site-header"><Link className="brand" href="/"><span>DISCOVERED</span><small>BY DESIGN™</small></Link><nav aria-label="Primary navigation"><Link href="/how-it-works">How It Works</Link><Link href="/explore">Explore Possibilities</Link><Link href="/blueprint">Your Blueprint</Link><Link href="/pricing">Pricing</Link><Link href="/about">About</Link><Link className="nav-signin" href="/auth/sign-in">Sign In</Link><Link className="nav-cta" href="/start">Start Discovering</Link></nav></header>
 }
 export function Footer(){
-  return <footer className="site-footer"><div><strong>DISCOVERED BY DESIGN™</strong><p>Fresh thinking about careers, business, and what comes next.</p></div><p className="footer-note">Discovery expands the field. You decide what deserves a closer look.</p></footer>
+  return <footer className="site-footer"><div><strong>DISCOVERED BY DESIGN™</strong><p>Your personal Think Tank. Discover what’s NEXT for YOU.</p></div><p className="footer-note">Discovery expands the field. You decide what deserves a closer look.</p></footer>
 }
 export function Chrome({children}:{children:React.ReactNode}){return <><Header/>{children}<Footer/></>}
