@@ -277,3 +277,7 @@ main > .cta-band,main > .belief-band{padding-top:clamp(38px,4.5vw,70px);padding-
 .first-reveal .reaction-buttons button{width:auto!important;min-height:40px!important;padding:9px 13px!important;font-size:12px!important;font-weight:550!important;letter-spacing:.025em!important;line-height:1.25!important;border:1px solid #8b9aa3!important;background:#fff!important;color:#193245!important;box-shadow:none!important;text-transform:none!important}
 .first-reveal .reaction-buttons button:hover,.first-reveal .reaction-buttons button:focus-visible{background:#f2f0e9!important;border-color:#98743b!important;outline-offset:2px}
 @media(max-width:760px){.first-reveal .reaction-instruction{padding:13px 15px!important}.first-reveal .reaction-buttons button{font-size:12px!important;padding:9px 11px!important}}
+
+/* Reaction choices: softer, smaller typography without changing the approved panel. */
+.first-reveal .reaction-buttons button{font-size:11px!important;font-weight:450!important;letter-spacing:0!important;line-height:1.35!important;text-transform:none!important;padding:9px 12px!important;color:#314657!important}
+@media(max-width:760px){.first-reveal .reaction-buttons button{font-size:11px!important;font-weight:450!important}}
