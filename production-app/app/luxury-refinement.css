@@ -220,3 +220,30 @@ body{font-size:17px;line-height:1.7}
 .hero-77 .hero-recognition-simple .hero-opportunity-list li{font-size:clamp(23px,2.05vw,30px)!important;line-height:1.34!important;font-weight:650!important;color:#071f34!important;text-shadow:0 1px 2px rgba(255,250,239,.52)!important}
 .hero-77 .hero-recognition-simple .hero-opportunity-list li::marker{color:#8e6a30!important}
 @media(max-width:760px){.hero-77 .hero-recognition-simple .hero-opportunity-list li{font-size:clamp(20px,4.5vw,25px)!important}}
+
+/* Make the three homepage directions unmistakable at first glance.
+   Soft ivory glazing separates the message from the busy harbor without obscuring it. */
+.hero-77 .hero-recognition-simple .hero-opportunity-list{
+ display:block!important;
+ width:fit-content!important;
+ max-width:100%!important;
+ padding:15px 25px 15px 39px!important;
+ margin:15px 0 13px!important;
+ background:rgba(255,250,238,.85)!important;
+ border-left:3px solid #aa8244!important;
+ box-shadow:0 7px 24px rgba(20,37,49,.10)!important;
+ backdrop-filter:blur(3px);
+}
+.hero-77 .hero-recognition-simple .hero-opportunity-list li{
+ font-size:clamp(25px,2.35vw,34px)!important;
+ font-weight:700!important;
+ line-height:1.3!important;
+ color:#071c2d!important;
+ letter-spacing:-.012em!important;
+ text-shadow:none!important;
+}
+.hero-77 .hero-recognition-simple .hero-opportunity-list li+li{margin-top:6px!important}
+@media(max-width:760px){
+ .hero-77 .hero-recognition-simple .hero-opportunity-list{padding:13px 15px 13px 32px!important;background:rgba(255,250,238,.9)!important}
+ .hero-77 .hero-recognition-simple .hero-opportunity-list li{font-size:clamp(21px,4.8vw,27px)!important}
+}
