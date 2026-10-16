@@ -247,3 +247,7 @@ body{font-size:17px;line-height:1.7}
  .hero-77 .hero-recognition-simple .hero-opportunity-list{padding:13px 15px 13px 32px!important;background:rgba(255,250,238,.9)!important}
  .hero-77 .hero-recognition-simple .hero-opportunity-list li{font-size:clamp(21px,4.8vw,27px)!important}
 }
+
+/* Approved review: retain prominent hero lettering; remove the ivory box treatment. */
+.hero-77 .hero-recognition-simple .hero-opportunity-list{background:transparent!important;border:0!important;box-shadow:none!important;backdrop-filter:none!important;padding:0 0 0 26px!important;margin:15px 0 13px!important}
+@media(max-width:760px){.hero-77 .hero-recognition-simple .hero-opportunity-list{padding:0 0 0 25px!important}}
