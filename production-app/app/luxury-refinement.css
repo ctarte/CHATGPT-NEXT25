@@ -263,3 +263,8 @@ main > .cta-band,main > .belief-band{padding-top:clamp(38px,4.5vw,70px);padding-
 .page-hero .lead,.section .journey-intro{line-height:1.65}
 .page-guidance-grid p{font-size:15px;line-height:1.58}
 @media(max-width:760px){main > .section{padding-top:34px;padding-bottom:34px}main > .section + .section{padding-top:28px}}
+
+/* Personal workspaces: quiet explanatory bridge beneath each page introduction. */
+.workspace-explainer{max-width:900px;margin:20px 0 0!important;padding:15px 19px;border-left:2px solid #aa8244;background:rgba(250,248,243,.68);font-size:15px!important;line-height:1.7!important;color:#263a49}
+.workspace-explainer strong{font-weight:650;color:#102a3d}
+@media(max-width:760px){.workspace-explainer{padding:13px 15px;font-size:14px!important}}
