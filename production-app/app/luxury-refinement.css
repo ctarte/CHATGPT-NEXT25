@@ -186,3 +186,13 @@ body{font-size:17px;line-height:1.7}
 .how-next-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:24px}
 .how-next-actions .button{font-size:16px;min-height:46px;display:inline-flex;align-items:center}
 @media(max-width:600px){.how-next-actions{flex-direction:column}.how-next-actions .button{justify-content:center}}
+
+/* Quiet concierge guidance: purposeful, compact, legible */
+.page-guidance{max-width:1180px;margin:0 auto clamp(24px,3vw,40px);padding:clamp(20px,3vw,34px);background:#f7f3ec;border:1px solid #e1d8c8;border-top:2px solid #a78552}
+.page-guidance-kicker{margin:0 0 15px;color:#86683e;font:700 12px/1.5 Arial,sans-serif;letter-spacing:.14em}
+.page-guidance-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,2.5vw,30px)}
+.page-guidance-grid>div+div{border-left:1px solid #ded5c6;padding-left:clamp(16px,2vw,28px)}
+.page-guidance-grid strong{font-size:16px;color:#102c40;line-height:1.45}
+.page-guidance-grid p{margin:7px 0 0;font-size:15px;line-height:1.65;color:#344655}
+.page-guidance-action{display:inline-flex;margin-top:18px;font-size:15px;font-weight:700;color:#14354b;text-decoration:underline;text-underline-offset:4px}
+@media(max-width:760px){.page-guidance{margin:0 16px 26px}.page-guidance-grid{grid-template-columns:1fr;gap:15px}.page-guidance-grid>div+div{border-left:0;border-top:1px solid #ded5c6;padding:14px 0 0}}
