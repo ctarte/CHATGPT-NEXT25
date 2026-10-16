@@ -1,3 +1,4 @@
+import {PageGuidance} from "../components/PageGuidance";
 import Link from "next/link";
 import {Chrome} from "../components/SiteChrome";
 import PurchaseButton from "../components/PurchaseButton";
@@ -8,7 +9,7 @@ export default function Page(){
    <p className="eyebrow">CHOOSE HOW FAR YOU WANT TO GO</p>
    <h1>Start with Discovery.<br/><em>Go deeper when you find a direction worth exploring.</em></h1>
    <p className="lead">Both versions begin with the same personalized Think Tank process. The difference is simple: one helps you discover directions worth considering; the other goes further and investigates whether the strongest directions hold up in the real world.</p>
-  </section>
+  </section><PageGuidance label="PRICING" purpose="Two levels of the same personalized Discovery process, with optional deeper opportunity research." why="You can start by finding directions that fit, then decide whether you want detailed market evidence." next="Compare what is included, then sign in before secure checkout. You can also begin by exploring Discovery." href="/how-it-works" action="Review how Discovery works"/>
   <section className="section">
    <div className="steps pricing-grid">
     <article>
