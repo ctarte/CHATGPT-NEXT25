@@ -205,3 +205,9 @@ body{font-size:17px;line-height:1.7}
 .think-tank-case .think-tank-case-intro{font-size:19px!important;line-height:1.65!important;color:#203c50!important}
 .think-tank-case .think-tank-case-close{font-style:italic;color:#705733!important;margin-top:22px!important}
 @media(max-width:760px){.think-tank-case{margin:0 12px;padding:35px 22px}.think-tank-case .think-tank-case-intro{font-size:17px!important}}
+
+/* Refine emphasis in the lower portion of the homepage hero photograph/panel */
+.hero-77 .hero-recognition-simple .hero-opportunity-list li{font-weight:500!important;letter-spacing:.005em!important}
+.hero-77 .hero-recognition-quiet,.hero-77 .hero-recognition-close{font-weight:400!important;line-height:1.65!important}
+.hero-77 .hero-art .lab-promise,.hero-77 .hero-art .lab-output{font-weight:400!important}
+.hero-77 .hero-art .think-tank-steps li{font-weight:500!important;letter-spacing:.075em!important}
