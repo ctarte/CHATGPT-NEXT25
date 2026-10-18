@@ -351,3 +351,19 @@ main > .cta-band,main > .belief-band{padding-top:clamp(38px,4.5vw,70px);padding-
 .start-wrap .first-reveal .discovery-deeper-analysis>.notice-insight{margin:0!important;padding:24px!important}
 .start-wrap .first-reveal .discovery-deeper-analysis>summary:focus-visible{outline:3px solid #a98246;outline-offset:3px}
 @media(max-width:760px){.start-wrap .first-reveal .discovery-deeper-analysis>summary{padding:16px}.start-wrap .first-reveal .discovery-deeper-analysis>.notice-insight{padding:16px!important}}
+
+
+/* One quiet editorial system for optional idea evidence and first impressions. */
+.start-wrap .first-reveal .idea-evidence-details{margin:19px 0 22px;border:1px solid #ded6c8;background:#fbfaf7}
+.start-wrap .first-reveal .idea-evidence-details>summary{display:flex;flex-direction:column;gap:5px;list-style:none;cursor:pointer;padding:18px 22px}
+.start-wrap .first-reveal .idea-evidence-details>summary::-webkit-details-marker{display:none}
+.start-wrap .first-reveal .idea-evidence-details>summary span{font-size:11px;font-weight:700;letter-spacing:.1em;color:#82602c}
+.start-wrap .first-reveal .idea-evidence-details>summary strong{font-family:Georgia,serif;font-size:20px;font-weight:500;line-height:1.35;color:#172e40}
+.start-wrap .first-reveal .idea-evidence-details>summary em{font-size:13px;font-style:normal;color:#415766}
+.start-wrap .first-reveal .idea-evidence-details[open]>summary{border-bottom:1px solid #e5ded2}
+.start-wrap .first-reveal .idea-evidence-details>.intelligence-box{margin:0!important;padding:22px!important}
+.start-wrap .first-reveal .idea-evidence-details>summary:focus-visible{outline:3px solid #a98246;outline-offset:3px}
+.start-wrap .first-reveal .reaction-buttons .reveal-reaction-choice{font-size:14px!important;font-weight:600!important;letter-spacing:0!important;min-height:46px!important;padding:12px 18px!important;border-radius:2px!important}
+.start-wrap .first-reveal .reaction-buttons .reveal-reaction-choice.reveal-reaction-primary{background:#172e40!important;border-color:#172e40!important;color:#fff!important;-webkit-text-fill-color:#fff!important}
+.start-wrap .first-reveal .reaction-buttons .reveal-reaction-choice.reveal-reaction-primary:hover{background:#29475c!important;border-color:#29475c!important}
+@media(max-width:760px){.start-wrap .first-reveal .idea-evidence-details>summary{padding:16px}.start-wrap .first-reveal .idea-evidence-details>.intelligence-box{padding:16px!important}.start-wrap .first-reveal .reaction-buttons .reveal-reaction-choice{font-size:14px!important;min-height:46px!important}}
