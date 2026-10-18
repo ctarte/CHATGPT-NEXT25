@@ -292,3 +292,9 @@ main > .cta-band,main > .belief-band{padding-top:clamp(38px,4.5vw,70px);padding-
 .first-reveal .reaction-buttons button:hover{background:#f4efe6!important;border-color:#987444!important;color:#102a3d!important}
 .first-reveal .reaction-buttons button:focus-visible{outline:3px solid #b58b4c!important;outline-offset:3px!important}
 @media(max-width:760px){.first-reveal .reaction-buttons button{font-size:13px!important;min-height:44px!important;padding:10px 14px!important}}
+
+/* First Reveal choices now share the site's .button design system rather than bespoke outlined controls. */
+.start-wrap .first-reveal .reaction-buttons .reveal-reaction-choice{display:inline-flex!important;align-items:center!important;justify-content:center!important;box-sizing:border-box!important;width:auto!important;min-height:44px!important;padding:12px 19px!important;border:0!important;border-radius:2px!important;background:var(--navy)!important;color:#fff!important;font:600 13px/1.35 Arial,Helvetica,sans-serif!important;letter-spacing:0!important;text-transform:none!important;box-shadow:none!important;cursor:pointer!important}
+.start-wrap .first-reveal .reaction-buttons .reveal-reaction-choice:hover{background:var(--navy2)!important;color:#fff!important}
+.start-wrap .first-reveal .reaction-buttons .reveal-reaction-choice:focus-visible{outline:3px solid #b58b4c!important;outline-offset:3px!important}
+@media(max-width:760px){.start-wrap .first-reveal .reaction-buttons .reveal-reaction-choice{min-height:44px!important;padding:11px 14px!important;font-size:13px!important}}
