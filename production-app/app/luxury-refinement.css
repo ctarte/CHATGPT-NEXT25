@@ -302,3 +302,15 @@ main > .cta-band,main > .belief-band{padding-top:clamp(38px,4.5vw,70px);padding-
 .start-wrap .first-reveal .reaction-buttons .reveal-reaction-choice:last-child:hover{background:#29445b!important;border-color:#29445b!important;color:#fff!important}
 .start-wrap .first-reveal .reaction-buttons .reveal-reaction-choice:focus-visible{outline:3px solid #b58b4c!important;outline-offset:3px!important}
 @media(max-width:760px){.start-wrap .first-reveal .think-tank-reveal h1{font-size:clamp(2.25rem,8vw,3rem)!important}.start-wrap .first-reveal .reaction-buttons .reveal-reaction-choice{min-height:44px!important;padding:11px 14px!important;font-size:13px!important}}
+
+/* Readability refinements: modest increases to small text and darker ink on light cards. */
+.start-wrap .clue-recap span{font-size:14px!important;line-height:1.5!important;color:#263c4a!important;min-height:88px!important}
+.start-wrap .clue-recap span b{font-size:11px!important;letter-spacing:.09em!important;color:#75551f!important}
+.start-wrap .clue-recap strong{font-size:12px!important;line-height:1.4!important;letter-spacing:.065em!important;color:#f2dba9!important}
+.start-wrap .first-reveal .reaction-buttons button.reveal-reaction-primary,
+.start-wrap .first-reveal .reaction-buttons button.reveal-reaction-primary:last-child{background-color:#172e40!important;background:#172e40!important;border-color:#172e40!important;color:#fff!important;-webkit-text-fill-color:#fff!important}
+.start-wrap .first-reveal .reaction-buttons button.reveal-reaction-primary:hover{background:#29475c!important;border-color:#29475c!important;color:#fff!important}
+.start-wrap .first-reveal .reaction-buttons button.reveal-reaction-primary:focus-visible{outline:3px solid #a98143!important;outline-offset:3px!important}
+.page-guidance-grid p,.section .journey-intro,.start-wrap .lead.darklead{color:#2d4351}
+.start-wrap .first-reveal .preview-grid p,.start-wrap .first-reveal .imagine-bridge small,.start-wrap .first-reveal .deep-preview p{color:#304654!important}
+@media(max-width:760px){.start-wrap .clue-recap span{font-size:14px!important;min-height:0!important}.start-wrap .clue-recap strong{font-size:12px!important}}
