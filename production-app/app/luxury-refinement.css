@@ -367,3 +367,16 @@ main > .cta-band,main > .belief-band{padding-top:clamp(38px,4.5vw,70px);padding-
 .start-wrap .first-reveal .reaction-buttons .reveal-reaction-choice.reveal-reaction-primary{background:#172e40!important;border-color:#172e40!important;color:#fff!important;-webkit-text-fill-color:#fff!important}
 .start-wrap .first-reveal .reaction-buttons .reveal-reaction-choice.reveal-reaction-primary:hover{background:#29475c!important;border-color:#29475c!important}
 @media(max-width:760px){.start-wrap .first-reveal .idea-evidence-details>summary{padding:16px}.start-wrap .first-reveal .idea-evidence-details>.intelligence-box{padding:16px!important}.start-wrap .first-reveal .reaction-buttons .reveal-reaction-choice{font-size:14px!important;min-height:46px!important}}
+
+
+/* Optional evidence: one calm decision at a time. */
+.start-wrap .first-reveal .idea-evidence-details{margin:20px 0 22px;background:#fbfaf7;border:1px solid #ddd5c8}
+.start-wrap .first-reveal .idea-evidence-details>summary{cursor:pointer;list-style:none;padding:18px 22px;font-family:Georgia,serif;font-size:19px;line-height:1.4;color:#172e40}
+.start-wrap .first-reveal .idea-evidence-details>summary::-webkit-details-marker{display:none}
+.start-wrap .first-reveal .idea-evidence-details>summary:before{content:"+";display:inline-block;width:25px;color:#997542;font-family:Arial,sans-serif;font-size:21px}
+.start-wrap .first-reveal .idea-evidence-details[open]>summary:before{content:"−"}
+.start-wrap .first-reveal .idea-evidence-details>summary span{font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#526674;margin-left:8px}
+.start-wrap .first-reveal .idea-evidence-details[open]>summary{border-bottom:1px solid #e4ded4}
+.start-wrap .first-reveal .idea-evidence-details>.intelligence-box{margin:0!important;padding:22px!important}
+.start-wrap .first-reveal .idea-evidence-details>summary:focus-visible{outline:3px solid #a98246;outline-offset:2px}
+@media(max-width:760px){.start-wrap .first-reveal .idea-evidence-details>summary{padding:15px;font-size:18px}.start-wrap .first-reveal .idea-evidence-details>summary span{display:block;margin:4px 0 0 25px}.start-wrap .first-reveal .idea-evidence-details>.intelligence-box{padding:15px!important}}
