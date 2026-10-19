@@ -380,3 +380,25 @@ main > .cta-band,main > .belief-band{padding-top:clamp(38px,4.5vw,70px);padding-
 .start-wrap .first-reveal .idea-evidence-details>.intelligence-box{margin:0!important;padding:22px!important}
 .start-wrap .first-reveal .idea-evidence-details>summary:focus-visible{outline:3px solid #a98246;outline-offset:2px}
 @media(max-width:760px){.start-wrap .first-reveal .idea-evidence-details>summary{padding:15px;font-size:18px}.start-wrap .first-reveal .idea-evidence-details>summary span{display:block;margin:4px 0 0 25px}.start-wrap .first-reveal .idea-evidence-details>.intelligence-box{padding:15px!important}}
+
+
+/* Discovery review: clear orientation and comfortable reading sizes. */
+.start-wrap .discovery-visitor-guide{padding:27px 30px!important;margin-bottom:27px!important}
+.start-wrap .discovery-visitor-guide>span{font-size:12px!important;letter-spacing:.12em!important}
+.start-wrap .discovery-visitor-guide>h2{font-size:clamp(23px,2.6vw,30px)!important;line-height:1.25!important;margin:10px 0 12px!important}
+.start-wrap .discovery-visitor-guide>p{font-size:16px!important;line-height:1.7!important;max-width:76ch}
+.start-wrap .discovery-review-roadmap{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px;margin:21px 0 16px}
+.start-wrap .discovery-review-roadmap>div{background:#fffefa;border:1px solid #dfd7c8;padding:16px 17px}
+.start-wrap .discovery-review-roadmap b{display:block;color:#815e2d;font-size:13px;letter-spacing:.055em;margin-bottom:8px}
+.start-wrap .discovery-review-roadmap p{font-size:15px;line-height:1.55;color:#243a48;margin:0}
+.start-wrap .discovery-review-reassurance{margin-bottom:0!important;font-size:15px!important}
+.start-wrap .first-reveal .discovery-idea-heading{font-family:Georgia,serif!important;font-size:clamp(30px,3.5vw,43px)!important;line-height:1.18!important;font-weight:400!important;letter-spacing:-.025em!important;margin:10px 0 17px!important;color:#1c3445!important}
+.start-wrap .first-reveal .eyebrow,.start-wrap .first-reveal .preview-kicker{font-size:12px!important}
+.start-wrap .first-reveal .lead{font-size:17px!important;line-height:1.65!important}
+.start-wrap .first-reveal .clue-recap{font-size:14px!important}
+.start-wrap .first-reveal .clue-recap span,.start-wrap .first-reveal .clue-recap strong{line-height:1.55!important}
+.start-wrap .first-reveal .steps.compact p,.start-wrap .first-reveal .steps.compact h3{line-height:1.55!important}
+.start-wrap .first-reveal .steps.compact p{font-size:14px!important}
+.start-wrap .first-reveal .reaction-instruction p{font-size:16px!important;line-height:1.65!important}
+.start-wrap .first-reveal .reaction-instruction span{font-size:12px!important}
+@media(max-width:760px){.start-wrap .discovery-visitor-guide{padding:20px!important}.start-wrap .discovery-review-roadmap{grid-template-columns:1fr}.start-wrap .discovery-review-roadmap>div{padding:13px 15px}.start-wrap .first-reveal .discovery-idea-heading{font-size:31px!important}}
