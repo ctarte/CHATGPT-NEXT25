@@ -600,3 +600,25 @@ main button,main a.button{min-height:42px}
 .start-wrap .discovery-field .field-columns article strong{color:#1b3446!important}
 .start-wrap .discovery-field .field-columns article small{color:#795b34!important}
 @media(max-width:760px){.start-wrap .knowledge-module{padding:19px!important}.start-wrap .discovery-orientation{padding:19px!important}}
+
+
+/* Readability and plain-language refinement: Discovery Map and blue idea exploration. */
+.start-wrap .discovery-map .map-grid article{padding:18px 20px!important;min-height:115px!important}
+.start-wrap .discovery-map .map-grid article b{display:block!important;color:#7a572a!important;font-size:13px!important;line-height:1.5!important;letter-spacing:.06em!important;margin-bottom:9px!important}
+.start-wrap .discovery-map .map-grid article p{color:#203648!important;font-size:17px!important;line-height:1.6!important;margin:0!important}
+.start-wrap .discovery-map .map-head>p{color:#3a4c59!important;font-size:16px!important;line-height:1.7!important}
+.start-wrap .discovery-map .map-open strong{font-size:19px!important;line-height:1.5!important}
+.start-wrap .push-further{background:#182f40!important;color:#f5f2ed!important;padding:24px 25px!important}
+.start-wrap .push-further>span{color:#e2bb7c!important;font-size:13px!important;line-height:1.5!important}
+.start-wrap .push-further>h3{color:#fff!important;font-size:clamp(23px,2.6vw,30px)!important;line-height:1.3!important}
+.start-wrap .push-further>p{color:#f1f1ec!important;font-size:16px!important;line-height:1.7!important}
+.start-wrap .push-further .cross-boundaries{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:12px!important;margin:20px 0!important}
+.start-wrap .push-further .cross-boundaries article{background:#294557!important;border:1px solid #526b7b!important;padding:18px!important;min-height:130px!important}
+.start-wrap .push-further .cross-boundaries article b{display:block!important;color:#eac891!important;font-size:13px!important;line-height:1.45!important;letter-spacing:.04em!important;margin-bottom:10px!important}
+.start-wrap .push-further .cross-boundaries article p{color:#fff!important;font-size:15px!important;line-height:1.65!important;margin:0!important}
+.start-wrap .push-further .push-prompt{background:#f8f5ed!important;border-left:4px solid #d0a96d!important;padding:17px 19px!important}
+.start-wrap .push-further .push-prompt b{color:#806035!important;font-size:12px!important}
+.start-wrap .push-further .push-prompt strong{color:#203748!important;font-size:17px!important;line-height:1.6!important}
+.start-wrap .discovery-map .map-challenge p{font-size:16px!important;line-height:1.65!important}
+.start-wrap .discovery-map .map-challenge button{font-size:14px!important;line-height:1.5!important;min-height:45px!important}
+@media(max-width:760px){.start-wrap .push-further{padding:19px!important}.start-wrap .push-further .cross-boundaries{grid-template-columns:1fr!important}.start-wrap .push-further .cross-boundaries article{min-height:0!important}}
