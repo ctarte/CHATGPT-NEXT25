@@ -433,3 +433,19 @@ main button,main a.button{min-height:42px}
 .start-wrap .preview-actions>.text-button{background:#f7f3e9!important;color:#172e40!important;border:1px solid #d4b785!important;font-weight:700!important}
 .start-wrap .preview-actions>.text-button:hover{background:#eadfc9!important}
 @media(max-width:760px){.start-wrap .idea-room{padding:20px 16px}.start-wrap .idea-shapes{grid-template-columns:1fr}.start-wrap .idea-shapes>button{min-height:0!important}.start-wrap .preview-actions>.button{width:100%;text-align:center}}
+
+
+/* Homepage: recognizable audience needs and one unambiguous next action. */
+.think-tank-case .think-tank-case-intro{font-size:18px!important;line-height:1.55!important;margin-bottom:18px!important}
+.think-tank-audience-list{list-style:none!important;margin:0 0 29px!important;padding:0!important;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px 19px}
+.think-tank-audience-list li{position:relative;background:#f8f5ee;border:1px solid #e5dccb;border-left:3px solid #b18a4f;padding:17px 18px 17px 42px;font-size:17px;line-height:1.58;color:#1c3546}
+.think-tank-audience-list li:before{content:"✓";position:absolute;left:17px;top:17px;color:#99723e;font-size:18px;font-weight:700}
+.think-tank-audience-list li strong{color:#172e40}
+.demo-next-guidance{font-size:17px!important;line-height:1.65!important;max-width:70ch;margin-top:19px!important}
+.blueprint-preview .blueprint-preview-guidance{background:#f4efe5;border-left:3px solid #c19b5c;padding:15px 18px;color:#243847!important;font-size:16px!important;line-height:1.65!important;margin:18px 0!important}
+.blueprint-preview .blueprint-preview-guidance strong{color:#172e40!important}
+.blueprint-preview .blueprint-actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:19px}
+.blueprint-preview .blueprint-actions .button{font-size:15px!important;min-height:48px;padding:13px 19px!important;line-height:1.4!important}
+.blueprint-preview .blueprint-actions .button.gold{background:#c6a16a!important;color:#132b3c!important;border-color:#c6a16a!important;font-weight:700!important}
+.blueprint-preview .blueprint-actions .blueprint-compare-button{background:transparent!important;color:#fff!important;border:1px solid #b6c5ce!important}
+@media(max-width:760px){.think-tank-audience-list{grid-template-columns:1fr}.blueprint-preview .blueprint-actions .button{width:100%;text-align:center}}
