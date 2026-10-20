@@ -402,3 +402,34 @@ main > .cta-band,main > .belief-band{padding-top:clamp(38px,4.5vw,70px);padding-
 .start-wrap .first-reveal .reaction-instruction p{font-size:16px!important;line-height:1.65!important}
 .start-wrap .first-reveal .reaction-instruction span{font-size:12px!important}
 @media(max-width:760px){.start-wrap .discovery-visitor-guide{padding:20px!important}.start-wrap .discovery-review-roadmap{grid-template-columns:1fr}.start-wrap .discovery-review-roadmap>div{padding:13px 15px}.start-wrap .first-reveal .discovery-idea-heading{font-size:31px!important}}
+
+
+/* Development-wide readability and guided Idea Room refinement. */
+body{font-size:17px;line-height:1.65}
+main p,main li{line-height:1.65}
+main small{font-size:13px}
+main .eyebrow,main .preview-kicker{font-size:12px;line-height:1.45}
+main button,main a.button{min-height:42px}
+.start-wrap .idea-room{background:#152b3b;color:#f8f5ed;padding:28px 28px 24px}
+.start-wrap .idea-room-head>span{font-size:12px!important;letter-spacing:.08em!important;color:#e2bb78!important}
+.start-wrap .idea-room-head h3{font-size:clamp(25px,2.7vw,34px)!important;line-height:1.25!important;color:#fff9ef!important;margin:10px 0 14px!important}
+.start-wrap .idea-room-head>p{font-size:16px!important;line-height:1.7!important;color:#f3f2ed!important;max-width:70ch}
+.start-wrap .idea-room-directions{background:#f7f3e9;color:#1a3041;padding:18px 21px;margin:22px 0 24px;border-left:4px solid #bb8b42}
+.start-wrap .idea-room-directions>b{display:block;font-size:13px;letter-spacing:.08em;color:#7b5929}
+.start-wrap .idea-room-directions p{font-size:16px!important;line-height:1.7!important;color:#243747!important;margin:8px 0 0}
+.start-wrap .idea-shapes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+.start-wrap .idea-shapes>button{height:auto!important;min-height:170px!important;padding:20px!important;text-align:left;border:1px solid #60717b!important;background:#203745!important;color:#fff!important;transition:background .15s,border-color .15s}
+.start-wrap .idea-shapes>button:hover{background:#2a4657!important;border-color:#dfba7e!important}
+.start-wrap .idea-shapes>button.selected{background:#29465a!important;border:2px solid #e6bf7d!important;box-shadow:inset 0 0 0 2px #29465a}
+.start-wrap .idea-shapes>button b{font-size:12px!important;line-height:1.5!important;letter-spacing:.07em!important;color:#f0c77f!important}
+.start-wrap .idea-shapes>button strong{font-size:20px!important;line-height:1.35!important;color:#fff!important;display:block;margin:10px 0}
+.start-wrap .idea-shapes>button p{font-size:15px!important;line-height:1.6!important;color:#f4f2ee!important;margin:0}
+.start-wrap .idea-room-test{background:#f6f2e9;color:#243747;padding:20px 22px;margin:20px 0 0}
+.start-wrap .idea-room-test>span{font-size:12px!important;color:#886332!important}
+.start-wrap .idea-room-test>strong{display:block;font-size:21px!important;line-height:1.35!important;color:#243747!important;margin:8px 0}
+.start-wrap .idea-room-test p{font-size:15px!important;line-height:1.65!important;color:#384b59!important}
+.start-wrap .preview-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
+.start-wrap .preview-actions>.button{font-size:15px!important;line-height:1.45!important;padding:13px 18px!important;min-height:50px}
+.start-wrap .preview-actions>.text-button{background:#f7f3e9!important;color:#172e40!important;border:1px solid #d4b785!important;font-weight:700!important}
+.start-wrap .preview-actions>.text-button:hover{background:#eadfc9!important}
+@media(max-width:760px){.start-wrap .idea-room{padding:20px 16px}.start-wrap .idea-shapes{grid-template-columns:1fr}.start-wrap .idea-shapes>button{min-height:0!important}.start-wrap .preview-actions>.button{width:100%;text-align:center}}
