@@ -479,3 +479,14 @@ main button,main a.button{min-height:42px}
 .think-tank-case .think-tank-audience-list li:before{content:"✓";left:18px!important;top:18px!important;font-size:23px!important;font-weight:800!important;color:#96682e!important}
 .think-tank-case .think-tank-audience-list li strong{display:block;font-size:19px!important;line-height:1.35!important;color:#102a3d!important;margin-bottom:4px}
 @media(max-width:760px){.think-tank-case .think-tank-audience-list li{font-size:17px!important;padding:17px 15px 17px 46px!important}.think-tank-case .think-tank-audience-list li strong{font-size:18px!important}}
+
+
+/* Homepage audience: premium navy editorial feature cards. */
+.think-tank-case .think-tank-audience-list{gap:15px 18px!important;margin:24px 0 23px!important}
+.think-tank-case .think-tank-audience-list li{background:#142d40!important;border:1px solid #314c5e!important;border-radius:3px!important;box-shadow:0 7px 20px rgba(17,39,56,.13)!important;padding:22px 23px!important;min-height:145px;color:#e9e7e2!important;display:flex!important;flex-direction:column;align-items:flex-start;justify-content:center;gap:5px;font-size:16px!important;line-height:1.5!important}
+.think-tank-case .think-tank-audience-list li:before{content:none!important;display:none!important}
+.think-tank-case .think-tank-audience-list .audience-number{display:block;color:#d8b47b!important;font-size:13px!important;letter-spacing:.12em;font-weight:700;margin-bottom:7px}
+.think-tank-case .think-tank-audience-list li strong{display:block;color:#fff!important;font-family:Georgia,serif;font-weight:400;font-size:clamp(21px,2.2vw,26px)!important;line-height:1.2!important;margin:0 0 3px!important}
+.think-tank-case .think-tank-audience-list li>span:last-child{color:#eee9e1!important;font-size:16px!important;line-height:1.5!important}
+.think-tank-case .think-tank-audience-transition{font-family:Georgia,serif;font-size:21px!important;line-height:1.5!important;font-style:italic;color:#75572f!important;margin:17px 0 25px!important}
+@media(max-width:760px){.think-tank-case .think-tank-audience-list li{min-height:125px!important;padding:19px!important}.think-tank-case .think-tank-audience-list li strong{font-size:23px!important}.think-tank-case .think-tank-audience-transition{font-size:19px!important}}
