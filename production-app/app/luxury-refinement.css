@@ -622,3 +622,36 @@ main button,main a.button{min-height:42px}
 .start-wrap .discovery-map .map-challenge p{font-size:16px!important;line-height:1.65!important}
 .start-wrap .discovery-map .map-challenge button{font-size:14px!important;line-height:1.5!important;min-height:45px!important}
 @media(max-width:760px){.start-wrap .push-further{padding:19px!important}.start-wrap .push-further .cross-boundaries{grid-template-columns:1fr!important}.start-wrap .push-further .cross-boundaries article{min-height:0!important}}
+
+
+/* Site-wide typography normalization: readable UI and consistent editorial hierarchy. */
+:root{--dbd-body-size:16px;--dbd-caption-size:13px;--dbd-label-size:13px}
+body{font-family:Arial,Helvetica,sans-serif!important;font-size:var(--dbd-body-size)!important;line-height:1.65!important}
+main p,main li,main label,main input,main textarea,main select{line-height:1.6}
+main p,main li{font-size:clamp(15px,1.05vw,17px)}
+main button,main input,main textarea,main select{font-family:Arial,Helvetica,sans-serif!important;font-size:max(14px,1em)}
+main button{line-height:1.4!important}
+main small,main .eyebrow,main [class*="section-label"]{font-family:Arial,Helvetica,sans-serif!important;font-size:var(--dbd-caption-size)!important;line-height:1.5!important}
+main h1,main h2,main h3,main h4{font-family:Georgia,"Times New Roman",serif;line-height:1.23}
+main h4{font-size:clamp(19px,2vw,23px)}
+/* Wild Cards: one consistent type system, no eight-pixel labels or controls. */
+.start-wrap .wildcards{color:#1c3445!important;padding:28px 24px!important}
+.start-wrap .wildcard-head>span{font:750 13px/1.5 Arial,Helvetica,sans-serif!important;letter-spacing:.09em!important;color:#77572e!important}
+.start-wrap .wildcard-head h3{font:400 clamp(25px,3vw,34px)/1.25 Georgia,serif!important;color:#183247!important}
+.start-wrap .wildcard-head p{font:400 16px/1.65 Arial,Helvetica,sans-serif!important;color:#344b5b!important}
+.start-wrap .wildcard-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:13px!important}
+.start-wrap .wildcard-grid article{min-width:0;padding:20px!important;border:1px solid #e0d8cb!important;border-top:3px solid #ad854c!important;background:#fff!important}
+.start-wrap .wildcard-grid small{font:750 12px/1.5 Arial,Helvetica,sans-serif!important;letter-spacing:.035em!important;color:#79572d!important;margin-bottom:11px!important}
+.start-wrap .wildcard-grid article>b{font:400 21px/1.35 Georgia,serif!important;color:#173247!important;overflow-wrap:anywhere}
+.start-wrap .wildcard-grid article p{font:400 15px/1.65 Arial,Helvetica,sans-serif!important;color:#354b59!important;margin:11px 0!important}
+.start-wrap .wildcard-grid article p strong{font:750 13px/1.45 Arial,Helvetica,sans-serif!important;letter-spacing:0!important;color:#193548!important}
+.start-wrap .wildcard-reaction{background:#183244!important;padding:22px!important}
+.start-wrap .wildcard-reaction>b{font:750 14px/1.5 Arial,Helvetica,sans-serif!important;letter-spacing:.045em!important;color:#e6c18a!important}
+.start-wrap .wildcard-reaction>p{font:400 16px/1.65 Arial,Helvetica,sans-serif!important;color:#f1eee7!important;margin:9px 0!important}
+.start-wrap .wildcard-actions{gap:9px!important;margin-top:16px!important}
+.start-wrap .wildcard-actions button{font:750 13px/1.4 Arial,Helvetica,sans-serif!important;letter-spacing:0!important;padding:12px 14px!important;min-height:44px!important;border-color:#80919e!important}
+.start-wrap .wildcard-next>span{font:750 13px/1.5 Arial,Helvetica,sans-serif!important;color:#e5c08a!important}
+.start-wrap .wildcard-next textarea{font:400 16px/1.6 Arial,Helvetica,sans-serif!important;min-height:95px}
+.start-wrap .micro-experiment b,.start-wrap .experiment-card>span{font:750 13px/1.5 Arial,Helvetica,sans-serif!important;letter-spacing:.04em!important}
+.start-wrap .micro-experiment p,.start-wrap .experiment-card p{font-size:15px!important;line-height:1.65!important}
+@media(max-width:850px){.start-wrap .wildcard-grid{grid-template-columns:1fr!important}.start-wrap .wildcards{padding:20px 15px!important}}
