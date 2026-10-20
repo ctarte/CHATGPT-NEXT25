@@ -449,3 +449,23 @@ main button,main a.button{min-height:42px}
 .blueprint-preview .blueprint-actions .button.gold{background:#c6a16a!important;color:#132b3c!important;border-color:#c6a16a!important;font-weight:700!important}
 .blueprint-preview .blueprint-actions .blueprint-compare-button{background:transparent!important;color:#fff!important;border:1px solid #b6c5ce!important}
 @media(max-width:760px){.think-tank-audience-list{grid-template-columns:1fr}.blueprint-preview .blueprint-actions .button{width:100%;text-align:center}}
+
+
+/* Blueprint: guide first, report second. */
+.blueprint-hero .blueprint-hero-main{max-width:1040px;margin:0 auto}
+.blueprint-hero .blueprint-hero-main>h1{font-size:clamp(44px,5.6vw,70px)!important;line-height:1.07!important;max-width:900px;margin-bottom:22px!important}
+.blueprint-hero .blueprint-hero-main>.lead{font-size:19px!important;line-height:1.65!important;max-width:820px}
+.blueprint-hero .blueprint-hero-guide{background:#f7f3ea;color:#1b3242;border-left:4px solid #c29b60;padding:24px 29px;margin:29px 0 26px;max-width:980px}
+.blueprint-hero .blueprint-hero-guide h2{font-family:Georgia,serif;font-size:27px!important;line-height:1.3!important;color:#1c3445!important;margin:0 0 16px}
+.blueprint-hero .blueprint-hero-guide ol{padding-left:23px;margin:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px 27px}
+.blueprint-hero .blueprint-hero-guide li{font-size:16px!important;line-height:1.6!important;padding-left:3px;color:#283e4e!important}
+.blueprint-hero .blueprint-hero-guide li::marker{color:#9b713c;font-weight:700}
+.blueprint-hero .blueprint-hero-guide li strong{display:block;color:#1c3445;font-size:17px}
+.blueprint-hero .blueprint-hero-guide>p{font-size:15px!important;line-height:1.6!important;margin:17px 0 0!important;color:#526371!important}
+.blueprint-hero .blueprint-hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.blueprint-hero .blueprint-hero-actions .button{font-size:15px!important;min-height:49px!important;line-height:1.45!important;padding:13px 19px!important}
+.blueprint-hero .blueprint-hero-actions .blueprint-continue-button{background:#e2c28d;color:#172e40!important;border:1px solid #e2c28d;font-weight:700}
+.blueprint-hero .blueprint-hero-actions .blueprint-continue-button:hover{background:#f0d6a9}
+.blueprint-readiness{scroll-margin-top:95px}
+.blueprint-summary{scroll-margin-top:95px}
+@media(max-width:760px){.blueprint-hero .blueprint-hero-guide{padding:19px}.blueprint-hero .blueprint-hero-guide ol{grid-template-columns:1fr;gap:13px}.blueprint-hero .blueprint-hero-actions .button{width:100%;text-align:center}.blueprint-hero .blueprint-hero-main>h1{font-size:43px!important}}
