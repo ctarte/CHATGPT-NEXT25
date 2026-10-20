@@ -469,3 +469,13 @@ main button,main a.button{min-height:42px}
 .blueprint-readiness{scroll-margin-top:95px}
 .blueprint-summary{scroll-margin-top:95px}
 @media(max-width:760px){.blueprint-hero .blueprint-hero-guide{padding:19px}.blueprint-hero .blueprint-hero-guide ol{grid-template-columns:1fr;gap:13px}.blueprint-hero .blueprint-hero-actions .button{width:100%;text-align:center}.blueprint-hero .blueprint-hero-main>h1{font-size:43px!important}}
+
+
+/* Homepage final visual polish: no boxed note, stronger audience statements. */
+.blueprint-preview .blueprint-preview-guidance{background:transparent!important;border:0!important;border-left:0!important;padding:0!important;margin:18px 0 20px!important;color:#f2eee6!important;font-size:16px!important;line-height:1.7!important;max-width:64ch}
+.blueprint-preview .blueprint-preview-guidance strong{color:#e4c48c!important;font-weight:700}
+.think-tank-case .think-tank-audience-list{gap:16px 19px!important;margin:22px 0 31px!important}
+.think-tank-case .think-tank-audience-list li{background:#fffdfa!important;border:1px solid #d8c7aa!important;border-left:5px solid #b18a4f!important;border-radius:2px;padding:20px 20px 20px 50px!important;font-size:18px!important;line-height:1.5!important;color:#263b49!important;box-shadow:0 4px 14px rgba(26,42,51,.06)}
+.think-tank-case .think-tank-audience-list li:before{content:"✓";left:18px!important;top:18px!important;font-size:23px!important;font-weight:800!important;color:#96682e!important}
+.think-tank-case .think-tank-audience-list li strong{display:block;font-size:19px!important;line-height:1.35!important;color:#102a3d!important;margin-bottom:4px}
+@media(max-width:760px){.think-tank-case .think-tank-audience-list li{font-size:17px!important;padding:17px 15px 17px 46px!important}.think-tank-case .think-tank-audience-list li strong{font-size:18px!important}}
