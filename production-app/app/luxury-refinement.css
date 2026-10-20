@@ -490,3 +490,57 @@ main button,main a.button{min-height:42px}
 .think-tank-case .think-tank-audience-list li>span:last-child{color:#eee9e1!important;font-size:16px!important;line-height:1.5!important}
 .think-tank-case .think-tank-audience-transition{font-family:Georgia,serif;font-size:21px!important;line-height:1.5!important;font-style:italic;color:#75572f!important;margin:17px 0 25px!important}
 @media(max-width:760px){.think-tank-case .think-tank-audience-list li{min-height:125px!important;padding:19px!important}.think-tank-case .think-tank-audience-list li strong{font-size:23px!important}.think-tank-case .think-tank-audience-transition{font-size:19px!important}}
+
+
+/* Discovery Think Tank insight: intentional navy highlight, not another cream panel. */
+.start-wrap .first-reveal .possibility-reveal .imagine-bridge{
+ background:linear-gradient(135deg,#1a3b52 0%,#142b3c 100%)!important;
+ border:1px solid #446073!important;border-left:4px solid #d4af75!important;
+ box-shadow:0 10px 24px rgba(18,41,59,.14)!important;
+ border-radius:3px!important;padding:25px 27px!important;margin:25px 0 20px!important;
+ color:#f5f1e9!important
+}
+.start-wrap .first-reveal .possibility-reveal .imagine-bridge>span{
+ color:#e4c48b!important;font-size:13px!important;font-weight:750!important;
+ letter-spacing:.13em!important
+}
+.start-wrap .first-reveal .possibility-reveal .imagine-bridge h3{
+ color:#fff!important;font-family:Georgia,serif!important;
+ font-size:clamp(23px,2.5vw,29px)!important;line-height:1.3!important;
+ margin:10px 0 17px!important
+}
+.start-wrap .first-reveal .possibility-reveal .imagine-bridge .imagine-equation{
+ display:flex!important;flex-wrap:wrap!important;align-items:center!important;
+ gap:8px 10px!important;margin:14px 0 19px!important
+}
+.start-wrap .first-reveal .possibility-reveal .imagine-bridge .imagine-equation strong,
+.start-wrap .first-reveal .possibility-reveal .imagine-bridge .imagine-equation em{
+ background:#294b61!important;color:#fff!important;border:1px solid #557187!important;
+ padding:10px 12px!important;border-radius:3px!important;
+ font-size:14px!important;line-height:1.5!important;font-weight:650!important;
+ font-style:normal!important;overflow-wrap:anywhere
+}
+.start-wrap .first-reveal .possibility-reveal .imagine-bridge .imagine-equation em{
+ background:#e1c18d!important;border-color:#e1c18d!important;
+ color:#162d3e!important;font-weight:750!important
+}
+.start-wrap .first-reveal .possibility-reveal .imagine-bridge .imagine-equation i,
+.start-wrap .first-reveal .possibility-reveal .imagine-bridge .imagine-equation b{
+ color:#e5bf83!important;font-size:20px!important;font-weight:750!important;
+ font-style:normal!important
+}
+.start-wrap .first-reveal .possibility-reveal .imagine-bridge>p{
+ color:#f1f0ea!important;font-size:16px!important;line-height:1.7!important;
+ margin:13px 0!important;max-width:68ch
+}
+.start-wrap .first-reveal .possibility-reveal .imagine-bridge>small{
+ display:block!important;color:#e5d3b6!important;font-size:13px!important;
+ line-height:1.55!important;letter-spacing:.035em!important;
+ border-top:1px solid #587083!important;padding-top:14px!important;margin-top:17px!important
+}
+.start-wrap .first-reveal .possibility-reveal .imagine-bridge>small b{color:#fff!important;font-size:14px!important}
+@media(max-width:760px){
+ .start-wrap .first-reveal .possibility-reveal .imagine-bridge{padding:20px 16px!important}
+ .start-wrap .first-reveal .possibility-reveal .imagine-bridge .imagine-equation strong,
+ .start-wrap .first-reveal .possibility-reveal .imagine-bridge .imagine-equation em{font-size:13px!important}
+}
