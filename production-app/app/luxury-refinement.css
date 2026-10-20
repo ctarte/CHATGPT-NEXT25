@@ -544,3 +544,59 @@ main button,main a.button{min-height:42px}
  .start-wrap .first-reveal .possibility-reveal .imagine-bridge .imagine-equation strong,
  .start-wrap .first-reveal .possibility-reveal .imagine-bridge .imagine-equation em{font-size:13px!important}
 }
+
+
+/* Discovery accessibility pass: readable text in every contrasting panel. */
+.start-wrap .discovery-orientation{
+ background:#183549!important;border:1px solid #34556a!important;
+ border-left:4px solid #cda66c!important;color:#fff!important;
+ padding:23px 25px!important;margin:17px 0 20px!important
+}
+.start-wrap .discovery-orientation h2,
+.start-wrap .discovery-orientation h3{
+ color:#fff!important;font-size:clamp(23px,2.6vw,29px)!important;
+ line-height:1.3!important;margin:0 0 9px!important
+}
+.start-wrap .discovery-orientation p,
+.start-wrap .discovery-orientation strong,
+.start-wrap .discovery-orientation span{
+ color:#f3f0e8!important;font-size:16px!important;line-height:1.7!important
+}
+.start-wrap .knowledge-module{background:#fbfaf7!important;color:#1b3446!important;border:1px solid #e0d6c6!important;border-top:4px solid #a77f49!important;padding:26px 28px!important}
+.start-wrap .knowledge-module .discovery-chapter-heading{
+ background:transparent!important;color:#1c3546!important;
+ border:0!important;border-left:4px solid #b58b52!important;
+ padding:0 0 0 18px!important;margin:0 0 22px!important
+}
+.start-wrap .knowledge-module .discovery-chapter-heading h2{color:#172f43!important;font-size:clamp(24px,2.7vw,31px)!important;line-height:1.3!important}
+.start-wrap .knowledge-module .discovery-chapter-heading .discovery-section-label{color:#815d2e!important;font-size:12px!important}
+.start-wrap .knowledge-module .discovery-section-help{
+ background:#f4efe6!important;color:#1b3548!important;
+ border-left:3px solid #ae824a!important;padding:14px 16px!important;
+ font-size:15px!important;line-height:1.65!important
+}
+.start-wrap .knowledge-module .discovery-section-help strong{color:#142e42!important}
+.start-wrap .knowledge-module .knowledge-intro{color:#2a4050!important;font-size:16px!important;line-height:1.7!important}
+.start-wrap .discovery-field{background:#152c3e!important;color:#f4f0e8!important}
+.start-wrap .discovery-field .field-lead,
+.start-wrap .discovery-field>.discovery-section-help,
+.start-wrap .discovery-field .discovery-section-help,
+.start-wrap .discovery-field>p,
+.start-wrap .discovery-field .field-stats span{color:#f5f2ec!important}
+.start-wrap .discovery-field .discovery-section-help{
+ font-size:16px!important;line-height:1.7!important;
+ background:#254357!important;border-left:3px solid #d6b17a!important;
+ padding:16px 18px!important;margin:17px 0 20px!important
+}
+.start-wrap .discovery-field .discovery-section-help strong,
+.start-wrap .discovery-field .discovery-section-help b{color:#f4ce92!important}
+.start-wrap .discovery-field .field-lead{font-size:16px!important;line-height:1.7!important}
+.start-wrap .discovery-field .field-stats strong{color:#e5bf81!important}
+.start-wrap .discovery-field .field-columns article{
+ background:#fffdfa!important;color:#1c3546!important
+}
+.start-wrap .discovery-field .field-columns article p,
+.start-wrap .discovery-field .field-columns article h3,
+.start-wrap .discovery-field .field-columns article strong{color:#1b3446!important}
+.start-wrap .discovery-field .field-columns article small{color:#795b34!important}
+@media(max-width:760px){.start-wrap .knowledge-module{padding:19px!important}.start-wrap .discovery-orientation{padding:19px!important}}
