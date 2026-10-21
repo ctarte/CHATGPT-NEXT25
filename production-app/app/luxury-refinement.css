@@ -777,3 +777,30 @@ main .discovery-progress span{font-size:13px!important}
 .start-wrap .field-columns article>small,.start-wrap .field-columns article>span,
 .start-wrap .field-columns .unexpected-column>b{color:#21445f!important;font-size:13px!important;line-height:1.5!important}
 @media(max-width:760px){.start-wrap .discovery-expand>summary .discovery-profile-action{max-width:150px!important}.start-wrap .field-columns .field-actions button{width:100%!important}}
+
+
+/* Workspace and report readability audit — replaces legacy 7–11px microtype. */
+:is(.field-workspace,.experiment-page,.brief-center,.blueprint-preview,.discovery-dash,.start-wrap) :is(
+ .field-column-head>span,.field-column-head p,.field-card small,.field-card label,
+ .field-card>a,.workspace-boundary,.experiment-form span,.experiment-plan dt,
+ .experiment-principle b,.experiment-after article b,.brief-list>p,.brief-list small,
+ .brief-detail section>span,.investigation-rail dt,.investigation-rail small,
+ .assembly-flow span,.assembly-flow small,.assembly-boundary,.record-stats span,
+ .record-panel>small,.dash-metrics span,.dash-note,.round-complete span,
+ .quick-layer>small,.brief-experiment span,.brief-disclaimer,.sample-signals span,
+ .sample-page>span,.sample-page>b,.blueprint-close small,.field-columns>section>b,
+ .field-columns article small,.field-stats span,.noticed-board span,.search-next span,
+ .outside-eyes>span,.outside-eyes>div b,.imagine-bridge>span,.imagine-bridge small,
+ .notice-insight span,.refinement-proof>span,.reaction-instruction span,
+ .idea-room-head>span,.idea-room-test>span,.idea-shapes article>b,
+ .idea-shapes button>b,.clue-note span,.clue-recap span b,.session-rule span
+){font-family:Arial,Helvetica,sans-serif!important;font-size:13px!important;line-height:1.5!important;letter-spacing:.025em!important}
+:is(.field-workspace,.experiment-page,.brief-center,.blueprint-preview,.discovery-dash,.start-wrap) :is(
+ .field-card select,.discovery-dash aside button,.brief-close,.field-actions button
+){font-family:Arial,Helvetica,sans-serif!important;font-size:14px!important;line-height:1.45!important;min-height:40px}
+:is(.field-workspace,.experiment-page,.brief-center,.blueprint-preview,.discovery-dash) :is(
+ .field-workspace>header,.experiment-page>header,.brief-center>header
+){font-size:15px!important;line-height:1.6!important}
+.start-wrap .knowledge-module .knowledge-intro,.start-wrap .profile-card .profile-note{font-size:16px!important;line-height:1.65!important}
+.start-wrap .knowledge-module .discovery-section-help{background:#e9eff3!important;color:#1f4056!important;border-left:4px solid #315d79!important}
+.start-wrap .knowledge-module .discovery-section-help strong{color:#173f5c!important}
