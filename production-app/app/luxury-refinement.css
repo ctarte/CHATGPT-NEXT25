@@ -804,3 +804,55 @@ main .discovery-progress span{font-size:13px!important}
 .start-wrap .knowledge-module .knowledge-intro,.start-wrap .profile-card .profile-note{font-size:16px!important;line-height:1.65!important}
 .start-wrap .knowledge-module .discovery-section-help{background:#e9eff3!important;color:#1f4056!important;border-left:4px solid #315d79!important}
 .start-wrap .knowledge-module .discovery-section-help strong{color:#173f5c!important}
+
+
+/* Definitive chapter-label overrides: supersede old gold-specific rules. */
+body .start-wrap .discovery-chapter-heading .discovery-section-label,
+body .start-wrap .discovery-expand#discovery-profile>summary .discovery-section-label,
+body .start-wrap .discovery-map .map-head .discovery-section-label,
+body .start-wrap .discovery-journal .discovery-section-label,
+body .start-wrap .discovery-field .discovery-section-label,
+body .start-wrap .next-lanes .discovery-section-label{
+ color:#173e5b!important;font:800 15px/1.5 Arial,Helvetica,sans-serif!important;
+ letter-spacing:.035em!important;display:block!important;margin:0 0 7px!important;
+ opacity:1!important;text-transform:uppercase!important
+}
+body .start-wrap .discovery-chapter-heading,
+body .start-wrap .discovery-expand#discovery-profile>summary{
+ border-left:5px solid #254f6b!important;border-top-color:#d2dce2!important;
+ border-right-color:#d2dce2!important;border-bottom-color:#d2dce2!important
+}
+/* White and light-gold text on navy: avoid low-contrast inherited label colors. */
+body .start-wrap .profile-card .search-next{background:#172f42!important}
+body .start-wrap .profile-card .search-next>span{color:#f0cb91!important;font:800 14px/1.5 Arial,Helvetica,sans-serif!important;letter-spacing:.045em!important}
+body .start-wrap .profile-card .search-next>p{color:#f6f7f7!important;font:400 16px/1.65 Arial,Helvetica,sans-serif!important}
+body .start-wrap .round-complete{background:#18354b!important}
+body .start-wrap .round-complete>span{color:#f0c88b!important;font:800 13px/1.5 Arial,Helvetica,sans-serif!important}
+body .start-wrap .round-complete>strong,body .start-wrap .round-complete>p{color:#fff!important}
+body .start-wrap .push-further :is(span,b,strong,p,h3){opacity:1}
+body .start-wrap .push-further .cross-boundaries article b{color:#f3ce95!important}
+body .start-wrap .push-further .cross-boundaries article p{color:#fff!important}
+/* Same two-column interaction design and selected state for map and field actions. */
+body .start-wrap .discovery-map .map-challenge>div:first-of-type{
+ display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;
+ gap:10px!important
+}
+body .start-wrap .discovery-map .map-challenge>div:first-of-type button,
+body .start-wrap .discovery-field .field-columns .field-actions button{
+ background:#fff!important;color:#173e5b!important;border:1px solid #aebec9!important;
+ border-radius:3px!important;font:750 14px/1.45 Arial,Helvetica,sans-serif!important;
+ letter-spacing:0!important;min-height:48px!important;padding:12px 13px!important;
+ text-align:center!important;box-shadow:none!important
+}
+body .start-wrap .discovery-map .map-challenge>div:first-of-type button.active,
+body .start-wrap .discovery-field .field-columns .field-actions button.active{
+ background:#1d4560!important;color:#fff!important;border:2px solid #1d4560!important;
+ box-shadow:inset 0 0 0 2px #fff!important
+}
+body .start-wrap .discovery-map .map-challenge>div:first-of-type button.active::before,
+body .start-wrap .discovery-field .field-columns .field-actions button.active::before{content:"✓ ";font-weight:800}
+body .start-wrap .discovery-map .map-challenge>span{color:#214a66!important;font:800 14px/1.5 Arial,Helvetica,sans-serif!important}
+body .start-wrap .discovery-map .map-challenge>p{color:#2c4659!important;font-size:16px!important;line-height:1.65!important}
+body .start-wrap .discovery-map .map-challenge textarea{font:400 16px/1.6 Arial,Helvetica,sans-serif!important;color:#1e3c51!important}
+body .start-wrap .discovery-map .map-challenge small{font:400 13px/1.5 Arial,Helvetica,sans-serif!important;color:#465c6a!important}
+@media(max-width:600px){body .start-wrap .discovery-map .map-challenge>div:first-of-type{grid-template-columns:1fr!important}}
