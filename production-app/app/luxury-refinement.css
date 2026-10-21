@@ -689,3 +689,40 @@ main .discovery-progress span{font-size:13px!important}
  main .reaction-buttons button,main .wildcard-actions button{font-size:14px!important}
  main .intelligence-grid,main .direction-board{grid-template-columns:1fr}
 }
+
+
+/* Discovery visual navigation and accessibility: navy on ivory, not pale gold on cream. */
+.start-wrap .discovery-chapter-heading .discovery-section-label,
+.start-wrap .discovery-profile-title .discovery-section-label,
+.start-wrap .knowledge-module .discovery-section-label,
+.start-wrap .discovery-section-label{
+ color:#173c56!important;font:800 15px/1.5 Arial,Helvetica,sans-serif!important;
+ letter-spacing:.045em!important;opacity:1!important;
+}
+.start-wrap .discovery-chapter-heading{border-left:5px solid #254c68!important;padding-left:18px!important}
+.start-wrap .discovery-profile-title .discovery-section-label{display:block!important}
+.start-wrap .discovery-orientation{background:#1d3c53!important;color:#fff!important;border-left:5px solid #c7a66c!important}
+.start-wrap .discovery-orientation h2,.start-wrap .discovery-orientation p,
+.start-wrap .discovery-orientation strong{color:#fff!important}
+.start-wrap .discovery-orientation p{font:400 16px/1.75 Arial,Helvetica,sans-serif!important;margin:13px 0!important}
+.start-wrap .discovery-guide{background:#e5edf2!important;border:1px solid #bccdd8!important;color:#1d3a50!important}
+.start-wrap .discovery-guide>summary,.start-wrap .discovery-guide>summary span,
+.start-wrap .discovery-guide li,.start-wrap .discovery-guide>p,
+.start-wrap .discovery-guide li a{color:#1d3a50!important;font-size:15px!important}
+.start-wrap .discovery-guide>summary{font-weight:750!important;padding:15px!important}
+.start-wrap .summary-cards-intro{margin:24px 0 14px;padding:17px 20px;background:#e8eff3;border-left:5px solid #254c68}
+.start-wrap .summary-cards-intro>span{display:block;font:800 14px/1.5 Arial,Helvetica,sans-serif;letter-spacing:.05em;color:#204761}
+.start-wrap .summary-cards-intro h2{font:400 clamp(21px,2.4vw,27px)/1.3 Georgia,serif;color:#173c56;margin:7px 0}
+.start-wrap .summary-cards-intro p{font:400 16px/1.65 Arial,Helvetica,sans-serif;color:#29465a;margin:7px 0}
+.start-wrap .signal-panel>div{border-top:4px solid #254c68!important}
+.start-wrap .signal-panel span{color:#244b65!important;font:800 13px/1.5 Arial,Helvetica,sans-serif!important;letter-spacing:.045em!important}
+.start-wrap .signal-panel strong{font:400 20px/1.4 Georgia,serif!important;color:#17384d!important}
+.start-wrap .distinctive-lens .lens-grid article{background:#edf2f5!important;border:1px solid #cbd7de!important;padding:17px!important}
+.start-wrap .distinctive-lens .lens-grid article b{display:block!important;color:#1d4965!important;font:800 14px/1.45 Arial,Helvetica,sans-serif!important;letter-spacing:.025em!important;margin-bottom:10px!important}
+.start-wrap .distinctive-lens .lens-grid article p{color:#263e50!important;font:400 16px/1.65 Arial,Helvetica,sans-serif!important}
+.start-wrap .distinctive-lens>span{color:#1e4965!important;font-size:14px!important;letter-spacing:.04em!important}
+.start-wrap .distinctive-lens>p{color:#30495a!important;font-size:16px!important}
+.start-wrap .lens-equation b,.start-wrap .lens-equation strong{font-size:13px!important;line-height:1.5!important;color:#1d4863!important}
+.start-wrap .lens-equation i{color:#1d4863!important}
+.start-wrap .distinctive-lens small{color:#344b5b!important;font-size:14px!important;line-height:1.6!important}
+@media(max-width:760px){.start-wrap .summary-cards-intro{padding:15px}.start-wrap .discovery-orientation{padding:20px!important}.start-wrap .signal-panel strong{font-size:18px!important}}
