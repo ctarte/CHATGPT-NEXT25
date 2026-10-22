@@ -922,3 +922,29 @@ body .start-wrap .several-futures .future-instinct button.active{background:#fff
  body .start-wrap .discovery-expand#discovery-profile>summary .discovery-profile-action{max-width:160px!important;min-width:130px!important}
  body .start-wrap .several-futures .future-angles{grid-template-columns:1fr!important}
 }
+
+
+/* Navigation clarity: explanatory diagrams and cards are visibly noninteractive. */
+body .start-wrap .lens-explainer,
+body .start-wrap .future-instructions{
+ font:400 16px/1.65 Arial,Helvetica,sans-serif!important;
+ padding:13px 17px!important;margin:14px 0!important;
+ background:#eaf0f4!important;border-left:4px solid #315c79!important;color:#193c55!important
+}
+body .start-wrap .lens-explainer strong,
+body .start-wrap .future-instructions strong{color:#173d59!important;font-weight:800!important}
+body .start-wrap .several-futures .future-instructions{
+ background:#29465b!important;border-color:#e1b977!important;color:#fff!important
+}
+body .start-wrap .several-futures .future-instructions strong{color:#f5d5a2!important}
+body .start-wrap .lens-equation .lens-result{
+ display:inline-block!important;background:#e8eff3!important;color:#173e5b!important;
+ border:1px solid #b8cbd8!important;padding:7px 10px!important;
+ font:800 14px/1.45 Arial,Helvetica,sans-serif!important;letter-spacing:.015em!important;
+ cursor:default!important
+}
+body .start-wrap .lens-equation,
+body .start-wrap .future-angles article{cursor:default!important}
+body .start-wrap .discovery-section-help{font:400 16px/1.65 Arial,Helvetica,sans-serif!important}
+body .start-wrap .discovery-section-help strong{font-weight:800!important}
+body .start-wrap .discovery-orientation p{font-size:16px!important;line-height:1.7!important}
