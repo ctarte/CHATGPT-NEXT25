@@ -948,3 +948,22 @@ body .start-wrap .future-angles article{cursor:default!important}
 body .start-wrap .discovery-section-help{font:400 16px/1.65 Arial,Helvetica,sans-serif!important}
 body .start-wrap .discovery-section-help strong{font-weight:800!important}
 body .start-wrap .discovery-orientation p{font-size:16px!important;line-height:1.7!important}
+
+
+/* Discovery Journal: direct, unmistakable routes to corrections. */
+body .start-wrap .journal-review-actions{
+ display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;
+ margin:16px 0 5px!important
+}
+body .start-wrap .journal-review-actions a{
+ display:flex;align-items:center;justify-content:center;min-height:48px;
+ padding:12px 14px!important;background:#f7fafb!important;
+ border:1px solid #9ab2c2!important;border-radius:3px!important;
+ color:#173e5b!important;text-decoration:none!important;
+ font:750 14px/1.4 Arial,Helvetica,sans-serif!important;text-align:center!important
+}
+body .start-wrap .journal-review-actions a:hover{background:#e5eef3!important;border-color:#245573!important}
+body .start-wrap .journal-review-actions a.journal-next-action{
+ background:#1d4560!important;color:#fff!important;border-color:#1d4560!important
+}
+@media(max-width:620px){body .start-wrap .journal-review-actions{grid-template-columns:1fr}}
