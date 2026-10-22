@@ -967,3 +967,31 @@ body .start-wrap .journal-review-actions a.journal-next-action{
  background:#1d4560!important;color:#fff!important;border-color:#1d4560!important
 }
 @media(max-width:620px){body .start-wrap .journal-review-actions{grid-template-columns:1fr}}
+
+
+/* Contextual return path after a Journal-initiated correction. */
+body .start-wrap .return-to-journal{
+ display:inline-flex!important;align-items:center!important;justify-content:center!important;
+ margin:10px 0 20px!important;min-height:48px!important;padding:12px 18px!important;
+ background:#1c4560!important;color:#fff!important;border:1px solid #1c4560!important;
+ border-radius:3px!important;cursor:pointer!important;
+ font:750 15px/1.4 Arial,Helvetica,sans-serif!important;letter-spacing:0!important
+}
+body .start-wrap .return-to-journal:hover{background:#2b5d7b!important}
+body .start-wrap .discovery-journal .journal-pages article small,
+body .start-wrap .discovery-journal .journal-pages article p,
+body .start-wrap .discovery-journal .journal-pages article h3{
+ opacity:1!important
+}
+body .start-wrap .discovery-journal .journal-pages article small{
+ color:#254b67!important;font:800 13px/1.5 Arial,Helvetica,sans-serif!important
+}
+body .start-wrap .discovery-journal .journal-pages article p{
+ color:#304b5c!important;font:400 15px/1.65 Arial,Helvetica,sans-serif!important
+}
+body .start-wrap .discovery-journal .journal-pages article h3{
+ color:#17384e!important;font-size:17px!important;line-height:1.45!important
+}
+body .start-wrap .discovery-journal .journal-intro>p{
+ color:#345064!important;font:400 16px/1.65 Arial,Helvetica,sans-serif!important
+}
