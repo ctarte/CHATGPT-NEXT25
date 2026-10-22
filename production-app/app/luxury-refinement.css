@@ -856,3 +856,69 @@ body .start-wrap .discovery-map .map-challenge>p{color:#2c4659!important;font-si
 body .start-wrap .discovery-map .map-challenge textarea{font:400 16px/1.6 Arial,Helvetica,sans-serif!important;color:#1e3c51!important}
 body .start-wrap .discovery-map .map-challenge small{font:400 13px/1.5 Arial,Helvetica,sans-serif!important;color:#465c6a!important}
 @media(max-width:600px){body .start-wrap .discovery-map .map-challenge>div:first-of-type{grid-template-columns:1fr!important}}
+
+
+/* Accessible orientation, chapter action and distinctive-direction contrast. */
+body .start-wrap .discovery-resume-guide{
+ background:#1c3c54!important;border:1px solid #2b526e!important;
+ border-left:5px solid #c7a66c!important;border-radius:4px!important;
+ padding:26px 30px!important;color:#fff!important;
+ box-shadow:0 8px 22px rgba(16,41,59,.10)!important;
+}
+body .start-wrap .discovery-resume-guide .eyebrow,
+body .start-wrap .discovery-resume-guide p.eyebrow.dark{
+ color:#f3cc92!important;font:800 14px/1.5 Arial,Helvetica,sans-serif!important;letter-spacing:.06em!important
+}
+body .start-wrap .discovery-resume-guide h2{color:#fff!important;font:400 clamp(26px,3vw,34px)/1.25 Georgia,serif!important}
+body .start-wrap .discovery-resume-guide p:not(.eyebrow),
+body .start-wrap .discovery-resume-guide strong{color:#fff!important;font:400 16px/1.7 Arial,Helvetica,sans-serif!important}
+body .start-wrap .discovery-resume-guide strong{font-weight:750!important}
+body .start-wrap .discovery-resume-guide a{
+ display:inline-block!important;background:#fff!important;color:#153d59!important;
+ font:750 15px/1.4 Arial,Helvetica,sans-serif!important;
+ border-radius:3px!important;padding:13px 18px!important;
+ text-decoration:none!important;margin-top:10px!important
+}
+body .start-wrap .discovery-expand#discovery-profile>summary .discovery-profile-action{
+ display:inline-flex!important;align-items:center!important;justify-content:center!important;
+ max-width:200px!important;min-width:145px!important;min-height:45px!important;
+ background:#1d4560!important;color:#fff!important;border-radius:3px!important;
+ font:750 14px/1.35 Arial,Helvetica,sans-serif!important;
+ padding:10px 14px!important;text-align:center!important;letter-spacing:0!important
+}
+body .start-wrap .discovery-expand#discovery-profile>summary .discovery-profile-action:hover{background:#2d5b78!important}
+body .start-wrap .several-futures{background:#172f42!important;color:#fff!important}
+body .start-wrap .several-futures>span{color:#f3ce96!important;font:800 14px/1.5 Arial,Helvetica,sans-serif!important;letter-spacing:.04em!important}
+body .start-wrap .several-futures>h3{color:#fff!important}
+body .start-wrap .several-futures>p{color:#eef3f5!important;font:400 16px/1.65 Arial,Helvetica,sans-serif!important}
+body .start-wrap .several-futures .future-angles article{background:#2c4453!important;border:1px solid #60798b!important;color:#fff!important}
+body .start-wrap .several-futures .future-angles article small{
+ display:block!important;color:#f3cf9b!important;font:800 14px/1.5 Arial,Helvetica,sans-serif!important;letter-spacing:.025em!important
+}
+body .start-wrap .several-futures .future-angles article b{
+ display:block!important;color:#fff!important;font:650 17px/1.4 Arial,Helvetica,sans-serif!important;
+ margin:10px 0!important;overflow-wrap:anywhere
+}
+body .start-wrap .several-futures .future-angles article p{color:#eef3f5!important;font:400 15px/1.65 Arial,Helvetica,sans-serif!important}
+body .start-wrap .several-futures .future-angles article.future-unexpected{
+ background:#f3f0e8!important;color:#19394f!important;border-color:#d5c9b6!important
+}
+body .start-wrap .several-futures .future-angles article.future-unexpected small,
+body .start-wrap .several-futures .future-angles article.future-unexpected b,
+body .start-wrap .several-futures .future-angles article.future-unexpected p{color:#173e5b!important}
+body .start-wrap .several-futures .future-angles article.future-unexpected small{font-weight:800!important}
+body .start-wrap .several-futures .future-angles article.future-unexpected p{font-size:15px!important}
+body .start-wrap .several-futures .future-instinct>span,
+body .start-wrap .several-futures .future-instinct small{color:#f1cc94!important;font-size:13px!important}
+body .start-wrap .several-futures .future-instinct p{color:#fff!important;font-size:16px!important}
+body .start-wrap .several-futures .future-instinct button{
+ color:#fff!important;font:750 14px/1.4 Arial,Helvetica,sans-serif!important;
+ min-height:44px!important;padding:11px 13px!important
+}
+body .start-wrap .several-futures .future-instinct button.selected,
+body .start-wrap .several-futures .future-instinct button.active{background:#fff!important;color:#173e5b!important}
+@media(max-width:700px){
+ body .start-wrap .discovery-resume-guide{padding:22px 18px!important}
+ body .start-wrap .discovery-expand#discovery-profile>summary .discovery-profile-action{max-width:160px!important;min-width:130px!important}
+ body .start-wrap .several-futures .future-angles{grid-template-columns:1fr!important}
+}
