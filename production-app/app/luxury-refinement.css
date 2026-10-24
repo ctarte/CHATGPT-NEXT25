@@ -1132,3 +1132,48 @@ body .start-wrap .discovery-color-guide-content strong{
  color:#173e5b!important;
  font-weight:750!important;
 }
+
+
+/* Accessibility correction: Section 03 heading and dark-panel form contrast.
+   Explicit selectors override earlier legacy styles without changing branding. */
+html body .start-wrap .knowledge-module .discovery-chapter-heading .discovery-section-label,
+html body .start-wrap .knowledge-module #discovery-raw-material,
+html body .start-wrap .discovery-chapter-heading .discovery-section-label{
+ color:#173e5b!important;
+ font-family:Arial,Helvetica,sans-serif!important;
+ font-size:15px!important;
+ font-weight:800!important;
+ letter-spacing:.035em!important;
+ line-height:1.5!important;
+ text-transform:uppercase!important;
+}
+html body .start-wrap .knowledge-prompts textarea,
+html body .start-wrap .outside-evidence textarea{
+ background:#ffffff!important;
+ color:#162f42!important;
+ border:1px solid #8ea4b3!important;
+ border-radius:3px!important;
+ font:400 17px/1.6 Arial,Helvetica,sans-serif!important;
+ padding:13px 15px!important;
+ caret-color:#173e5b!important;
+}
+html body .start-wrap .knowledge-prompts textarea::placeholder,
+html body .start-wrap .outside-evidence textarea::placeholder{
+ color:#536c7d!important;
+ opacity:1!important;
+}
+html body .start-wrap .knowledge-prompts label b,
+html body .start-wrap .outside-evidence label b{
+ color:#ffffff!important;
+ font:750 16px/1.5 Arial,Helvetica,sans-serif!important;
+}
+html body .start-wrap .knowledge-prompts label span,
+html body .start-wrap .outside-evidence label span{
+ color:#e3edf2!important;
+ font:400 16px/1.6 Arial,Helvetica,sans-serif!important;
+}
+html body .start-wrap .knowledge-prompts textarea:focus-visible,
+html body .start-wrap .outside-evidence textarea:focus-visible{
+ outline:3px solid #b9d6e8!important;
+ outline-offset:2px!important;
+}
