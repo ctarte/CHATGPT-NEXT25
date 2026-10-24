@@ -1040,3 +1040,61 @@ body .start-wrap .outside-evidence textarea::placeholder{
 body .start-wrap .discovery-visitor-guide .discovery-back-to-clues{
  background:#fff!important;color:#173e5b!important
 }
+
+
+/* Discovery readability pass: consistent, legible hierarchy throughout 01–07. */
+body .start-wrap .discovery-section-label,
+body .start-wrap .discovery-chapter-heading .discovery-section-label{
+  font-family:Arial,Helvetica,sans-serif!important;
+  font-size:15px!important;
+  font-weight:800!important;
+  line-height:1.5!important;
+  letter-spacing:.035em!important;
+  color:#173e5b!important;
+}
+body .start-wrap .discovery-chapter-heading p,
+body .start-wrap .discovery-chapter-heading span:not(.discovery-section-label),
+body .start-wrap .journal-pages article p,
+body .start-wrap .discovery-map p,
+body .start-wrap .discovery-field p,
+body .start-wrap .discovery-journal p,
+body .start-wrap .opportunity-plain-language p{
+  font-size:16px!important;
+  line-height:1.7!important;
+  color:#263f50!important;
+}
+body .start-wrap .journal-pages article small,
+body .start-wrap .discovery-map small,
+body .start-wrap .discovery-field small,
+body .start-wrap .discovery-journal small{
+  font-size:14px!important;
+  line-height:1.55!important;
+  color:#355367!important;
+}
+body .start-wrap .journal-pages article strong,
+body .start-wrap .journal-pages article b,
+body .start-wrap .discovery-map strong,
+body .start-wrap .discovery-map b{
+  font-weight:750!important;
+  color:#173e5b!important;
+}
+body .start-wrap .opportunity-plain-language{
+  margin:18px 0!important;
+  padding:20px 22px!important;
+  background:#f3f0e9!important;
+  border-left:3px solid #aa854c!important;
+}
+body .start-wrap .opportunity-plain-language>strong{
+  display:block!important;
+  margin-bottom:8px!important;
+  font-size:15px!important;
+  font-weight:800!important;
+  color:#173e5b!important;
+}
+body .start-wrap button,
+body .start-wrap .button{
+  font-size:max(15px,1em);
+}
+@media(max-width:700px){
+ body .start-wrap .opportunity-plain-language{padding:16px!important}
+}
