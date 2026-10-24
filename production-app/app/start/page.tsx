@@ -59,6 +59,8 @@ export default function Page(){
  const [returnToJournal,setReturnToJournal]=useState(false);
  const goBackToJournal=()=>{setReturnToJournal(false);document.getElementById("discovery-journal")?.scrollIntoView({behavior:"smooth",block:"start"});window.history.replaceState(null,"","#discovery-journal")};
  const [stage,setStage]=useState(1),[pick,setPick]=useState("");
+ // Stage changes replace the visible page content; always begin the new stage at its top.
+ useEffect(()=>{window.scrollTo({top:0,behavior:"instant"});},[stage]);
  const [lastRefinement,setLastRefinement]=useState<{reaction:Reaction;title:string;message:string}|null>(null);
  const [intersectionReactions,setIntersectionReactions]=useState<Record<string,"THAT DOESN’T FEEL RIGHT"|"I’M CURIOUS"|"SHOW ME MORE">>({});
  const [secretDirection,setSecretDirection]=useState("");
