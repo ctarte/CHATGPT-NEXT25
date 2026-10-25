@@ -1257,3 +1257,34 @@ html body .start-wrap .map-finding-corrections textarea::placeholder{color:#536a
  text-decoration:underline!important;
  text-underline-offset:3px!important;
 }
+
+
+/* Conversational Discovery guide: essential steps visible, deeper instructions optional. */
+html body .start-wrap .discovery-three-steps{
+ display:flex!important;flex-wrap:wrap!important;gap:10px 17px!important;
+ align-items:center!important;
+ font:400 16px/1.6 Arial,Helvetica,sans-serif!important;
+ color:#f3f7fa!important;
+}
+html body .start-wrap .discovery-three-steps strong{
+ color:#fff!important;
+ font:800 15px/1.5 Arial,Helvetica,sans-serif!important;
+}
+html body .start-wrap .discovery-optional-guide{
+ margin-top:16px!important;
+ border:1px solid #91afc1!important;
+ border-radius:3px!important;
+ padding:12px 16px!important;
+ background:#f2f5f7!important;
+ color:#203b4d!important;
+}
+html body .start-wrap .discovery-optional-guide>summary{
+ cursor:pointer!important;
+ font:750 16px/1.5 Arial,Helvetica,sans-serif!important;
+ color:#173e5b!important;
+}
+html body .start-wrap .discovery-optional-guide p{
+ color:#203b4d!important;
+ font:400 16px/1.65 Arial,Helvetica,sans-serif!important;
+}
+html body .start-wrap .discovery-optional-guide strong{color:#173e5b!important}
