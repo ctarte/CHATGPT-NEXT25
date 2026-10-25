@@ -1209,3 +1209,51 @@ html body .start-wrap .profile-correction textarea{
 }
 html body .start-wrap .profile-correction textarea::placeholder{color:#526a7b!important;opacity:1!important}
 html body .start-wrap .profile-correction p{font:400 15px/1.6 Arial,Helvetica,sans-serif!important;color:#263f50!important}
+
+
+/* Map corrections: clear expandable actions and legible editing fields. */
+html body .start-wrap .map-finding-corrections{
+ margin:20px 0!important;
+ background:#eaf1f5!important;
+ border:1px solid #c7d9e3!important;
+ border-left:4px solid #315b75!important;
+ padding:16px 20px!important;
+}
+html body .start-wrap .map-finding-corrections summary{
+ cursor:pointer!important;
+ color:#173e5b!important;
+ font:750 17px/1.5 Arial,Helvetica,sans-serif!important;
+}
+html body .start-wrap .map-finding-corrections summary span{
+ font-size:14px!important;
+}
+html body .start-wrap .map-finding-corrections p{
+ color:#263f50!important;
+ font:400 16px/1.6 Arial,Helvetica,sans-serif!important;
+}
+html body .start-wrap .map-finding-corrections label{
+ display:block!important;
+ margin:16px 0!important;
+}
+html body .start-wrap .map-finding-corrections label strong{
+ display:block!important;
+ color:#173e5b!important;
+ font:750 16px/1.5 Arial,Helvetica,sans-serif!important;
+ margin-bottom:7px!important;
+}
+html body .start-wrap .map-finding-corrections textarea{
+ display:block!important;width:100%!important;box-sizing:border-box!important;
+ background:#fff!important;color:#173e5b!important;
+ border:1px solid #8199a9!important;padding:12px!important;
+ font:400 17px/1.6 Arial,Helvetica,sans-serif!important;
+}
+html body .start-wrap .map-finding-corrections textarea::placeholder{color:#536a79!important;opacity:1!important}
+.blueprint-completion-link{
+ display:inline-block!important;
+ margin-top:8px!important;
+ font-size:15px!important;
+ font-weight:750!important;
+ color:#173e5b!important;
+ text-decoration:underline!important;
+ text-underline-offset:3px!important;
+}
