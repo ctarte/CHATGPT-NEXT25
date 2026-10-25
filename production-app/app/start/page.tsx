@@ -61,11 +61,12 @@ export default function Page(){
  const [stage,setStage]=useState(1),[pick,setPick]=useState("");
  // Blueprint refinement links must open the actual Discovery Map, not the start of the guide.
  useEffect(()=>{
-  if(window.location.hash!=="#discovery-map")return;
-  setStage(4);
+  const requested=window.location.hash;
+  if(requested!=="#discovery-map"&&requested!=="#discovery-next")return;
+  setStage(requested==="#discovery-next"?7:4);
   let tries=0;
   const timer=window.setInterval(()=>{
-   const target=document.getElementById("discovery-map");
+   const target=document.getElementById(requested.slice(1));
    if(target){target.scrollIntoView({behavior:"instant",block:"start"});window.clearInterval(timer);}
    else if(++tries>25)window.clearInterval(timer);
   },120);
