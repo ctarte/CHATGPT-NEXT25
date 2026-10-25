@@ -59,6 +59,18 @@ export default function Page(){
  const [returnToJournal,setReturnToJournal]=useState(false);
  const goBackToJournal=()=>{setReturnToJournal(false);document.getElementById("discovery-journal")?.scrollIntoView({behavior:"smooth",block:"start"});window.history.replaceState(null,"","#discovery-journal")};
  const [stage,setStage]=useState(1),[pick,setPick]=useState("");
+ // Blueprint refinement links must open the actual Discovery Map, not the start of the guide.
+ useEffect(()=>{
+  if(window.location.hash!=="#discovery-map")return;
+  setStage(4);
+  let tries=0;
+  const timer=window.setInterval(()=>{
+   const target=document.getElementById("discovery-map");
+   if(target){target.scrollIntoView({behavior:"instant",block:"start"});window.clearInterval(timer);}
+   else if(++tries>25)window.clearInterval(timer);
+  },120);
+  return ()=>window.clearInterval(timer);
+ },[]);
  // Stage changes replace the visible page content; always begin the new stage at its top.
  useEffect(()=>{window.scrollTo({top:0,behavior:"instant"});},[stage]);
  const [lastRefinement,setLastRefinement]=useState<{reaction:Reaction;title:string;message:string}|null>(null);
