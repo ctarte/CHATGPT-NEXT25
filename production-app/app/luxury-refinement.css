@@ -1312,3 +1312,16 @@ html body .start-wrap .map-challenge button[aria-pressed="true"]{outline:2px sol
 html body .start-wrap .map-supporting-detail{margin:16px 0!important;border:1px solid #a8bfcc!important;background:#eaf1f5!important}
 html body .start-wrap .map-supporting-detail>summary{cursor:pointer!important;padding:15px 18px!important;color:#173e5b!important;font:750 16px/1.5 Arial,Helvetica,sans-serif!important}
 html body .start-wrap .map-supporting-detail .map-open{margin:0!important}
+
+
+/* Accessibility and interactive clarity pass for Discovery. */
+html body .start-wrap .wildcard-refinement{padding:18px!important;margin:16px 0!important;background:#eaf1f5!important;border-left:4px solid #315b75!important;color:#203b4d!important}
+html body .start-wrap .wildcard-refinement strong{display:block!important;font-size:17px!important;color:#173e5b!important}
+html body .start-wrap .wildcard-refinement p{color:#263f50!important;font-size:16px!important;line-height:1.6!important}
+html body .start-wrap .wildcard-refinement textarea{width:100%!important;box-sizing:border-box!important;padding:12px!important;background:#fff!important;color:#173e5b!important;border:1px solid #8199a9!important;font-size:16px!important}
+html body .start-wrap .wildcard-refinement textarea::placeholder{color:#526779!important;opacity:1!important}
+html body .start-wrap .field-opportunity-list .field-actions button{cursor:pointer!important;min-height:42px!important;font-size:13px!important;line-height:1.4!important}
+html body .start-wrap .field-opportunity-list .field-actions button.active{background:#173e5b!important;color:#fff!important}
+html body .start-wrap .field-opportunity-list .opportunity-note{color:#263f50!important;font-size:15px!important;line-height:1.6!important}
+html body .start-wrap .wildcard-actions button[aria-pressed="true"]{outline:2px solid #cba66b!important;outline-offset:2px!important}
+html body .start-wrap .discovery-section-help,html body .start-wrap .reaction-instruction p{font-size:16px!important;line-height:1.65!important}
