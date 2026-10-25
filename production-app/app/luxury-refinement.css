@@ -1177,3 +1177,35 @@ html body .start-wrap .outside-evidence textarea:focus-visible{
  outline:3px solid #b9d6e8!important;
  outline-offset:2px!important;
 }
+
+
+/* Site-wide refinement: readable labels and actionable Discovery corrections. */
+.think-tank-emphasis{font-weight:800!important;color:#173e5b!important}
+.retirement-invitation{font-size:clamp(17px,1.5vw,19px)!important;line-height:1.65!important;color:#263f50!important}
+html body .start-wrap .knowledge-prompts label,
+html body .start-wrap .knowledge-prompts label span,
+html body .start-wrap .knowledge-prompts label b{
+ color:#243e50!important;
+}
+html body .start-wrap .knowledge-prompts label b{font-size:16px!important;font-weight:800!important}
+html body .start-wrap .knowledge-prompts label span{font-size:16px!important;line-height:1.6!important}
+html body .start-wrap .knowledge-prompts label textarea{
+ background:#fff!important;color:#172f40!important;
+}
+html body .start-wrap .profile-correction{
+ background:#eaf1f5!important;
+ border-left:4px solid #315b75!important;
+ padding:19px 21px!important;
+ margin:22px 0!important;
+}
+html body .start-wrap .profile-correction label{display:block!important;color:#173e5b!important}
+html body .start-wrap .profile-correction label strong{display:block!important;font:800 16px/1.5 Arial,Helvetica,sans-serif!important;color:#173e5b!important}
+html body .start-wrap .profile-correction label span{display:block!important;margin:6px 0 12px!important;font:400 16px/1.6 Arial,Helvetica,sans-serif!important;color:#263f50!important}
+html body .start-wrap .profile-correction textarea{
+ width:100%!important;box-sizing:border-box!important;
+ padding:12px 14px!important;background:#fff!important;
+ color:#172f40!important;border:1px solid #829ba9!important;
+ font:400 17px/1.6 Arial,Helvetica,sans-serif!important;
+}
+html body .start-wrap .profile-correction textarea::placeholder{color:#526a7b!important;opacity:1!important}
+html body .start-wrap .profile-correction p{font:400 15px/1.6 Arial,Helvetica,sans-serif!important;color:#263f50!important}
