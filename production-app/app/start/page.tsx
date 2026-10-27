@@ -63,7 +63,7 @@ export default function Page(){
  useEffect(()=>{
   const requested=window.location.hash;
   if(requested!=="#discovery-map"&&requested!=="#discovery-next")return;
-  setStage(requested==="#discovery-next"?7:4);
+  setStage(5);
   let tries=0;
   const timer=window.setInterval(()=>{
    const target=document.getElementById(requested.slice(1));
