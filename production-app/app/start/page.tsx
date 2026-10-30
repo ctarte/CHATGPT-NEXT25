@@ -97,7 +97,7 @@ export default function Page(){
  const [fieldActions,setFieldActions]=useState<Record<string,string>>({});
  const [briefTitle,setBriefTitle]=useState("");
  const [briefsOpened,setBriefsOpened]=useState<string[]>([]);
- const [quickQuestion,setQuickQuestion]=useState(0),[quickAnswers,setQuickAnswers]=useState<Record<number,string>>({});
+ const [quickQuestion,setQuickQuestion]=useState(()=>typeof window!=="undefined"&&["#discovery-map","#discovery-next"].includes(window.location.hash)?quickQuestions.length:0),[quickAnswers,setQuickAnswers]=useState<Record<number,string>>({});
  const [knowledgeOpen,setKnowledgeOpen]=useState(false);
  const [futureReactions,setFutureReactions]=useState<Record<string,string>>({});
  const [mapFeedback,setMapFeedback]=useState<Record<string,string>>({});
