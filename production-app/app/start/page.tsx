@@ -73,8 +73,12 @@ export default function Page(){
   },120);
   return ()=>window.clearInterval(timer);
  },[]);
- // Stage changes replace the visible page content; always begin the new stage at its top.
- useEffect(()=>{window.scrollTo({top:0,behavior:"instant"});},[stage]);
+ // Stage changes normally begin at the top. Preserve an explicit Blueprint deep link
+ // so this scroll does not compete with the requested Discovery section anchor.
+ useEffect(()=>{
+  if(stage===5&&["#discovery-map","#discovery-next"].includes(window.location.hash))return;
+  window.scrollTo({top:0,behavior:"instant"});
+ },[stage]);
  const [lastRefinement,setLastRefinement]=useState<{reaction:Reaction;title:string;message:string}|null>(null);
  const [intersectionReactions,setIntersectionReactions]=useState<Record<string,"THAT DOESN’T FEEL RIGHT"|"I’M CURIOUS"|"SHOW ME MORE">>({});
  const [secretDirection,setSecretDirection]=useState("");
