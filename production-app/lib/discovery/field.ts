@@ -5,12 +5,14 @@ import type {Synthesis} from "./synthesis";
 export type FieldItem={title:string;world:string;lane:string;reason:string;watch:string;experiment:string};
 export type DiscoveryField={curiosities:string[];explore:FieldItem[];unexpected:FieldItem[];knowledge:FieldItem|null};
 
-export function buildDiscoveryField(universe:Possibility[],wanted:string[],avoid:string[],profile:DiscoveryProfile,synthesis:Synthesis):DiscoveryField{
+export function buildDiscoveryField(universe:Possibility[],wanted:string[],avoid:string[],profile:DiscoveryProfile,synthesis:Synthesis,rejectedTitles:readonly string[]=[]):DiscoveryField{
  const score=(p:Possibility)=>
   p.signals.filter(x=>wanted.includes(x)).length*3
   -p.conditions.filter(x=>avoid.includes(x)).length*3
   +(synthesis.directions.includes(p.title)?5:0);
- const ranked=[...universe].sort((a,b)=>score(b)-score(a));
+ // A customer rejection is an explicit boundary, not another weak ranking signal.
+ const rejected=new Set(rejectedTitles);
+ const ranked=universe.filter(p=>!rejected.has(p.title)).sort((a,b)=>score(b)-score(a));
  const toItem=(p:Possibility):FieldItem=>{
   const matches=p.signals.filter(x=>wanted.includes(x)).slice(0,2);
   const conflicts=p.conditions.filter(x=>avoid.includes(x)).slice(0,2);
