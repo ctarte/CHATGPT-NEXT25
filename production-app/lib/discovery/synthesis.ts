@@ -9,7 +9,12 @@ const dictionaries=[
  {theme:"BUILD & LEAD",words:["build","lead","manage","launch","business","team","develop"],directions:["Niche Acquisition Entrepreneur","Community Venture Builder","Independent Project Producer"]}
 ];
 export function synthesizeDiscovery(knowledge:Record<string,string>,wanted:string[],avoid:string[],profile:DiscoveryProfile,universe:Possibility[]):Synthesis{
- const text=Object.values(knowledge).join(" ").toLowerCase();
+ // Corrections describe what the customer wants changed, often by quoting a
+ // rejected finding. Do not treat those quotations as positive interest signals.
+ const text=Object.entries(knowledge)
+  .filter(([key])=>!key.startsWith("mapCorrection_"))
+  .map(([,value])=>value)
+  .join(" ").toLowerCase();
  const scored=dictionaries.map(d=>({...d,score:d.words.reduce((n,w)=>n+(text.includes(w)?1:0),0)})).sort((a,b)=>b.score-a.score);
  const active=scored.filter(x=>x.score>0).slice(0,3);
  const themes=active.length?active.map(x=>x.theme):["EXPERIENCE WORTH EXAMINING"];
