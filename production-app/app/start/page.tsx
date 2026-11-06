@@ -299,7 +299,8 @@ export default function Page(){
  const outsideEvidenceCount=["outsideTrust","outsideEasy","outsideAdmire"].filter(k=>(knowledge[k]||"").trim().length>2).length;
  const fascinationReady=knowledgeCount>=4||outsideEvidenceCount>=2;
  const synthesis=useMemo(()=>synthesizeDiscovery(knowledge,wanted,avoid,profile,possibilities),[knowledge,wanted,avoid,profile]);
- const field=useMemo(()=>buildDiscoveryField(possibilities,wanted,avoid,profile,synthesis),[wanted,avoid,profile,synthesis]);
+ const rejectedFieldTitles=useMemo(()=>Object.entries(fieldActions).filter(([,action])=>action==="THAT DOESN’T FEEL RIGHT").map(([title])=>title),[fieldActions]);
+ const field=useMemo(()=>buildDiscoveryField(possibilities,wanted,avoid,profile,synthesis,rejectedFieldTitles),[wanted,avoid,profile,synthesis,rejectedFieldTitles]);
  const briefPossibility=possibilities.find(p=>p.title===briefTitle);
  const opportunityBrief=briefPossibility?buildOpportunityBrief(briefPossibility):null;
 
