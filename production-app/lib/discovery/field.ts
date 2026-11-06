@@ -12,7 +12,7 @@ export function buildDiscoveryField(universe:Possibility[],wanted:string[],avoid
   +(synthesis.directions.includes(p.title)?5:0);
  // A customer rejection is an explicit boundary, not another weak ranking signal.
  const rejected=new Set(rejectedTitles);
- const ranked=universe.filter(p=>!rejected.has(p.title)).sort((a,b)=>score(b)-score(a));
+ const ranked=[...universe].sort((a,b)=>(Number(rejected.has(a.title))-Number(rejected.has(b.title)))*100+score(b)-score(a));
  const toItem=(p:Possibility):FieldItem=>{
   const matches=p.signals.filter(x=>wanted.includes(x)).slice(0,2);
   const conflicts=p.conditions.filter(x=>avoid.includes(x)).slice(0,2);
@@ -40,7 +40,9 @@ export function buildDiscoveryField(universe:Possibility[],wanted:string[],avoid
    add(alternate||remaining[0]);
   }
  }
- const explore=selected.map(toItem);
+ // Keep rejected items visible so the customer can reverse a reaction.
+ const rejectedItems=universe.filter(p=>rejected.has(p.title)&&p.lane!=="SURPRISE ME");
+ const explore=[...selected.filter(p=>!rejected.has(p.title)),...rejectedItems].map(toItem);
  const unexpected=hasEvidence?ranked.filter(p=>p.lane==="SURPRISE ME"&&!used.has(p.title)).slice(0,2).map(toItem):[];
  const knowledgeCandidate=hasEvidence?ranked.find(p=>p.world==="WHAT YOU KNOW"&&!used.has(p.title)&&!unexpected.some(x=>x.title===p.title)):undefined;
  return {curiosities:wanted.slice(0,3),explore,unexpected,knowledge:knowledgeCandidate?toItem(knowledgeCandidate):null};
