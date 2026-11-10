@@ -22,7 +22,7 @@ export function buildDiscoveryField(universe:Possibility[],wanted:string[],avoid
   return {title:p.title,world:p.world,lane:p.lane,watch:p.watch,experiment:p.experiment,reason:why+(conflicts.length?" Worth examining carefully because it may involve "+conflicts.join(" and ").toLowerCase()+".":"")};
  };
  // Show credible matches first, then widen the field rather than filling it with near-identical options.
- const candidates=ranked.filter(p=>p.lane!=="SURPRISE ME");
+ const candidates=ranked.filter(p=>p.lane!=="SURPRISE ME"&&!rejected.has(p.title));
  const selected:Possibility[]=[];
  const used=new Set<string>();
  const add=(p:Possibility|undefined)=>{if(p&&!used.has(p.title)){selected.push(p);used.add(p.title)}};
@@ -43,7 +43,7 @@ export function buildDiscoveryField(universe:Possibility[],wanted:string[],avoid
  // Keep rejected items visible so the customer can reverse a reaction.
  const rejectedItems=universe.filter(p=>rejected.has(p.title)&&p.lane!=="SURPRISE ME");
  const explore=[...selected.filter(p=>!rejected.has(p.title)),...rejectedItems].map(toItem);
- const unexpected=hasEvidence?ranked.filter(p=>p.lane==="SURPRISE ME"&&!used.has(p.title)).slice(0,2).map(toItem):[];
- const knowledgeCandidate=hasEvidence?ranked.find(p=>p.world==="WHAT YOU KNOW"&&!used.has(p.title)&&!unexpected.some(x=>x.title===p.title)):undefined;
+ const unexpected=hasEvidence?ranked.filter(p=>p.lane==="SURPRISE ME"&&!rejected.has(p.title)&&!used.has(p.title)).slice(0,2).map(toItem):[];
+ const knowledgeCandidate=hasEvidence?ranked.find(p=>p.world==="WHAT YOU KNOW"&&!rejected.has(p.title)&&!used.has(p.title)&&!unexpected.some(x=>x.title===p.title)):undefined;
  return {curiosities:wanted.slice(0,3),explore,unexpected,knowledge:knowledgeCandidate?toItem(knowledgeCandidate):null};
 }
