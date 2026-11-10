@@ -12,7 +12,7 @@ export function synthesizeDiscovery(knowledge:Record<string,string>,wanted:strin
  // Corrections describe what the customer wants changed, often by quoting a
  // rejected finding. Do not treat those quotations as positive interest signals.
  const text=Object.entries(knowledge)
-  .filter(([key])=>!key.startsWith("mapCorrection_"))
+  .filter(([key])=>!key.startsWith("mapCorrection_")&&key!=="wildcardNote"&&key!=="wildcardReaction")
   .map(([,value])=>value)
   .join(" ").toLowerCase();
  const scored=dictionaries.map(d=>({...d,score:d.words.reduce((n,w)=>n+(text.includes(w)?1:0),0)})).sort((a,b)=>b.score-a.score);
