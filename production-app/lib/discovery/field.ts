@@ -2,7 +2,7 @@ import type {Possibility} from "./possibilities";
 import type {DiscoveryProfile} from "./profile";
 import type {Synthesis} from "./synthesis";
 
-export type FieldItem={title:string;world:string;lane:string;reason:string;watch:string;experiment:string};
+export type FieldItem={title:string;world:string;lane:string;description:string;reason:string;watch:string;experiment:string};
 export type DiscoveryField={curiosities:string[];explore:FieldItem[];unexpected:FieldItem[];knowledge:FieldItem|null};
 
 export function buildDiscoveryField(universe:Possibility[],wanted:string[],avoid:string[],profile:DiscoveryProfile,synthesis:Synthesis,rejectedTitles:readonly string[]=[]):DiscoveryField{
@@ -19,7 +19,7 @@ export function buildDiscoveryField(universe:Possibility[],wanted:string[],avoid
   const why=matches.length
    ?"Connects with your interest in "+matches.join(" and ").toLowerCase()+"."
    :p.desc;
-  return {title:p.title,world:p.world,lane:p.lane,watch:p.watch,experiment:p.experiment,reason:why+(conflicts.length?" Worth examining carefully because it may involve "+conflicts.join(" and ").toLowerCase()+".":"")};
+  return {title:p.title,world:p.world,lane:p.lane,description:p.desc,watch:p.watch,experiment:p.experiment,reason:why+(conflicts.length?" Worth examining carefully because it may involve "+conflicts.join(" and ").toLowerCase()+".":"")};
  };
  // Show credible matches first, then widen the field rather than filling it with near-identical options.
  const candidates=ranked.filter(p=>p.lane!=="SURPRISE ME"&&!rejected.has(p.title));
