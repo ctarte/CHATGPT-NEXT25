@@ -1325,3 +1325,11 @@ html body .start-wrap .field-opportunity-list .field-actions button.active{backg
 html body .start-wrap .field-opportunity-list .opportunity-note{color:#263f50!important;font-size:15px!important;line-height:1.6!important}
 html body .start-wrap .wildcard-actions button[aria-pressed="true"]{outline:2px solid #cba66b!important;outline-offset:2px!important}
 html body .start-wrap .discovery-section-help,html body .start-wrap .reaction-instruction p{font-size:16px!important;line-height:1.65!important}
+
+/* Homepage Discovery message: two readable, distinct statements without heavy boxes. */
+.hero-77 .hero-discovery-message{display:grid;gap:clamp(16px,2vw,26px);max-width:610px}
+.hero-77 .hero-discovery-message h2{font-family:Georgia,serif;color:#102a3d;font-size:clamp(1.28rem,1.8vw,1.65rem);line-height:1.27;font-weight:650;letter-spacing:-.015em;margin:0 0 9px}
+.hero-77 .hero-discovery-message p{font-size:clamp(1rem,1.1vw,1.12rem);line-height:1.55;color:#23384a;margin:0}
+.hero-77 .hero-discovery-result{border-top:1px solid rgba(163,125,53,.55);padding-top:16px}
+.hero-77 .hero-discovery-result .hero-discovery-label{color:#826127;font-size:.78rem;font-weight:750;letter-spacing:.12em;margin:0 0 8px}
+@media(max-width:760px){.hero-77 .hero-discovery-message{gap:17px}.hero-77 .hero-discovery-message h2{font-size:1.3rem}.hero-77 .hero-discovery-message p{font-size:1rem}}
