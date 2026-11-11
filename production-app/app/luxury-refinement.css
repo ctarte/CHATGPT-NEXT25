@@ -1333,3 +1333,18 @@ html body .start-wrap .discovery-section-help,html body .start-wrap .reaction-in
 .hero-77 .hero-discovery-result{border-top:1px solid rgba(163,125,53,.55);padding-top:16px}
 .hero-77 .hero-discovery-result .hero-discovery-label{color:#826127;font-size:.78rem;font-weight:750;letter-spacing:.12em;margin:0 0 8px}
 @media(max-width:760px){.hero-77 .hero-discovery-message{gap:17px}.hero-77 .hero-discovery-message h2{font-size:1.3rem}.hero-77 .hero-discovery-message p{font-size:1rem}}
+
+/* Sitewide readability pass — improve small labels, controls and contrast without changing hierarchy. */
+:root{--muted:#425665}
+.site-header nav a{font-size:max(15px,0.94rem)}
+.brand small{font-size:12px;letter-spacing:.16em}
+.site-footer small,.site-header small,footer small,main small{font-size:clamp(14px,0.9rem,16px);line-height:1.5}
+main input,main textarea,main select,main button,main summary{font-size:max(15px,0.95rem)}
+main label{font-size:max(15px,0.95rem)}
+main .discovery-section-label,main .eyebrow{font-size:max(14px,0.9rem);line-height:1.5}
+main .discovery-section-help{font-size:max(16px,1rem);line-height:1.65;color:#243d50}
+main .portrait-inline-editor{margin-top:1rem;border-top:1px solid #d7d0c4;padding-top:.7rem}
+main .portrait-inline-editor summary{color:#102a3d;font-weight:700;cursor:pointer}
+main .portrait-inline-editor textarea{display:block;width:100%;min-height:92px;margin-top:.5rem;color:#142f43;background:#fff}
+main .portrait-next-action{margin:2rem 0 1rem;padding:1.25rem 0;border-top:1px solid #d7d0c4}
+@media(max-width:760px){.site-header nav a{font-size:14px}main .discovery-section-help{font-size:16px}}
