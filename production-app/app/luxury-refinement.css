@@ -1358,3 +1358,19 @@ html body .start-wrap .portrait-inline-editor summary{font-size:16px!important;l
 html body .start-wrap .portrait-inline-editor textarea{font-size:16px!important;border:1px solid #71889a!important}
 html body .start-wrap .portrait-inline-editor textarea::placeholder{color:#526779!important;opacity:1!important}
 html body .start-wrap .portrait-next-action .button{font-size:16px!important;min-height:44px!important}
+
+/* Consistent typography and clear actions in the first Think Tank review. */
+html body .start-wrap .think-tank-reveal .steps.compact article b,
+html body .start-wrap .notice-insight .connection-engine>span,
+html body .start-wrap .notice-insight .assumption-challenge>span,
+html body .start-wrap .notice-insight .contradiction-lab>span{font-size:14px!important;line-height:1.5!important;letter-spacing:.06em!important}
+html body .start-wrap .notice-insight .connection-engine p,
+html body .start-wrap .notice-insight .assumption-challenge p,
+html body .start-wrap .notice-insight .contradiction-lab p,
+html body .start-wrap .think-tank-reveal .steps.compact article p{font-size:16px!important;line-height:1.65!important;color:#263f50!important}
+html body .start-wrap .notice-insight .connection-engine strong,
+html body .start-wrap .notice-insight .assumption-challenge strong,
+html body .start-wrap .notice-insight .contradiction-lab h3,
+html body .start-wrap .think-tank-reveal .steps.compact article h3{font-size:clamp(18px,1.35vw,21px)!important;line-height:1.4!important}
+html body .start-wrap .notice-insight .connection-engine a{display:inline-block;color:#123c5a!important;font-size:16px!important;font-weight:700;text-decoration:underline;text-underline-offset:3px;margin-top:6px}
+html body .start-wrap #think-tank-reaction{scroll-margin-top:100px}
