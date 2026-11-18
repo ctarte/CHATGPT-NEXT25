@@ -1,0 +1,52 @@
+name: Development Playwright read-only checks
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - work/checkout-entitlements-blueprint-review
+    paths:
+      - '.github/workflows/development-playwright.yml'
+      - 'production-app/tests/preview-smoke.spec.cjs'
+
+permissions:
+  contents: read
+
+jobs:
+  browser-smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        viewport: [desktop, mobile]
+    env:
+      PREVIEW_URL: https://chatgpt-next-25-k57dqezt2-ct-next-25.vercel.app
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install browser test runner
+        run: npm install --no-save @playwright/test@1.58.2
+        working-directory: production-app
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+        working-directory: production-app
+      - name: Run read-only smoke checks
+        working-directory: production-app
+        run: |
+          if [ "${{ matrix.viewport }}" = "mobile" ]; then
+            npx playwright test tests/preview-smoke.spec.cjs --browser chromium --reporter=html --output=test-results --workers=1 --config=tests/playwright.mobile.config.cjs
+          else
+            npx playwright test tests/preview-smoke.spec.cjs --browser chromium --reporter=html --output=test-results --workers=1 --config=tests/playwright.desktop.config.cjs
+          fi
+      - name: Upload screenshots and report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: development-playwright-${{ matrix.viewport }}
+          path: |
+            production-app/playwright-report/
+            production-app/test-results/
+          retention-days: 14
