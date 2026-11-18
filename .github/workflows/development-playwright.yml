@@ -28,6 +28,13 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Confirm protected preview credential is configured
+        run: |
+          if [ -z "$VERCEL_AUTOMATION_BYPASS_SECRET" ]; then
+            echo "::error::VERCEL_AUTOMATION_BYPASS_SECRET is not configured in GitHub Actions"
+            exit 1
+          fi
+          echo "Automation bypass credential is configured (value hidden)."
       - name: Install browser test runner
         run: npm install --no-save @playwright/test@1.58.2
         working-directory: production-app
