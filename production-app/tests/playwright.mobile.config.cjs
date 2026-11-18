@@ -5,6 +5,10 @@ module.exports = {
   reporter: [['html', { open: 'never' }]],
   use: {
     browserName: 'chromium',
+    extraHTTPHeaders: process.env.VERCEL_AUTOMATION_BYPASS_SECRET ? {
+      'x-vercel-protection-bypass': process.env.VERCEL_AUTOMATION_BYPASS_SECRET,
+      'x-vercel-set-bypass-cookie': 'true'
+    } : {},
     viewport: { width: 390, height: 844 },
     screenshot: 'on',
     trace: 'retain-on-failure'
