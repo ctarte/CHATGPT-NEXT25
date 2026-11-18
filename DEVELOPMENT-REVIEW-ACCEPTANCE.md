@@ -33,3 +33,10 @@ A Vercel READY build is necessary but **not sufficient**. Do not invite the cust
 
 ## Guardrails
 Use isolated test identities and Stripe test mode only when the environment is proven safe. The preview may share Production database configuration; do not create, edit, or delete real customer records or perform migrations. If safe end-to-end testing cannot be established, document the blocker and withhold the review-ready announcement.
+
+## Verification attempt — 2026-11-18
+- **Deployment:** `6ead246a4ef52e44686d9282632c714f58aa0463`; Vercel state **READY**; hostname `chatgpt-next-25-k57dqezt2-ct-next-25.vercel.app`.
+- **Live-browser blocker:** the available external web fetch could not open a Development preview; the local browser runtime has Chromium and Python Playwright but DNS/network access to Vercel is unavailable. Thus **no live screenshots, clicks, keyboard, mobile, or end-to-end interactions have been verified**.
+- **Auth/checkout blocker:** Preview is understood to potentially share Production database configuration. Do not run sign-up, sign-in mutation, Stripe checkout, webhook, or entitlement-write tests until an isolated test database and Stripe test-mode environment are independently confirmed.
+- **Status:** Build PASS; all visual/interactive and customer-flow checks remain **NOT VERIFIED**. This is a documented testing blocker, not a release approval.
+- **Unblock options:** provide an authorized browser testing environment that can access the Development URL (for example a configured browser runner/CI job), and provision separate test auth/database/payment credentials. Then attach dated screenshots, viewport measurements, interaction outcomes, and test-only entitlement traces to this checklist.
