@@ -8,6 +8,8 @@ on:
     paths:
       - '.github/workflows/development-playwright.yml'
       - 'production-app/tests/preview-smoke.spec.cjs'
+      - 'production-app/tests/playwright.desktop.config.cjs'
+      - 'production-app/tests/playwright.mobile.config.cjs'
 
 permissions:
   contents: read
@@ -21,7 +23,7 @@ jobs:
       matrix:
         viewport: [desktop, mobile]
     env:
-      PREVIEW_URL: https://chatgpt-next-25-k57dqezt2-ct-next-25.vercel.app
+      PREVIEW_URL: https://chatgpt-next-25-39yyjuasa-ct-next-25.vercel.app
       VERCEL_AUTOMATION_BYPASS_SECRET: ${{ secrets.VERCEL_AUTOMATION_BYPASS_SECRET }}
     steps:
       - uses: actions/checkout@v4
