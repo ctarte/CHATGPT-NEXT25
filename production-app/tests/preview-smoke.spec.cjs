@@ -61,7 +61,7 @@ test.describe('Development preview — public customer journey', () => {
     await page.goto(new URL('/', base).toString(), { waitUntil: 'domcontentloaded' });
     await requireActualPreview(page);
     const hrefs = await page.locator('a[href]').evaluateAll(nodes => nodes.map(n => n.getAttribute('href') || ''));
-    expect(hrefs.some(h => /(^|\\/)start(?:[/?#]|$)/i.test(h)), 'Homepage needs a direct link toward /start').toBeTruthy();
+    expect(hrefs.some(h => /(?:^|\/)start(?:[/?#]|$)/i.test(h)), 'Homepage needs a direct link toward /start').toBeTruthy();
     await expect(page.locator('h1').first()).toBeVisible();
   });
 
@@ -69,7 +69,7 @@ test.describe('Development preview — public customer journey', () => {
     await page.goto(new URL('/pricing', base).toString(), { waitUntil: 'domcontentloaded' });
     await requireActualPreview(page);
     const hrefs = await page.locator('a[href]').evaluateAll(nodes => nodes.map(n => n.getAttribute('href') || ''));
-    expect(hrefs.some(h => /(^|\\/)start(?:[/?#]|$)/i.test(h)), 'Pricing needs a link toward /start').toBeTruthy();
+    expect(hrefs.some(h => /(?:^|\/)start(?:[/?#]|$)/i.test(h)), 'Pricing needs a link toward /start').toBeTruthy();
   });
 
   for (const route of ['/', '/how-it-works', '/explore', '/blueprint', '/pricing', '/start']) {
