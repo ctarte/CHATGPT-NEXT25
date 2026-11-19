@@ -54,3 +54,33 @@ test.describe('Development preview — read-only visual smoke tests', () => {
     }
   });
 });
+
+// Additional read-only journey checks. These never submit forms, authenticate, or modify data.
+test.describe('Development preview — public customer journey', () => {
+  test('homepage has a usable route toward Discovery', async ({ page }) => {
+    await page.goto(new URL('/', base).toString(), { waitUntil: 'domcontentloaded' });
+    await requireActualPreview(page);
+    const hrefs = await page.locator('a[href]').evaluateAll(nodes => nodes.map(n => n.getAttribute('href') || ''));
+    expect(hrefs.some(h => /(^|\\/)start(?:[/?#]|$)/i.test(h)), 'Homepage needs a direct link toward /start').toBeTruthy();
+    await expect(page.locator('h1').first()).toBeVisible();
+  });
+
+  test('pricing links offer a path toward starting Discovery', async ({ page }) => {
+    await page.goto(new URL('/pricing', base).toString(), { waitUntil: 'domcontentloaded' });
+    await requireActualPreview(page);
+    const hrefs = await page.locator('a[href]').evaluateAll(nodes => nodes.map(n => n.getAttribute('href') || ''));
+    expect(hrefs.some(h => /(^|\\/)start(?:[/?#]|$)/i.test(h)), 'Pricing needs a link toward /start').toBeTruthy();
+  });
+
+  for (const route of ['/', '/how-it-works', '/explore', '/blueprint', '/pricing', '/start']) {
+    test(route + ' does not clip content horizontally at test viewport', async ({ page }) => {
+      await page.goto(new URL(route, base).toString(), { waitUntil: 'domcontentloaded' });
+      await requireActualPreview(page);
+      const dimensions = await page.evaluate(() => ({
+        viewport: document.documentElement.clientWidth,
+        content: document.documentElement.scrollWidth
+      }));
+      expect(dimensions.content, 'Horizontal overflow: ' + JSON.stringify(dimensions)).toBeLessThanOrEqual(dimensions.viewport + 3);
+    });
+  }
+});
