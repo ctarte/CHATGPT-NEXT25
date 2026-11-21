@@ -5,6 +5,17 @@
 ## Release rule
 A Vercel READY build is necessary but **not sufficient**. Do not invite the customer to review until the checks below have evidence (test date, preview commit/URL, viewport, steps, expected/actual results, screenshots where appropriate). Mark untested items **NOT VERIFIED**, never PASS.
 
+## Approved experience direction — Option B (2026-11-21)
+**Simplified experience:** At the beginning of Discovery and each section, give a short orientation, one clear next action, and an optional expandable explanation for customers who want more detail. Preserve meaningful approved material in the optional explanation rather than removing it. Keep the tone personal and advisory (some warmth of Option C), without turning the process into a long guided tutorial or job-placement questionnaire.
+
+Acceptance checks:
+- [ ] At first entry, explain what Discovery is, what the customer should do now, and what follows in concise language.
+- [ ] In Sections 01–07, present one obvious primary next action and an easy way back; avoid competing calls to action.
+- [ ] Move secondary instructions and context into clearly labeled, reversible disclosures that open and close with mouse, touch, and keyboard.
+- [ ] Keep progress and response instructions visible at the point of action; do not force customers to search elsewhere to understand how to respond.
+- [ ] Use readable type and sufficient contrast for instructions, captions, and buttons on mobile and desktop.
+- [ ] Preserve reaction changes, corrections, and refinement context; make it clear when a customer is revisiting rather than restarting.
+
 ## Customer journey and editorial standards
 - [ ] Homepage: value proposition, primary CTA, sign-in, navigation, mobile and desktop text legible.
 - [ ] Pricing: $595 Discovery and $995 Discovery + Opportunity Intelligence clearly differentiated; no accidental access grants.
