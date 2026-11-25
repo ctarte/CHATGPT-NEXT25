@@ -23,7 +23,8 @@ jobs:
       matrix:
         viewport: [desktop, mobile]
     env:
-      PREVIEW_URL: https://chatgpt-next-25-g348o0i55-ct-next-25.vercel.app
+      PREVIEW_URL: https://chatgpt-next-25-5rr48xvu5-ct-next-25.vercel.app
+      EXPECTED_PREVIEW_COMMIT: c2e45148d7a07be06e800a1e53ed74f717afde09
       VERCEL_AUTOMATION_BYPASS_SECRET: ${{ secrets.VERCEL_AUTOMATION_BYPASS_SECRET }}
     steps:
       - uses: actions/checkout@v4
@@ -43,6 +44,11 @@ jobs:
       - name: Install Chromium
         run: npx playwright install --with-deps chromium
         working-directory: production-app
+      - name: Record pinned preview target
+        run: |
+          echo "Preview target: $PREVIEW_URL"
+          echo "Expected deployed commit (pinned from Vercel): $EXPECTED_PREVIEW_COMMIT"
+          echo "Test runner commit: $GITHUB_SHA"
       - name: Run read-only smoke checks
         working-directory: production-app
         run: |
