@@ -84,3 +84,38 @@ test.describe('Development preview — public customer journey', () => {
     });
   }
 });
+
+
+ // Public-only audit: collect concrete readability evidence, not a blanket accessibility pass.
+ test.describe('Public page readability and navigation audit', () => {
+   for (const route of paths) {
+     test(route + ' typography and disclosure inventory', async ({page}, testInfo) => {
+       await page.goto(new URL(route, base).toString(), {waitUntil:'domcontentloaded'});
+       await requireActualPreview(page);
+       await page.evaluate(() => document.fonts.ready);
+       const audit = await page.evaluate(() => {
+         const visible = el => { const s=getComputedStyle(el), r=el.getBoundingClientRect(); return r.width>0 && r.height>0 && s.visibility==='visible' && s.display!=='none'; };
+         const text = [...document.querySelectorAll('body *')].filter(el => visible(el) && [...el.childNodes].some(n=>n.nodeType===3 && n.textContent.trim())).map(el => {
+           const s=getComputedStyle(el);
+           return {tag:el.tagName, text:el.textContent.trim().slice(0,180), fontSize:parseFloat(s.fontSize), color:s.color, background:s.backgroundColor, opacity:s.opacity};
+         });
+         return {url:location.href, viewport:{width:innerWidth,height:innerHeight}, smallText:text.filter(t=>t.fontSize<14), text, links:[...document.querySelectorAll('a[href]')].filter(visible).map(a=>({text:a.innerText,href:a.getAttribute('href')})), disclosures:[...document.querySelectorAll('details,button[aria-expanded]')].filter(visible).map(e=>({text:e.innerText.slice(0,180),expanded:e.getAttribute('aria-expanded'),open:e.hasAttribute('open')}))};
+       });
+       await testInfo.attach('readability-inventory.json',{body:JSON.stringify(audit,null,2),contentType:'application/json'});
+       await page.screenshot({path:testInfo.outputPath('readability.png'),fullPage:true});
+       expect(audit.text.length).toBeGreaterThan(0);
+       expect(audit.text.filter(t=>Number(t.opacity)===0),'Visible-layout text with zero opacity').toEqual([]);
+     });
+   }
+   test('public homepage Discovery link and browser back', async ({page}) => {
+     await page.goto(new URL('/',base).toString());
+     await requireActualPreview(page);
+     const link=page.locator('a[href="/start"]:visible').first();
+     await expect(link).toBeVisible();
+     await link.click();
+     await expect(page).toHaveURL(/\/start(?:[/?#]|$)/);
+     await requireActualPreview(page);
+     await page.goBack();
+     await expect(page).toHaveURL(new URL('/',base).toString());
+   });
+ });
