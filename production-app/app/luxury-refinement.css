@@ -1378,3 +1378,23 @@ html body .start-wrap #think-tank-reaction{scroll-margin-top:100px}
 /* Card 03 is an interpretive prompt, not a page-level headline. */
 html body .start-wrap .notice-insight .contradiction-lab h3{font-family:Georgia,serif!important;font-size:19px!important;line-height:1.45!important;font-weight:600!important;letter-spacing:0!important;margin:.55rem 0 .75rem!important}
 html body .start-wrap .notice-insight .contradiction-lab>strong{font-size:16px!important;line-height:1.55!important}
+
+/* Option B: readable, reversible optional guidance and keyboard focus. */
+html body .start-wrap details.discovery-section-help{
+ background:#eef3f6!important;color:#203b4d!important;border:1px solid #a8bfcc!important;
+ padding:14px 18px!important;margin:14px 0 20px!important;
+}
+html body .start-wrap details.discovery-section-help>summary{
+ cursor:pointer!important;color:#173e5b!important;font-size:16px!important;
+ font-weight:700!important;line-height:1.5!important;min-height:44px;
+}
+html body .start-wrap details.discovery-section-help[open]>summary{margin-bottom:12px}
+html body .start-wrap details.discovery-section-help .discovery-section-help{
+ color:#203b4d!important;background:transparent!important;border:0!important;padding:8px 0!important;margin:0!important;
+}
+html body .start-wrap details.discovery-section-help strong{color:#173e5b!important}
+html body .start-wrap :is(button,a,summary,input,textarea,select):focus-visible{
+ outline:3px solid #a67c38!important;outline-offset:3px!important;
+}
+html body .start-wrap .field-opportunity-list>summary span{font-size:15px!important}
+html body .start-wrap .field-columns article small{font-size:15px!important;line-height:1.5!important}
