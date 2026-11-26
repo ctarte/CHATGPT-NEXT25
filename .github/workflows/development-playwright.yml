@@ -23,8 +23,8 @@ jobs:
       matrix:
         viewport: [desktop, mobile]
     env:
-      PREVIEW_URL: https://chatgpt-next-25-5rr48xvu5-ct-next-25.vercel.app
-      EXPECTED_PREVIEW_COMMIT: c2e45148d7a07be06e800a1e53ed74f717afde09
+      PREVIEW_URL: https://chatgpt-next-25-11jm6l0qo-ct-next-25.vercel.app
+      EXPECTED_PREVIEW_COMMIT: 9cfc8161c5dabddafa07d666017dad36fa127437
       VERCEL_AUTOMATION_BYPASS_SECRET: ${{ secrets.VERCEL_AUTOMATION_BYPASS_SECRET }}
     steps:
       - uses: actions/checkout@v4
@@ -53,9 +53,9 @@ jobs:
         working-directory: production-app
         run: |
           if [ "${{ matrix.viewport }}" = "mobile" ]; then
-            npx playwright test tests/preview-smoke.spec.cjs --browser chromium --reporter=html --output=test-results --workers=1 --config=tests/playwright.mobile.config.cjs
+            npx playwright test tests/preview-smoke.spec.cjs --browser chromium --reporter=line,html --output=test-results --workers=1 --config=tests/playwright.mobile.config.cjs
           else
-            npx playwright test tests/preview-smoke.spec.cjs --browser chromium --reporter=html --output=test-results --workers=1 --config=tests/playwright.desktop.config.cjs
+            npx playwright test tests/preview-smoke.spec.cjs --browser chromium --reporter=line,html --output=test-results --workers=1 --config=tests/playwright.desktop.config.cjs
           fi
       - name: Upload screenshots and report
         if: always()
